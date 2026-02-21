@@ -1,0 +1,22 @@
+// Paste these into src/data/players.ts (PLAYERS array). Then fill pos/era.
+export const MISSING_SCORERS_2015 = [
+  { id: "kshort", name: "K.Short", pos: "?", era: "2010s" },
+  { id: "kcoleman", name: "K.Coleman", pos: "?", era: "2010s" },
+  { id: "kealy", name: "K.Ealy", pos: "?", era: "2010s" },
+  { id: "maddison", name: "M.Addison", pos: "?", era: "2010s" },
+  { id: "cjohnson", name: "C.Johnson", pos: "?", era: "2010s" },
+  { id: "klove", name: "K.Love", pos: "?", era: "2010s" },
+  { id: "aklein", name: "A.Klein", pos: "?", era: "2010s" },
+  { id: "ctillman", name: "C.Tillman", pos: "?", era: "2010s" },
+  { id: "tboston", name: "T.Boston", pos: "?", era: "2010s" },
+  { id: "dedwards", name: "D.Edwards", pos: "?", era: "2010s" },
+  { id: "rdelaire", name: "R.Delaire", pos: "?", era: "2010s" },
+  { id: "jallen", name: "J.Allen", pos: "?", era: "2010s" },
+  { id: "cjones", name: "C.Jones", pos: "?", era: "2010s" },
+  { id: "rmcclain", name: "R.McClain", pos: "?", era: "2010s" },
+  { id: "cfinnegan", name: "C.Finnegan", pos: "?", era: "2010s" },
+  { id: "sthompson", name: "S.Thompson", pos: "?", era: "2010s" },
+  { id: "whorton", name: "W.Horton", pos: "?", era: "2010s" },
+  { id: "slotulelei", name: "S.Lotulelei", pos: "?", era: "2010s" },
+  { id: "bbenwikere", name: "B.Benwikere", pos: "?", era: "2010s" },
+];
