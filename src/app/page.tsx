@@ -417,19 +417,24 @@ export default function HomePage() {
                     className="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800 px-3 py-1.5 text-xs font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:bg-slate-700 hover:text-white active:scale-95"
                     href="/stats"
                   >
-                    Leaderboard
+                    <span className="hidden sm:inline">Leaderboard</span>
+                    <span className="sm:hidden">🏆</span>
                   </Link>
                   <div className="relative">
                     <button
-                      className="rounded-lg border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs font-semibold text-sky-400 hover:border-slate-600 hover:bg-slate-800 transition-colors active:scale-95"
+                      className="max-w-[120px] truncate rounded-lg border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs font-semibold text-sky-400 hover:border-slate-600 hover:bg-slate-800 transition-colors active:scale-95"
                       onClick={() => setShowUserMenu((v) => !v)}
                     >
-                      {user.username ?? user.email} ▾
+                      Account ▾
                     </button>
                     {showUserMenu && (
                       <>
                         <div className="fixed inset-0 z-10" onClick={() => setShowUserMenu(false)} />
-                        <div className="absolute right-0 mt-1 z-20 w-36 rounded-xl border border-slate-700 bg-slate-900 shadow-xl overflow-hidden">
+                        <div className="absolute right-0 mt-1 z-20 w-44 rounded-xl border border-slate-700 bg-slate-900 shadow-xl overflow-hidden">
+                          <div className="px-4 py-2.5 border-b border-slate-800">
+                            <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Signed in as</p>
+                            <p className="mt-0.5 text-xs font-bold text-slate-200 truncate">{user.username ?? user.email}</p>
+                          </div>
                           <button
                             className="w-full px-4 py-2.5 text-left text-xs font-semibold text-rose-400 hover:bg-slate-800 transition-colors"
                             onClick={async () => { await supabase.auth.signOut(); localStorage.removeItem("panthers_daily_v1"); window.location.reload(); }}
