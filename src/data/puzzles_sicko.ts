@@ -20,43 +20,40 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who recorded a sack in Week 16 of the 2009 season against the New York Giants?",
+        "prompt": "Which RB caught S.Beuerlein's 2nd TD pass in Week 8 of the 2000 season against the San Francisco 49ers?",
         "playerIds": [
-          "jon-beason",
-          "julius-peppers",
-          "charles-johnson",
-          "tyler-brayton"
+          "tim-biakabutuka"
         ],
         "tier": 1,
-        "season": 2009
+        "season": 2000
       },
       {
         "id": "q2",
-        "prompt": "Who caught a TD pass in Week 7 of the 2003 season against the Tennessee Titans?",
+        "prompt": "Which TE had 129+ receiving yards in Week 13 of the 2015 season against the New Orleans Saints?",
         "playerIds": [
-          "steve-smith",
-          "nick-goings"
+          "greg-olsen"
+        ],
+        "tier": 1,
+        "season": 2015
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 10 of the 2003 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "steve-smith"
         ],
         "tier": 1,
         "season": 2003
       },
       {
-        "id": "q3",
-        "prompt": "Which CB recorded an interception in Week 17 of the 2012 season against the New Orleans Saints?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
         "id": "q4",
-        "prompt": "Which S forced a fumble in Week 13 of the 2000 season against the Green Bay Packers?",
+        "prompt": "Who caught a TD pass in Week 12 of the 2019 season against the New Orleans Saints?",
         "playerIds": [
-          "mike-minter"
+          "dj-moore-00-003",
+          "christian-mccaffrey"
         ],
         "tier": 1,
-        "season": 2000
+        "season": 2019
       }
     ]
   },
@@ -65,40 +62,42 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which WR led the Panthers in receptions in 2005?",
+        "prompt": "Which RB caught a TD pass in Week 16 of the 2014 season against the Cleveland Browns?",
         "playerIds": [
-          "steve-smith"
+          "jonathan-stewart"
         ],
-        "tier": 2,
-        "season": 2005
+        "tier": 1,
+        "season": 2014
       },
       {
         "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 14 of the 2022 season against the Seattle Seahawks?",
+        "prompt": "Which WR converted a 2-point conversion in Week 7 of the 2018 season against the Philadelphia Eagles?",
         "playerIds": [
-          "shi-smith"
+          "jarius-wright"
         ],
         "tier": 1,
-        "season": 2022
+        "season": 2018
       },
       {
         "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 16 of the 2016 season against the Atlanta Falcons?",
+        "prompt": "Which WR caught a TD pass in Week 12 of the 2020 season against the Minnesota Vikings?",
         "playerIds": [
-          "kony-ealy"
+          "robby-anderson"
         ],
         "tier": 1,
-        "season": 2016
+        "season": 2020
       },
       {
         "id": "q4",
-        "prompt": "Who recorded a sack in Week 10 of the 2024 season against the New York Giants?",
+        "prompt": "Who recorded a sack in the 2005 Wild Card against the New York Giants?",
         "playerIds": [
-          "dj-wonnum",
-          "ashawn-robinson"
+          "thomas-davis",
+          "jordan-carstens",
+          "julius-peppers",
+          "will-witherspoon"
         ],
         "tier": 1,
-        "season": 2024
+        "season": 2005
       }
     ]
   },
@@ -107,738 +106,6 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which RB returned a kickoff for a TD in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 127+ receiving yards in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a TD on 4th down in Week 5 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "cameron-artis-payne"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE forced a fumble in Week 13 of the 2006 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-02-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 13 of the 2007 season against the San Francisco 49ers?",
-        "playerIds": [
-          "thomas-davis",
-          "mike-rucker",
-          "damione-lewis",
-          "marquand-manuel"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB did the Panthers select with the 1st overall pick in the 2023 NFL Draft?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 3,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 13 of the 2003 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2015 season against the New York Giants?",
-        "playerIds": [
-          "charles-tillman"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-02-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 11 of the 2002 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 17 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ted-ginn",
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 8 of the 2018 season against the Baltimore Ravens?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 4 of the 1999 season against the Washington Commanders?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-02-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 15 of the 2011 season against the Houston Texans?",
-        "playerIds": [
-          "jeremy-shockey"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB returned an interception for a TD in Week 11 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 13 of the 2002 season against the Cleveland Browns?",
-        "playerIds": [
-          "julius-peppers",
-          "mark-fields"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 17 of the 2014 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ed-dickson"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-02-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR scored a rushing TD in Week 7 of the 2020 season against the New Orleans Saints?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 2 sacks in Week 4 of the 2017 season against the New England Patriots?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in the 2015 Super Bowl against the Denver Broncos?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 151+ receiving yards in Week 7 of the 2003 season against the Tennessee Titans?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-02-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receptions in 2021?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 2,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 8 of the 2002 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB did the Panthers select in Round 3, Pick 94 of the 2022 NFL Draft?",
-        "playerIds": [
-          "matt-corral"
-        ],
-        "tier": 3,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 13 of the 2017 season against the New Orleans Saints?",
-        "playerIds": [
-          "christian-mccaffrey",
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-02-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 1999?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 2,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 1 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "kevin-greene",
-          "jason-peter",
-          "damien-richardson"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught J.Delhomme's 3rd TD pass in Week 3 of the 2005 season against the Miami Dolphins?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE forced a fumble in Week 4 of the 2005 season against the Green Bay Packers?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-03-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 1 of the 2018 season against the Dallas Cowboys?",
-        "playerIds": [
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB did the Panthers select with the 5th overall pick in the 1995 NFL Draft?",
-        "playerIds": [
-          "kerry-collins"
-        ],
-        "tier": 3,
-        "season": 1995
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 132+ receiving yards in Week 2 of the 2001 season against the Atlanta Falcons?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 1 of the 2011 season against the Arizona Cardinals?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-03-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 5 of the 2008 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 119+ receiving yards in Week 5 of the 2005 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 15 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "brentson-buckner",
-          "artrell-hawkins",
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 4 of the 2017 season against the New England Patriots?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-03-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught C.Newton's 4th TD pass in Week 15 of the 2015 season against the New York Giants?",
-        "playerIds": [
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB led the Panthers in receptions in 2017?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 2,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught S.Beuerlein's 4th TD pass in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 11 of the 2023 season against the Dallas Cowboys?",
-        "playerIds": [
-          "tommy-tremble"
-        ],
-        "tier": 1,
-        "season": 2023
-      }
-    ]
-  },
-  {
-    "date": "2026-03-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 113+ receiving yards in Week 15 of the 2019 season against the Seattle Seahawks?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 4 of the 1999 season against the Washington Commanders?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 9 of the 2001 season against the Los Angeles Rams?",
-        "playerIds": [
-          "mike-minter",
-          "doug-evans",
-          "deon-grant"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 178+ yards in Week 8 of the 2003 season against the New Orleans Saints?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-03-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB did the Panthers select in Round 2, Pick 58 of the 2006 NFL Draft?",
-        "playerIds": [
-          "richard-marshall"
-        ],
-        "tier": 3,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB led the Panthers in interceptions in 1999?",
-        "playerIds": [
-          "eric-davis"
-        ],
-        "tier": 2,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 2 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught B.Young's 2nd TD pass in Week 8 of the 2024 season against the Denver Broncos?",
-        "playerIds": [
-          "jalen-coker"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-03-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 7 of the 2011 season against the Washington Commanders?",
-        "playerIds": [
-          "antwan-applewhite",
-          "james-anderson",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 181+ receiving yards in Week 4 of the 2011 season against the Chicago Bears?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 15 of the 2007 season against the Seattle Seahawks?",
-        "playerIds": [
-          "nail-diggs",
-          "kris-jenkins",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Who forced a fumble in Week 2 of the 2014 season against the Detroit Lions?",
-        "playerIds": [
-          "antoine-cason",
-          "chase-blackburn"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-03-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB led the Panthers in interceptions in 2009?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 2,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 11 of the 2006 season against the Los Angeles Rams?",
-        "playerIds": [
-          "christian-morton"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 5 of the 2010 season against the Chicago Bears?",
-        "playerIds": [
-          "ed-johnson",
-          "jordan-pugh",
-          "everette-brown",
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB had 2 sacks in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "kevin-greene"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-03-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 4 of the 2005 season against the Green Bay Packers?",
-        "playerIds": [
-          "kris-mangum",
-          "michael-gaines"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing yards in 2015?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 115+ yards in Week 13 of the 2003 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 13 of the 2009 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "charles-godfrey",
-          "jon-beason",
-          "chris-harris",
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-03-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR converted a 2-point conversion in Week 2 of the 2014 season against the Detroit Lions?",
-        "playerIds": [
-          "jerricho-cotchery"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught S.Beuerlein's 2nd TD pass in Week 6 of the 2000 season against the Seattle Seahawks?",
-        "playerIds": [
-          "william-floyd"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 1 of the 2022 season against the Cleveland Browns?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE recorded a sack in Week 9 of the 2009 season against the New Orleans Saints?",
-        "playerIds": [
-          "tyler-brayton"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-03-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB returned a punt for a TD in Week 11 of the 2019 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kenjon-barner"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 147+ receiving yards in Week 4 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 11 of the 2010 season against the Baltimore Ravens?",
-        "playerIds": [
-          "charles-johnson",
-          "everette-brown",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DT recorded a sack in Week 2 of the 2008 season against the Chicago Bears?",
-        "playerIds": [
-          "damione-lewis"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-03-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DE did the Panthers select in Round 2, Pick 43 of the 2009 NFL Draft?",
-        "playerIds": [
-          "everette-brown"
-        ],
-        "tier": 3,
-        "season": 2009
-      },
-      {
-        "id": "q2",
         "prompt": "Which QB led the Panthers in passing yards in 2000?",
         "playerIds": [
           "steve-beuerlein"
@@ -847,5136 +114,66 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2000
       },
       {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 310+ passing yards in Week 9 of the 2020 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "teddy-bridgewater"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-03-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 8 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kevin-greene",
-          "ernest-jones",
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
         "id": "q2",
-        "prompt": "Which WR led the Panthers in receptions in 2004?",
+        "prompt": "Which RB rushed for 105+ yards in Week 4 of the 2006 season against the New Orleans Saints?",
         "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 2,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB returned an interception for a TD in Week 10 of the 2005 season against the New York Jets?",
-        "playerIds": [
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR scored a TD on 4th down in Week 5 of the 2023 season against the Detroit Lions?",
-        "playerIds": [
-          "adam-thielen"
-        ],
-        "tier": 1,
-        "season": 2023
-      }
-    ]
-  },
-  {
-    "date": "2026-03-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 14 of the 2016 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "daryl-worley",
-          "shaq-thompson",
-          "kurt-coleman"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in the 2003 Super Bowl against the New England Patriots?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S forced a fumble in Week 7 of the 2004 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "keyshawn-johnson"
+          "deshaun-foster"
         ],
         "tier": 1,
         "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-03-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 11 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB scored a rushing TD in Week 9 of the 2015 season against the Green Bay Packers?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
       },
       {
         "id": "q3",
-        "prompt": "Which DB did the Panthers select in Round 2, Pick 55 of the 2018 NFL Draft?",
+        "prompt": "Who caught a TD pass in Week 13 of the 2012 season against the Kansas City Chiefs?",
         "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 3,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 16 of the 2007 season against the Dallas Cowboys?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-03-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who forced a fumble in Week 15 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kony-ealy",
-          "mario-addison",
-          "colin-jones",
-          "roman-harper"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB had 2 sacks in Week 15 of the 2013 season against the New York Jets?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 9 of the 2020 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "teddy-bridgewater",
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 14 of the 2014 season against the New Orleans Saints?",
-        "playerIds": [
-          "kelvin-benjamin",
           "greg-olsen",
-          "fozzy-whittaker"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-03-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receptions in 2010?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 106+ yards in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 2 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "eric-davis"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught K.Allen's 2nd TD pass in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-03-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in the 2003 Super Bowl against the New England Patriots?",
-        "playerIds": [
-          "reggie-howard"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 8 of the 2013 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "deangelo-williams",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught a TD pass in Week 15 of the 2003 season against the Arizona Cardinals?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR converted a 2-point conversion in Week 6 of the 2004 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-03-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 9 of the 2005 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 319+ passing yards in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "rodney-peete"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2008 Divisional Round against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 103+ receiving yards in Week 2 of the 1999 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-03-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 16 of the 2022 season against the Detroit Lions?",
-        "playerIds": [
-          "raheem-blackshear",
-          "sam-darnold",
-          "donta-foreman"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 4 of the 2019 season against the Houston Texans?",
-        "playerIds": [
-          "vernon-butler"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE did the Panthers select in Round 3, Pick 83 of the 2021 NFL Draft?",
-        "playerIds": [
-          "tommy-tremble"
-        ],
-        "tier": 3,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 11 of the 2008 season against the Detroit Lions?",
-        "playerIds": [
-          "deangelo-williams",
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-03-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 15 of the 2020 season against the Green Bay Packers?",
-        "playerIds": [
-          "brian-burns",
-          "derrick-brown",
-          "efe-obada"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2020?",
-        "playerIds": [
-          "teddy-bridgewater"
-        ],
-        "tier": 2,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 132+ yards in Week 3 of the 1999 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 3 sacks in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-03-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in the 2005 Wild Card against the New York Giants?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DE had 2 sacks in Week 8 of the 2003 season against the New Orleans Saints?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL led the Panthers in sacks in 2008?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 2,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in rushing touchdowns in 2001?",
-        "playerIds": [
-          "chris-weinke"
-        ],
-        "tier": 2,
-        "season": 2001
-      }
-    ]
-  },
-  {
-    "date": "2026-03-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded an interception in Week 9 of the 2014 season against the New Orleans Saints?",
-        "playerIds": [
-          "dwan-edwards"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jadeveon-clowney"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded a sack in Week 18 of the 2021 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "myles-hartsfield"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw 3 TD passes in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-03-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 184+ yards in Week 3 of the 2018 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 117+ receiving yards in Week 3 of the 1999 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE had 110+ receiving yards in Week 15 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Who returned an interception for a TD in Week 17 of the 2014 season against the Atlanta Falcons?",
-        "playerIds": [
-          "roman-harper",
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-03-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 9 of the 2016 season against the Los Angeles Rams?",
-        "playerIds": [
-          "mario-addison",
-          "thomas-davis",
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 115+ receiving yards in Week 3 of the 2014 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DT recorded a sack in Week 4 of the 2001 season against the San Francisco 49ers?",
-        "playerIds": [
-          "brentson-buckner"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 5 of the 2018 season against the New York Giants?",
-        "playerIds": [
-          "curtis-samuel",
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-03-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "cameron-artis-payne"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "wes-horton"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught S.Darnold's 2nd TD pass in Week 17 of the 2022 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 2 of the 2020 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-03-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in the 2003 Super Bowl against the New England Patriots?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR did the Panthers select in Round 2, Pick 41 of the 2015 NFL Draft?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 3,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB recorded an interception in Week 11 of the 2005 season against the Chicago Bears?",
-        "playerIds": [
-          "ricky-manning"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 8 of the 2014 season against the Seattle Seahawks?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-03-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 14 of the 2000 season against the Los Angeles Rams?",
-        "playerIds": [
-          "mike-minter",
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 12 of the 2010 season against the Cleveland Browns?",
-        "playerIds": [
-          "jon-beason",
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 5 of the 2017 season against the Detroit Lions?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 126+ receiving yards in Week 3 of the 2021 season against the Houston Texans?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-03-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2006?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 2,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB had 102+ receiving yards in Week 2 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 11 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jonathan-stewart"
+          "steve-smith",
+          "louis-murphy"
         ],
         "tier": 1,
         "season": 2012
       },
       {
         "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2004 season against the San Francisco 49ers?",
-        "playerIds": [
-          "brandon-bennett"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-03-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jonathan-nelson"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 14 of the 2014 season against the New Orleans Saints?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 3 of the 2024 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "miles-sanders"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB caught a TD pass in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "ameer-abdullah"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-03-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DE recorded a sack in Week 17 of the 2010 season against the Atlanta Falcons?",
-        "playerIds": [
-          "eric-norwood"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 122+ yards in Week 11 of the 2009 season against the Miami Dolphins?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 7 of the 2013 season against the Los Angeles Rams?",
-        "playerIds": [
-          "colin-cole",
-          "charles-johnson",
-          "michael-mitchell",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded an interception in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-03-31",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 106+ receiving yards in Week 16 of the 2020 season against the Washington Commanders?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Who forced a fumble in Week 12 of the 2000 season against the Minnesota Vikings?",
-        "playerIds": [
-          "mike-rucker",
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DT recorded a sack in Week 1 of the 2006 season against the Atlanta Falcons?",
-        "playerIds": [
-          "damione-lewis"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-04-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which EDGE forced a fumble in Week 7 of the 2020 season against the New Orleans Saints?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR did the Panthers select with the 24th overall pick in the 2018 NFL Draft?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 3,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DT recorded a sack in Week 8 of the 2004 season against the Seattle Seahawks?",
-        "playerIds": [
-          "brentson-buckner"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-04-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught V.Testaverde's 2nd TD pass in Week 11 of the 2007 season against the Green Bay Packers?",
-        "playerIds": [
-          "drew-carter"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 10 of the 2013 season against the San Francisco 49ers?",
-        "playerIds": [
-          "dwan-edwards",
-          "aj-klein",
-          "charles-johnson",
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 16 of the 2022 season against the Detroit Lions?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Who scored a rushing TD in Week 12 of the 2017 season against the New York Jets?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-04-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 4 of the 2011 season against the Chicago Bears?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 155+ yards in Week 14 of the 2014 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Who forced a fumble in Week 5 of the 2014 season against the Chicago Bears?",
-        "playerIds": [
-          "antoine-cason",
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-04-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE had 105+ receiving yards in Week 7 of the 2014 season against the Green Bay Packers?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in Week 16 of the 2009 season against the New York Giants?",
-        "playerIds": [
-          "matt-moore"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Which OL did the Panthers select in Round 3, Pick 92 of the 2014 NFL Draft?",
-        "playerIds": [
-          "trai-turner"
-        ],
-        "tier": 3,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-04-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 334+ passing yards in Week 4 of the 1999 season against the Washington Commanders?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 9 of the 2000 season against the Atlanta Falcons?",
-        "playerIds": [
-          "hannibal-navies"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 14 of the 2021 season against the Atlanta Falcons?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB forced a fumble in Week 8 of the 2004 season against the Seattle Seahawks?",
-        "playerIds": [
-          "artrell-hawkins"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-04-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 315+ passing yards in Week 3 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which EDGE recorded a sack in Week 7 of the 2020 season against the New Orleans Saints?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 4 of the 2001 season against the San Francisco 49ers?",
+        "prompt": "Which DB recorded an interception in Week 5 of the 2001 season against the New Orleans Saints?",
         "playerIds": [
           "doug-evans"
         ],
         "tier": 1,
         "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 103+ yards in Week 14 of the 2017 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2017
       }
     ]
   },
   {
-    "date": "2026-04-07",
+    "date": "2026-02-23",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 11 of the 2014 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kelvin-benjamin",
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught S.Darnold's 2nd TD pass in Week 18 of the 2021 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught B.Mayfield's 2nd TD pass in Week 9 of the 2022 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "terrace-marshall"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 16 of the 2024 season against the Arizona Cardinals?",
-        "playerIds": [
-          "ashawn-robinson",
-          "jacoby-windmon",
-          "dj-wonnum"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-04-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "wes-horton",
-          "mario-addison",
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 13 of the 2010 season against the Seattle Seahawks?",
-        "playerIds": [
-          "mike-goodson",
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 3 of the 1999 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "micheal-barrow",
-          "antonio-edwards",
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-04-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "james-bradberry",
-          "javien-elliott",
-          "luke-kuechly",
-          "ross-cockrell"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 13 of the 2019 season against the Washington Commanders?",
-        "playerIds": [
-          "curtis-samuel",
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw for 432+ passing yards in Week 2 of the 2011 season against the Green Bay Packers?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-04-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 136+ receiving yards in Week 6 of the 2007 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 103+ receiving yards in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S forced a fumble in Week 12 of the 2002 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deon-grant"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 1 of the 2024 season against the New Orleans Saints?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-04-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 16 of the 2024 season against the Arizona Cardinals?",
-        "playerIds": [
-          "adam-thielen",
-          "david-moore"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in Week 8 of the 2005 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR scored a TD on 4th down in Week 1 of the 2003 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB had 101+ receiving yards in Week 13 of the 2006 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-04-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receiving yards in 2020?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 2,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 11 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing yards in 2005?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 2,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which OG did the Panthers select in Round 3, Pick 79 of the 2005 NFL Draft?",
-        "playerIds": [
-          "evan-mathis"
-        ],
-        "tier": 3,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who had 2 sacks in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "al-wallace",
-          "kindal-moorehead"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 4 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2019 season against the Green Bay Packers?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in the 2014 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-04-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 15 of the 2008 season against the Denver Broncos?",
-        "playerIds": [
-          "jonathan-stewart",
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB forced a fumble in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "kurt-coleman"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in passing yards in 2002?",
-        "playerIds": [
-          "rodney-peete"
-        ],
-        "tier": 2,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB forced a fumble in Week 17 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "mark-fields"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-04-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB returned an interception for a TD in Week 12 of the 2010 season against the Cleveland Browns?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DT did the Panthers select in Round 3, Pick 65 of the 2011 NFL Draft?",
-        "playerIds": [
-          "terrell-mcclain"
-        ],
-        "tier": 3,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 4 of the 2012 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kealoha-pilares"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 122+ yards in Week 13 of the 2002 season against the Cleveland Browns?",
-        "playerIds": [
-          "dee-brown"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-04-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2014 season against the Chicago Bears?",
-        "playerIds": [
-          "chris-ogbonnaya"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 189+ receiving yards in Week 6 of the 2006 season against the Baltimore Ravens?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2003 season against the New Orleans Saints?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "julius-peppers",
-          "mike-rucker",
-          "kris-jenkins"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-04-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL forced a fumble in Week 6 of the 2006 season against the Baltimore Ravens?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 362+ passing yards in Week 7 of the 2003 season against the Tennessee Titans?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in the 2003 Divisional Round against the Los Angeles Rams?",
-        "playerIds": [
-          "mike-minter",
-          "deon-grant",
-          "ricky-manning"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 114+ yards in Week 3 of the 2024 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-04-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing yards in 2016?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 2,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB forced a fumble in Week 16 of the 2005 season against the Dallas Cowboys?",
-        "playerIds": [
-          "jermaine-hardy"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 15 of the 2008 season against the Denver Broncos?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 142+ yards in Week 4 of the 1999 season against the Washington Commanders?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-04-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw 3 TD passes in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 110+ receiving yards in Week 17 of the 2024 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "adam-thielen"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 6 of the 2013 season against the Minnesota Vikings?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 130+ yards in Week 10 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donta-foreman"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-04-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "mike-adams"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 16 of the 2000 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "isaac-byrd"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 2 of the 2013 season against the Buffalo Bills?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB forced a fumble in Week 14 of the 2004 season against the Los Angeles Rams?",
-        "playerIds": [
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-04-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deshaun-foster",
-          "jamal-robertson"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB did the Panthers select with the 8th overall pick in the 1996 NFL Draft?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 3,
-        "season": 1996
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 8 of the 2024 season against the Denver Broncos?",
-        "playerIds": [
-          "shy-tuttle",
-          "trevin-wallace"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 102+ receiving yards in Week 1 of the 2022 season against the Cleveland Browns?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-04-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded an interception in the 2015 Super Bowl against the Denver Broncos?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR led the Panthers in receiving yards in 2006?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught R.Peete's 3rd TD pass in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught K.Allen's 2nd TD pass in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-04-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 5 of the 2009 season against the Washington Commanders?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 13 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 131+ yards in Week 13 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 3 of the 2002 season against the Minnesota Vikings?",
-        "playerIds": [
-          "mike-rucker",
-          "reggie-howard",
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-04-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "mike-tolbert",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DE had 3 sacks in Week 1 of the 2003 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 122+ yards in Week 16 of the 2014 season against the Cleveland Browns?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-04-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 2 of the 2011 season against the Green Bay Packers?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught D.Anderson's 2nd TD pass in Week 1 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB scored a rushing TD in Week 12 of the 2021 season against the Miami Dolphins?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR converted a 2-point conversion in Week 6 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-04-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 11 of the 1999 season against the Cleveland Browns?",
-        "playerIds": [
-          "wesley-walls",
-          "brian-kinchen"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded an interception in Week 12 of the 2007 season against the New Orleans Saints?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB did the Panthers select with the 8th overall pick in the 2021 NFL Draft?",
-        "playerIds": [
-          "jaycee-horn"
-        ],
-        "tier": 3,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "mike-adams"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-04-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE led the Panthers in receptions in 2015?",
+        "prompt": "Which TE led the Panthers in receptions in 2016?",
         "playerIds": [
           "greg-olsen"
         ],
         "tier": 2,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 15 of the 2013 season against the New York Jets?",
-        "playerIds": [
-          "captain-munnerlyn",
-          "greg-hardy",
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2008 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 15 of the 2000 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "chris-hetherington"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-04-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 114+ receiving yards in Week 4 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 309+ passing yards in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB forced a fumble in Week 15 of the 2008 season against the Denver Broncos?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw 4 TD passes in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "kyle-allen"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-04-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 102+ yards in Week 2 of the 2022 season against the New York Giants?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB forced a fumble in Week 2 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "eric-davis"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2005 NFC Championship against the Seattle Seahawks?",
-        "playerIds": [
-          "drew-carter"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 15 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-04-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded a sack in the 2013 Divisional Round against the San Francisco 49ers?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Who forced a fumble in Week 17 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "richard-marshall",
-          "james-anderson"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 4 of the 2017 season against the New England Patriots?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Who scored a rushing TD in Week 13 of the 2008 season against the Green Bay Packers?",
-        "playerIds": [
-          "deangelo-williams",
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-05-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 151+ receiving yards in Week 4 of the 1999 season against the Washington Commanders?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 168+ yards in Week 17 of the 2001 season against the New England Patriots?",
-        "playerIds": [
-          "richard-huntley"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 132+ receiving yards in Week 11 of the 2007 season against the Green Bay Packers?",
-        "playerIds": [
-          "drew-carter"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "matt-ioannidis"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-05-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 1 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "antoine-cason",
-          "roman-harper"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 3 of the 2008 season against the Minnesota Vikings?",
-        "playerIds": [
-          "charles-godfrey",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 16 of the 1999 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "jason-peter"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-05-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 120+ receiving yards in Week 13 of the 2012 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 14 of the 2004 season against the Los Angeles Rams?",
-        "playerIds": [
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB did the Panthers select in Round 3, Pick 73 of the 2002 NFL Draft?",
-        "playerIds": [
-          "will-witherspoon"
-        ],
-        "tier": 3,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-05-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 14 of the 2005 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 5 of the 2018 season against the New York Giants?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded a sack in Week 15 of the 2022 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "frankie-luvu"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 4th TD pass in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-05-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 12 of the 2022 season against the Denver Broncos?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB returned an interception for a TD in Week 6 of the 2023 season against the Miami Dolphins?",
-        "playerIds": [
-          "troy-hill"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 8 of the 2015 season against the Indianapolis Colts?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which S did the Panthers select in Round 2, Pick 57 of the 2000 NFL Draft?",
-        "playerIds": [
-          "deon-grant"
-        ],
-        "tier": 3,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-05-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB forced a fumble in Week 10 of the 1999 season against the Los Angeles Rams?",
-        "playerIds": [
-          "micheal-barrow"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 17 of the 2012 season against the New Orleans Saints?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught T.Bridgewater's 2nd TD pass in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q4",
-        "prompt": "Who had 113+ receiving yards in the 2015 NFC Championship against the Arizona Cardinals?",
-        "playerIds": [
-          "greg-olsen",
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-05-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw 3 TD passes in Week 3 of the 2024 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "andy-dalton"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in the 2014 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "wes-horton"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB led the Panthers in interceptions in 2001?",
-        "playerIds": [
-          "doug-evans"
-        ],
-        "tier": 2,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR scored a TD on 4th down in Week 14 of the 2013 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-05-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 11 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "kurt-coleman"
-        ],
-        "tier": 1,
         "season": 2016
       },
       {
         "id": "q2",
-        "prompt": "Which TE caught S.Beuerlein's 3rd TD pass in Week 2 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in rushing touchdowns in 2021?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB had 112+ receiving yards in Week 12 of the 2018 season against the Seattle Seahawks?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-05-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 317+ passing yards in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "phillip-walker"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 100+ yards in Week 10 of the 2010 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mike-goodson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S forced a fumble in Week 1 of the 2008 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "chris-harris"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 17 of the 2005 season against the Atlanta Falcons?",
+        "prompt": "Which WR scored a rushing TD in the 2005 Wild Card against the New York Giants?",
         "playerIds": [
           "steve-smith"
         ],
         "tier": 1,
         "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-05-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who forced a fumble in Week 2 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donte-jackson",
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 12 of the 2017 season against the New York Jets?",
-        "playerIds": [
-          "wes-horton"
-        ],
-        "tier": 1,
-        "season": 2017
       },
       {
         "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 1 of the 2003 season against the Jacksonville Jaguars?",
+        "prompt": "Who recorded an interception in Week 8 of the 2021 season against the Atlanta Falcons?",
         "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 8 of the 2007 season against the Indianapolis Colts?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-05-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 1 of the 2004 season against the Green Bay Packers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 17 of the 2007 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 3 of the 2007 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded an interception in the 2015 Super Bowl against the Denver Broncos?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-05-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 115+ yards in Week 14 of the 2008 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "melvin-white",
-          "robert-lester"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught a TD pass in Week 6 of the 2002 season against the Dallas Cowboys?",
-        "playerIds": [
-          "brad-hoover"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB caught C.Newton's 3rd TD pass in Week 10 of the 2017 season against the Miami Dolphins?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-05-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receptions in 2022?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 2,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Who forced a fumble in Week 12 of the 2004 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chris-gamble",
-          "mike-rucker",
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2007 season against the Los Angeles Rams?",
-        "playerIds": [
-          "drew-carter",
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR led the Panthers in receptions in 1999?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 2,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-05-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "dean-wells",
-          "mike-minter",
-          "doug-evans",
-          "brent-alexander"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 13 of the 2002 season against the Cleveland Browns?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught S.Beuerlein's 3rd TD pass in Week 9 of the 1999 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 2 of the 2005 season against the New England Patriots?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-05-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded an interception in the 2008 Divisional Round against the Arizona Cardinals?",
-        "playerIds": [
-          "jon-beason"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 10 of the 2021 season against the Arizona Cardinals?",
-        "playerIds": [
-          "haason-reddick",
           "shaq-thompson",
-          "marquis-haynes"
+          "stephon-gilmore"
         ],
         "tier": 1,
         "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 17 of the 2018 season against the New Orleans Saints?",
-        "playerIds": [
-          "colin-jones"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR led the Panthers in receptions in 2024?",
-        "playerIds": [
-          "xavier-legette"
-        ],
-        "tier": 2,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-05-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "luke-kuechly",
-          "cortland-finnegan"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 3 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "shaq-thompson"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DT had 2 sacks in Week 4 of the 2002 season against the Green Bay Packers?",
-        "playerIds": [
-          "kris-jenkins"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2022 season against the Cleveland Browns?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-05-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL did the Panthers select with the 14th overall pick in the 2013 NFL Draft?",
-        "playerIds": [
-          "star-lotulelei"
-        ],
-        "tier": 3,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 7 of the 2013 season against the Los Angeles Rams?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 1 of the 2001 season against the Minnesota Vikings?",
-        "playerIds": [
-          "rashard-anderson",
-          "jimmy-hitchcock",
-          "deon-grant"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR returned a kickoff for a TD in Week 9 of the 2001 season against the Los Angeles Rams?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2001
-      }
-    ]
-  },
-  {
-    "date": "2026-05-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB led the Panthers in interceptions in 2005?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 2,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "steve-smith",
-          "kris-mangum"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw for 304+ passing yards in Week 3 of the 2021 season against the Houston Texans?",
-        "playerIds": [
-          "sam-darnold"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 11 of the 2015 season against the Washington Commanders?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-05-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 122+ receiving yards in Week 7 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 11 of the 2001 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kris-jenkins",
-          "mike-rucker",
-          "reggie-howard"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 1 of the 2009 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "julius-peppers",
-          "louis-leonard"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw 3 TD passes in Week 14 of the 1999 season against the Green Bay Packers?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-05-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 157+ receiving yards in Week 11 of the 2018 season against the Detroit Lions?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 4 of the 2001 season against the San Francisco 49ers?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 1 of the 2009 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 15 of the 2019 season against the Seattle Seahawks?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-05-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE had 116+ receiving yards in Week 15 of the 2017 season against the Green Bay Packers?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which EDGE returned a fumble for a TD in Week 5 of the 2019 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in receptions in 2018?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 2,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 17 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-05-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2010 season against the New York Giants?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 2 of the 2015 season against the Houston Texans?",
-        "playerIds": [
-          "ted-ginn",
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 14 of the 2011 season against the Atlanta Falcons?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 15 of the 2008 season against the Denver Broncos?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-05-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2009 season against the Washington Commanders?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 11 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "captain-munnerlyn",
-          "haruki-nakamura"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 3 sacks in Week 10 of the 2008 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 15 of the 2024 season against the Dallas Cowboys?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-05-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S forced a fumble in Week 14 of the 2007 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "chris-harris"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 2 sacks in Week 10 of the 2013 season against the San Francisco 49ers?",
-        "playerIds": [
-          "dwan-edwards"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing yards in 2014?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 2,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR did the Panthers select in Round 2, Pick 40 of the 2017 NFL Draft?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 3,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-05-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 6 of the 2002 season against the Dallas Cowboys?",
-        "playerIds": [
-          "mike-minter",
-          "julius-peppers",
-          "kris-jenkins",
-          "brentson-buckner"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB forced a fumble in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S forced a fumble in Week 14 of the 2013 season against the New Orleans Saints?",
-        "playerIds": [
-          "quintin-mikell"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 9 of the 2001 season against the Los Angeles Rams?",
-        "playerIds": [
-          "kris-mangum"
-        ],
-        "tier": 1,
-        "season": 2001
-      }
-    ]
-  },
-  {
-    "date": "2026-05-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "kawann-short",
-          "tre-boston",
-          "dwan-edwards",
-          "charles-johnson",
-          "josh-norman"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 6 of the 2006 season against the Baltimore Ravens?",
-        "playerIds": [
-          "colin-branch",
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 15 of the 2019 season against the Seattle Seahawks?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-05-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 8 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "efe-obada",
-          "marquis-haynes"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 6 of the 2011 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jonathan-stewart",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB forced a fumble in Week 12 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught B.Young's 2nd TD pass in Week 16 of the 2024 season against the Arizona Cardinals?",
-        "playerIds": [
-          "david-moore"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-05-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 3 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who forced a fumble in Week 15 of the 2012 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "greg-hardy",
-          "charles-johnson",
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DT had 2 sacks in Week 10 of the 2001 season against the San Francisco 49ers?",
-        "playerIds": [
-          "brentson-buckner"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2024 season against the New York Giants?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-05-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 16 of the 2005 season against the Dallas Cowboys?",
-        "playerIds": [
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 2 sacks in Week 10 of the 2000 season against the Los Angeles Rams?",
-        "playerIds": [
-          "reggie-white"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB forced a fumble in Week 2 of the 2009 season against the Atlanta Falcons?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE led the Panthers in receiving yards in 2013?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 2,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-05-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 8 of the 2004 season against the Seattle Seahawks?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 102+ receiving yards in Week 14 of the 2024 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "adam-thielen"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 8 of the 2005 season against the Minnesota Vikings?",
-        "playerIds": [
-          "steve-smith",
-          "kris-mangum",
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 2 sacks in Week 13 of the 2013 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "wes-horton"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-05-31",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR returned a punt for a TD in Week 10 of the 2023 season against the Chicago Bears?",
-        "playerIds": [
-          "ihmir-smith-marsette"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 3 of the 2005 season against the Miami Dolphins?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded an interception in Week 8 of the 2003 season against the New Orleans Saints?",
-        "playerIds": [
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donta-foreman"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-06-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing yards in 2011?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 2,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 6 of the 2006 season against the Baltimore Ravens?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in receptions in 2019?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 2,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 353+ passing yards in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-06-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 107+ receiving yards in Week 6 of the 2013 season against the Minnesota Vikings?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 13 of the 2000 season against the Green Bay Packers?",
-        "playerIds": [
-          "brad-hoover"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught R.Peete's 2nd TD pass in Week 10 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 8 of the 2009 season against the Arizona Cardinals?",
-        "playerIds": [
-          "julius-peppers",
-          "thomas-davis",
-          "sherrod-martin",
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-06-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL led the Panthers in sacks in 2009?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 2,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 4 of the 2003 season against the Atlanta Falcons?",
-        "playerIds": [
-          "will-witherspoon",
-          "mike-rucker",
-          "al-wallace",
-          "kris-jenkins",
-          "terry-cousin"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a TD on 4th down in Week 7 of the 2009 season against the Buffalo Bills?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing yards in 2010?",
-        "playerIds": [
-          "jimmy-clausen"
-        ],
-        "tier": 2,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-06-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB returned an interception for a TD in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "josh-norman",
-          "kurt-coleman",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB had 2 sacks in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kevin-greene"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "dwan-edwards"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-06-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S recorded an interception in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 8 of the 2015 season against the Indianapolis Colts?",
-        "playerIds": [
-          "charles-tillman",
-          "kurt-coleman",
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 6 of the 2013 season against the Minnesota Vikings?",
-        "playerIds": [
-          "thomas-davis",
-          "michael-mitchell"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB recorded a sack in Week 12 of the 2006 season against the Washington Commanders?",
-        "playerIds": [
-          "chris-draft"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-06-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S forced a fumble in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "chris-harris"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 7 of the 2014 season against the Green Bay Packers?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 12 of the 2011 season against the Indianapolis Colts?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 8 of the 2023 season against the Houston Texans?",
-        "playerIds": [
-          "brian-burns",
-          "frankie-luvu"
-        ],
-        "tier": 1,
-        "season": 2023
-      }
-    ]
-  },
-  {
-    "date": "2026-06-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in the 2003 Super Bowl against the New England Patriots?",
-        "playerIds": [
-          "reggie-howard"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 14 of the 2024 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "tommy-tremble"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR led the Panthers in receiving yards in 2000?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 2,
-        "season": 2000
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 6 of the 2005 season against the Detroit Lions?",
-        "playerIds": [
-          "rod-gardner",
-          "steve-smith",
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-06-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 152+ yards in Week 16 of the 2024 season against the Arizona Cardinals?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 4 TD passes in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 14 of the 1999 season against the Green Bay Packers?",
-        "playerIds": [
-          "dean-wells",
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2024?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 2,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-06-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in Week 9 of the 2005 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DT did the Panthers select in Round 3, Pick 97 of the 2011 NFL Draft?",
-        "playerIds": [
-          "sione-fua"
-        ],
-        "tier": 3,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 7 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith",
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-06-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who forced a fumble in Week 7 of the 2013 season against the Los Angeles Rams?",
-        "playerIds": [
-          "michael-mitchell",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 1 of the 2018 season against the Dallas Cowboys?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE converted a 2-point conversion in Week 3 of the 2011 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DT recorded a sack in the 2008 Divisional Round against the Arizona Cardinals?",
-        "playerIds": [
-          "damione-lewis"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-06-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 12 of the 2018 season against the Seattle Seahawks?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 7 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2003 Super Bowl against the New England Patriots?",
-        "playerIds": [
-          "steve-smith",
-          "muhsin-muhammad",
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-06-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which OL did the Panthers select with the 29th overall pick in the 1995 NFL Draft?",
-        "playerIds": [
-          "blake-brockermeyer"
-        ],
-        "tier": 3,
-        "season": 1995
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2015?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 118+ receiving yards in Week 8 of the 2012 season against the Chicago Bears?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 6 of the 2003 season against the Indianapolis Colts?",
-        "playerIds": [
-          "ricky-manning"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-06-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught a TD pass in Week 6 of the 2017 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 16 of the 2008 season against the New York Giants?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded an interception in Week 3 of the 2023 season against the Seattle Seahawks?",
-        "playerIds": [
-          "deion-jones"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 115+ receiving yards in Week 5 of the 2004 season against the Denver Broncos?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-06-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught T.Bridgewater's 2nd TD pass in Week 5 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-davis"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 10 of the 2005 season against the New York Jets?",
-        "playerIds": [
-          "ken-lucas",
-          "chris-gamble",
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 7 of the 2012 season against the Dallas Cowboys?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 6 of the 2005 season against the Detroit Lions?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-06-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 10 of the 2021 season against the Arizona Cardinals?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 6 of the 2018 season against the Washington Commanders?",
-        "playerIds": [
-          "devin-funchess",
-          "torrey-smith"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in rushing yards in 2017?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 10 of the 2005 season against the New York Jets?",
-        "playerIds": [
-          "kindal-moorehead",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-06-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT had 2 sacks in Week 9 of the 2007 season against the Tennessee Titans?",
-        "playerIds": [
-          "damione-lewis"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 8 of the 2021 season against the Atlanta Falcons?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 114+ receiving yards in Week 1 of the 2020 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB forced a fumble in Week 9 of the 2019 season against the Tennessee Titans?",
-        "playerIds": [
-          "eric-reid"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-06-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 2 of the 2024 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "jaycee-horn"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in Week 12 of the 2019 season against the New Orleans Saints?",
-        "playerIds": [
-          "kyle-allen"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 17 of the 2023 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "brian-burns",
-          "yetur-gross-matos",
-          "deion-jones"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 120+ yards in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-06-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ricky-proehl",
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 11 of the 2003 season against the Washington Commanders?",
-        "playerIds": [
-          "terry-cousin",
-          "kris-jenkins"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 5 of the 2008 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "jon-beason",
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 11 of the 2018 season against the Detroit Lions?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-06-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 121+ yards in Week 11 of the 2004 season against the Arizona Cardinals?",
-        "playerIds": [
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded an interception in Week 15 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S recorded a sack in Week 14 of the 2013 season against the New Orleans Saints?",
-        "playerIds": [
-          "quintin-mikell"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 15 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-06-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 1 of the 2016 season against the Denver Broncos?",
-        "playerIds": [
-          "thomas-davis",
-          "bene-benwikere"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught a TD pass in Week 12 of the 2005 season against the Buffalo Bills?",
-        "playerIds": [
-          "michael-gaines"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 104+ yards in Week 13 of the 2023 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2023
-      }
-    ]
-  },
-  {
-    "date": "2026-06-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S forced a fumble in Week 3 of the 2011 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "jordan-pugh"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught a TD pass in Week 4 of the 2010 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 9 of the 2015 season against the Green Bay Packers?",
-        "playerIds": [
-          "star-lotulelei",
-          "kawann-short",
-          "thomas-davis",
-          "kurt-coleman",
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB led the Panthers in receiving yards in 2018?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 2,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-06-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught a TD pass in Week 15 of the 2013 season against the New York Jets?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 2 of the 1999 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 9 of the 2015 season against the Green Bay Packers?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 2 sacks in Week 1 of the 2015 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-06-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB led the Panthers in interceptions in 2006?",
-        "playerIds": [
-          "richard-marshall"
-        ],
-        "tier": 2,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB returned an interception for a TD in Week 1 of the 2015 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "josh-norman"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded a sack in Week 15 of the 2018 season against the New Orleans Saints?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 125+ yards in Week 7 of the 2015 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-06-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who forced a fumble in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "chris-draft",
-          "dante-wesley"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 11 of the 1999 season against the Cleveland Browns?",
-        "playerIds": [
-          "william-floyd"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "deangelo-williams",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 9 of the 2015 season against the Green Bay Packers?",
-        "playerIds": [
-          "greg-olsen",
-          "corey-brown",
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-06-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 9 of the 2016 season against the Los Angeles Rams?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB returned an interception for a TD in Week 6 of the 2022 season against the Los Angeles Rams?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR led the Panthers in receiving yards in 2004?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 2,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 7 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-06-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR scored a TD on 4th down in Week 6 of the 2013 season against the Minnesota Vikings?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL did the Panthers select with the 30th overall pick in the 2016 NFL Draft?",
-        "playerIds": [
-          "vernon-butler"
-        ],
-        "tier": 3,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught a TD pass in Week 15 of the 2010 season against the Arizona Cardinals?",
-        "playerIds": [
-          "jeff-king"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught R.Peete's 2nd TD pass in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-06-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "isaac-byrd",
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 4 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "hilee-taylor",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw for 310+ passing yards in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "rodney-peete"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE had 175+ receiving yards in Week 5 of the 2017 season against the Detroit Lions?",
-        "playerIds": [
-          "ed-dickson"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-06-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 9 of the 2014 season against the New Orleans Saints?",
-        "playerIds": [
-          "charles-johnson",
-          "colin-jones",
-          "wes-horton",
-          "dwan-edwards"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 14 of the 2015 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ted-ginn",
-          "ed-dickson"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw for 312+ passing yards in Week 15 of the 2001 season against the Los Angeles Rams?",
-        "playerIds": [
-          "chris-weinke"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE led the Panthers in sacks in 2013?",
-        "playerIds": [
-          "greg-hardy"
-        ],
-        "tier": 2,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-06-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 13 of the 2013 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "greg-hardy",
-          "aj-klein",
-          "wes-horton"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 7 of the 2000 season against the New Orleans Saints?",
-        "playerIds": [
-          "jay-williams"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded a sack in Week 8 of the 2021 season against the Atlanta Falcons?",
-        "playerIds": [
-          "haason-reddick",
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 5 of the 2006 season against the Cleveland Browns?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-06-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 15 of the 2001 season against the Los Angeles Rams?",
-        "playerIds": [
-          "kris-jenkins",
-          "al-lucas",
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "bryce-young",
-          "miles-sanders"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2013 season against the Seattle Seahawks?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB caught a TD pass in Week 7 of the 2015 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-07-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 13 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE recorded a sack in Week 13 of the 2006 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in the 2003 NFC Championship against the Philadelphia Eagles?",
-        "playerIds": [
-          "ricky-manning",
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-07-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB scored a TD on 4th down in Week 1 of the 2024 season against the New Orleans Saints?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 14 of the 2010 season against the Atlanta Falcons?",
-        "playerIds": [
-          "charles-johnson",
-          "everette-brown"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB forced a fumble in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "melvin-white"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a TD on 4th down in Week 8 of the 2015 season against the Indianapolis Colts?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-07-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in Week 8 of the 2002 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "reggie-howard"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 12 of the 2005 season against the Buffalo Bills?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 8 of the 2008 season against the Arizona Cardinals?",
-        "playerIds": [
-          "charles-johnson",
-          "maake-kemoeatu"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 117+ receiving yards in Week 8 of the 2008 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-07-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 109+ yards in Week 15 of the 2009 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 14 of the 2021 season against the Atlanta Falcons?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing yards in 2018?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 2,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 16 of the 1999 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-07-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB forced a fumble in Week 13 of the 2017 season against the New Orleans Saints?",
-        "playerIds": [
-          "mike-adams"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which EDGE had 2 sacks in Week 2 of the 2022 season against the New York Giants?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 6 of the 2000 season against the Seattle Seahawks?",
-        "playerIds": [
-          "donald-hayes",
-          "william-floyd"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 12 of the 2015 season against the Dallas Cowboys?",
-        "playerIds": [
-          "kurt-coleman",
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-07-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 8 of the 2017 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 15 of the 2016 season against the Washington Commanders?",
-        "playerIds": [
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "vernon-butler"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 7 of the 2020 season against the New Orleans Saints?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-07-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB led the Panthers in interceptions in 2023?",
-        "playerIds": [
-          "xavier-woods"
-        ],
-        "tier": 2,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR scored a rushing TD in Week 8 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 152+ yards in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR led the Panthers in receiving yards in 2014?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 2,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-07-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 15 of the 2009 season against the Minnesota Vikings?",
-        "playerIds": [
-          "everette-brown",
-          "james-anderson",
-          "dante-wesley",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "deangelo-williams",
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 14 of the 2010 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-goodson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 17 of the 2007 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-07-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR returned a kickoff for a TD in Week 1 of the 2001 season against the Minnesota Vikings?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 101+ yards in Week 12 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 6 of the 2007 season against the Arizona Cardinals?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 15 of the 2009 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB forced a fumble in Week 16 of the 2020 season against the Washington Commanders?",
-        "playerIds": [
-          "marquis-haynes"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 123+ receiving yards in Week 10 of the 2004 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 13 of the 2019 season against the Washington Commanders?",
-        "playerIds": [
-          "eric-reid",
-          "mario-addison",
-          "bruce-irvin",
-          "gerald-mccoy"
-        ],
-        "tier": 1,
-        "season": 2019
       },
       {
         "id": "q4",
@@ -5990,945 +187,16 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2026-07-11",
+    "date": "2026-02-24",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which RB had 101+ receiving yards in Week 3 of the 2017 season against the New Orleans Saints?",
+        "prompt": "Which QB threw for 301+ passing yards in Week 4 of the 2021 season against the Dallas Cowboys?",
         "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 18 of the 2022 season against the New Orleans Saints?",
-        "playerIds": [
-          "amare-barno"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 131+ receiving yards in Week 2 of the 2009 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 101+ yards in Week 5 of the 2021 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "chuba-hubbard"
+          "sam-darnold"
         ],
         "tier": 1,
         "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-07-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 340+ passing yards in Week 15 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 143+ receiving yards in Week 7 of the 2011 season against the Washington Commanders?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 11 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 11 of the 2011 season against the Detroit Lions?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-07-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 3 of the 2021 season against the Houston Texans?",
-        "playerIds": [
-          "brian-burns",
-          "frankie-luvu",
-          "haason-reddick"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB returned a fumble for a TD in Week 10 of the 2007 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 13 of the 2024 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chau-smith-wade",
-          "xavier-woods"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "luke-kuechly",
-          "cortland-finnegan"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB led the Panthers in rushing touchdowns in 2012?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 105+ receiving yards in Week 13 of the 2008 season against the Green Bay Packers?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE forced a fumble in Week 2 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 2 sacks in Week 12 of the 2010 season against the Cleveland Browns?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-07-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 13 of the 2010 season against the Seattle Seahawks?",
-        "playerIds": [
-          "charles-godfrey",
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 11 of the 2004 season against the Arizona Cardinals?",
-        "playerIds": [
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in rushing touchdowns in 2013?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which EDGE recorded a sack in Week 16 of the 2022 season against the Detroit Lions?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 349+ passing yards in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in the 2003 Divisional Round against the Los Angeles Rams?",
-        "playerIds": [
-          "julius-peppers",
-          "greg-favors"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 5 TD passes in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB forced a fumble in Week 17 of the 2014 season against the Atlanta Falcons?",
-        "playerIds": [
-          "adarius-glanton"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-07-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 16 of the 2004 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "muhsin-muhammad",
-          "keary-colbert",
-          "mike-seidman"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 3 sacks in the 2015 Super Bowl against the Denver Broncos?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR converted a 2-point conversion in Week 10 of the 2021 season against the Arizona Cardinals?",
-        "playerIds": [
-          "terrace-marshall"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2014?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-07-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in the 2015 Super Bowl against the Denver Broncos?",
-        "playerIds": [
-          "luke-kuechly",
-          "kony-ealy",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded an interception in Week 13 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "thomas-keiser"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB returned a fumble for a TD in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ricky-manning"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-07-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 10 of the 2004 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 13 of the 2012 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 7 of the 2024 season against the Washington Commanders?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB returned an interception for a TD in Week 4 of the 2001 season against the San Francisco 49ers?",
-        "playerIds": [
-          "doug-evans"
-        ],
-        "tier": 1,
-        "season": 2001
-      }
-    ]
-  },
-  {
-    "date": "2026-07-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receiving yards in 2003?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught J.Delhomme's 2nd TD pass in Week 16 of the 2003 season against the Detroit Lions?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 10 of the 2014 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE had 102+ receiving yards in Week 6 of the 2000 season against the Seattle Seahawks?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 11 of the 2015 season against the Washington Commanders?",
-        "playerIds": [
-          "kurt-coleman"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 10 of the 2001 season against the San Francisco 49ers?",
-        "playerIds": [
-          "richard-huntley",
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 10 of the 2005 season against the New York Jets?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw 3 TD passes in Week 15 of the 2009 season against the Minnesota Vikings?",
-        "playerIds": [
-          "matt-moore"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who forced a fumble in Week 1 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "greg-hardy",
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded an interception in Week 9 of the 2004 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 15 of the 2007 season against the Seattle Seahawks?",
-        "playerIds": [
-          "chris-harris",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB forced a fumble in Week 8 of the 2007 season against the Indianapolis Colts?",
-        "playerIds": [
-          "nail-diggs"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-07-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw 3 TD passes in Week 5 of the 2017 season against the Detroit Lions?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 4 of the 2016 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kyle-love",
-          "luke-kuechly",
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 11 of the 2003 season against the Washington Commanders?",
-        "playerIds": [
-          "jake-delhomme",
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 2 of the 2011 season against the Green Bay Packers?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 1 of the 2013 season against the Seattle Seahawks?",
-        "playerIds": [
-          "charles-godfrey",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB returned an interception for a TD in Week 4 of the 2016 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kurt-coleman"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught a TD pass in Week 10 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "jermaine-wiggins",
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 134+ receiving yards in Week 17 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S recorded an interception in Week 17 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "chris-harris"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 5 of the 2006 season against the Cleveland Browns?",
-        "playerIds": [
-          "richard-marshall",
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB did the Panthers select in Round 3, Pick 82 of the 2003 NFL Draft?",
-        "playerIds": [
-          "ricky-manning"
-        ],
-        "tier": 3,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB did the Panthers select in Round 3, Pick 85 of the 2018 NFL Draft?",
-        "playerIds": [
-          "rashaan-gaulden"
-        ],
-        "tier": 3,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-07-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded a sack in Week 12 of the 2011 season against the Indianapolis Colts?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB did the Panthers select with the 11th overall pick in the 2001 NFL Draft?",
-        "playerIds": [
-          "dan-morgan"
-        ],
-        "tier": 3,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 16 of the 2006 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ken-lucas",
-          "shaun-williams"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB led the Panthers in rushing yards in 2020?",
-        "playerIds": [
-          "mike-davis"
-        ],
-        "tier": 2,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB led the Panthers in passing yards in 2017?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2010?",
-        "playerIds": [
-          "matt-moore"
-        ],
-        "tier": 2,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE had 3 sacks in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DT recorded a sack in Week 1 of the 2001 season against the Minnesota Vikings?",
-        "playerIds": [
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 2001
-      }
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 13 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "chris-draft",
-          "mike-rucker",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 3 of the 2008 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 16 of the 2002 season against the Chicago Bears?",
-        "playerIds": [
-          "dee-brown"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in rushing yards in 2012?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE had 110+ receiving yards in Week 2 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 2 sacks in Week 8 of the 2012 season against the Chicago Bears?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 11 of the 2008 season against the Detroit Lions?",
-        "playerIds": [
-          "thomas-davis",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2013 season against the New York Jets?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-07-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 312+ passing yards in Week 16 of the 2023 season against the Green Bay Packers?",
-        "playerIds": [
-          "bryce-young"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 10 of the 2015 season against the Tennessee Titans?",
-        "playerIds": [
-          "ed-dickson"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 12 of the 2011 season against the Indianapolis Colts?",
-        "playerIds": [
-          "chris-gamble",
-          "sherrod-martin"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 109+ receiving yards in Week 2 of the 2020 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S did the Panthers select in Round 2, Pick 59 of the 2009 NFL Draft?",
-        "playerIds": [
-          "sherrod-martin"
-        ],
-        "tier": 3,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 2 of the 2010 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 133+ receiving yards in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donald-hayes"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 11 of the 2021 season against the Washington Commanders?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-08-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 9 of the 1999 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "doug-evans"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 15 of the 2017 season against the Green Bay Packers?",
-        "playerIds": [
-          "wes-horton"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 3 of the 2024 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "jayden-peevy",
-          "labryan-ray",
-          "jadeveon-clowney"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 4 of the 2012 season against the Atlanta Falcons?",
-        "playerIds": [
-          "greg-olsen",
-          "kealoha-pilares"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB had 2 sacks in Week 17 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "james-anderson"
-        ],
-        "tier": 1,
-        "season": 2006
       },
       {
         "id": "q2",
@@ -6944,5152 +212,35 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB threw for 308+ passing yards in Week 7 of the 2010 season against the San Francisco 49ers?",
+        "prompt": "Which QB scored a rushing TD in Week 1 of the 2024 season against the New Orleans Saints?",
         "playerIds": [
-          "matt-moore"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 10 of the 2014 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 14 of the 2011 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jeremy-shockey",
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded an interception in Week 8 of the 2016 season against the Arizona Cardinals?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2013 Divisional Round against the San Francisco 49ers?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 16 of the 2012 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "dwan-edwards"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB had 119+ receiving yards in Week 16 of the 2019 season against the Indianapolis Colts?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 120+ receiving yards in Week 14 of the 2015 season against the Atlanta Falcons?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 2 sacks in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "dwan-edwards"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 422+ passing yards in Week 1 of the 2011 season against the Arizona Cardinals?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 218+ receiving yards in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in Week 13 of the 2000 season against the Green Bay Packers?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR returned a punt for a TD in Week 16 of the 2000 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "iheanyi-uwaezuoke"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR led the Panthers in receiving yards in 1999?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 2,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught J.Delhomme's 2nd TD pass in Week 7 of the 2003 season against the Tennessee Titans?",
-        "playerIds": [
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 178+ receiving yards in Week 1 of the 2011 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 11 of the 2019 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mario-addison",
-          "gerald-mccoy",
-          "dontari-poe"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2016 season against the Denver Broncos?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 12 of the 2003 season against the Dallas Cowboys?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught A.Dalton's 2nd TD pass in Week 6 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "xavier-legette"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which EDGE recorded a sack in Week 7 of the 2022 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 6 of the 2014 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "antoine-cason",
-          "roman-harper"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 108+ receiving yards in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 6 of the 2005 season against the Detroit Lions?",
-        "playerIds": [
-          "dan-morgan",
-          "julius-peppers",
-          "al-wallace",
-          "jordan-carstens",
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which S forced a fumble in Week 14 of the 2006 season against the New York Giants?",
-        "playerIds": [
-          "shaun-williams"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-08-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "christian-mccaffrey",
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 16 of the 2009 season against the New York Giants?",
-        "playerIds": [
-          "muhsin-muhammad",
-          "jeff-king",
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 15 of the 2008 season against the Denver Broncos?",
-        "playerIds": [
-          "thomas-davis",
-          "charles-johnson",
-          "tyler-brayton"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 100+ receiving yards in Week 8 of the 2004 season against the Seattle Seahawks?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 16 of the 2008 season against the New York Giants?",
-        "playerIds": [
-          "thomas-davis",
-          "tyler-brayton",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught M.Moore's 3rd TD pass in Week 16 of the 2009 season against the New York Giants?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 7 of the 2014 season against the Green Bay Packers?",
-        "playerIds": [
-          "kelvin-benjamin",
-          "brenton-bersin"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 125+ yards in Week 17 of the 2009 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded a sack in Week 3 of the 2022 season against the New Orleans Saints?",
-        "playerIds": [
-          "jeremy-chinn"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which OT did the Panthers select with the 19th overall pick in the 2008 NFL Draft?",
-        "playerIds": [
-          "jeff-otah"
-        ],
-        "tier": 3,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 131+ receiving yards in Week 15 of the 2020 season against the Green Bay Packers?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing yards in 2004?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded an interception in Week 2 of the 2005 season against the New England Patriots?",
-        "playerIds": [
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 14 of the 2015 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kawann-short",
-          "kyle-love",
-          "aj-klein"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S recorded an interception in Week 4 of the 2012 season against the Atlanta Falcons?",
-        "playerIds": [
-          "haruki-nakamura"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB led the Panthers in interceptions in 2010?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 2,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 132+ yards in Week 15 of the 2016 season against the Washington Commanders?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 11 of the 2013 season against the New England Patriots?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB forced a fumble in Week 6 of the 2021 season against the Minnesota Vikings?",
-        "playerIds": [
-          "aj-bouye",
-          "keith-taylor"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 7 of the 2013 season against the Los Angeles Rams?",
-        "playerIds": [
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 17 of the 2018 season against the New Orleans Saints?",
-        "playerIds": [
-          "ian-thomas",
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 7 of the 2022 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded a sack in Week 7 of the 2004 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2009?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 2,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in the 2014 Wild Card against the Arizona Cardinals?",
-        "playerIds": [
-          "dwan-edwards",
-          "kawann-short",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 112+ receiving yards in Week 10 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 6 of the 2013 season against the Minnesota Vikings?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 16 of the 1999 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 2 sacks in Week 16 of the 2006 season against the Atlanta Falcons?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 107+ receiving yards in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 5 of the 2017 season against the Detroit Lions?",
-        "playerIds": [
-          "christian-mccaffrey",
-          "devin-funchess",
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-08-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught S.Beuerlein's 2nd TD pass in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 4 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE led the Panthers in receptions in 2014?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 2,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught J.Delhomme's 3rd TD pass in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "kris-mangum"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL forced a fumble in Week 6 of the 2002 season against the Dallas Cowboys?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DT recorded an interception in Week 11 of the 2003 season against the Washington Commanders?",
-        "playerIds": [
-          "shane-burton"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 12 of the 2018 season against the Seattle Seahawks?",
-        "playerIds": [
-          "shaq-thompson"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-08-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 9 of the 2022 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "raheem-blackshear"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 3 sacks in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 153+ yards in Week 4 of the 2003 season against the Atlanta Falcons?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 1 of the 2019 season against the Los Angeles Rams?",
-        "playerIds": [
-          "james-bradberry"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-08-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB forced a fumble in Week 15 of the 2017 season against the Green Bay Packers?",
-        "playerIds": [
-          "james-bradberry"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DE recorded a sack in Week 13 of the 1999 season against the Los Angeles Rams?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR converted a 2-point conversion in Week 7 of the 2018 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "jarius-wright"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 6 of the 2017 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT had 2 sacks in Week 11 of the 2003 season against the Washington Commanders?",
-        "playerIds": [
-          "kris-jenkins"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 12 of the 2013 season against the Miami Dolphins?",
-        "playerIds": [
-          "josh-thomas-00-003"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 110+ yards in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2018 season against the New Orleans Saints?",
-        "playerIds": [
-          "james-bradberry"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-08-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 15 of the 2011 season against the Houston Texans?",
-        "playerIds": [
-          "jason-shirley",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 16 of the 2023 season against the Green Bay Packers?",
-        "playerIds": [
-          "dj-chark"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB had 2 sacks in Week 11 of the 2011 season against the Detroit Lions?",
-        "playerIds": [
-          "thomas-keiser"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 16 of the 2009 season against the New York Giants?",
-        "playerIds": [
-          "richard-marshall",
-          "chris-harris"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-08-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught a TD pass in Week 2 of the 2012 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "julius-peppers",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 126+ receiving yards in Week 15 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE had 3 sacks in Week 3 of the 2002 season against the Minnesota Vikings?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR converted a 2-point conversion in Week 6 of the 2018 season against the Washington Commanders?",
-        "playerIds": [
-          "torrey-smith"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB returned an interception for a TD in Week 14 of the 2000 season against the Los Angeles Rams?",
-        "playerIds": [
-          "jimmy-hitchcock"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 2 sacks in Week 2 of the 2017 season against the Buffalo Bills?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 7 of the 2006 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "kris-mangum",
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 14 of the 2011 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in the 2015 NFC Championship against the Arizona Cardinals?",
-        "playerIds": [
-          "kurt-coleman",
-          "luke-kuechly",
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 3 sacks in Week 2 of the 2006 season against the Minnesota Vikings?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 10 of the 2009 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 13 of the 2017 season against the New Orleans Saints?",
-        "playerIds": [
-          "mario-addison",
-          "kyle-love"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded an interception in Week 8 of the 2004 season against the Seattle Seahawks?",
-        "playerIds": [
-          "brian-allen"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "miles-sanders",
-          "tommy-tremble",
-          "david-moore"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which S returned an interception for a TD in Week 10 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-08-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S forced a fumble in Week 7 of the 1999 season against the Detroit Lions?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 12 of the 2024 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "jadeveon-clowney",
-          "dj-wonnum",
-          "jaycee-horn",
-          "josey-jewell"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB forced a fumble in Week 17 of the 2017 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-adams"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2019 season against the Seattle Seahawks?",
-        "playerIds": [
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-08-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in Week 9 of the 2010 season against the New Orleans Saints?",
-        "playerIds": [
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 12 of the 2004 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE led the Panthers in receptions in 2016?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 2,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 6 of the 2004 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-08-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB forced a fumble in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kevin-greene"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 5 of the 2023 season against the Detroit Lions?",
-        "playerIds": [
-          "brian-burns",
-          "cj-henderson"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB did the Panthers select in Round 2, Pick 51 of the 2025 NFL Draft?",
-        "playerIds": [
-          "nic-scourton"
-        ],
-        "tier": 3,
-        "season": 2025
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 12 of the 2015 season against the Dallas Cowboys?",
-        "playerIds": [
-          "thomas-davis",
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 17 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 4 TD passes in Week 16 of the 2004 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 7 of the 2011 season against the Washington Commanders?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Who scored a rushing TD in Week 6 of the 2014 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "fozzy-whittaker",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 15 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "muhsin-muhammad",
-          "kris-mangum"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 10 of the 2024 season against the New York Giants?",
-        "playerIds": [
-          "xavier-woods",
-          "josey-jewell"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 12 of the 2001 season against the New Orleans Saints?",
-        "playerIds": [
-          "chris-slade",
-          "deon-grant"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "brian-burns",
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB forced a fumble in Week 8 of the 2011 season against the Minnesota Vikings?",
-        "playerIds": [
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB did the Panthers select in Round 3, Pick 87 of the 1997 NFL Draft?",
-        "playerIds": [
-          "kinnon-tatum"
-        ],
-        "tier": 3,
-        "season": 1997
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 13 of the 2001 season against the Buffalo Bills?",
-        "playerIds": [
-          "chris-weinke",
-          "richard-huntley"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 174+ yards in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 152+ receiving yards in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 9 of the 2024 season against the New Orleans Saints?",
-        "playerIds": [
-          "xavier-legette"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 3 of the 2017 season against the New Orleans Saints?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 153+ receiving yards in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded an interception in Week 12 of the 2004 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 7 of the 2010 season against the San Francisco 49ers?",
-        "playerIds": [
-          "david-gettis"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 6 of the 2023 season against the Miami Dolphins?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receiving yards in 2021?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 2,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 146+ yards in Week 9 of the 2019 season against the Tennessee Titans?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2001?",
-        "playerIds": [
-          "chris-weinke"
-        ],
-        "tier": 2,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB returned an interception for a TD in Week 4 of the 2022 season against the Arizona Cardinals?",
-        "playerIds": [
-          "frankie-luvu"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-09-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw 3 TD passes in Week 4 of the 2017 season against the New England Patriots?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 4 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "drew-carter"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "jeremy-chinn"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 7 of the 2003 season against the Tennessee Titans?",
-        "playerIds": [
-          "mike-rucker",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-09-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 122+ yards in Week 13 of the 2004 season against the New Orleans Saints?",
-        "playerIds": [
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2004?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 16 of the 2016 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kawann-short",
-          "kurt-coleman",
-          "kony-ealy",
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 16 of the 2014 season against the Cleveland Browns?",
-        "playerIds": [
-          "josh-norman"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR led the Panthers in receptions in 2009?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB scored a rushing TD in Week 3 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 14 of the 2015 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jonathan-stewart",
-          "fozzy-whittaker"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-09-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 11 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "mario-addison",
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 142+ yards in Week 2 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB did the Panthers select in Round 2, Pick 54 of the 2005 NFL Draft?",
-        "playerIds": [
-          "eric-shelton"
-        ],
-        "tier": 3,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a TD on 4th down in Week 17 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-09-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "reggie-howard",
-          "kris-jenkins",
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 126+ receiving yards in Week 12 of the 2019 season against the New Orleans Saints?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 13 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "legedu-naanee"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 10 of the 2016 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "mario-addison",
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB had 2 sacks in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2007?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 2,
-        "season": 2007
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 4 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 2 sacks in Week 14 of the 2016 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-09-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receptions in 2012?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 323+ passing yards in the 2003 Super Bowl against the New England Patriots?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Who had 2 sacks in Week 9 of the 2005 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mike-rucker",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB had 2 sacks in Week 5 of the 2021 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "haason-reddick"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-09-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 11 of the 2000 season against the New Orleans Saints?",
-        "playerIds": [
-          "mike-minter",
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2005 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 10 of the 2008 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "dante-wesley",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 331+ passing yards in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-09-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 3 of the 2018 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 13 of the 2001 season against the Buffalo Bills?",
-        "playerIds": [
-          "chris-slade",
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught S.Beuerlein's 4th TD pass in Week 15 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-09-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which OG forced a fumble in Week 14 of the 2011 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jason-shirley"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 4 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-smith",
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2014 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 15 of the 2015 season against the New York Giants?",
-        "playerIds": [
-          "ted-ginn",
-          "greg-olsen",
-          "devin-funchess",
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-09-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 15 of the 2014 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jerricho-cotchery"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB returned an interception for a TD in Week 2 of the 2012 season against the New Orleans Saints?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE recorded a sack in Week 9 of the 2003 season against the Houston Texans?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "greg-olsen",
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-09-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DE recorded a sack in Week 4 of the 2005 season against the Green Bay Packers?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 11 of the 2013 season against the New England Patriots?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 13 of the 2016 season against the Seattle Seahawks?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 2 sacks in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-09-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught V.Testaverde's 2nd TD pass in Week 13 of the 2007 season against the San Francisco 49ers?",
-        "playerIds": [
-          "jeff-king"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 13 of the 2000 season against the Green Bay Packers?",
-        "playerIds": [
-          "jimmy-hitchcock",
-          "eric-davis",
-          "hannibal-navies"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR led the Panthers in receptions in 2011?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE scored a TD on 4th down in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "tommy-tremble"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-09-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 1 of the 2015 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "josh-norman",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "esera-tuaolo",
-          "kevin-greene"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 5 of the 2019 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "mario-addison",
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 165+ receiving yards in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-09-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB forced a fumble in Week 4 of the 2022 season against the Arizona Cardinals?",
-        "playerIds": [
-          "myles-hartsfield"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR scored a rushing TD in the 2005 Wild Card against the New York Giants?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 17 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 10 of the 2004 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-09-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE scored a TD on 4th down in Week 4 of the 2011 season against the Chicago Bears?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "star-lotulelei",
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 201+ receiving yards in Week 8 of the 2005 season against the Minnesota Vikings?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 4 of the 2010 season against the New Orleans Saints?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 2 of the 2001 season against the Atlanta Falcons?",
-        "playerIds": [
-          "doug-evans"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2003 Divisional Round against the Los Angeles Rams?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 6 of the 2013 season against the Minnesota Vikings?",
-        "playerIds": [
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 14 of the 2008 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 4 of the 2017 season against the New England Patriots?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB did the Panthers select with the 23th overall pick in the 2000 NFL Draft?",
-        "playerIds": [
-          "rashard-anderson"
-        ],
-        "tier": 3,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing yards in 2011?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "lester-towns"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q4",
-        "prompt": "Which OT did the Panthers select in Round 3, Pick 89 of the 2006 NFL Draft?",
-        "playerIds": [
-          "rashad-butler"
-        ],
-        "tier": 3,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 7 of the 2015 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "mike-tolbert",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in Week 3 of the 2005 season against the Miami Dolphins?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DT forced a fumble in Week 13 of the 2001 season against the Buffalo Bills?",
-        "playerIds": [
-          "brentson-buckner"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 2 of the 2015 season against the Houston Texans?",
-        "playerIds": [
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 17 of the 2021 season against the New Orleans Saints?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL led the Panthers in sacks in 2006?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 2,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 6 of the 2003 season against the Indianapolis Colts?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "brandon-lafell",
-          "jonathan-stewart",
-          "jeremy-shockey"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-09-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 4 of the 2016 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kelvin-benjamin",
-          "greg-olsen",
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2024?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 2,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE forced a fumble in Week 1 of the 2010 season against the New York Giants?",
-        "playerIds": [
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 8 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-09-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who forced a fumble in Week 11 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "mario-addison",
-          "kurt-coleman"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2006?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE had 119+ receiving yards in Week 10 of the 2014 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB did the Panthers select in Round 2, Pick 62 of the 2016 NFL Draft?",
-        "playerIds": [
-          "james-bradberry"
-        ],
-        "tier": 3,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 4 of the 2002 season against the Green Bay Packers?",
-        "playerIds": [
-          "kris-jenkins",
-          "brentson-buckner",
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB did the Panthers select in Round 3, Pick 80 of the 2023 NFL Draft?",
-        "playerIds": [
-          "dj-johnson"
-        ],
-        "tier": 3,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught S.Beuerlein's 3rd TD pass in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 1 of the 2020 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 165+ receiving yards in Week 15 of the 2008 season against the Denver Broncos?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 301+ passing yards in Week 4 of the 2021 season against the Dallas Cowboys?",
-        "playerIds": [
-          "sam-darnold"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 2 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "torrey-smith"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 2 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which OL did the Panthers select in Round 2, Pick 37 of the 2019 NFL Draft?",
-        "playerIds": [
-          "greg-little"
-        ],
-        "tier": 3,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 1 of the 2023 season against the Atlanta Falcons?",
-        "playerIds": [
-          "hayden-hurst"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 15 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad",
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 1 of the 2011 season against the Arizona Cardinals?",
-        "playerIds": [
-          "charles-johnson",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded a sack in Week 4 of the 2020 season against the Arizona Cardinals?",
-        "playerIds": [
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught S.Beuerlein's 2nd TD pass in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "eric-reid",
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 15 of the 2004 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-rucker",
-          "mark-fields",
-          "brentson-buckner",
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 8 of the 2023 season against the Houston Texans?",
-        "playerIds": [
-          "tommy-tremble"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 12 of the 2024 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR led the Panthers in receiving yards in 2017?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 2,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-10-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 16 of the 2024 season against the Arizona Cardinals?",
-        "playerIds": [
-          "chuba-hubbard",
           "bryce-young"
         ],
         "tier": 1,
         "season": 2024
       },
       {
-        "id": "q2",
-        "prompt": "Which DE forced a fumble in Week 6 of the 2001 season against the Washington Commanders?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 10 of the 2018 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
         "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 3rd TD pass in Week 2 of the 2007 season against the Houston Texans?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-10-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 10 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "mike-rucker",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 2 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2002?",
-        "playerIds": [
-          "lamar-smith"
-        ],
-        "tier": 2,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL led the Panthers in sacks in 2018?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 2,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded a sack in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "frankie-luvu"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught a TD pass in the 2014 Wild Card against the Arizona Cardinals?",
-        "playerIds": [
-          "fozzy-whittaker",
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 104+ yards in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "efe-obada"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB forced a fumble in Week 5 of the 2012 season against the Seattle Seahawks?",
-        "playerIds": [
-          "jason-phillips"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "kawann-short",
-          "tre-boston",
-          "dwan-edwards",
-          "charles-johnson",
-          "josh-norman"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught B.Young's 2nd TD pass in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "tommy-tremble"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 106+ receiving yards in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 6 of the 2022 season against the Los Angeles Rams?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 18 of the 2023 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "yetur-gross-matos",
-          "derrick-brown",
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 4 of the 2010 season against the New Orleans Saints?",
-        "playerIds": [
-          "charles-johnson",
-          "james-anderson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw 3 TD passes in Week 11 of the 2018 season against the Detroit Lions?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB did the Panthers select in Round 3, Pick 72 of the 2024 NFL Draft?",
-        "playerIds": [
-          "trevin-wallace"
-        ],
-        "tier": 3,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught a TD pass in Week 10 of the 2018 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE had 2 sacks in Week 9 of the 2003 season against the Houston Texans?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB returned a fumble for a TD in Week 17 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "dante-wesley"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT forced a fumble in Week 10 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kris-jenkins"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 11 of the 2020 season against the Detroit Lions?",
-        "playerIds": [
-          "mike-davis"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded a sack in Week 5 of the 2021 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "haason-reddick"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 15 of the 2012 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-10-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded a sack in Week 13 of the 2012 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 9 of the 1999 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 16 of the 2003 season against the Detroit Lions?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 16 of the 2020 season against the Washington Commanders?",
-        "playerIds": [
-          "mike-davis"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-10-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT returned an interception for a TD in Week 16 of the 2004 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kindal-moorehead"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "mark-fields",
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE caught M.Moore's 2nd TD pass in Week 17 of the 2007 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "dante-rosario"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 11 of the 2022 season against the Baltimore Ravens?",
-        "playerIds": [
-          "frankie-luvu",
-          "brian-burns",
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB returned an interception for a TD in Week 5 of the 2006 season against the Cleveland Browns?",
-        "playerIds": [
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 16 of the 2020 season against the Washington Commanders?",
-        "playerIds": [
-          "tahir-whitehead",
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2004 season against the New Orleans Saints?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 10 of the 2001 season against the San Francisco 49ers?",
-        "playerIds": [
-          "doug-evans",
-          "brentson-buckner"
-        ],
-        "tier": 1,
-        "season": 2001
-      }
-    ]
-  },
-  {
-    "date": "2026-10-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 13 of the 2007 season against the San Francisco 49ers?",
-        "playerIds": [
-          "dante-rosario",
-          "jeff-king"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 14 of the 2024 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 2 sacks in Week 14 of the 2017 season against the Minnesota Vikings?",
-        "playerIds": [
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB recorded a sack in Week 1 of the 2010 season against the New York Giants?",
-        "playerIds": [
-          "dan-connor"
-        ],
-        "tier": 1,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mario-addison",
-          "kyle-love"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB returned an interception for a TD in Week 13 of the 2007 season against the San Francisco 49ers?",
-        "playerIds": [
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR returned a punt for a TD in Week 17 of the 2003 season against the New York Giants?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2000?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 2,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-10-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 2 of the 2023 season against the New Orleans Saints?",
-        "playerIds": [
-          "vonn-bell"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 5 of the 2014 season against the Chicago Bears?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 3 of the 2024 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "mike-jackson"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Who had 2 sacks in Week 15 of the 2012 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "charles-johnson",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "greg-olsen",
-          "kelvin-benjamin",
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB scored a rushing TD in Week 1 of the 2016 season against the Denver Broncos?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 11 of the 2002 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mike-rucker",
-          "dante-wesley",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 108+ yards in Week 8 of the 2008 season against the Arizona Cardinals?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-10-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2017?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 2,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 13 of the 2014 season against the Minnesota Vikings?",
-        "playerIds": [
-          "thomas-davis",
-          "charles-johnson",
-          "bene-benwikere"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Who forced a fumble in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "mike-rucker",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 3 of the 2018 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "mario-addison",
-          "efe-obada"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a TD on 4th down in Week 3 of the 2013 season against the New York Giants?",
-        "playerIds": [
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 13 of the 2017 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 8 of the 2008 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-10-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 10 of the 2016 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE had 131+ receiving yards in Week 6 of the 2015 season against the Seattle Seahawks?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 12 of the 2017 season against the New York Jets?",
-        "playerIds": [
-          "mario-addison",
-          "wes-horton",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in the 2014 Wild Card against the Arizona Cardinals?",
-        "playerIds": [
-          "dwan-edwards",
-          "kawann-short",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which OL did the Panthers select with the 6th overall pick in the 2022 NFL Draft?",
-        "playerIds": [
-          "ikem-ekwonu"
-        ],
-        "tier": 3,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 3 of the 2011 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "greg-hardy",
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 5 of the 2005 season against the Arizona Cardinals?",
-        "playerIds": [
-          "al-wallace",
-          "marlon-mccree"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which S recorded an interception in Week 10 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 2 of the 2014 season against the Detroit Lions?",
-        "playerIds": [
-          "dwan-edwards",
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2008 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in passing yards in 2005?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 313+ passing yards in Week 5 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "teddy-bridgewater"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 131+ receiving yards in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 1 of the 2021 season against the New York Jets?",
-        "playerIds": [
-          "brian-burns",
-          "haason-reddick",
-          "marquis-haynes",
-          "shaq-thompson",
-          "derrick-brown"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2018?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a TD on 4th down in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donta-foreman"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in the 2014 Wild Card against the Arizona Cardinals?",
-        "playerIds": [
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 3 of the 2000 season against the Atlanta Falcons?",
-        "playerIds": [
-          "reggie-white",
-          "jason-peter"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "gerald-mccoy",
-          "dontari-poe",
-          "brian-burns",
-          "vernon-butler"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 1 of the 2011 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-10-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB led the Panthers in interceptions in 2024?",
-        "playerIds": [
-          "xavier-woods"
-        ],
-        "tier": 2,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 6 of the 2003 season against the Indianapolis Colts?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB recorded a sack in Week 5 of the 2005 season against the Arizona Cardinals?",
-        "playerIds": [
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 17 of the 2019 season against the New Orleans Saints?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2026-10-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DT recorded an interception in Week 7 of the 1999 season against the Detroit Lions?",
-        "playerIds": [
-          "sean-gilbert"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 17 of the 2004 season against the New Orleans Saints?",
-        "playerIds": [
-          "will-witherspoon",
-          "julius-peppers",
-          "mark-fields"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DT forced a fumble in Week 14 of the 2008 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "damione-lewis"
-        ],
-        "tier": 1,
-        "season": 2008
-      }
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 154+ yards in Week 3 of the 2002 season against the Minnesota Vikings?",
-        "playerIds": [
-          "lamar-smith"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 12 of the 2012 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "gary-barnidge",
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB returned a kickoff for a TD in Week 1 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "michael-bates"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2023 season against the Atlanta Falcons?",
-        "playerIds": [
-          "xavier-woods"
-        ],
-        "tier": 1,
-        "season": 2023
-      }
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which CB recorded an interception in Week 17 of the 2011 season against the New Orleans Saints?",
-        "playerIds": [
-          "rj-stanford"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 135+ receiving yards in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in the 2017 Wild Card against the New Orleans Saints?",
-        "playerIds": [
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "ken-lucas",
-          "shaun-williams"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which S returned an interception for a TD in Week 8 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 9 of the 2015 season against the Green Bay Packers?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 5 of the 2007 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR scored a rushing TD in the 2005 Wild Card against the New York Giants?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 13 of the 2023 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a TD on 4th down in Week 9 of the 2019 season against the Tennessee Titans?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2023?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 2,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in the 2015 NFC Championship against the Arizona Cardinals?",
-        "playerIds": [
-          "ted-ginn",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 101+ yards in Week 16 of the 2018 season against the Atlanta Falcons?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 122+ yards in Week 3 of the 2007 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2026-10-31",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 5 of the 2010 season against the Chicago Bears?",
-        "playerIds": [
-          "greg-hardy",
-          "richard-marshall"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 4 of the 2020 season against the Arizona Cardinals?",
-        "playerIds": [
-          "reggie-bonnafon",
-          "ian-thomas"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE recorded a sack in Week 5 of the 2002 season against the Arizona Cardinals?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 17 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 12 of the 2001 season against the New Orleans Saints?",
-        "playerIds": [
-          "jimmy-hitchcock"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 160+ receiving yards in Week 16 of the 1999 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR did the Panthers select in Round 2, Pick 39 of the 2023 NFL Draft?",
-        "playerIds": [
-          "jonathan-mingo"
-        ],
-        "tier": 3,
-        "season": 2023
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE had 3 sacks in Week 8 of the 2012 season against the Chicago Bears?",
-        "playerIds": [
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB had 100+ receiving yards in Week 2 of the 2011 season against the Green Bay Packers?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 5 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "juston-burris"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught J.Delhomme's 3rd TD pass in Week 13 of the 2006 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 7 of the 2002 season against the Atlanta Falcons?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT recorded a sack in Week 14 of the 2005 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "kindal-moorehead"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR returned a punt for a TD in Week 12 of the 2017 season against the New York Jets?",
-        "playerIds": [
-          "kaelin-clay"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB forced a fumble in Week 14 of the 2024 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "chau-smith-wade"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DE led the Panthers in sacks in 2003?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 2,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-11-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB scored a rushing TD in Week 9 of the 2014 season against the New Orleans Saints?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 17 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "muhsin-muhammad",
-          "wesley-walls",
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 16 of the 2013 season against the New Orleans Saints?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 3 of the 2010 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-11-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL led the Panthers in sacks in 2014?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 2,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 2 of the 2001 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jay-williams",
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 5 of the 2001 season against the New Orleans Saints?",
-        "playerIds": [
-          "donald-hayes",
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-11-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB scored a rushing TD in Week 12 of the 2022 season against the Denver Broncos?",
-        "playerIds": [
-          "sam-darnold"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB led the Panthers in interceptions in 2017?",
-        "playerIds": [
-          "mike-adams"
-        ],
-        "tier": 2,
-        "season": 2017
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB returned an interception for a TD in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "josh-norman"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-11-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 133+ receiving yards in Week 10 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 11 of the 2013 season against the New England Patriots?",
-        "playerIds": [
-          "greg-hardy",
-          "star-lotulelei"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 5 of the 2004 season against the Denver Broncos?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 3 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 12 of the 2023 season against the Tennessee Titans?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB caught a TD pass in Week 15 of the 2002 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "dee-brown"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 303+ passing yards in Week 10 of the 2004 season against the San Francisco 49ers?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2000 season against the Dallas Cowboys?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 117+ receiving yards in Week 17 of the 2022 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in the 2014 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "mario-addison",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR returned a kickoff for a TD in Week 16 of the 2017 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "damiere-byrd"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 2 of the 2005 season against the New England Patriots?",
-        "playerIds": [
-          "thomas-davis",
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 10 of the 2017 season against the Miami Dolphins?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 105+ receiving yards in Week 9 of the 2020 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 7 of the 2006 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "damione-lewis",
-          "chris-draft"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "thomas-keiser",
-          "andre-neblett"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB caught a TD pass in Week 16 of the 2014 season against the Cleveland Browns?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which TE caught K.Allen's 3rd TD pass in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught T.Bridgewater's 2nd TD pass in Week 4 of the 2020 season against the Arizona Cardinals?",
-        "playerIds": [
-          "ian-thomas"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 12 of the 2010 season against the Cleveland Browns?",
-        "playerIds": [
-          "mike-goodson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 3 of the 2012 season against the New York Giants?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 107+ receiving yards in Week 5 of the 2023 season against the Detroit Lions?",
+        "prompt": "Which WR had 102+ receiving yards in Week 14 of the 2024 season against the Philadelphia Eagles?",
         "playerIds": [
           "adam-thielen"
         ],
         "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 11 of the 2019 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 14 of the 2017 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB led the Panthers in interceptions in 2015?",
-        "playerIds": [
-          "kurt-coleman"
-        ],
-        "tier": 2,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 9 of the 2019 season against the Tennessee Titans?",
-        "playerIds": [
-          "christian-mccaffrey",
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2011 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2014 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in the 2015 Divisional Round against the Seattle Seahawks?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 4 of the 2016 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kurt-coleman"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 5 of the 2012 season against the Seattle Seahawks?",
-        "playerIds": [
-          "greg-hardy",
-          "antwan-applewhite"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL did the Panthers select in Round 2, Pick 60 of the 2014 NFL Draft?",
-        "playerIds": [
-          "kony-ealy"
-        ],
-        "tier": 3,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 5 of the 2005 season against the Arizona Cardinals?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "keyshawn-johnson",
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 9 of the 2021 season against the New England Patriots?",
-        "playerIds": [
-          "stephon-gilmore"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 7 of the 2018 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "kyle-love",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 9 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 6 of the 2017 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "julius-peppers",
-          "james-bradberry",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 120+ receiving yards in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in Week 13 of the 2012 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 2 of the 2016 season against the San Francisco 49ers?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-11-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 4 of the 2005 season against the Green Bay Packers?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 2 of the 2012 season against the New Orleans Saints?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 15 of the 2005 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which EDGE forced a fumble in Week 5 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 12 of the 2019 season against the New Orleans Saints?",
-        "playerIds": [
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S led the Panthers in interceptions in 2013?",
-        "playerIds": [
-          "michael-mitchell"
-        ],
-        "tier": 2,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 9 of the 2004 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 10 of the 2018 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 16 of the 2000 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "tim-morabito"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in the 2008 Divisional Round against the Arizona Cardinals?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB returned a kickoff for a TD in Week 1 of the 2000 season against the Washington Commanders?",
-        "playerIds": [
-          "michael-bates"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-11-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 305+ passing yards in Week 2 of the 2021 season against the New Orleans Saints?",
-        "playerIds": [
-          "sam-darnold"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 15 of the 2016 season against the Washington Commanders?",
-        "playerIds": [
-          "wes-horton",
-          "kyle-love"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB scored a rushing TD in Week 16 of the 2012 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 2 of the 2014 season against the Detroit Lions?",
-        "playerIds": [
-          "melvin-white"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-11-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB forced a fumble in Week 13 of the 2004 season against the New Orleans Saints?",
-        "playerIds": [
-          "brandon-short"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing yards in 2006?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB did the Panthers select with the 25th overall pick in the 2007 NFL Draft?",
-        "playerIds": [
-          "jon-beason"
-        ],
-        "tier": 3,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 11 of the 2018 season against the Detroit Lions?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2018
-      }
-    ]
-  },
-  {
-    "date": "2026-11-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB forced a fumble in Week 12 of the 2024 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "jordan-fuller"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 13 of the 2006 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "keyshawn-johnson"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jerricho-cotchery",
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded an interception in Week 17 of the 2009 season against the New Orleans Saints?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2026-11-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 137+ yards in Week 15 of the 2010 season against the Arizona Cardinals?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR scored a TD on 4th down in Week 18 of the 2021 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 11 of the 2007 season against the Green Bay Packers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR did the Panthers select with the 27th overall pick in the 1997 NFL Draft?",
-        "playerIds": [
-          "rae-carruth"
-        ],
-        "tier": 3,
-        "season": 1997
-      }
-    ]
-  },
-  {
-    "date": "2026-11-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 10 of the 2021 season against the Arizona Cardinals?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR did the Panthers select with the 8th overall pick in the 2025 NFL Draft?",
-        "playerIds": [
-          "tetairoa-mcmillan"
-        ],
-        "tier": 3,
-        "season": 2025
-      },
-      {
-        "id": "q3",
-        "prompt": "Which EDGE led the Panthers in sacks in 2020?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 2,
-        "season": 2020
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL did the Panthers select with the 2nd overall pick in the 2002 NFL Draft?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 3,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-11-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 13 of the 1999 season against the Los Angeles Rams?",
-        "playerIds": [
-          "donald-hayes"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 17 of the 2004 season against the New Orleans Saints?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 15 of the 2006 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "chris-gamble",
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 10 of the 2017 season against the Miami Dolphins?",
-        "playerIds": [
-          "ed-dickson",
-          "devin-funchess",
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2017
-      }
-    ]
-  },
-  {
-    "date": "2026-11-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 3 of the 2010 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in the 2008 Divisional Round against the Arizona Cardinals?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 4 of the 2019 season against the Houston Texans?",
-        "playerIds": [
-          "ross-cockrell"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 341+ passing yards in Week 17 of the 2022 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "sam-darnold"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-11-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 7 of the 2015 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "colin-jones"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 5 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "brian-burns",
-          "marquis-haynes"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 2 of the 2011 season against the Green Bay Packers?",
-        "playerIds": [
-          "jordan-senn"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 10 of the 2024 season against the New York Giants?",
-        "playerIds": [
-          "jatavion-sanders"
-        ],
-        "tier": 1,
         "season": 2024
       }
     ]
   },
   {
-    "date": "2026-11-29",
+    "date": "2026-02-25",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2010?",
-        "playerIds": [
-          "mike-goodson"
-        ],
-        "tier": 2,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB did the Panthers select in Round 3, Pick 77 of the 2016 NFL Draft?",
-        "playerIds": [
-          "daryl-worley"
-        ],
-        "tier": 3,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught J.Delhomme's 2nd TD pass in Week 7 of the 2008 season against the New Orleans Saints?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 5 of the 2024 season against the Chicago Bears?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-11-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "efe-obada",
-          "kawann-short",
-          "dontari-poe"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR led the Panthers in receptions in 2007?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2007
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 115+ receiving yards in Week 16 of the 2004 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which WR had 104+ receiving yards in Week 13 of the 2001 season against the Buffalo Bills?",
         "playerIds": [
           "muhsin-muhammad"
         ],
         "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 9 of the 2004 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "kris-mangum",
-          "brad-hoover",
-          "nick-goings"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-12-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 149+ yards in Week 9 of the 2009 season against the New Orleans Saints?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR did the Panthers select in Round 2, Pick 62 of the 2004 NFL Draft?",
-        "playerIds": [
-          "keary-colbert"
-        ],
-        "tier": 3,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE recorded a sack in Week 12 of the 2009 season against the New York Jets?",
-        "playerIds": [
-          "tyler-brayton"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB did the Panthers select in Round 2, Pick 38 of the 2020 NFL Draft?",
-        "playerIds": [
-          "yetur-gross-matos"
-        ],
-        "tier": 3,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2026-12-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 6 of the 2007 season against the Arizona Cardinals?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2007
+        "season": 2001
       },
       {
         "id": "q2",
@@ -12103,408 +254,103 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which TE caught a TD pass in Week 16 of the 2006 season against the Atlanta Falcons?",
+        "prompt": "Which RB led the Panthers in receptions in 2017?",
         "playerIds": [
-          "jeff-king"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 5 of the 2014 season against the Chicago Bears?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2026-12-03",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 8 of the 2010 season against the Los Angeles Rams?",
-        "playerIds": [
-          "brandon-lafell"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 2 of the 2013 season against the Buffalo Bills?",
-        "playerIds": [
-          "greg-olsen",
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 9 of the 2017 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-adams"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 3 of the 2024 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "chuba-hubbard",
-          "adam-thielen"
-        ],
-        "tier": 1,
-        "season": 2024
-      }
-    ]
-  },
-  {
-    "date": "2026-12-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 108+ receiving yards in Week 2 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 4 of the 2023 season against the Minnesota Vikings?",
-        "playerIds": [
-          "jeremy-chinn",
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 17 of the 2018 season against the New Orleans Saints?",
-        "playerIds": [
-          "julius-peppers",
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 9 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-12-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 12 of the 2020 season against the Minnesota Vikings?",
-        "playerIds": [
-          "zach-kerr",
-          "bravvion-roy"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 13 of the 2005 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB converted a 2-point conversion in Week 8 of the 2022 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donta-foreman"
-        ],
-        "tier": 1,
-        "season": 2022
-      }
-    ]
-  },
-  {
-    "date": "2026-12-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 14 of the 2009 season against the New England Patriots?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 14 of the 2016 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "kawann-short",
-          "ryan-delaire",
-          "aj-klein",
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB had 2 sacks in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "mark-fields"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB rushed for 115+ yards in Week 5 of the 2011 season against the New Orleans Saints?",
-        "playerIds": [
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2026-12-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 4 of the 2017 season against the New England Patriots?",
-        "playerIds": [
-          "fozzy-whittaker",
-          "devin-funchess"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB forced a fumble in Week 11 of the 2014 season against the Atlanta Falcons?",
-        "playerIds": [
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "steve-smith",
-          "muhsin-muhammad",
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 5 of the 2006 season against the Cleveland Browns?",
-        "playerIds": [
-          "keyshawn-johnson"
-        ],
-        "tier": 1,
-        "season": 2006
-      }
-    ]
-  },
-  {
-    "date": "2026-12-08",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded a sack in Week 15 of the 2024 season against the Dallas Cowboys?",
-        "playerIds": [
-          "jaycee-horn"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "steve-smith",
-          "kris-mangum"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 14 of the 2018 season against the Cleveland Browns?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB recorded a sack in Week 14 of the 1999 season against the Green Bay Packers?",
-        "playerIds": [
-          "kevin-greene"
-        ],
-        "tier": 1,
-        "season": 1999
-      }
-    ]
-  },
-  {
-    "date": "2026-12-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL led the Panthers in sacks in 2017?",
-        "playerIds": [
-          "julius-peppers"
+          "christian-mccaffrey"
         ],
         "tier": 2,
         "season": 2017
       },
       {
-        "id": "q3",
-        "prompt": "Which DB returned a fumble for a TD in Week 7 of the 2001 season against the New York Jets?",
-        "playerIds": [
-          "rashard-anderson"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
         "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 15 of the 2017 season against the Green Bay Packers?",
+        "prompt": "Which TE did the Panthers select in Round 3, Pick 83 of the 2021 NFL Draft?",
         "playerIds": [
-          "daryl-worley",
-          "colin-jones",
-          "james-bradberry"
+          "tommy-tremble"
         ],
-        "tier": 1,
-        "season": 2017
+        "tier": 3,
+        "season": 2021
       }
     ]
   },
   {
-    "date": "2026-12-10",
+    "date": "2026-02-26",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB threw for 355+ passing yards in Week 5 of the 2017 season against the Detroit Lions?",
+        "prompt": "Who recorded a sack in Week 1 of the 1999 season against the New Orleans Saints?",
         "playerIds": [
-          "cam-newton-00-002"
+          "kevin-greene",
+          "jason-peter",
+          "damien-richardson"
         ],
         "tier": 1,
-        "season": 2017
+        "season": 1999
       },
       {
         "id": "q2",
-        "prompt": "Which DB recorded an interception in Week 3 of the 2020 season against the Los Angeles Chargers?",
+        "prompt": "Which RB scored a rushing TD in Week 17 of the 2005 season against the Atlanta Falcons?",
         "playerIds": [
-          "donte-jackson"
+          "deshaun-foster",
+          "jamal-robertson"
         ],
         "tier": 1,
-        "season": 2020
+        "season": 2005
       },
       {
         "id": "q3",
-        "prompt": "Which RB caught a TD pass in Week 4 of the 2007 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which WR caught a TD pass in the 2003 Wild Card against the Dallas Cowboys?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB caught J.Delhomme's 2nd TD pass in Week 7 of the 2008 season against the New Orleans Saints?",
         "playerIds": [
           "deangelo-williams"
         ],
         "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 14 of the 2017 season against the Minnesota Vikings?",
-        "playerIds": [
-          "julius-peppers",
-          "mario-addison",
-          "kyle-love",
-          "luke-kuechly",
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2017
+        "season": 2008
       }
     ]
   },
   {
-    "date": "2026-12-11",
+    "date": "2026-02-27",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who caught a TD pass in Week 17 of the 2022 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which DL forced a fumble in Week 16 of the 2018 season against the Atlanta Falcons?",
         "playerIds": [
-          "tommy-tremble",
-          "dj-moore-00-003",
-          "shi-smith"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB forced a fumble in Week 8 of the 2023 season against the Houston Texans?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 1 of the 2018 season against the Dallas Cowboys?",
-        "playerIds": [
-          "cam-newton-00-002",
-          "alex-armah"
+          "kyle-love"
         ],
         "tier": 1,
         "season": 2018
       },
       {
-        "id": "q4",
-        "prompt": "Which DB recorded a sack in Week 1 of the 2019 season against the Los Angeles Rams?",
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 3 of the 2019 season against the Arizona Cardinals?",
         "playerIds": [
-          "james-bradberry"
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught S.Beuerlein's 4th TD pass in Week 17 of the 1999 season against the New Orleans Saints?",
+        "playerIds": [
+          "patrick-jeffers"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q4",
+        "prompt": "Which EDGE recorded a sack in Week 17 of the 2019 season against the New Orleans Saints?",
+        "playerIds": [
+          "brian-burns"
         ],
         "tier": 1,
         "season": 2019
@@ -12512,230 +358,73 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2026-12-12",
+    "date": "2026-02-28",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who forced a fumble in Week 10 of the 2012 season against the Denver Broncos?",
+        "prompt": "Who caught a TD pass in Week 1 of the 2017 season against the San Francisco 49ers?",
         "playerIds": [
-          "charles-johnson",
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Who scored a rushing TD in Week 3 of the 2021 season against the Houston Texans?",
-        "playerIds": [
-          "sam-darnold",
-          "tommy-tremble"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in the 2014 Wild Card against the Arizona Cardinals?",
-        "playerIds": [
+          "russell-shepard",
           "jonathan-stewart"
         ],
         "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which EDGE forced a fumble in Week 12 of the 2021 season against the Miami Dolphins?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-12-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded an interception in Week 13 of the 1999 season against the Los Angeles Rams?",
-        "playerIds": [
-          "eric-davis",
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 1999
+        "season": 2017
       },
       {
         "id": "q2",
-        "prompt": "Which QB led the Panthers in passing yards in 2020?",
+        "prompt": "Which RB rushed for 106+ yards in Week 5 of the 2006 season against the Cleveland Browns?",
         "playerIds": [
-          "teddy-bridgewater"
-        ],
-        "tier": 2,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which LB recorded a sack in the 2013 Divisional Round against the San Francisco 49ers?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-12-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a TD on 4th down in Week 9 of the 2020 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 13 of the 2012 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "louis-murphy"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB threw 3 TD passes in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which C did the Panthers select in Round 2, Pick 50 of the 2003 NFL Draft?",
-        "playerIds": [
-          "bruce-nelson"
-        ],
-        "tier": 3,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2026-12-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DE returned a fumble for a TD in Week 14 of the 2002 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB led the Panthers in passing yards in 2021?",
-        "playerIds": [
-          "sam-darnold"
-        ],
-        "tier": 2,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in the 2003 Divisional Round against the Los Angeles Rams?",
-        "playerIds": [
-          "julius-peppers",
-          "greg-favors"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB recorded an interception in Week 16 of the 2005 season against the Dallas Cowboys?",
-        "playerIds": [
-          "ken-lucas"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-12-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT recorded a sack in Week 1 of the 2004 season against the Green Bay Packers?",
-        "playerIds": [
-          "brentson-buckner",
-          "kris-jenkins"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 365+ passing yards in Week 6 of the 2006 season against the Baltimore Ravens?",
-        "playerIds": [
-          "jake-delhomme"
+          "deshaun-foster"
         ],
         "tier": 1,
         "season": 2006
       },
       {
         "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 16 of the 2011 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who recorded a sack in Week 15 of the 2007 season against the Seattle Seahawks?",
         "playerIds": [
-          "dan-connor",
-          "jason-williams"
+          "nail-diggs",
+          "kris-jenkins",
+          "thomas-davis"
         ],
         "tier": 1,
-        "season": 2011
+        "season": 2007
       },
       {
         "id": "q4",
-        "prompt": "Which RB rushed for 210+ yards in Week 17 of the 2012 season against the New Orleans Saints?",
+        "prompt": "Which DE recorded a sack in Week 5 of the 2001 season against the New Orleans Saints?",
         "playerIds": [
-          "deangelo-williams"
+          "mike-rucker"
         ],
         "tier": 1,
-        "season": 2012
+        "season": 2001
       }
     ]
   },
   {
-    "date": "2026-12-17",
+    "date": "2026-03-01",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which WR returned a kickoff for a TD in Week 11 of the 2015 season against the Washington Commanders?",
+        "prompt": "Which DL recorded a sack in Week 11 of the 2014 season against the Atlanta Falcons?",
         "playerIds": [
-          "andre-roberts"
+          "mario-addison",
+          "charles-johnson"
         ],
         "tier": 1,
-        "season": 2015
+        "season": 2014
       },
       {
         "id": "q2",
+        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 15 of the 2016 season against the Washington Commanders?",
+        "playerIds": [
+          "mike-tolbert"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q3",
         "prompt": "Which WR caught a TD pass in the 2015 NFC Championship against the Arizona Cardinals?",
         "playerIds": [
           "corey-brown",
@@ -12745,944 +434,200 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2015
       },
       {
-        "id": "q3",
-        "prompt": "Which WR had 109+ receiving yards in Week 14 of the 2012 season against the Atlanta Falcons?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
         "id": "q4",
-        "prompt": "Which TE caught J.Delhomme's 3rd TD pass in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "mike-seidman"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-12-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB did the Panthers select with the 9th overall pick in the 2012 NFL Draft?",
-        "playerIds": [
-          "luke-kuechly"
-        ],
-        "tier": 3,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 12 of the 2016 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR led the Panthers in receiving yards in 2005?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2005
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 1 of the 2000 season against the Washington Commanders?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-12-19",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2019?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 2,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DE recorded a sack in Week 12 of the 2012 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 5 of the 2013 season against the Arizona Cardinals?",
-        "playerIds": [
-          "robert-lester",
-          "michael-mitchell",
-          "luke-kuechly"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 15 of the 2002 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "mike-rucker",
-          "mark-fields"
-        ],
-        "tier": 1,
-        "season": 2002
-      }
-    ]
-  },
-  {
-    "date": "2026-12-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 16 of the 2010 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 10 of the 2014 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chris-draft"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 115+ receiving yards in Week 2 of the 2000 season against the San Francisco 49ers?",
-        "playerIds": [
-          "donald-hayes"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2026-12-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DE recorded a sack in Week 13 of the 2004 season against the New Orleans Saints?",
-        "playerIds": [
-          "mike-rucker"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 3 of the 2014 season against the Pittsburgh Steelers?",
-        "playerIds": [
-          "greg-olsen",
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 9 of the 2019 season against the Tennessee Titans?",
-        "playerIds": [
-          "donte-jackson",
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 11 of the 2004 season against the Arizona Cardinals?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-12-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught S.Beuerlein's 3rd TD pass in Week 13 of the 2000 season against the Green Bay Packers?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2000
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 11 of the 2020 season against the Detroit Lions?",
-        "playerIds": [
-          "brian-burns",
-          "efe-obada"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DE recorded an interception in Week 2 of the 2003 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "al-wallace"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 6 of the 2016 season against the New Orleans Saints?",
-        "playerIds": [
-          "devin-funchess",
-          "ed-dickson"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2026-12-23",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 9 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-tolbert",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Who forced a fumble in Week 10 of the 2005 season against the New York Jets?",
-        "playerIds": [
-          "dan-morgan",
-          "ricky-manning",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB forced a fumble in the 2014 Wild Card against the Arizona Cardinals?",
-        "playerIds": [
-          "melvin-white"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Who forced a fumble in Week 10 of the 2004 season against the San Francisco 49ers?",
-        "playerIds": [
-          "mike-minter",
-          "will-witherspoon"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2026-12-24",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR converted a 2-point conversion in Week 15 of the 2021 season against the Buffalo Bills?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw for 308+ passing yards in Week 5 of the 2013 season against the Arizona Cardinals?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL led the Panthers in sacks in 2012?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 2,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which CB returned an interception for a TD in Week 17 of the 2013 season against the Atlanta Falcons?",
-        "playerIds": [
-          "melvin-white"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-12-25",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DT recorded a sack in Week 1 of the 2007 season against the Los Angeles Rams?",
-        "playerIds": [
-          "kindal-moorehead"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 14 of the 2024 season against the Philadelphia Eagles?",
-        "playerIds": [
-          "josey-jewell",
-          "dj-wonnum",
-          "ashawn-robinson"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 8 of the 2013 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "greg-olsen",
-          "mike-tolbert"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2026-12-26",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which EDGE led the Panthers in sacks in 2022?",
-        "playerIds": [
-          "brian-burns"
-        ],
-        "tier": 2,
-        "season": 2022
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 15 of the 2015 season against the New York Giants?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR converted a 2-point conversion in Week 11 of the 2011 season against the Detroit Lions?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 104+ receiving yards in Week 16 of the 2005 season against the Dallas Cowboys?",
-        "playerIds": [
-          "ricky-proehl"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-12-27",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2010 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "josh-vaughan"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 123+ receiving yards in Week 6 of the 2005 season against the Detroit Lions?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 130+ yards in Week 11 of the 2008 season against the Detroit Lions?",
+        "prompt": "Which RB led the Panthers in rushing yards in 2009?",
         "playerIds": [
           "jonathan-stewart"
         ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 10 of the 2021 season against the Arizona Cardinals?",
-        "playerIds": [
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2021
-      }
-    ]
-  },
-  {
-    "date": "2026-12-28",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB led the Panthers in passing yards in 2012?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 2,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR led the Panthers in receiving yards in 2009?",
-        "playerIds": [
-          "steve-smith"
-        ],
         "tier": 2,
         "season": 2009
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "curtis-samuel",
-          "dj-moore-00-003",
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB returned an interception for a TD in Week 4 of the 2023 season against the Minnesota Vikings?",
-        "playerIds": [
-          "sam-franklin-jr"
-        ],
-        "tier": 1,
-        "season": 2023
       }
     ]
   },
   {
-    "date": "2026-12-29",
+    "date": "2026-03-02",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 15 of the 2016 season against the Washington Commanders?",
+        "prompt": "Which QB led the Panthers in passing yards in 2020?",
         "playerIds": [
-          "wes-horton"
+          "teddy-bridgewater"
         ],
-        "tier": 1,
-        "season": 2016
+        "tier": 2,
+        "season": 2020
       },
       {
         "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 17 of the 2006 season against the New Orleans Saints?",
+        "prompt": "Who recorded a sack in Week 4 of the 2008 season against the Atlanta Falcons?",
         "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL recorded a sack in Week 16 of the 2015 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB threw for 319+ passing yards in the 2005 Divisional Round against the Chicago Bears?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2026-12-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which OL did the Panthers select in Round 2, Pick 40 of the 2012 NFL Draft?",
-        "playerIds": [
-          "amini-silatolu"
-        ],
-        "tier": 3,
-        "season": 2012
-      },
-      {
-        "id": "q2",
-        "prompt": "Which RB rushed for 105+ yards in Week 4 of the 2006 season against the New Orleans Saints?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in the 2003 NFC Championship against the Philadelphia Eagles?",
-        "playerIds": [
-          "ricky-manning",
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which S recorded an interception in Week 15 of the 2010 season against the Arizona Cardinals?",
-        "playerIds": [
-          "sherrod-martin"
-        ],
-        "tier": 1,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2026-12-31",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 5 of the 2017 season against the Detroit Lions?",
-        "playerIds": [
-          "mario-addison",
-          "kawann-short",
-          "julius-peppers",
-          "shaq-thompson",
-          "captain-munnerlyn"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which S recorded an interception in Week 14 of the 2003 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deon-grant"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S recorded an interception in Week 5 of the 2011 season against the New Orleans Saints?",
-        "playerIds": [
-          "sherrod-martin"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 8 of the 2014 season against the Seattle Seahawks?",
-        "playerIds": [
-          "josh-norman"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2027-01-01",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB scored a rushing TD in Week 5 of the 2004 season against the Denver Broncos?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 1 of the 2008 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "nail-diggs"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which TE scored a TD on 4th down in Week 15 of the 2018 season against the New Orleans Saints?",
-        "playerIds": [
-          "chris-manhertz"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 12 of the 2016 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "ted-ginn",
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2016
-      }
-    ]
-  },
-  {
-    "date": "2027-01-02",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which LB recorded an interception in Week 16 of the 2007 season against the Dallas Cowboys?",
-        "playerIds": [
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2007
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 18 of the 2021 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "chuba-hubbard",
-          "robby-anderson"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL forced a fumble in Week 6 of the 2018 season against the Washington Commanders?",
-        "playerIds": [
+          "hilee-taylor",
           "julius-peppers"
         ],
         "tier": 1,
-        "season": 2018
+        "season": 2008
       },
       {
-        "id": "q4",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 16 of the 2004 season against the Tampa Bay Buccaneers?",
+        "id": "q3",
+        "prompt": "Which WR caught a TD pass in the 2003 NFC Championship against the Philadelphia Eagles?",
         "playerIds": [
           "muhsin-muhammad"
         ],
         "tier": 1,
-        "season": 2004
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 4 of the 1999 season against the Washington Commanders?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 1,
+        "season": 1999
       }
     ]
   },
   {
-    "date": "2027-01-03",
+    "date": "2026-03-03",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 17 of the 2010 season against the Atlanta Falcons?",
+        "prompt": "Who forced a fumble in Week 12 of the 2004 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "jeff-king"
+          "chris-gamble",
+          "mike-rucker",
+          "al-wallace"
         ],
         "tier": 1,
-        "season": 2010
+        "season": 2004
       },
       {
         "id": "q2",
-        "prompt": "Who recorded an interception in Week 14 of the 2015 season against the Atlanta Falcons?",
+        "prompt": "Which QB threw 3 TD passes in Week 14 of the 2002 season against the Cincinnati Bengals?",
         "playerIds": [
-          "luke-kuechly",
-          "kurt-coleman"
+          "rodney-peete"
         ],
         "tier": 1,
-        "season": 2015
+        "season": 2002
       },
       {
         "id": "q3",
-        "prompt": "Who recorded a sack in Week 8 of the 2000 season against the San Francisco 49ers?",
+        "prompt": "Which RB scored a rushing TD in Week 7 of the 2022 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "jason-peter",
-          "mike-rucker",
-          "reggie-white"
+          "chuba-hubbard"
+        ],
+        "tier": 1,
+        "season": 2022
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 16 of the 2010 season against the Pittsburgh Steelers?",
+        "playerIds": [
+          "charles-johnson",
+          "derek-landri"
+        ],
+        "tier": 1,
+        "season": 2010
+      }
+    ]
+  },
+  {
+    "date": "2026-03-04",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR had 127+ receiving yards in Week 8 of the 2000 season against the San Francisco 49ers?",
+        "playerIds": [
+          "muhsin-muhammad"
         ],
         "tier": 1,
         "season": 2000
       },
       {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 1 of the 2004 season against the Green Bay Packers?",
+        "id": "q2",
+        "prompt": "Which DB led the Panthers in interceptions in 2017?",
         "playerIds": [
-          "brad-hoover",
-          "muhsin-muhammad"
+          "mike-adams"
+        ],
+        "tier": 2,
+        "season": 2017
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded an interception in Week 6 of the 2007 season against the Arizona Cardinals?",
+        "playerIds": [
+          "ken-lucas",
+          "deke-cooper"
         ],
         "tier": 1,
-        "season": 2004
+        "season": 2007
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL forced a fumble in Week 16 of the 2017 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "wes-horton",
+          "kawann-short"
+        ],
+        "tier": 1,
+        "season": 2017
       }
     ]
   },
   {
-    "date": "2027-01-04",
+    "date": "2026-03-05",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who recorded a sack in Week 12 of the 2021 season against the Miami Dolphins?",
+        "prompt": "Which DB recorded an interception in Week 2 of the 2000 season against the San Francisco 49ers?",
         "playerIds": [
-          "brian-burns",
-          "phil-hoskins"
+          "eric-davis"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q2",
+        "prompt": "Which TE converted a 2-point conversion in Week 6 of the 2021 season against the Minnesota Vikings?",
+        "playerIds": [
+          "tommy-tremble"
         ],
         "tier": 1,
         "season": 2021
       },
       {
-        "id": "q2",
-        "prompt": "Which RB caught a TD pass in Week 5 of the 2019 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
         "id": "q3",
-        "prompt": "Which RB scored a TD in overtime in Week 16 of the 2024 season against the Arizona Cardinals?",
+        "prompt": "Which WR had 115+ receiving yards in Week 3 of the 2014 season against the Pittsburgh Steelers?",
         "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR had 157+ receiving yards in Week 15 of the 2009 season against the Minnesota Vikings?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2027-01-05",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB converted a 2-point conversion in Week 12 of the 2024 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "chuba-hubbard"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 14 of the 2003 season against the Atlanta Falcons?",
-        "playerIds": [
-          "jermaine-wiggins"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB forced a fumble in Week 11 of the 2012 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
-        "id": "q4",
-        "prompt": "Which WR led the Panthers in receiving yards in 2011?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2011
-      }
-    ]
-  },
-  {
-    "date": "2027-01-06",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 300+ passing yards in Week 6 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "steve-beuerlein"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR returned a punt for a TD in the 2005 NFC Championship against the Seattle Seahawks?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2005
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR had 125+ receiving yards in Week 10 of the 1999 season against the Los Angeles Rams?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded an interception in Week 11 of the 2004 season against the Arizona Cardinals?",
-        "playerIds": [
-          "colin-branch",
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2004
-      }
-    ]
-  },
-  {
-    "date": "2027-01-07",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who caught a TD pass in Week 6 of the 2014 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "kelvin-benjamin",
-          "greg-olsen"
+          "kelvin-benjamin"
         ],
         "tier": 1,
         "season": 2014
       },
       {
-        "id": "q2",
-        "prompt": "Who forced a fumble in Week 4 of the 2010 season against the New Orleans Saints?",
-        "playerIds": [
-          "sherrod-martin",
-          "richard-marshall",
-          "james-anderson"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded a sack in Week 17 of the 2021 season against the New Orleans Saints?",
-        "playerIds": [
-          "derrick-brown",
-          "jeremy-chinn"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
         "id": "q4",
-        "prompt": "Who caught a TD pass in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which DT had 2 sacks in Week 9 of the 2007 season against the Tennessee Titans?",
         "playerIds": [
-          "christian-mccaffrey",
-          "devin-funchess"
+          "damione-lewis"
         ],
         "tier": 1,
-        "season": 2018
+        "season": 2007
       }
     ]
   },
   {
-    "date": "2027-01-08",
+    "date": "2026-03-06",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who caught a TD pass in Week 15 of the 2012 season against the Los Angeles Chargers?",
+        "prompt": "Which OG did the Panthers select in Round 3, Pick 79 of the 2005 NFL Draft?",
         "playerIds": [
-          "deangelo-williams",
-          "steve-smith"
+          "evan-mathis"
         ],
-        "tier": 1,
-        "season": 2012
+        "tier": 3,
+        "season": 2005
       },
       {
         "id": "q2",
-        "prompt": "Which CB recorded an interception in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "chris-gamble"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
         "prompt": "Which DL recorded a sack in Week 6 of the 2011 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson"
@@ -13691,307 +636,13 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2011
       },
       {
-        "id": "q4",
-        "prompt": "Which DB forced a fumble in Week 15 of the 2023 season against the Atlanta Falcons?",
-        "playerIds": [
-          "troy-hill"
-        ],
-        "tier": 1,
-        "season": 2023
-      }
-    ]
-  },
-  {
-    "date": "2027-01-09",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 3 of the 2023 season against the Seattle Seahawks?",
-        "playerIds": [
-          "brian-burns",
-          "yetur-gross-matos"
-        ],
-        "tier": 1,
-        "season": 2023
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL had 3 sacks in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
         "id": "q3",
-        "prompt": "Which WR caught a TD pass in Week 2 of the 2022 season against the New York Giants?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2022
-      },
-      {
-        "id": "q4",
-        "prompt": "Who scored a rushing TD in Week 4 of the 2012 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deangelo-williams",
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2027-01-10",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw 4 TD passes in Week 10 of the 2017 season against the Miami Dolphins?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Which S returned an interception for a TD in Week 15 of the 2003 season against the Arizona Cardinals?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB scored a rushing TD in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in the 2003 Divisional Round against the Los Angeles Rams?",
-        "playerIds": [
-          "brad-hoover"
-        ],
-        "tier": 1,
-        "season": 2003
-      }
-    ]
-  },
-  {
-    "date": "2027-01-11",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DB recorded an interception in Week 18 of the 2024 season against the Atlanta Falcons?",
-        "playerIds": [
-          "mike-jackson"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DB recorded a sack in Week 5 of the 2016 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught a TD pass in the 2008 Divisional Round against the Arizona Cardinals?",
+        "prompt": "Which WR had 163+ receiving yards in the 2003 Divisional Round against the Los Angeles Rams?",
         "playerIds": [
           "steve-smith"
         ],
         "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing yards in 2009?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2027-01-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw 3 TD passes in Week 11 of the 2013 season against the New England Patriots?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 4 of the 2019 season against the Houston Texans?",
-        "playerIds": [
-          "shaq-thompson",
-          "mario-addison",
-          "bruce-irvin",
-          "vernon-butler"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 2 sacks in Week 11 of the 2008 season against the Detroit Lions?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB recorded an interception in Week 8 of the 2020 season against the Atlanta Falcons?",
-        "playerIds": [
-          "donte-jackson"
-        ],
-        "tier": 1,
-        "season": 2020
-      }
-    ]
-  },
-  {
-    "date": "2027-01-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL recorded a sack in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 8 of the 2018 season against the Baltimore Ravens?",
-        "playerIds": [
-          "greg-olsen",
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q3",
-        "prompt": "Who forced a fumble in Week 14 of the 2015 season against the Atlanta Falcons?",
-        "playerIds": [
-          "thomas-davis",
-          "kawann-short",
-          "aj-klein"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL did the Panthers select in Round 3, Pick 83 of the 2007 NFL Draft?",
-        "playerIds": [
-          "charles-johnson"
-        ],
-        "tier": 3,
-        "season": 2007
-      }
-    ]
-  },
-  {
-    "date": "2027-01-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 2 of the 2004 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "julius-peppers",
-          "dan-morgan"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q2",
-        "prompt": "Who caught a TD pass in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "colin-thompson",
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 110+ yards in Week 10 of the 2017 season against the Miami Dolphins?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 5 of the 2014 season against the Chicago Bears?",
-        "playerIds": [
-          "wes-horton",
-          "charles-johnson",
-          "kawann-short"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2027-01-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 5 of the 2017 season against the Detroit Lions?",
-        "playerIds": [
-          "kelvin-benjamin"
-        ],
-        "tier": 1,
-        "season": 2017
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 1 of the 2015 season against the Jacksonville Jaguars?",
-        "playerIds": [
-          "luke-kuechly",
-          "charles-johnson",
-          "mario-addison",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "christian-mccaffrey",
-          "curtis-samuel"
-        ],
-        "tier": 1,
-        "season": 2019
+        "season": 2003
       },
       {
         "id": "q4",
@@ -14005,32 +656,327 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-01-16",
+    "date": "2026-03-07",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which WR led the Panthers in receiving yards in 2008?",
+        "prompt": "Which WR led the Panthers in receptions in 2021?",
         "playerIds": [
-          "steve-smith"
+          "dj-moore-00-003"
         ],
         "tier": 2,
-        "season": 2008
+        "season": 2021
       },
       {
         "id": "q2",
-        "prompt": "Which WR caught C.Newton's 4th TD pass in Week 10 of the 2017 season against the Miami Dolphins?",
+        "prompt": "Which RB scored a rushing TD in Week 11 of the 2004 season against the Arizona Cardinals?",
         "playerIds": [
-          "devin-funchess"
+          "nick-goings"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Who scored a rushing TD in Week 11 of the 2003 season against the Washington Commanders?",
+        "playerIds": [
+          "jake-delhomme",
+          "stephen-davis"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 16 of the 2006 season against the Atlanta Falcons?",
+        "playerIds": [
+          "julius-peppers",
+          "chris-draft"
+        ],
+        "tier": 1,
+        "season": 2006
+      }
+    ]
+  },
+  {
+    "date": "2026-03-08",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB recorded an interception in Week 1 of the 2021 season against the New York Jets?",
+        "playerIds": [
+          "shaq-thompson"
+        ],
+        "tier": 1,
+        "season": 2021
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 1 of the 2019 season against the Los Angeles Rams?",
+        "playerIds": [
+          "christian-mccaffrey",
+          "alex-armah"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in Week 15 of the 2016 season against the Washington Commanders?",
+        "playerIds": [
+          "ted-ginn",
+          "mike-tolbert"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 10 of the 2014 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2014
+      }
+    ]
+  },
+  {
+    "date": "2026-03-09",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR scored a TD in overtime in the 2003 Divisional Round against the Los Angeles Rams?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 15 of the 2017 season against the Green Bay Packers?",
+        "playerIds": [
+          "damiere-byrd"
         ],
         "tier": 1,
         "season": 2017
       },
       {
         "id": "q3",
-        "prompt": "Who recorded a sack in Week 10 of the 2003 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which LB did the Panthers select in Round 3, Pick 87 of the 1997 NFL Draft?",
         "playerIds": [
-          "al-wallace",
-          "kris-jenkins",
+          "kinnon-tatum"
+        ],
+        "tier": 3,
+        "season": 1997
+      },
+      {
+        "id": "q4",
+        "prompt": "Who forced a fumble in Week 12 of the 2012 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "sione-fua",
+          "charles-johnson",
+          "sherrod-martin"
+        ],
+        "tier": 1,
+        "season": 2012
+      }
+    ]
+  },
+  {
+    "date": "2026-03-10",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 10 of the 2014 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "kelvin-benjamin"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR had 105+ receiving yards in Week 13 of the 2008 season against the Green Bay Packers?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught a TD pass in Week 9 of the 2007 season against the Tennessee Titans?",
+        "playerIds": [
+          "drew-carter"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 8 of the 1999 season against the Atlanta Falcons?",
+        "playerIds": [
+          "kevin-greene",
+          "ernest-jones",
+          "sean-gilbert"
+        ],
+        "tier": 1,
+        "season": 1999
+      }
+    ]
+  },
+  {
+    "date": "2026-03-11",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL forced a fumble in Week 14 of the 2017 season against the Minnesota Vikings?",
+        "playerIds": [
+          "mario-addison"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q2",
+        "prompt": "Which S did the Panthers select in Round 2, Pick 59 of the 2009 NFL Draft?",
+        "playerIds": [
+          "sherrod-martin"
+        ],
+        "tier": 3,
+        "season": 2009
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DB recorded an interception in Week 3 of the 2020 season against the Los Angeles Chargers?",
+        "playerIds": [
+          "donte-jackson"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught a TD pass in Week 16 of the 2005 season against the Dallas Cowboys?",
+        "playerIds": [
+          "drew-carter",
+          "ricky-proehl"
+        ],
+        "tier": 1,
+        "season": 2005
+      }
+    ]
+  },
+  {
+    "date": "2026-03-12",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DB forced a fumble in Week 8 of the 2011 season against the Minnesota Vikings?",
+        "playerIds": [
+          "captain-munnerlyn"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL forced a fumble in Week 6 of the 2017 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB scored a rushing TD in Week 16 of the 2013 season against the New Orleans Saints?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q4",
+        "prompt": "Which QB scored a rushing TD in Week 1 of the 2021 season against the New York Jets?",
+        "playerIds": [
+          "sam-darnold"
+        ],
+        "tier": 1,
+        "season": 2021
+      }
+    ]
+  },
+  {
+    "date": "2026-03-13",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB did the Panthers select with the 8th overall pick in the 1996 NFL Draft?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 3,
+        "season": 1996
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL recorded a sack in Week 17 of the 2012 season against the New Orleans Saints?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2012
+      },
+      {
+        "id": "q3",
+        "prompt": "Which TE caught a TD pass in Week 11 of the 2008 season against the Detroit Lions?",
+        "playerIds": [
+          "jeff-king"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q4",
+        "prompt": "Who scored a rushing TD in Week 14 of the 2021 season against the Atlanta Falcons?",
+        "playerIds": [
+          "cam-newton-00-002",
+          "chuba-hubbard"
+        ],
+        "tier": 1,
+        "season": 2021
+      }
+    ]
+  },
+  {
+    "date": "2026-03-14",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR had 118+ receiving yards in Week 11 of the 2004 season against the Arizona Cardinals?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 12 of the 2024 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "chuba-hubbard"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DE had 2 sacks in Week 9 of the 2003 season against the Houston Texans?",
+        "playerIds": [
           "mike-rucker"
         ],
         "tier": 1,
@@ -14038,9 +984,306 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which WR caught a TD pass in Week 4 of the 2003 season against the Atlanta Falcons?",
+        "prompt": "Who caught a TD pass in Week 15 of the 2011 season against the Houston Texans?",
         "playerIds": [
-          "ricky-proehl"
+          "steve-smith",
+          "jeremy-shockey"
+        ],
+        "tier": 1,
+        "season": 2011
+      }
+    ]
+  },
+  {
+    "date": "2026-03-15",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL forced a fumble in Week 8 of the 2015 season against the Indianapolis Colts?",
+        "playerIds": [
+          "kony-ealy",
+          "star-lotulelei"
+        ],
+        "tier": 1,
+        "season": 2015
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR had 103+ receiving yards in Week 2 of the 1999 season against the Jacksonville Jaguars?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DL forced a fumble in Week 12 of the 2017 season against the New York Jets?",
+        "playerIds": [
+          "wes-horton"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 8 of the 2017 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2017
+      }
+    ]
+  },
+  {
+    "date": "2026-03-16",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DB led the Panthers in interceptions in 2001?",
+        "playerIds": [
+          "doug-evans"
+        ],
+        "tier": 2,
+        "season": 2001
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 1 of the 2004 season against the Green Bay Packers?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DT did the Panthers select in Round 3, Pick 89 of the 2005 NFL Draft?",
+        "playerIds": [
+          "atiyyah-ellison"
+        ],
+        "tier": 3,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 2 of the 2013 season against the Buffalo Bills?",
+        "playerIds": [
+          "ted-ginn"
+        ],
+        "tier": 1,
+        "season": 2013
+      }
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in Week 10 of the 2002 season against the New Orleans Saints?",
+        "playerIds": [
+          "mike-rucker",
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2002
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB threw 3 TD passes in Week 13 of the 2006 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "jake-delhomme"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB rushed for 132+ yards in Week 3 of the 1999 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q4",
+        "prompt": "Who forced a fumble in Week 12 of the 2022 season against the Denver Broncos?",
+        "playerIds": [
+          "brian-burns",
+          "tj-carrie"
+        ],
+        "tier": 1,
+        "season": 2022
+      }
+    ]
+  },
+  {
+    "date": "2026-03-18",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in the 2014 Divisional Round against the Seattle Seahawks?",
+        "playerIds": [
+          "mario-addison",
+          "thomas-davis"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR had 118+ receiving yards in Week 17 of the 2020 season against the New Orleans Saints?",
+        "playerIds": [
+          "curtis-samuel"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in Week 1 of the 2014 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "greg-olsen",
+          "kelvin-benjamin"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL recorded an interception in Week 8 of the 2016 season against the Arizona Cardinals?",
+        "playerIds": [
+          "kony-ealy"
+        ],
+        "tier": 1,
+        "season": 2016
+      }
+    ]
+  },
+  {
+    "date": "2026-03-19",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB rushed for 101+ yards in Week 5 of the 2021 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "chuba-hubbard"
+        ],
+        "tier": 1,
+        "season": 2021
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 5 of the 2011 season against the New Orleans Saints?",
+        "playerIds": [
+          "captain-munnerlyn",
+          "greg-hardy"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 117+ receiving yards in Week 3 of the 1999 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DE recorded a sack in Week 5 of the 2002 season against the Arizona Cardinals?",
+        "playerIds": [
+          "mike-rucker"
+        ],
+        "tier": 1,
+        "season": 2002
+      }
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in Week 10 of the 2007 season against the Atlanta Falcons?",
+        "playerIds": [
+          "nail-diggs",
+          "mike-rucker"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q2",
+        "prompt": "Which CB recorded an interception in Week 12 of the 2006 season against the Washington Commanders?",
+        "playerIds": [
+          "richard-marshall"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB forced a fumble in Week 13 of the 2004 season against the New Orleans Saints?",
+        "playerIds": [
+          "brandon-short"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q4",
+        "prompt": "Who caught a TD pass in Week 14 of the 2002 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "steve-smith",
+          "muhsin-muhammad",
+          "wesley-walls"
+        ],
+        "tier": 1,
+        "season": 2002
+      }
+    ]
+  },
+  {
+    "date": "2026-03-21",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB forced a fumble in Week 1 of the 2006 season against the Atlanta Falcons?",
+        "playerIds": [
+          "thomas-davis"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 15 of the 2004 season against the Atlanta Falcons?",
+        "playerIds": [
+          "nick-goings"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB forced a fumble in the 2005 Wild Card against the New York Giants?",
+        "playerIds": [
+          "will-witherspoon"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DE forced a fumble in Week 2 of the 2003 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "mike-rucker"
         ],
         "tier": 1,
         "season": 2003
@@ -14048,228 +1291,310 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-01-17",
+    "date": "2026-03-22",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB scored a rushing TD in Week 14 of the 2012 season against the Atlanta Falcons?",
+        "prompt": "Which RB scored a rushing TD in Week 10 of the 2009 season against the Atlanta Falcons?",
         "playerIds": [
-          "cam-newton-00-002"
+          "jonathan-stewart"
         ],
         "tier": 1,
-        "season": 2012
+        "season": 2009
       },
       {
         "id": "q2",
-        "prompt": "Which WR caught K.Allen's 2nd TD pass in Week 9 of the 2019 season against the Tennessee Titans?",
+        "prompt": "Which OL did the Panthers select in Round 3, Pick 92 of the 2014 NFL Draft?",
         "playerIds": [
-          "curtis-samuel"
+          "trai-turner"
         ],
-        "tier": 1,
-        "season": 2019
+        "tier": 3,
+        "season": 2014
       },
       {
         "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2020?",
+        "prompt": "Which RB rushed for 122+ yards in Week 11 of the 2009 season against the Miami Dolphins?",
         "playerIds": [
-          "mike-davis"
+          "deangelo-williams"
         ],
-        "tier": 2,
-        "season": 2020
+        "tier": 1,
+        "season": 2009
       },
       {
         "id": "q4",
-        "prompt": "Which WR had 131+ receiving yards in Week 13 of the 2000 season against the Green Bay Packers?",
+        "prompt": "Which RB scored a TD on 4th down in Week 3 of the 2013 season against the New York Giants?",
         "playerIds": [
-          "muhsin-muhammad"
+          "mike-tolbert"
         ],
         "tier": 1,
-        "season": 2000
+        "season": 2013
       }
     ]
   },
   {
-    "date": "2027-01-18",
+    "date": "2026-03-23",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who scored a rushing TD in Week 8 of the 2018 season against the Baltimore Ravens?",
+        "prompt": "Which CB recorded an interception in Week 14 of the 2009 season against the New England Patriots?",
         "playerIds": [
-          "christian-mccaffrey",
-          "cam-newton-00-002"
+          "chris-gamble"
         ],
         "tier": 1,
-        "season": 2018
+        "season": 2009
       },
       {
         "id": "q2",
-        "prompt": "Who recorded a sack in Week 8 of the 2010 season against the Los Angeles Rams?",
+        "prompt": "Who forced a fumble in Week 14 of the 2000 season against the Los Angeles Rams?",
         "playerIds": [
-          "derek-landri",
+          "mike-minter",
+          "eric-davis"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q3",
+        "prompt": "Who forced a fumble in Week 2 of the 2002 season against the Detroit Lions?",
+        "playerIds": [
+          "mike-rucker",
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2002
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 5 of the 2008 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2008
+      }
+    ]
+  },
+  {
+    "date": "2026-03-24",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded an interception in Week 10 of the 2001 season against the San Francisco 49ers?",
+        "playerIds": [
+          "doug-evans",
+          "brentson-buckner"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q2",
+        "prompt": "Which S forced a fumble in Week 13 of the 2000 season against the Green Bay Packers?",
+        "playerIds": [
+          "mike-minter"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded a sack in Week 1 of the 2009 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "julius-peppers",
+          "louis-leonard"
+        ],
+        "tier": 1,
+        "season": 2009
+      },
+      {
+        "id": "q4",
+        "prompt": "Who caught a TD pass in Week 18 of the 2024 season against the Atlanta Falcons?",
+        "playerIds": [
+          "miles-sanders",
+          "tommy-tremble",
+          "david-moore"
+        ],
+        "tier": 1,
+        "season": 2024
+      }
+    ]
+  },
+  {
+    "date": "2026-03-25",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR did the Panthers select in Round 2, Pick 41 of the 2015 NFL Draft?",
+        "playerIds": [
+          "devin-funchess"
+        ],
+        "tier": 3,
+        "season": 2015
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 14 of the 2016 season against the Los Angeles Chargers?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB had 101+ receiving yards in Week 3 of the 2017 season against the New Orleans Saints?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q4",
+        "prompt": "Who caught a TD pass in Week 5 of the 2008 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "deangelo-williams",
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2008
+      }
+    ]
+  },
+  {
+    "date": "2026-03-26",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who caught a TD pass in the 2017 Wild Card against the New Orleans Saints?",
+        "playerIds": [
+          "greg-olsen",
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB led the Panthers in passing touchdowns in 2004?",
+        "playerIds": [
+          "jake-delhomme"
+        ],
+        "tier": 2,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 181+ receiving yards in Week 4 of the 2011 season against the Chicago Bears?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded an interception in Week 14 of the 2015 season against the Atlanta Falcons?",
+        "playerIds": [
+          "luke-kuechly",
+          "kurt-coleman"
+        ],
+        "tier": 1,
+        "season": 2015
+      }
+    ]
+  },
+  {
+    "date": "2026-03-27",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which TE caught a TD pass in Week 9 of the 2013 season against the Atlanta Falcons?",
+        "playerIds": [
+          "greg-olsen"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR led the Panthers in receptions in 1999?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 2,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in the 2005 Divisional Round against the Chicago Bears?",
+        "playerIds": [
+          "steve-smith",
+          "kris-mangum"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DT recorded a sack in Week 5 of the 2004 season against the Denver Broncos?",
+        "playerIds": [
+          "omari-jordan"
+        ],
+        "tier": 1,
+        "season": 2004
+      }
+    ]
+  },
+  {
+    "date": "2026-03-28",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DB returned an interception for a TD in Week 15 of the 2013 season against the New York Jets?",
+        "playerIds": [
+          "captain-munnerlyn"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL recorded a sack in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "wes-horton",
+          "mario-addison",
+          "kony-ealy"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded a sack in Week 4 of the 2010 season against the New Orleans Saints?",
+        "playerIds": [
+          "charles-johnson",
           "james-anderson"
         ],
         "tier": 1,
         "season": 2010
       },
       {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing yards in 2002?",
+        "id": "q4",
+        "prompt": "Which WR led the Panthers in receptions in 2007?",
         "playerIds": [
-          "lamar-smith"
+          "steve-smith"
         ],
         "tier": 2,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DB forced a fumble in Week 1 of the 2020 season against the Las Vegas Raiders?",
-        "playerIds": [
-          "tre-boston"
-        ],
-        "tier": 1,
-        "season": 2020
+        "season": 2007
       }
     ]
   },
   {
-    "date": "2027-01-19",
+    "date": "2026-03-29",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB scored a rushing TD in Week 3 of the 2018 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2018
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DE had 2 sacks in Week 16 of the 2013 season against the New Orleans Saints?",
-        "playerIds": [
-          "greg-hardy"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which QB scored a rushing TD in Week 14 of the 2019 season against the Atlanta Falcons?",
-        "playerIds": [
-          "kyle-allen"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB led the Panthers in passing touchdowns in 2009?",
-        "playerIds": [
-          "jake-delhomme"
-        ],
-        "tier": 2,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2027-01-20",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in the 2003 NFC Championship against the Philadelphia Eagles?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE had 129+ receiving yards in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "greg-olsen"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which LB led the Panthers in sacks in 2021?",
-        "playerIds": [
-          "haason-reddick"
-        ],
-        "tier": 2,
-        "season": 2021
-      },
-      {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 13 of the 2015 season against the New Orleans Saints?",
-        "playerIds": [
-          "kawann-short",
-          "thomas-davis"
-        ],
-        "tier": 1,
-        "season": 2015
-      }
-    ]
-  },
-  {
-    "date": "2027-01-21",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 13 of the 2013 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "brandon-lafell",
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB forced a fumble in Week 10 of the 2021 season against the Arizona Cardinals?",
-        "playerIds": [
-          "haason-reddick"
-        ],
-        "tier": 1,
-        "season": 2021
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2003?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 2,
-        "season": 2003
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB had 121+ receiving yards in Week 11 of the 2019 season against the Atlanta Falcons?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2027-01-22",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR led the Panthers in receiving yards in 2019?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 2,
-        "season": 2019
-      },
-      {
-        "id": "q2",
         "prompt": "Which RB had 101+ receiving yards in the 2017 Wild Card against the New Orleans Saints?",
         "playerIds": [
           "christian-mccaffrey"
@@ -14278,40 +1603,404 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2017
       },
       {
-        "id": "q3",
-        "prompt": "Which LB recorded a sack in Week 17 of the 2024 season against the Tampa Bay Buccaneers?",
+        "id": "q2",
+        "prompt": "Which TE caught B.Young's 2nd TD pass in Week 18 of the 2024 season against the Atlanta Falcons?",
         "playerIds": [
-          "jadeveon-clowney"
+          "tommy-tremble"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB threw 3 TD passes in Week 12 of the 1999 season against the Atlanta Falcons?",
+        "playerIds": [
+          "steve-beuerlein"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DB did the Panthers select in Round 2, Pick 55 of the 2018 NFL Draft?",
+        "playerIds": [
+          "donte-jackson"
+        ],
+        "tier": 3,
+        "season": 2018
+      }
+    ]
+  },
+  {
+    "date": "2026-03-30",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR had 106+ receiving yards in Week 16 of the 2020 season against the Washington Commanders?",
+        "playerIds": [
+          "curtis-samuel"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DB recorded an interception in Week 2 of the 2024 season against the Los Angeles Chargers?",
+        "playerIds": [
+          "jaycee-horn"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in Week 3 of the 2014 season against the Pittsburgh Steelers?",
+        "playerIds": [
+          "greg-olsen",
+          "kelvin-benjamin"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q4",
+        "prompt": "Which CB recorded an interception in the 2003 Super Bowl against the New England Patriots?",
+        "playerIds": [
+          "reggie-howard"
+        ],
+        "tier": 1,
+        "season": 2003
+      }
+    ]
+  },
+  {
+    "date": "2026-03-31",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB rushed for 121+ yards in Week 17 of the 2007 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q2",
+        "prompt": "Who caught a TD pass in the 2017 Wild Card against the New Orleans Saints?",
+        "playerIds": [
+          "greg-olsen",
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB did the Panthers select with the 25th overall pick in the 2007 NFL Draft?",
+        "playerIds": [
+          "jon-beason"
+        ],
+        "tier": 3,
+        "season": 2007
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR did the Panthers select with the 24th overall pick in the 2018 NFL Draft?",
+        "playerIds": [
+          "dj-moore-00-003"
+        ],
+        "tier": 3,
+        "season": 2018
+      }
+    ]
+  },
+  {
+    "date": "2026-04-01",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL recorded a sack in Week 14 of the 2014 season against the New Orleans Saints?",
+        "playerIds": [
+          "kawann-short",
+          "mario-addison"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 3 of the 2010 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded a sack in Week 16 of the 2024 season against the Arizona Cardinals?",
+        "playerIds": [
+          "ashawn-robinson",
+          "jacoby-windmon",
+          "dj-wonnum"
         ],
         "tier": 1,
         "season": 2024
       },
       {
         "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 5 of the 2009 season against the Washington Commanders?",
+        "prompt": "Who recorded a sack in Week 16 of the 2005 season against the Dallas Cowboys?",
         "playerIds": [
-          "jeff-king"
+          "julius-peppers",
+          "chris-draft",
+          "will-witherspoon"
         ],
         "tier": 1,
-        "season": 2009
+        "season": 2005
       }
     ]
   },
   {
-    "date": "2027-01-23",
+    "date": "2026-04-02",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 8 of the 2013 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which DB forced a fumble in Week 14 of the 2024 season against the Philadelphia Eagles?",
         "playerIds": [
-          "charles-johnson"
+          "chau-smith-wade"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 15 of the 2013 season against the New York Jets?",
+        "playerIds": [
+          "mike-tolbert"
         ],
         "tier": 1,
         "season": 2013
       },
       {
+        "id": "q3",
+        "prompt": "Which RB scored a rushing TD in Week 14 of the 2011 season against the Atlanta Falcons?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q4",
+        "prompt": "Who forced a fumble in Week 15 of the 2014 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "kony-ealy",
+          "mario-addison",
+          "colin-jones",
+          "roman-harper"
+        ],
+        "tier": 1,
+        "season": 2014
+      }
+    ]
+  },
+  {
+    "date": "2026-04-03",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB recorded a sack in Week 9 of the 2000 season against the Atlanta Falcons?",
+        "playerIds": [
+          "hannibal-navies"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
         "id": "q2",
-        "prompt": "Which RB rushed for 158+ yards in Week 8 of the 2009 season against the Arizona Cardinals?",
+        "prompt": "Which S recorded an interception in Week 11 of the 2013 season against the New England Patriots?",
+        "playerIds": [
+          "robert-lester"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught B.Young's 2nd TD pass in Week 8 of the 2024 season against the Denver Broncos?",
+        "playerIds": [
+          "jalen-coker"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL had 2 sacks in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "ryan-delaire"
+        ],
+        "tier": 1,
+        "season": 2015
+      }
+    ]
+  },
+  {
+    "date": "2026-04-04",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 7 of the 2020 season against the New Orleans Saints?",
+        "playerIds": [
+          "dj-moore-00-003"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR led the Panthers in receptions in 2005?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 2,
+        "season": 2005
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DB did the Panthers select in Round 3, Pick 85 of the 2018 NFL Draft?",
+        "playerIds": [
+          "rashaan-gaulden"
+        ],
+        "tier": 3,
+        "season": 2018
+      },
+      {
+        "id": "q4",
+        "prompt": "Which QB threw for 334+ passing yards in Week 4 of the 1999 season against the Washington Commanders?",
+        "playerIds": [
+          "steve-beuerlein"
+        ],
+        "tier": 1,
+        "season": 1999
+      }
+    ]
+  },
+  {
+    "date": "2026-04-05",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in Week 12 of the 2024 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "jadeveon-clowney",
+          "dj-wonnum",
+          "jaycee-horn",
+          "josey-jewell"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DB returned an interception for a TD in Week 12 of the 2010 season against the Cleveland Browns?",
+        "playerIds": [
+          "captain-munnerlyn"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q3",
+        "prompt": "Which CB recorded an interception in Week 6 of the 2004 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "ricky-manning"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 3 of the 2008 season against the Minnesota Vikings?",
+        "playerIds": [
+          "charles-godfrey",
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2008
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in Week 3 of the 1999 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "micheal-barrow",
+          "antonio-edwards",
+          "mike-rucker"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 7 of the 2011 season against the Washington Commanders?",
+        "playerIds": [
+          "antwan-applewhite",
+          "james-anderson",
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB scored a rushing TD in Week 10 of the 2008 season against the Las Vegas Raiders?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR returned a kickoff for a TD in Week 11 of the 2011 season against the Detroit Lions?",
+        "playerIds": [
+          "kealoha-pilares"
+        ],
+        "tier": 1,
+        "season": 2011
+      }
+    ]
+  },
+  {
+    "date": "2026-04-07",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 5 of the 2005 season against the Arizona Cardinals?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Which LB led the Panthers in sacks in 1999?",
+        "playerIds": [
+          "kevin-greene"
+        ],
+        "tier": 2,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB rushed for 152+ yards in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "deangelo-williams"
         ],
@@ -14319,101 +2008,98 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2009
       },
       {
-        "id": "q3",
-        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 9 of the 2015 season against the Green Bay Packers?",
-        "playerIds": [
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
         "id": "q4",
-        "prompt": "Which RB converted a 2-point conversion in Week 8 of the 2019 season against the San Francisco 49ers?",
+        "prompt": "Who recorded a sack in Week 11 of the 2021 season against the Washington Commanders?",
         "playerIds": [
-          "christian-mccaffrey"
+          "marquis-haynes",
+          "haason-reddick",
+          "brian-burns"
         ],
         "tier": 1,
-        "season": 2019
+        "season": 2021
       }
     ]
   },
   {
-    "date": "2027-01-24",
+    "date": "2026-04-08",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which WR caught a TD pass in Week 11 of the 2016 season against the New Orleans Saints?",
+        "prompt": "Which S forced a fumble in Week 1 of the 2007 season against the Los Angeles Rams?",
         "playerIds": [
-          "ted-ginn"
+          "chris-harris",
+          "deke-cooper"
         ],
         "tier": 1,
-        "season": 2016
+        "season": 2007
       },
       {
         "id": "q2",
-        "prompt": "Which QB threw for 316+ passing yards in Week 4 of the 2017 season against the New England Patriots?",
+        "prompt": "Who recorded a sack in Week 11 of the 2010 season against the Baltimore Ravens?",
         "playerIds": [
-          "cam-newton-00-002"
+          "charles-johnson",
+          "everette-brown",
+          "greg-hardy"
         ],
         "tier": 1,
-        "season": 2017
+        "season": 2010
       },
       {
         "id": "q3",
-        "prompt": "Which DB recorded an interception in Week 11 of the 2000 season against the New Orleans Saints?",
+        "prompt": "Which CB forced a fumble in Week 12 of the 2011 season against the Indianapolis Colts?",
         "playerIds": [
-          "eric-davis"
+          "charles-godfrey"
         ],
         "tier": 1,
-        "season": 2000
+        "season": 2011
       },
       {
         "id": "q4",
-        "prompt": "Which DL led the Panthers in sacks in 2004?",
+        "prompt": "Who caught a TD pass in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "julius-peppers"
+          "colin-thompson",
+          "dj-moore-00-003"
         ],
-        "tier": 2,
-        "season": 2004
+        "tier": 1,
+        "season": 2020
       }
     ]
   },
   {
-    "date": "2027-01-25",
+    "date": "2026-04-09",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which TE caught S.Beuerlein's 3rd TD pass in Week 12 of the 1999 season against the Atlanta Falcons?",
+        "prompt": "Which WR had 116+ receiving yards in Week 4 of the 2002 season against the Green Bay Packers?",
         "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE scored a TD on 4th down in Week 1 of the 2008 season against the Los Angeles Chargers?",
-        "playerIds": [
-          "dante-rosario"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB caught a TD pass in Week 17 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "brad-hoover"
+          "steve-smith"
         ],
         "tier": 1,
         "season": 2002
       },
       {
-        "id": "q4",
-        "prompt": "Who recorded a sack in Week 8 of the 2013 season against the Tampa Bay Buccaneers?",
+        "id": "q2",
+        "prompt": "Which DB led the Panthers in interceptions in 1999?",
         "playerIds": [
-          "greg-hardy",
+          "eric-davis"
+        ],
+        "tier": 2,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB threw for 322+ passing yards in Week 6 of the 2016 season against the New Orleans Saints?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 1 of the 2013 season against the Seattle Seahawks?",
+        "playerIds": [
+          "charles-godfrey",
           "charles-johnson"
         ],
         "tier": 1,
@@ -14422,40 +2108,1091 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-01-26",
+    "date": "2026-04-10",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 10 of the 2018 season against the Pittsburgh Steelers?",
+        "prompt": "Which QB led the Panthers in passing touchdowns in 1999?",
         "playerIds": [
-          "christian-mccaffrey"
+          "steve-beuerlein"
         ],
-        "tier": 1,
-        "season": 2018
+        "tier": 2,
+        "season": 1999
       },
       {
         "id": "q2",
-        "prompt": "Which QB scored a rushing TD in Week 3 of the 2016 season against the Minnesota Vikings?",
+        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 6 of the 2014 season against the Cincinnati Bengals?",
         "playerIds": [
-          "cam-newton-00-002"
+          "greg-olsen"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB forced a fumble in Week 10 of the 2016 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "luke-kuechly"
         ],
         "tier": 1,
         "season": 2016
       },
       {
-        "id": "q3",
-        "prompt": "Which DE had 2 sacks in Week 2 of the 2002 season against the Detroit Lions?",
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 17 of the 2012 season against the New Orleans Saints?",
         "playerIds": [
-          "mike-rucker"
+          "mike-tolbert",
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2012
+      }
+    ]
+  },
+  {
+    "date": "2026-04-11",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 14 of the 2014 season against the New Orleans Saints?",
+        "playerIds": [
+          "greg-olsen"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 2 of the 2019 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "brian-burns",
+          "dontari-poe"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB rushed for 109+ yards in Week 15 of the 2009 season against the Minnesota Vikings?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2009
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded an interception in Week 17 of the 2014 season against the Atlanta Falcons?",
+        "playerIds": [
+          "roman-harper",
+          "tre-boston"
+        ],
+        "tier": 1,
+        "season": 2014
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught B.Mayfield's 2nd TD pass in Week 9 of the 2022 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "terrace-marshall"
+        ],
+        "tier": 1,
+        "season": 2022
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 8 of the 2021 season against the Atlanta Falcons?",
+        "playerIds": [
+          "chuba-hubbard"
+        ],
+        "tier": 1,
+        "season": 2021
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in Week 7 of the 2008 season against the New Orleans Saints?",
+        "playerIds": [
+          "steve-smith",
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q4",
+        "prompt": "Which LB forced a fumble in Week 13 of the 2002 season against the Cleveland Browns?",
+        "playerIds": [
+          "mark-fields"
+        ],
+        "tier": 1,
+        "season": 2002
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB recorded a sack in Week 8 of the 2022 season against the Atlanta Falcons?",
+        "playerIds": [
+          "frankie-luvu"
+        ],
+        "tier": 1,
+        "season": 2022
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL forced a fumble in Week 8 of the 2012 season against the Chicago Bears?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2012
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded an interception in Week 1 of the 2010 season against the New York Giants?",
+        "playerIds": [
+          "charles-godfrey",
+          "james-anderson"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DB forced a fumble in Week 15 of the 2018 season against the New Orleans Saints?",
+        "playerIds": [
+          "james-bradberry"
+        ],
+        "tier": 1,
+        "season": 2018
+      }
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB had 2 sacks in Week 13 of the 2014 season against the Minnesota Vikings?",
+        "playerIds": [
+          "luke-kuechly"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 13 of the 2007 season against the San Francisco 49ers?",
+        "playerIds": [
+          "deshaun-foster"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DL recorded a sack in Week 4 of the 2011 season against the Chicago Bears?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q4",
+        "prompt": "Which S did the Panthers select in Round 2, Pick 57 of the 2000 NFL Draft?",
+        "playerIds": [
+          "deon-grant"
+        ],
+        "tier": 3,
+        "season": 2000
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which CB led the Panthers in interceptions in 2005?",
+        "playerIds": [
+          "ken-lucas"
+        ],
+        "tier": 2,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DB recorded an interception in Week 5 of the 2020 season against the Atlanta Falcons?",
+        "playerIds": [
+          "juston-burris"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB threw 3 TD passes in Week 13 of the 2012 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2012
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in the 2003 Super Bowl against the New England Patriots?",
+        "playerIds": [
+          "deshaun-foster"
+        ],
+        "tier": 1,
+        "season": 2003
+      }
+    ]
+  },
+  {
+    "date": "2026-04-16",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught J.Delhomme's 3rd TD pass in the 2003 Super Bowl against the New England Patriots?",
+        "playerIds": [
+          "ricky-proehl"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 17 of the 2007 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB scored a rushing TD in Week 4 of the 2019 season against the Houston Texans?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB rushed for 142+ yards in Week 4 of the 1999 season against the Washington Commanders?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 1,
+        "season": 1999
+      }
+    ]
+  },
+  {
+    "date": "2026-04-17",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB did the Panthers select in Round 3, Pick 73 of the 2002 NFL Draft?",
+        "playerIds": [
+          "will-witherspoon"
+        ],
+        "tier": 3,
+        "season": 2002
+      },
+      {
+        "id": "q2",
+        "prompt": "Which TE caught C.Newton's 2nd TD pass in Week 15 of the 2011 season against the Houston Texans?",
+        "playerIds": [
+          "jeremy-shockey"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 110+ receiving yards in Week 17 of the 2024 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "adam-thielen"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q4",
+        "prompt": "Which S recorded an interception in Week 3 of the 2011 season against the Jacksonville Jaguars?",
+        "playerIds": [
+          "sherrod-martin"
+        ],
+        "tier": 1,
+        "season": 2011
+      }
+    ]
+  },
+  {
+    "date": "2026-04-18",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB threw for 422+ passing yards in Week 1 of the 2011 season against the Arizona Cardinals?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 2 of the 2014 season against the Detroit Lions?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q3",
+        "prompt": "Which EDGE forced a fumble in Week 5 of the 2020 season against the Atlanta Falcons?",
+        "playerIds": [
+          "brian-burns"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB led the Panthers in rushing touchdowns in 1999?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 2,
+        "season": 1999
+      }
+    ]
+  },
+  {
+    "date": "2026-04-19",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB forced a fumble in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "shaq-thompson"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR caught a TD pass in Week 8 of the 2010 season against the Los Angeles Rams?",
+        "playerIds": [
+          "brandon-lafell"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB led the Panthers in rushing touchdowns in 2021?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 2,
+        "season": 2021
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR scored a TD on 4th down in Week 4 of the 2016 season against the Atlanta Falcons?",
+        "playerIds": [
+          "corey-brown"
+        ],
+        "tier": 1,
+        "season": 2016
+      }
+    ]
+  },
+  {
+    "date": "2026-04-20",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB threw 3 TD passes in Week 3 of the 2005 season against the Miami Dolphins?",
+        "playerIds": [
+          "jake-delhomme"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR had 131+ receiving yards in Week 2 of the 2009 season against the Atlanta Falcons?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2009
+      },
+      {
+        "id": "q3",
+        "prompt": "Who scored a rushing TD in Week 7 of the 2011 season against the Washington Commanders?",
+        "playerIds": [
+          "cam-newton-00-002",
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught a TD pass in Week 13 of the 2014 season against the Minnesota Vikings?",
+        "playerIds": [
+          "corey-brown"
+        ],
+        "tier": 1,
+        "season": 2014
+      }
+    ]
+  },
+  {
+    "date": "2026-04-21",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB scored a rushing TD in Week 1 of the 2020 season against the Las Vegas Raiders?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR caught R.Peete's 2nd TD pass in Week 14 of the 2002 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "muhsin-muhammad"
         ],
         "tier": 1,
         "season": 2002
       },
       {
-        "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 14 of the 2021 season against the Atlanta Falcons?",
+        "id": "q3",
+        "prompt": "Who recorded a sack in the 2005 Wild Card against the New York Giants?",
         "playerIds": [
-          "daquan-jones"
+          "thomas-davis",
+          "jordan-carstens",
+          "julius-peppers",
+          "will-witherspoon"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught a TD pass in Week 8 of the 2009 season against the Arizona Cardinals?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2009
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR had 118+ receiving yards in Week 1 of the 2007 season against the Los Angeles Rams?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 14 of the 2012 season against the Atlanta Falcons?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2012
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 103+ receiving yards in the 2003 Wild Card against the Dallas Cowboys?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "brad-hoover"
+        ],
+        "tier": 1,
+        "season": 2006
+      }
+    ]
+  },
+  {
+    "date": "2026-04-23",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 1 of the 2001 season against the Minnesota Vikings?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q2",
+        "prompt": "Which LB had 2 sacks in Week 17 of the 1999 season against the New Orleans Saints?",
+        "playerIds": [
+          "kevin-greene"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB recorded a sack in Week 18 of the 2022 season against the New Orleans Saints?",
+        "playerIds": [
+          "amare-barno"
+        ],
+        "tier": 1,
+        "season": 2022
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught B.Young's 2nd TD pass in Week 17 of the 2024 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "adam-thielen"
+        ],
+        "tier": 1,
+        "season": 2024
+      }
+    ]
+  },
+  {
+    "date": "2026-04-24",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 5 of the 2007 season against the New Orleans Saints?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DB recorded an interception in Week 8 of the 2012 season against the Chicago Bears?",
+        "playerIds": [
+          "josh-norman"
+        ],
+        "tier": 1,
+        "season": 2012
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB had 2 sacks in Week 17 of the 2006 season against the New Orleans Saints?",
+        "playerIds": [
+          "james-anderson"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 11 of the 2013 season against the New England Patriots?",
+        "playerIds": [
+          "greg-hardy",
+          "star-lotulelei"
+        ],
+        "tier": 1,
+        "season": 2013
+      }
+    ]
+  },
+  {
+    "date": "2026-04-25",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which TE caught a TD pass in Week 11 of the 1999 season against the Cleveland Browns?",
+        "playerIds": [
+          "wesley-walls",
+          "brian-kinchen"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 3 of the 2008 season against the Minnesota Vikings?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DL had 2 sacks in Week 6 of the 2015 season against the Seattle Seahawks?",
+        "playerIds": [
+          "kawann-short"
+        ],
+        "tier": 1,
+        "season": 2015
+      },
+      {
+        "id": "q4",
+        "prompt": "Who scored a rushing TD in Week 2 of the 2012 season against the New Orleans Saints?",
+        "playerIds": [
+          "mike-tolbert",
+          "deangelo-williams",
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2012
+      }
+    ]
+  },
+  {
+    "date": "2026-04-26",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB threw 3 TD passes in Week 2 of the 2000 season against the San Francisco 49ers?",
+        "playerIds": [
+          "steve-beuerlein"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 15 of the 2000 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "chris-hetherington"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB scored a TD on 4th down in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught a TD pass in Week 16 of the 2024 season against the Arizona Cardinals?",
+        "playerIds": [
+          "adam-thielen",
+          "david-moore"
+        ],
+        "tier": 1,
+        "season": 2024
+      }
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 15 of the 1999 season against the San Francisco 49ers?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q2",
+        "prompt": "Who scored a rushing TD in Week 18 of the 2024 season against the Atlanta Falcons?",
+        "playerIds": [
+          "bryce-young",
+          "miles-sanders"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB threw 5 TD passes in Week 13 of the 2015 season against the New Orleans Saints?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2015
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL recorded a sack in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "julius-peppers",
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2009
+      }
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DB forced a fumble in Week 3 of the 2000 season against the Atlanta Falcons?",
+        "playerIds": [
+          "eric-davis",
+          "eugene-robinson"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q2",
+        "prompt": "Which CB recorded an interception in Week 14 of the 2010 season against the Atlanta Falcons?",
+        "playerIds": [
+          "richard-marshall"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q3",
+        "prompt": "Who forced a fumble in Week 7 of the 2003 season against the Tennessee Titans?",
+        "playerIds": [
+          "reggie-howard",
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Who forced a fumble in Week 9 of the 2005 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "jordan-carstens",
+          "mike-rucker"
+        ],
+        "tier": 1,
+        "season": 2005
+      }
+    ]
+  },
+  {
+    "date": "2026-04-29",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR had 132+ receiving yards in Week 2 of the 2001 season against the Atlanta Falcons?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q2",
+        "prompt": "Which S led the Panthers in interceptions in 2013?",
+        "playerIds": [
+          "michael-mitchell"
+        ],
+        "tier": 2,
+        "season": 2013
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DB forced a fumble in Week 15 of the 2017 season against the Green Bay Packers?",
+        "playerIds": [
+          "james-bradberry"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 4 of the 2002 season against the Green Bay Packers?",
+        "playerIds": [
+          "kris-jenkins",
+          "brentson-buckner",
+          "dan-morgan"
+        ],
+        "tier": 1,
+        "season": 2002
+      }
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB led the Panthers in passing touchdowns in 2014?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 2,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR had 151+ receiving yards in Week 4 of the 1999 season against the Washington Commanders?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 122+ receiving yards in Week 7 of the 2008 season against the New Orleans Saints?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL recorded a sack in Week 16 of the 1999 season against the Pittsburgh Steelers?",
+        "playerIds": [
+          "jason-peter"
+        ],
+        "tier": 1,
+        "season": 1999
+      }
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB scored a rushing TD in Week 2 of the 2005 season against the New England Patriots?",
+        "playerIds": [
+          "stephen-davis"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 12 of the 1999 season against the Atlanta Falcons?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DL led the Panthers in sacks in 2005?",
+        "playerIds": [
+          "julius-peppers"
+        ],
+        "tier": 2,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 8 of the 2009 season against the Arizona Cardinals?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2009
+      }
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded an interception in Week 10 of the 2024 season against the New York Giants?",
+        "playerIds": [
+          "xavier-woods",
+          "josey-jewell"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q2",
+        "prompt": "Which TE caught a TD pass in Week 12 of the 2005 season against the Buffalo Bills?",
+        "playerIds": [
+          "michael-gaines"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB scored a rushing TD in Week 1 of the 2005 season against the New Orleans Saints?",
+        "playerIds": [
+          "stephen-davis"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 8 of the 2019 season against the San Francisco 49ers?",
+        "playerIds": [
+          "eric-reid",
+          "bruce-irvin"
+        ],
+        "tier": 1,
+        "season": 2019
+      }
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB led the Panthers in rushing yards in 2012?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 2,
+        "season": 2012
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 16 of the 2020 season against the Washington Commanders?",
+        "playerIds": [
+          "marquis-haynes",
+          "yetur-gross-matos",
+          "brian-burns"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB caught a TD pass in Week 12 of the 2003 season against the Dallas Cowboys?",
+        "playerIds": [
+          "brad-hoover"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR led the Panthers in receiving yards in 2014?",
+        "playerIds": [
+          "kelvin-benjamin"
+        ],
+        "tier": 2,
+        "season": 2014
+      }
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB threw for 307+ passing yards in Week 2 of the 2007 season against the Houston Texans?",
+        "playerIds": [
+          "jake-delhomme"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB led the Panthers in rushing yards in 2005?",
+        "playerIds": [
+          "deshaun-foster"
+        ],
+        "tier": 2,
+        "season": 2005
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB scored a rushing TD in Week 16 of the 2017 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DT recorded a sack in Week 3 of the 2007 season against the Atlanta Falcons?",
+        "playerIds": [
+          "kris-jenkins"
+        ],
+        "tier": 1,
+        "season": 2007
+      }
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR converted a 2-point conversion in Week 2 of the 2014 season against the Detroit Lions?",
+        "playerIds": [
+          "jerricho-cotchery"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL recorded a sack in Week 10 of the 2018 season against the Pittsburgh Steelers?",
+        "playerIds": [
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2018
+      },
+      {
+        "id": "q3",
+        "prompt": "Which TE caught a TD pass in Week 14 of the 2019 season against the Atlanta Falcons?",
+        "playerIds": [
+          "ian-thomas"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q4",
+        "prompt": "Who caught a TD pass in Week 11 of the 2021 season against the Washington Commanders?",
+        "playerIds": [
+          "dj-moore-00-003",
+          "christian-mccaffrey"
         ],
         "tier": 1,
         "season": 2021
@@ -14463,52 +3200,197 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-01-27",
+    "date": "2026-05-06",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who forced a fumble in Week 15 of the 2000 season against the Kansas City Chiefs?",
+        "prompt": "Which DL recorded a sack in Week 4 of the 2006 season against the New Orleans Saints?",
         "playerIds": [
-          "sean-gilbert",
-          "al-lucas"
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 11 of the 2013 season against the New England Patriots?",
+        "playerIds": [
+          "ted-ginn"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in Week 8 of the 2005 season against the Minnesota Vikings?",
+        "playerIds": [
+          "steve-smith",
+          "kris-mangum",
+          "keary-colbert"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which CB forced a fumble in Week 16 of the 2005 season against the Dallas Cowboys?",
+        "playerIds": [
+          "jermaine-hardy"
+        ],
+        "tier": 1,
+        "season": 2005
+      }
+    ]
+  },
+  {
+    "date": "2026-05-07",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB caught S.Beuerlein's 2nd TD pass in Week 6 of the 2000 season against the Seattle Seahawks?",
+        "playerIds": [
+          "william-floyd"
         ],
         "tier": 1,
         "season": 2000
       },
       {
         "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 16 of the 2018 season against the Atlanta Falcons?",
+        "prompt": "Which WR caught C.Newton's 2nd TD pass in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "ian-thomas"
+          "devin-funchess"
         ],
         "tier": 1,
-        "season": 2018
+        "season": 2015
       },
       {
         "id": "q3",
-        "prompt": "Which TE caught a TD pass in Week 1 of the 2008 season against the Los Angeles Chargers?",
+        "prompt": "Which WR caught a TD pass in Week 6 of the 2003 season against the Indianapolis Colts?",
         "playerIds": [
-          "dante-rosario"
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q4",
+        "prompt": "Which QB led the Panthers in passing yards in 2011?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 2,
+        "season": 2011
+      }
+    ]
+  },
+  {
+    "date": "2026-05-08",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who caught a TD pass in Week 13 of the 2005 season against the Atlanta Falcons?",
+        "playerIds": [
+          "deshaun-foster",
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL recorded a sack in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "mario-addison",
+          "kyle-love"
+        ],
+        "tier": 1,
+        "season": 2015
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DE forced a fumble in Week 13 of the 2006 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "mike-rucker"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DB returned an interception for a TD in Week 6 of the 2022 season against the Los Angeles Rams?",
+        "playerIds": [
+          "donte-jackson"
+        ],
+        "tier": 1,
+        "season": 2022
+      }
+    ]
+  },
+  {
+    "date": "2026-05-09",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who scored a rushing TD in Week 6 of the 2011 season against the Atlanta Falcons?",
+        "playerIds": [
+          "jonathan-stewart",
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB threw for 317+ passing yards in Week 11 of the 2003 season against the Washington Commanders?",
+        "playerIds": [
+          "jake-delhomme"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 123+ receiving yards in Week 10 of the 2004 season against the San Francisco 49ers?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught a TD pass in Week 15 of the 2022 season against the Pittsburgh Steelers?",
+        "playerIds": [
+          "dj-moore-00-003"
+        ],
+        "tier": 1,
+        "season": 2022
+      }
+    ]
+  },
+  {
+    "date": "2026-05-10",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 11 of the 2002 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2002
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB rushed for 108+ yards in Week 8 of the 2008 season against the Arizona Cardinals?",
+        "playerIds": [
+          "deangelo-williams"
         ],
         "tier": 1,
         "season": 2008
       },
       {
-        "id": "q4",
-        "prompt": "Which RB led the Panthers in rushing yards in 2010?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 2,
-        "season": 2010
-      }
-    ]
-  },
-  {
-    "date": "2027-01-28",
-    "questions": [
-      {
-        "id": "q1",
+        "id": "q3",
         "prompt": "Which LB forced a fumble in Week 17 of the 2008 season against the New Orleans Saints?",
         "playerIds": [
           "landon-johnson"
@@ -14517,149 +3399,174 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2008
       },
       {
-        "id": "q2",
-        "prompt": "Which WR had 104+ receiving yards in the 2013 Divisional Round against the San Francisco 49ers?",
-        "playerIds": [
-          "ted-ginn"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Who scored a rushing TD in Week 12 of the 2008 season against the Atlanta Falcons?",
-        "playerIds": [
-          "deangelo-williams",
-          "jake-delhomme"
-        ],
-        "tier": 1,
-        "season": 2008
-      },
-      {
         "id": "q4",
-        "prompt": "Which LB forced a fumble in Week 1 of the 2021 season against the New York Jets?",
+        "prompt": "Which WR caught T.Bridgewater's 2nd TD pass in Week 7 of the 2020 season against the New Orleans Saints?",
         "playerIds": [
-          "haason-reddick"
+          "dj-moore-00-003"
         ],
         "tier": 1,
-        "season": 2021
+        "season": 2020
       }
     ]
   },
   {
-    "date": "2027-01-29",
+    "date": "2026-05-11",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing touchdowns in 2005?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 2,
-        "season": 2005
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL recorded a sack in Week 6 of the 2014 season against the Cincinnati Bengals?",
+        "prompt": "Which DL forced a fumble in Week 2 of the 2016 season against the San Francisco 49ers?",
         "playerIds": [
           "charles-johnson"
         ],
         "tier": 1,
-        "season": 2014
+        "season": 2016
       },
       {
-        "id": "q3",
-        "prompt": "Which WR led the Panthers in receptions in 2008?",
+        "id": "q2",
+        "prompt": "Who forced a fumble in Week 16 of the 2002 season against the Chicago Bears?",
         "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 2,
-        "season": 2008
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a TD on 4th down in Week 5 of the 2000 season against the Dallas Cowboys?",
-        "playerIds": [
-          "tim-biakabutuka"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2027-01-30",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB threw for 310+ passing yards in Week 10 of the 2002 season against the New Orleans Saints?",
-        "playerIds": [
-          "rodney-peete"
+          "al-wallace",
+          "mark-fields"
         ],
         "tier": 1,
         "season": 2002
       },
       {
-        "id": "q2",
-        "prompt": "Which RB scored a rushing TD in Week 17 of the 2012 season against the New Orleans Saints?",
-        "playerIds": [
-          "mike-tolbert",
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2012
-      },
-      {
         "id": "q3",
-        "prompt": "Who forced a fumble in Week 17 of the 2010 season against the Atlanta Falcons?",
+        "prompt": "Which RB rushed for 118+ yards in Week 8 of the 2022 season against the Atlanta Falcons?",
         "playerIds": [
-          "james-anderson",
-          "eric-norwood"
+          "donta-foreman"
         ],
         "tier": 1,
-        "season": 2010
+        "season": 2022
       },
       {
         "id": "q4",
-        "prompt": "Which TE caught K.Allen's 4th TD pass in Week 3 of the 2019 season against the Arizona Cardinals?",
+        "prompt": "Which WR caught a TD pass in Week 12 of the 2024 season against the Kansas City Chiefs?",
         "playerIds": [
-          "greg-olsen"
+          "david-moore"
         ],
         "tier": 1,
-        "season": 2019
+        "season": 2024
       }
     ]
   },
   {
-    "date": "2027-01-31",
+    "date": "2026-05-12",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB threw for 367+ passing yards in Week 2 of the 2020 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which TE caught a TD pass in Week 5 of the 2021 season against the Philadelphia Eagles?",
         "playerIds": [
-          "teddy-bridgewater"
+          "tommy-tremble"
         ],
         "tier": 1,
-        "season": 2020
+        "season": 2021
       },
       {
         "id": "q2",
-        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 1 of the 2007 season against the Los Angeles Rams?",
+        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 13 of the 2006 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "keyshawn-johnson"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q3",
+        "prompt": "Who scored a rushing TD in Week 6 of the 2014 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "fozzy-whittaker",
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught S.Beuerlein's 3rd TD pass in Week 9 of the 1999 season against the Philadelphia Eagles?",
+        "playerIds": [
+          "patrick-jeffers"
+        ],
+        "tier": 1,
+        "season": 1999
+      }
+    ]
+  },
+  {
+    "date": "2026-05-13",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which CB forced a fumble in Week 15 of the 2008 season against the Denver Broncos?",
+        "playerIds": [
+          "charles-godfrey"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded an interception in Week 17 of the 1999 season against the New Orleans Saints?",
+        "playerIds": [
+          "dean-wells",
+          "mike-minter",
+          "doug-evans",
+          "brent-alexander"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 4 of the 2008 season against the Atlanta Falcons?",
+        "playerIds": [
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in the 2003 Divisional Round against the Los Angeles Rams?",
+        "playerIds": [
+          "julius-peppers",
+          "greg-favors"
+        ],
+        "tier": 1,
+        "season": 2003
+      }
+    ]
+  },
+  {
+    "date": "2026-05-14",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which TE led the Panthers in receptions in 2015?",
+        "playerIds": [
+          "greg-olsen"
+        ],
+        "tier": 2,
+        "season": 2015
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR had 134+ receiving yards in Week 17 of the 2008 season against the New Orleans Saints?",
         "playerIds": [
           "steve-smith"
         ],
         "tier": 1,
-        "season": 2007
+        "season": 2008
       },
       {
         "id": "q3",
-        "prompt": "Who recorded a sack in Week 7 of the 2021 season against the New York Giants?",
+        "prompt": "Which CB recorded an interception in Week 16 of the 2005 season against the Dallas Cowboys?",
         "playerIds": [
-          "brian-burns",
-          "derrick-brown"
+          "ken-lucas"
         ],
         "tier": 1,
-        "season": 2021
+        "season": 2005
       },
       {
         "id": "q4",
@@ -14674,51 +3581,397 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-02-01",
+    "date": "2026-05-15",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did the Panthers select in Round 3, Pick 100 of the 2019 NFL Draft?",
+        "prompt": "Which RB caught a TD pass in Week 2 of the 2012 season against the New Orleans Saints?",
         "playerIds": [
-          "will-grier"
+          "jonathan-stewart"
         ],
-        "tier": 3,
-        "season": 2019
+        "tier": 1,
+        "season": 2012
       },
       {
         "id": "q2",
-        "prompt": "Which WR had 112+ receiving yards in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who scored a rushing TD in Week 5 of the 2011 season against the New Orleans Saints?",
         "playerIds": [
-          "steve-smith"
+          "deangelo-williams",
+          "cam-newton-00-002"
         ],
         "tier": 1,
-        "season": 2006
+        "season": 2011
       },
       {
         "id": "q3",
-        "prompt": "Which QB converted a 2-point conversion in Week 13 of the 2023 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which QB threw for 310+ passing yards in Week 9 of the 2020 season against the Kansas City Chiefs?",
         "playerIds": [
-          "bryce-young"
+          "teddy-bridgewater"
         ],
         "tier": 1,
-        "season": 2023
+        "season": 2020
       },
       {
         "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 5 of the 2016 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which WR caught J.Delhomme's 3rd TD pass in Week 10 of the 2004 season against the San Francisco 49ers?",
         "playerIds": [
-          "mario-addison"
+          "muhsin-muhammad"
         ],
         "tier": 1,
-        "season": 2016
+        "season": 2004
       }
     ]
   },
   {
-    "date": "2027-02-02",
+    "date": "2026-05-16",
     "questions": [
       {
         "id": "q1",
+        "prompt": "Which DB returned a fumble for a TD in Week 7 of the 2001 season against the New York Jets?",
+        "playerIds": [
+          "rashard-anderson"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB caught J.Delhomme's 2nd TD pass in Week 9 of the 2004 season against the Las Vegas Raiders?",
+        "playerIds": [
+          "brad-hoover"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DB recorded an interception in Week 2 of the 2001 season against the Atlanta Falcons?",
+        "playerIds": [
+          "doug-evans"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR led the Panthers in receptions in 2024?",
+        "playerIds": [
+          "xavier-legette"
+        ],
+        "tier": 2,
+        "season": 2024
+      }
+    ]
+  },
+  {
+    "date": "2026-05-17",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB threw 3 TD passes in Week 14 of the 1999 season against the Green Bay Packers?",
+        "playerIds": [
+          "steve-beuerlein"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DT did the Panthers select in Round 3, Pick 97 of the 2011 NFL Draft?",
+        "playerIds": [
+          "sione-fua"
+        ],
+        "tier": 3,
+        "season": 2011
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR led the Panthers in receiving yards in 2006?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 2,
+        "season": 2006
+      },
+      {
+        "id": "q4",
+        "prompt": "Which LB recorded an interception in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "thomas-davis"
+        ],
+        "tier": 1,
+        "season": 2009
+      }
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which TE caught a TD pass in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "jeff-king"
+        ],
+        "tier": 1,
+        "season": 2009
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 12 of the 2001 season against the New Orleans Saints?",
+        "playerIds": [
+          "chris-slade",
+          "deon-grant"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 100+ receiving yards in Week 8 of the 2011 season against the Minnesota Vikings?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DB forced a fumble in Week 6 of the 2013 season against the Minnesota Vikings?",
+        "playerIds": [
+          "captain-munnerlyn"
+        ],
+        "tier": 1,
+        "season": 2013
+      }
+    ]
+  },
+  {
+    "date": "2026-05-19",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in Week 1 of the 2011 season against the Arizona Cardinals?",
+        "playerIds": [
+          "charles-johnson",
+          "greg-hardy"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q2",
+        "prompt": "Which WR caught a TD pass in Week 14 of the 2016 season against the Los Angeles Chargers?",
+        "playerIds": [
+          "devin-funchess"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q3",
+        "prompt": "Who caught a TD pass in Week 5 of the 2001 season against the New Orleans Saints?",
+        "playerIds": [
+          "donald-hayes",
+          "wesley-walls"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q4",
+        "prompt": "Which TE scored a TD on 4th down in Week 9 of the 2022 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "tommy-tremble"
+        ],
+        "tier": 1,
+        "season": 2022
+      }
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL recorded a sack in Week 12 of the 2010 season against the Cleveland Browns?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 5 of the 2019 season against the Jacksonville Jaguars?",
+        "playerIds": [
+          "mario-addison",
+          "brian-burns"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB led the Panthers in passing touchdowns in 2020?",
+        "playerIds": [
+          "teddy-bridgewater"
+        ],
+        "tier": 2,
+        "season": 2020
+      },
+      {
+        "id": "q4",
+        "prompt": "Which LB forced a fumble in Week 3 of the 2015 season against the New Orleans Saints?",
+        "playerIds": [
+          "thomas-davis"
+        ],
+        "tier": 1,
+        "season": 2015
+      }
+    ]
+  },
+  {
+    "date": "2026-05-21",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught J.Delhomme's 3rd TD pass in Week 1 of the 2007 season against the Los Angeles Rams?",
+        "playerIds": [
+          "drew-carter"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q2",
+        "prompt": "Which TE caught J.Delhomme's 2nd TD pass in Week 4 of the 2005 season against the Green Bay Packers?",
+        "playerIds": [
+          "michael-gaines"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DB returned an interception for a TD in Week 4 of the 2016 season against the Atlanta Falcons?",
+        "playerIds": [
+          "kurt-coleman"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q4",
+        "prompt": "Which TE caught a TD pass in Week 10 of the 2024 season against the New York Giants?",
+        "playerIds": [
+          "jatavion-sanders"
+        ],
+        "tier": 1,
+        "season": 2024
+      }
+    ]
+  },
+  {
+    "date": "2026-05-22",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL led the Panthers in sacks in 2011?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 2,
+        "season": 2011
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded an interception in Week 8 of the 2017 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "mike-adams",
+          "luke-kuechly"
+        ],
+        "tier": 1,
+        "season": 2017
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB led the Panthers in receptions in 2018?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 2,
+        "season": 2018
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL had 2 sacks in Week 14 of the 2015 season against the Atlanta Falcons?",
+        "playerIds": [
+          "kawann-short"
+        ],
+        "tier": 1,
+        "season": 2015
+      }
+    ]
+  },
+  {
+    "date": "2026-05-23",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL forced a fumble in Week 17 of the 2004 season against the New Orleans Saints?",
+        "playerIds": [
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q2",
+        "prompt": "Who caught a TD pass in Week 10 of the 2001 season against the San Francisco 49ers?",
+        "playerIds": [
+          "richard-huntley",
+          "wesley-walls"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded a sack in Week 17 of the 2021 season against the New Orleans Saints?",
+        "playerIds": [
+          "derrick-brown",
+          "jeremy-chinn"
+        ],
+        "tier": 1,
+        "season": 2021
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL recorded a sack in Week 10 of the 2012 season against the Denver Broncos?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2012
+      }
+    ]
+  },
+  {
+    "date": "2026-05-24",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who caught a TD pass in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "christian-mccaffrey",
+          "curtis-samuel"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q2",
         "prompt": "Who recorded a sack in Week 8 of the 2015 season against the Indianapolis Colts?",
         "playerIds": [
           "kony-ealy",
@@ -14728,209 +3981,438 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2015
       },
       {
-        "id": "q2",
-        "prompt": "Which S forced a fumble in Week 2 of the 2013 season against the Buffalo Bills?",
-        "playerIds": [
-          "quintin-mikell"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
         "id": "q3",
-        "prompt": "Who recorded a sack in Week 15 of the 2012 season against the Los Angeles Chargers?",
+        "prompt": "Who recorded a sack in Week 8 of the 2002 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "charles-johnson",
-          "greg-hardy",
-          "mario-addison"
+          "mark-fields",
+          "kris-jenkins",
+          "julius-peppers",
+          "brentson-buckner"
         ],
         "tier": 1,
-        "season": 2012
+        "season": 2002
       },
       {
         "id": "q4",
-        "prompt": "Which WR returned a punt for a TD in Week 5 of the 2001 season against the New Orleans Saints?",
+        "prompt": "Which DB recorded an interception in Week 2 of the 2023 season against the New Orleans Saints?",
         "playerIds": [
-          "steve-smith"
+          "vonn-bell"
         ],
         "tier": 1,
-        "season": 2001
+        "season": 2023
       }
     ]
   },
   {
-    "date": "2027-02-03",
+    "date": "2026-05-25",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who recorded a sack in Week 6 of the 2006 season against the Baltimore Ravens?",
+        "prompt": "Who caught a TD pass in Week 14 of the 2014 season against the New Orleans Saints?",
         "playerIds": [
-          "chris-draft",
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR had 144+ receiving yards in Week 14 of the 2006 season against the New York Giants?",
-        "playerIds": [
-          "drew-carter"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q3",
-        "prompt": "Which CB recorded an interception in Week 13 of the 2001 season against the Buffalo Bills?",
-        "playerIds": [
-          "reggie-howard"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 4 of the 2005 season against the Green Bay Packers?",
-        "playerIds": [
-          "stephen-davis"
-        ],
-        "tier": 1,
-        "season": 2005
-      }
-    ]
-  },
-  {
-    "date": "2027-02-04",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Who recorded a sack in Week 15 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "micheal-barrow",
-          "jason-peter"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded a sack in Week 7 of the 2014 season against the Green Bay Packers?",
-        "playerIds": [
-          "charles-johnson",
-          "thomas-davis"
+          "kelvin-benjamin",
+          "greg-olsen",
+          "fozzy-whittaker"
         ],
         "tier": 1,
         "season": 2014
       },
       {
-        "id": "q3",
-        "prompt": "Which RB scored a TD on 4th down in Week 5 of the 2022 season against the San Francisco 49ers?",
+        "id": "q2",
+        "prompt": "Which CB recorded an interception in Week 7 of the 2008 season against the New Orleans Saints?",
         "playerIds": [
-          "christian-mccaffrey"
+          "ken-lucas"
         ],
         "tier": 1,
-        "season": 2022
+        "season": 2008
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded a sack in Week 12 of the 2004 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "julius-peppers",
+          "mike-minter"
+        ],
+        "tier": 1,
+        "season": 2004
       },
       {
         "id": "q4",
-        "prompt": "Which WR scored a rushing TD in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which LB recorded a sack in Week 14 of the 2022 season against the Seattle Seahawks?",
         "playerIds": [
-          "keyshawn-johnson"
+          "frankie-luvu",
+          "marquis-haynes"
         ],
         "tier": 1,
-        "season": 2006
+        "season": 2022
       }
     ]
   },
   {
-    "date": "2027-02-05",
+    "date": "2026-05-26",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which DB returned a fumble for a TD in Week 12 of the 2020 season against the Minnesota Vikings?",
         "playerIds": [
-          "ryan-delaire"
+          "jeremy-chinn"
         ],
         "tier": 1,
-        "season": 2015
+        "season": 2020
       },
       {
         "id": "q2",
-        "prompt": "Which DB forced a fumble in Week 15 of the 2018 season against the New Orleans Saints?",
+        "prompt": "Which DL returned an interception for a TD in Week 8 of the 2009 season against the Arizona Cardinals?",
         "playerIds": [
-          "james-bradberry"
+          "julius-peppers"
         ],
         "tier": 1,
-        "season": 2018
+        "season": 2009
       },
       {
         "id": "q3",
-        "prompt": "Which RB caught a TD pass in Week 12 of the 2003 season against the Dallas Cowboys?",
+        "prompt": "Which DB did the Panthers select with the 22th overall pick in the 1995 NFL Draft?",
         "playerIds": [
-          "brad-hoover"
+          "tyrone-poole"
+        ],
+        "tier": 3,
+        "season": 1995
+      },
+      {
+        "id": "q4",
+        "prompt": "Which EDGE had 2 sacks in Week 16 of the 2022 season against the Detroit Lions?",
+        "playerIds": [
+          "brian-burns"
+        ],
+        "tier": 1,
+        "season": 2022
+      }
+    ]
+  },
+  {
+    "date": "2026-05-27",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR returned a kickoff for a TD in Week 1 of the 2001 season against the Minnesota Vikings?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2001
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL had 2 sacks in Week 10 of the 2000 season against the Los Angeles Rams?",
+        "playerIds": [
+          "reggie-white"
+        ],
+        "tier": 1,
+        "season": 2000
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 189+ receiving yards in Week 11 of the 2003 season against the Washington Commanders?",
+        "playerIds": [
+          "muhsin-muhammad"
         ],
         "tier": 1,
         "season": 2003
       },
       {
         "id": "q4",
-        "prompt": "Which WR caught S.Beuerlein's 3rd TD pass in Week 15 of the 1999 season against the San Francisco 49ers?",
+        "prompt": "Which WR caught D.Anderson's 2nd TD pass in Week 4 of the 2016 season against the Atlanta Falcons?",
         "playerIds": [
-          "patrick-jeffers"
+          "corey-brown"
         ],
         "tier": 1,
-        "season": 1999
+        "season": 2016
       }
     ]
   },
   {
-    "date": "2027-02-06",
+    "date": "2026-05-28",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which TE caught a TD pass in Week 2 of the 2009 season against the Atlanta Falcons?",
+        "prompt": "Which CB recorded an interception in Week 17 of the 2005 season against the Atlanta Falcons?",
         "playerIds": [
-          "dante-rosario"
+          "chris-gamble"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DB forced a fumble in Week 12 of the 2024 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "jordan-fuller"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q3",
+        "prompt": "Which DB recorded an interception in Week 2 of the 2018 season against the Atlanta Falcons?",
+        "playerIds": [
+          "donte-jackson"
+        ],
+        "tier": 1,
+        "season": 2018
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL recorded a sack in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "efe-obada",
+          "kawann-short",
+          "dontari-poe"
+        ],
+        "tier": 1,
+        "season": 2018
+      }
+    ]
+  },
+  {
+    "date": "2026-05-29",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB scored a rushing TD in Week 9 of the 2019 season against the Tennessee Titans?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2019
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL forced a fumble in Week 8 of the 2003 season against the New Orleans Saints?",
+        "playerIds": [
+          "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q3",
+        "prompt": "Who scored a rushing TD in Week 3 of the 2021 season against the Houston Texans?",
+        "playerIds": [
+          "sam-darnold",
+          "tommy-tremble"
+        ],
+        "tier": 1,
+        "season": 2021
+      },
+      {
+        "id": "q4",
+        "prompt": "Which TE caught J.Delhomme's 3rd TD pass in Week 2 of the 2004 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "mike-seidman"
+        ],
+        "tier": 1,
+        "season": 2004
+      }
+    ]
+  },
+  {
+    "date": "2026-05-30",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which LB had 2 sacks in Week 2 of the 2023 season against the New Orleans Saints?",
+        "playerIds": [
+          "frankie-luvu"
+        ],
+        "tier": 1,
+        "season": 2023
+      },
+      {
+        "id": "q2",
+        "prompt": "Which S recorded an interception in Week 12 of the 2003 season against the Dallas Cowboys?",
+        "playerIds": [
+          "deon-grant"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q3",
+        "prompt": "Who scored a rushing TD in Week 17 of the 2018 season against the New Orleans Saints?",
+        "playerIds": [
+          "kyle-allen",
+          "cameron-artis-payne"
+        ],
+        "tier": 1,
+        "season": 2018
+      },
+      {
+        "id": "q4",
+        "prompt": "Which CB recorded an interception in Week 9 of the 2010 season against the New Orleans Saints?",
+        "playerIds": [
+          "richard-marshall"
+        ],
+        "tier": 1,
+        "season": 2010
+      }
+    ]
+  },
+  {
+    "date": "2026-05-31",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded an interception in Week 15 of the 2005 season against the New Orleans Saints?",
+        "playerIds": [
+          "mike-minter",
+          "al-wallace",
+          "chris-gamble",
+          "ken-lucas"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q2",
+        "prompt": "Who caught a TD pass in Week 1 of the 2004 season against the Green Bay Packers?",
+        "playerIds": [
+          "brad-hoover",
+          "muhsin-muhammad"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Who recorded a sack in Week 16 of the 2013 season against the New Orleans Saints?",
+        "playerIds": [
+          "captain-munnerlyn",
+          "greg-hardy",
+          "quintin-mikell"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR scored a TD on 4th down in Week 13 of the 2014 season against the Minnesota Vikings?",
+        "playerIds": [
+          "corey-brown"
+        ],
+        "tier": 1,
+        "season": 2014
+      }
+    ]
+  },
+  {
+    "date": "2026-06-01",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB led the Panthers in rushing yards in 2000?",
+        "playerIds": [
+          "tim-biakabutuka"
+        ],
+        "tier": 2,
+        "season": 2000
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 8 of the 2010 season against the Los Angeles Rams?",
+        "playerIds": [
+          "derek-landri",
+          "james-anderson"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB rushed for 120+ yards in Week 13 of the 2009 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "jonathan-stewart"
         ],
         "tier": 1,
         "season": 2009
       },
       {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 5 of the 2002 season against the Arizona Cardinals?",
-        "playerIds": [
-          "julius-peppers"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR did the Panthers select in Round 3, Pick 74 of the 2001 NFL Draft?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 3,
-        "season": 2001
-      },
-      {
         "id": "q4",
-        "prompt": "Which WR had 118+ receiving yards in Week 17 of the 2020 season against the New Orleans Saints?",
+        "prompt": "Which RB scored a rushing TD in Week 13 of the 2000 season against the Green Bay Packers?",
         "playerIds": [
-          "curtis-samuel"
+          "brad-hoover"
         ],
         "tier": 1,
-        "season": 2020
+        "season": 2000
       }
     ]
   },
   {
-    "date": "2027-02-07",
+    "date": "2026-06-02",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB recorded a sack in Week 6 of the 1999 season against the San Francisco 49ers?",
+        "prompt": "Who recorded a sack in Week 17 of the 2020 season against the New Orleans Saints?",
+        "playerIds": [
+          "efe-obada",
+          "tre-boston"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DE recorded a sack in Week 9 of the 2003 season against the Houston Texans?",
+        "playerIds": [
+          "mike-rucker"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB led the Panthers in receptions in 2019?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 2,
+        "season": 2019
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DB recorded an interception in Week 7 of the 2013 season against the Los Angeles Rams?",
+        "playerIds": [
+          "captain-munnerlyn"
+        ],
+        "tier": 1,
+        "season": 2013
+      }
+    ]
+  },
+  {
+    "date": "2026-06-03",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which RB caught J.Delhomme's 2nd TD pass in Week 7 of the 2006 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "nick-goings"
+        ],
+        "tier": 1,
+        "season": 2006
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded an interception in Week 13 of the 2005 season against the Atlanta Falcons?",
+        "playerIds": [
+          "ricky-manning",
+          "marlon-mccree"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q3",
+        "prompt": "Which LB had 2 sacks in Week 12 of the 1999 season against the Atlanta Falcons?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -14938,28 +4420,180 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 1999
       },
       {
-        "id": "q2",
-        "prompt": "Which TE caught J.Delhomme's 2nd TD pass in Week 3 of the 2007 season against the Atlanta Falcons?",
+        "id": "q4",
+        "prompt": "Which RB scored a rushing TD in Week 17 of the 2011 season against the New Orleans Saints?",
         "playerIds": [
-          "jeff-king"
+          "jonathan-stewart"
         ],
         "tier": 1,
-        "season": 2007
+        "season": 2011
+      }
+    ]
+  },
+  {
+    "date": "2026-06-04",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DB led the Panthers in interceptions in 2024?",
+        "playerIds": [
+          "xavier-woods"
+        ],
+        "tier": 2,
+        "season": 2024
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB scored a rushing TD in Week 1 of the 2016 season against the Denver Broncos?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2016
       },
       {
         "id": "q3",
-        "prompt": "Which WR caught K.Allen's 3rd TD pass in Week 12 of the 2019 season against the New Orleans Saints?",
+        "prompt": "Which S forced a fumble in Week 14 of the 2006 season against the New York Giants?",
         "playerIds": [
-          "dj-moore-00-003"
+          "shaun-williams"
         ],
         "tier": 1,
-        "season": 2019
+        "season": 2006
       },
       {
         "id": "q4",
-        "prompt": "Which DL forced a fumble in Week 1 of the 2009 season against the Philadelphia Eagles?",
+        "prompt": "Who recorded a sack in Week 5 of the 2023 season against the Detroit Lions?",
+        "playerIds": [
+          "brian-burns",
+          "cj-henderson"
+        ],
+        "tier": 1,
+        "season": 2023
+      }
+    ]
+  },
+  {
+    "date": "2026-06-05",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 14 of the 2013 season against the New Orleans Saints?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q2",
+        "prompt": "Which CB recorded an interception in Week 4 of the 2005 season against the Green Bay Packers?",
+        "playerIds": [
+          "ken-lucas"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q3",
+        "prompt": "Which TE caught a TD pass in Week 1 of the 2023 season against the Atlanta Falcons?",
+        "playerIds": [
+          "hayden-hurst"
+        ],
+        "tier": 1,
+        "season": 2023
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL had 3 sacks in Week 10 of the 2008 season against the Las Vegas Raiders?",
         "playerIds": [
           "julius-peppers"
+        ],
+        "tier": 1,
+        "season": 2008
+      }
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR led the Panthers in receiving yards in 2003?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 2,
+        "season": 2003
+      },
+      {
+        "id": "q2",
+        "prompt": "Who forced a fumble in Week 14 of the 1999 season against the Green Bay Packers?",
+        "playerIds": [
+          "dean-wells",
+          "sean-gilbert"
+        ],
+        "tier": 1,
+        "season": 1999
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught a TD pass in Week 13 of the 2024 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "adam-thielen"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 4 of the 2003 season against the Atlanta Falcons?",
+        "playerIds": [
+          "will-witherspoon",
+          "mike-rucker",
+          "al-wallace",
+          "kris-jenkins",
+          "terry-cousin"
+        ],
+        "tier": 1,
+        "season": 2003
+      }
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DL recorded a sack in Week 3 of the 2010 season against the Cincinnati Bengals?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2010
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB threw for 315+ passing yards in Week 3 of the 2015 season against the New Orleans Saints?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2015
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught a TD pass in the 2005 Wild Card against the New York Giants?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2005
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB rushed for 149+ yards in Week 9 of the 2009 season against the New Orleans Saints?",
+        "playerIds": [
+          "deangelo-williams"
         ],
         "tier": 1,
         "season": 2009
@@ -14967,60 +4601,152 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-02-08",
+    "date": "2026-06-08",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which CB returned an interception for a TD in Week 17 of the 2006 season against the New Orleans Saints?",
+        "prompt": "Which OG forced a fumble in Week 14 of the 2011 season against the Atlanta Falcons?",
         "playerIds": [
-          "chris-gamble"
+          "jason-shirley"
         ],
         "tier": 1,
-        "season": 2006
+        "season": 2011
       },
       {
         "id": "q2",
-        "prompt": "Which OL did the Panthers select in Round 2, Pick 64 of the 2017 NFL Draft?",
+        "prompt": "Which LB returned an interception for a TD in the 2015 NFC Championship against the Arizona Cardinals?",
         "playerIds": [
-          "taylor-moton"
+          "luke-kuechly"
         ],
-        "tier": 3,
-        "season": 2017
+        "tier": 1,
+        "season": 2015
       },
       {
         "id": "q3",
-        "prompt": "Which TE caught J.Delhomme's 2nd TD pass in Week 8 of the 2005 season against the Minnesota Vikings?",
+        "prompt": "Which RB rushed for 100+ yards in Week 2 of the 2016 season against the San Francisco 49ers?",
         "playerIds": [
-          "kris-mangum"
+          "fozzy-whittaker"
         ],
         "tier": 1,
-        "season": 2005
+        "season": 2016
       },
       {
         "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 6 of the 2021 season against the Minnesota Vikings?",
+        "prompt": "Which WR caught J.Delhomme's 2nd TD pass in Week 17 of the 2005 season against the Atlanta Falcons?",
         "playerIds": [
-          "chuba-hubbard"
+          "steve-smith"
         ],
         "tier": 1,
-        "season": 2021
+        "season": 2005
       }
     ]
   },
   {
-    "date": "2027-02-09",
+    "date": "2026-06-09",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which RB led the Panthers in rushing yards in 2022?",
+        "prompt": "Which QB scored a rushing TD in Week 9 of the 2015 season against the Green Bay Packers?",
         "playerIds": [
-          "donta-foreman"
+          "cam-newton-00-002"
         ],
-        "tier": 2,
-        "season": 2022
+        "tier": 1,
+        "season": 2015
       },
       {
         "id": "q2",
+        "prompt": "Which RB scored a rushing TD in Week 16 of the 2008 season against the New York Giants?",
+        "playerIds": [
+          "deangelo-williams"
+        ],
+        "tier": 1,
+        "season": 2008
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR caught a TD pass in Week 6 of the 2007 season against the Arizona Cardinals?",
+        "playerIds": [
+          "steve-smith"
+        ],
+        "tier": 1,
+        "season": 2007
+      },
+      {
+        "id": "q4",
+        "prompt": "Who recorded a sack in Week 9 of the 2012 season against the Washington Commanders?",
+        "playerIds": [
+          "charles-johnson",
+          "greg-hardy"
+        ],
+        "tier": 1,
+        "season": 2012
+      }
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which DT recorded an interception in Week 11 of the 2003 season against the Washington Commanders?",
+        "playerIds": [
+          "shane-burton"
+        ],
+        "tier": 1,
+        "season": 2003
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB led the Panthers in rushing yards in 2021?",
+        "playerIds": [
+          "chuba-hubbard"
+        ],
+        "tier": 2,
+        "season": 2021
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB had 100+ receiving yards in Week 2 of the 2011 season against the Green Bay Packers?",
+        "playerIds": [
+          "jonathan-stewart"
+        ],
+        "tier": 1,
+        "season": 2011
+      },
+      {
+        "id": "q4",
+        "prompt": "Which QB threw for 314+ passing yards in Week 8 of the 2012 season against the Chicago Bears?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2012
+      }
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB rushed for 116+ yards in Week 14 of the 2012 season against the Atlanta Falcons?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 1,
+        "season": 2012
+      },
+      {
+        "id": "q2",
+        "prompt": "Which RB rushed for 127+ yards in Week 16 of the 2004 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "nick-goings"
+        ],
+        "tier": 1,
+        "season": 2004
+      },
+      {
+        "id": "q3",
         "prompt": "Which WR caught C.Newton's 3rd TD pass in Week 15 of the 2015 season against the New York Giants?",
         "playerIds": [
           "devin-funchess"
@@ -15029,28 +4755,18 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2015
       },
       {
-        "id": "q3",
-        "prompt": "Which CB recorded an interception in Week 4 of the 2011 season against the Chicago Bears?",
-        "playerIds": [
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2011
-      },
-      {
         "id": "q4",
-        "prompt": "Who forced a fumble in Week 2 of the 2008 season against the Chicago Bears?",
+        "prompt": "Which RB scored a rushing TD in Week 13 of the 2009 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "thomas-davis",
-          "chris-harris"
+          "jonathan-stewart"
         ],
         "tier": 1,
-        "season": 2008
+        "season": 2009
       }
     ]
   },
   {
-    "date": "2027-02-10",
+    "date": "2026-06-12",
     "questions": [
       {
         "id": "q1",
@@ -15063,31 +4779,112 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which S recorded an interception in Week 5 of the 2014 season against the Chicago Bears?",
+        "prompt": "Which WR led the Panthers in receiving yards in 2004?",
         "playerIds": [
-          "roman-harper",
-          "thomas-decoud"
+          "muhsin-muhammad"
+        ],
+        "tier": 2,
+        "season": 2004
+      },
+      {
+        "id": "q3",
+        "prompt": "Which QB led the Panthers in passing touchdowns in 2015?",
+        "playerIds": [
+          "cam-newton-00-002"
+        ],
+        "tier": 2,
+        "season": 2015
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 8 of the 2018 season against the Baltimore Ravens?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2018
+      }
+    ]
+  },
+  {
+    "date": "2026-06-13",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which QB led the Panthers in passing touchdowns in 2024?",
+        "playerIds": [
+          "bryce-young"
+        ],
+        "tier": 2,
+        "season": 2024
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB scored a rushing TD in Week 17 of the 2014 season against the Atlanta Falcons?",
+        "playerIds": [
+          "cam-newton-00-002"
         ],
         "tier": 1,
         "season": 2014
       },
       {
         "id": "q3",
-        "prompt": "Who recorded a sack in Week 1 of the 2018 season against the Dallas Cowboys?",
+        "prompt": "Which DB recorded a sack in Week 14 of the 2020 season against the Denver Broncos?",
         "playerIds": [
-          "shaq-thompson",
-          "kawann-short",
-          "wes-horton",
-          "mario-addison"
+          "jeremy-chinn"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DL forced a fumble in Week 1 of the 2013 season against the Seattle Seahawks?",
+        "playerIds": [
+          "charles-johnson"
+        ],
+        "tier": 1,
+        "season": 2013
+      }
+    ]
+  },
+  {
+    "date": "2026-06-14",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Who recorded a sack in Week 9 of the 2020 season against the Kansas City Chiefs?",
+        "playerIds": [
+          "sam-franklin-jr",
+          "brian-burns"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q2",
+        "prompt": "Which DL recorded a sack in Week 16 of the 2018 season against the Atlanta Falcons?",
+        "playerIds": [
+          "kyle-love"
         ],
         "tier": 1,
         "season": 2018
       },
       {
-        "id": "q4",
-        "prompt": "Which TE caught a TD pass in Week 3 of the 2009 season against the Dallas Cowboys?",
+        "id": "q3",
+        "prompt": "Who recorded an interception in Week 14 of the 2016 season against the Los Angeles Chargers?",
         "playerIds": [
-          "dante-rosario"
+          "daryl-worley",
+          "shaq-thompson",
+          "kurt-coleman"
+        ],
+        "tier": 1,
+        "season": 2016
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB scored a TD on 4th down in Week 7 of the 2009 season against the Buffalo Bills?",
+        "playerIds": [
+          "deangelo-williams"
         ],
         "tier": 1,
         "season": 2009
@@ -15095,19 +4892,92 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-02-11",
+    "date": "2026-06-15",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB forced a fumble in the 2005 Wild Card against the New York Giants?",
+        "prompt": "Which WR led the Panthers in receiving yards in 2017?",
         "playerIds": [
-          "will-witherspoon"
+          "devin-funchess"
+        ],
+        "tier": 2,
+        "season": 2017
+      },
+      {
+        "id": "q2",
+        "prompt": "Which QB scored a rushing TD in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "teddy-bridgewater"
+        ],
+        "tier": 1,
+        "season": 2020
+      },
+      {
+        "id": "q3",
+        "prompt": "Which WR had 109+ receiving yards in Week 11 of the 2014 season against the Atlanta Falcons?",
+        "playerIds": [
+          "kelvin-benjamin"
+        ],
+        "tier": 1,
+        "season": 2014
+      },
+      {
+        "id": "q4",
+        "prompt": "Which DB forced a fumble in Week 1 of the 2001 season against the Minnesota Vikings?",
+        "playerIds": [
+          "doug-evans"
+        ],
+        "tier": 1,
+        "season": 2001
+      }
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR had 169+ receiving yards in Week 11 of the 2005 season against the Chicago Bears?",
+        "playerIds": [
+          "steve-smith"
         ],
         "tier": 1,
         "season": 2005
       },
       {
         "id": "q2",
+        "prompt": "Which LB recorded a sack in Week 16 of the 2023 season against the Green Bay Packers?",
+        "playerIds": [
+          "frankie-luvu"
+        ],
+        "tier": 1,
+        "season": 2023
+      },
+      {
+        "id": "q3",
+        "prompt": "Which RB caught C.Newton's 2nd TD pass in Week 5 of the 2018 season against the New York Giants?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2018
+      },
+      {
+        "id": "q4",
+        "prompt": "Which WR caught a TD pass in Week 12 of the 2022 season against the Denver Broncos?",
+        "playerIds": [
+          "dj-moore-00-003"
+        ],
+        "tier": 1,
+        "season": 2022
+      }
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "questions": [
+      {
+        "id": "q1",
         "prompt": "Which WR did the Panthers select in Round 3, Pick 78 of the 2010 NFL Draft?",
         "playerIds": [
           "brandon-lafell"
@@ -15116,315 +4986,31 @@ export const PUZZLES_SICKO: SickoDay[] = [
         "season": 2010
       },
       {
-        "id": "q3",
-        "prompt": "Who caught a TD pass in Week 6 of the 1999 season against the San Francisco 49ers?",
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 15 of the 2003 season against the Arizona Cardinals?",
         "playerIds": [
-          "patrick-jeffers",
-          "muhsin-muhammad",
-          "wesley-walls"
+          "shane-burton",
+          "kemp-rasmussen",
+          "al-wallace",
+          "julius-peppers"
         ],
         "tier": 1,
-        "season": 1999
+        "season": 2003
       },
       {
-        "id": "q4",
-        "prompt": "Which WR returned a punt for a TD in Week 5 of the 2014 season against the Chicago Bears?",
+        "id": "q3",
+        "prompt": "Which OT did the Panthers select with the 19th overall pick in the 2008 NFL Draft?",
         "playerIds": [
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2014
-      }
-    ]
-  },
-  {
-    "date": "2027-02-12",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL did the Panthers select with the 7th overall pick in the 2020 NFL Draft?",
-        "playerIds": [
-          "derrick-brown"
+          "jeff-otah"
         ],
         "tier": 3,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which WR caught a TD pass in Week 14 of the 2013 season against the New Orleans Saints?",
-        "playerIds": [
-          "steve-smith"
-        ],
-        "tier": 1,
-        "season": 2013
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught S.Beuerlein's 2nd TD pass in Week 12 of the 1999 season against the Atlanta Falcons?",
-        "playerIds": [
-          "patrick-jeffers"
-        ],
-        "tier": 1,
-        "season": 1999
+        "season": 2008
       },
       {
         "id": "q4",
-        "prompt": "Which WR had 102+ receiving yards in Week 15 of the 2000 season against the Kansas City Chiefs?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2000
-      }
-    ]
-  },
-  {
-    "date": "2027-02-13",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which DL had 2 sacks in Week 2 of the 2014 season against the Detroit Lions?",
-        "playerIds": [
-          "mario-addison"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DL forced a fumble in Week 15 of the 1999 season against the San Francisco 49ers?",
-        "playerIds": [
-          "tim-morabito"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Which RB rushed for 106+ yards in Week 5 of the 2006 season against the Cleveland Browns?",
-        "playerIds": [
-          "deshaun-foster"
-        ],
-        "tier": 1,
-        "season": 2006
-      },
-      {
-        "id": "q4",
-        "prompt": "Which TE caught M.Moore's 2nd TD pass in Week 16 of the 2009 season against the New York Giants?",
-        "playerIds": [
-          "jeff-king"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2027-02-14",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB rushed for 108+ yards in Week 10 of the 2019 season against the Green Bay Packers?",
-        "playerIds": [
-          "christian-mccaffrey"
-        ],
-        "tier": 1,
-        "season": 2019
-      },
-      {
-        "id": "q2",
-        "prompt": "Which TE caught a TD pass in Week 1 of the 1999 season against the New Orleans Saints?",
-        "playerIds": [
-          "wesley-walls"
-        ],
-        "tier": 1,
-        "season": 1999
-      },
-      {
-        "id": "q3",
-        "prompt": "Who recorded an interception in Week 3 of the 2010 season against the Cincinnati Bengals?",
-        "playerIds": [
-          "captain-munnerlyn",
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2010
-      },
-      {
-        "id": "q4",
-        "prompt": "Which QB scored a rushing TD in Week 13 of the 2013 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which QB threw for 300+ passing yards in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2013
-      }
-    ]
-  },
-  {
-    "date": "2027-02-15",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which S recorded an interception in Week 15 of the 2003 season against the Arizona Cardinals?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Which QB threw 5 TD passes in Week 11 of the 2015 season against the Washington Commanders?",
-        "playerIds": [
-          "cam-newton-00-002"
-        ],
-        "tier": 1,
-        "season": 2015
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught D.Anderson's 2nd TD pass in Week 4 of the 2016 season against the Atlanta Falcons?",
-        "playerIds": [
-          "corey-brown"
-        ],
-        "tier": 1,
-        "season": 2016
-      },
-      {
-        "id": "q4",
-        "prompt": "Who forced a fumble in Week 14 of the 2009 season against the New England Patriots?",
-        "playerIds": [
-          "chris-harris",
-          "charles-godfrey"
-        ],
-        "tier": 1,
-        "season": 2009
-      }
-    ]
-  },
-  {
-    "date": "2027-02-16",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which QB scored a rushing TD in Week 15 of the 2020 season against the Green Bay Packers?",
-        "playerIds": [
-          "teddy-bridgewater"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q2",
-        "prompt": "Which LB recorded a sack in Week 13 of the 2024 season against the Tampa Bay Buccaneers?",
-        "playerIds": [
-          "jadeveon-clowney",
-          "amare-barno",
-          "josey-jewell",
-          "trevin-wallace"
-        ],
-        "tier": 1,
-        "season": 2024
-      },
-      {
-        "id": "q3",
-        "prompt": "Which WR caught T.Bridgewater's 2nd TD pass in Week 7 of the 2020 season against the New Orleans Saints?",
-        "playerIds": [
-          "dj-moore-00-003"
-        ],
-        "tier": 1,
-        "season": 2020
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL had 2 sacks in Week 3 of the 2019 season against the Arizona Cardinals?",
-        "playerIds": [
-          "christian-miller"
-        ],
-        "tier": 1,
-        "season": 2019
-      }
-    ]
-  },
-  {
-    "date": "2027-02-17",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which RB scored a rushing TD in Week 8 of the 2009 season against the Arizona Cardinals?",
-        "playerIds": [
-          "jonathan-stewart"
-        ],
-        "tier": 1,
-        "season": 2009
-      },
-      {
-        "id": "q2",
-        "prompt": "Which DT had 2 sacks in Week 14 of the 2004 season against the Los Angeles Rams?",
-        "playerIds": [
-          "kindal-moorehead"
-        ],
-        "tier": 1,
-        "season": 2004
-      },
-      {
-        "id": "q3",
-        "prompt": "Which S returned an interception for a TD in Week 2 of the 2002 season against the Detroit Lions?",
-        "playerIds": [
-          "mike-minter"
-        ],
-        "tier": 1,
-        "season": 2002
-      },
-      {
-        "id": "q4",
-        "prompt": "Who caught a TD pass in Week 14 of the 2012 season against the Atlanta Falcons?",
-        "playerIds": [
-          "greg-olsen",
-          "deangelo-williams"
-        ],
-        "tier": 1,
-        "season": 2012
-      }
-    ]
-  },
-  {
-    "date": "2027-02-18",
-    "questions": [
-      {
-        "id": "q1",
-        "prompt": "Which WR had 103+ receiving yards in the 2003 Wild Card against the Dallas Cowboys?",
-        "playerIds": [
-          "muhsin-muhammad"
-        ],
-        "tier": 1,
-        "season": 2003
-      },
-      {
-        "id": "q2",
-        "prompt": "Who recorded an interception in Week 3 of the 2001 season against the Green Bay Packers?",
-        "playerIds": [
-          "doug-evans",
-          "deon-grant"
-        ],
-        "tier": 1,
-        "season": 2001
-      },
-      {
-        "id": "q3",
-        "prompt": "Which DL had 2 sacks in Week 17 of the 2014 season against the Atlanta Falcons?",
-        "playerIds": [
-          "star-lotulelei"
-        ],
-        "tier": 1,
-        "season": 2014
-      },
-      {
-        "id": "q4",
-        "prompt": "Which DL recorded a sack in Week 11 of the 2018 season against the Detroit Lions?",
-        "playerIds": [
-          "julius-peppers"
         ],
         "tier": 1,
         "season": 2018
@@ -15432,45 +5018,90 @@ export const PUZZLES_SICKO: SickoDay[] = [
     ]
   },
   {
-    "date": "2027-02-19",
+    "date": "2026-06-18",
     "questions": [
       {
         "id": "q1",
-        "prompt": "Who recorded a sack in Week 17 of the 2005 season against the Atlanta Falcons?",
+        "prompt": "Which S forced a fumble in Week 2 of the 2013 season against the Buffalo Bills?",
         "playerIds": [
-          "al-wallace",
-          "kindal-moorehead",
-          "brentson-buckner"
+          "quintin-mikell"
+        ],
+        "tier": 1,
+        "season": 2013
+      },
+      {
+        "id": "q2",
+        "prompt": "Who recorded a sack in Week 18 of the 2023 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "yetur-gross-matos",
+          "derrick-brown",
+          "brian-burns"
+        ],
+        "tier": 1,
+        "season": 2023
+      },
+      {
+        "id": "q3",
+        "prompt": "Who forced a fumble in Week 8 of the 2024 season against the Denver Broncos?",
+        "playerIds": [
+          "shy-tuttle",
+          "trevin-wallace"
+        ],
+        "tier": 1,
+        "season": 2024
+      },
+      {
+        "id": "q4",
+        "prompt": "Which RB caught a TD pass in Week 10 of the 2018 season against the Pittsburgh Steelers?",
+        "playerIds": [
+          "christian-mccaffrey"
+        ],
+        "tier": 1,
+        "season": 2018
+      }
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which WR caught a TD pass in Week 9 of the 2005 season against the Tampa Bay Buccaneers?",
+        "playerIds": [
+          "steve-smith"
         ],
         "tier": 1,
         "season": 2005
       },
       {
         "id": "q2",
-        "prompt": "Which QB threw 3 TD passes in Week 2 of the 1999 season against the Jacksonville Jaguars?",
+        "prompt": "Which RB scored a rushing TD in Week 9 of the 2005 season against the Tampa Bay Buccaneers?",
         "playerIds": [
-          "steve-beuerlein"
+          "stephen-davis"
         ],
         "tier": 1,
-        "season": 1999
+        "season": 2005
       },
       {
         "id": "q3",
-        "prompt": "Which WR had 106+ receiving yards in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who recorded a sack in Week 11 of the 2020 season against the Detroit Lions?",
         "playerIds": [
-          "steve-smith"
+          "brian-burns",
+          "efe-obada"
         ],
         "tier": 1,
-        "season": 2012
+        "season": 2020
       },
       {
         "id": "q4",
-        "prompt": "Which RB scored a rushing TD in Week 3 of the 2023 season against the Seattle Seahawks?",
+        "prompt": "Who recorded a sack in Week 15 of the 2013 season against the New York Jets?",
         "playerIds": [
-          "miles-sanders"
+          "captain-munnerlyn",
+          "greg-hardy",
+          "luke-kuechly"
         ],
         "tier": 1,
-        "season": 2023
+        "season": 2013
       }
     ]
   }

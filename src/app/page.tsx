@@ -7,6 +7,8 @@ import { chicagoYMD } from "@/lib/time";
 import { PLAYERS } from "@/data/players";
 import { PUZZLES_SICKO } from "@/data/puzzles_sicko";
 import { getDayProgress, upsertDayProgress, type Mode } from "@/lib/storage";
+import { createClient } from "@/lib/supabase";
+import AuthModal from "@/components/AuthModal";
 
 /** ---------- scoring helpers ---------- **/
 const BASE_PTS = 1000;
@@ -17,19 +19,24 @@ function tierLabel(tier: number): string {
   return "Draft Pick";
 }
 
-function streakMultiplier(streak: number): number {
-  if (streak >= 4) return 2.0;
-  if (streak === 3) return 1.5;
-  if (streak === 2) return 1.25;
-  return 1.0;
+function eraBonus(season: number): number {
+  if (season < 2000) return 300;
+  if (season < 2010) return 200;
+  if (season < 2020) return 100;
+  return 0;
 }
 
-function calcScore(timeRemaining: number, streak: number): number {
-  return Math.round(BASE_PTS * (timeRemaining / 30) * streakMultiplier(streak));
+function eraDecade(season: number): string {
+  if (season < 2000) return "1990s";
+  if (season < 2010) return "2000s";
+  if (season < 2020) return "2010s";
+  return "2020s";
 }
 
-const MAX_DAY_SCORE = [1, 2, 3, 4].reduce((sum, streak) =>
-  sum + Math.round(BASE_PTS * streakMultiplier(streak)), 0); // 5750
+function calcScore(timeRemaining: number, season: number): number {
+  return Math.round(BASE_PTS * (timeRemaining / 30)) + eraBonus(season);
+}
+
 
 /** ---------- helpers ---------- **/
 function normalizeName(s: string) {
@@ -41,13 +48,8 @@ function normalizeName(s: string) {
     .trim();
 }
 
-function getAdminDateOverride(): string | null {
-  if (typeof window === "undefined") return null;
-  const v = localStorage.getItem("panthers_admin_date_v1");
-  return v && /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : null;
-}
 
-type QuestionProgress = { guesses: string[]; completed: boolean; score?: number; timeRemaining?: number };
+type QuestionProgress = { guesses: string[]; completed: boolean; score?: number; timeRemaining?: number; hintUsed?: boolean };
 
 type DayProgressV2 = {
   mode: Mode;
@@ -92,12 +94,38 @@ function coerceProgress(mode: Mode, date: string, saved: any | null): DayProgres
 
 /** ---------- component ---------- **/
 export default function HomePage() {
+  const supabase = createClient();
   const today = useMemo(() => chicagoYMD(), []);
-  const ADMIN_PASSWORD = "1234";
-  const [adminPassword, setAdminPassword] = useState<string>("");
-  const adminEnabled = adminPassword === ADMIN_PASSWORD;
   const [adminDate, setAdminDate] = useState<string>(() => today);
-  const [feedback, setFeedback] = useState<string | null>(null);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [showUserMenu, setShowUserMenu] = useState(false);
+  const [user, setUser] = useState<{ email?: string; username?: string; isAdmin?: boolean } | null>(null);
+
+  useEffect(() => {
+    async function loadUser(userId: string, email?: string) {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("username, is_admin")
+        .eq("id", userId)
+        .maybeSingle();
+      setUser({ email, username: profile?.username, isAdmin: profile?.is_admin ?? false });
+      await restoreProgressFromSupabase(userId, chicagoYMD());
+    }
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) loadUser(session.user.id, session.user.email);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session?.user) {
+        loadUser(session.user.id, session.user.email);
+      } else {
+        setUser(null);
+      }
+    });
+    return () => subscription.unsubscribe();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     try {
@@ -105,6 +133,7 @@ export default function HomePage() {
     } catch {}
   }, [adminDate]);
 
+  const adminEnabled = !!user?.isAdmin;
   const activeDate = adminEnabled ? adminDate : today;
   const mode: Mode = "sicko";
 
@@ -120,6 +149,7 @@ export default function HomePage() {
 
   const [input, setInput] = useState<string>("");
   const [sickoProgress, setSickoProgress] = useState<Record<string, QuestionProgress>>({});
+  const [hintsRevealed, setHintsRevealed] = useState<Record<string, boolean>>({});
   const [sickoStarted, setSickoStarted] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(30);
   const [timerKey, setTimerKey] = useState(0);
@@ -137,7 +167,7 @@ export default function HomePage() {
 
   const totalScore = SICKO_ORDER.reduce((sum, id) => sum + (sickoProgress[id]?.score ?? 0), 0);
 
-  const maxScore = sickoQuestions ? MAX_DAY_SCORE : null;
+  const maxScore = sickoQuestions ? 4 * BASE_PTS : null;
 
   // Map every question id -> all valid answer Players (usually 1, sometimes multiple)
   const sickoPlayerMap = useMemo(() => {
@@ -161,6 +191,7 @@ export default function HomePage() {
     }
     setSickoProgress(next);
     setSickoStarted(SICKO_ORDER.some((qid) => (next[qid]?.guesses.length ?? 0) > 0));
+    setHintsRevealed({});
     setInput("");
   }, [activeDate]);
 
@@ -178,6 +209,7 @@ export default function HomePage() {
     setSickoProgress(nextQuestions);
     setInput("");
     upsertDayProgress({ mode: "sicko", date: activeDate, questions: nextQuestions } as any);
+    saveScoreToSupabase(nextQuestions);
   };
 
   // 30-second countdown per question
@@ -210,6 +242,71 @@ export default function HomePage() {
     } as any);
   }
 
+  async function saveScoreToSupabase(nextQuestions: Record<string, QuestionProgress>) {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session?.user) return;
+
+    const allAnswered = SICKO_ORDER.every((id) => (nextQuestions[id]?.guesses.length ?? 0) > 0);
+    if (!allAnswered) return;
+
+    const total = SICKO_ORDER.reduce((sum, id) => sum + (nextQuestions[id]?.score ?? 0), 0);
+    const results = SICKO_ORDER.map((id) => !!nextQuestions[id]?.completed);
+    const scores = SICKO_ORDER.map((id) => nextQuestions[id]?.score ?? 0);
+    const correct = results.filter(Boolean).length;
+    const hintQuestion = SICKO_ORDER.find((id) => nextQuestions[id]?.hintUsed) ?? null;
+    const hintUsed = !!hintQuestion;
+
+    const { error } = await supabase.from("scores").upsert({
+      user_id: session.user.id,
+      date: activeDate,
+      total_score: total,
+      questions_correct: correct,
+      question_results: results,
+      question_scores: scores,
+      hint_used: hintUsed,
+      hint_question: hintQuestion,
+    }, { onConflict: "user_id,date" });
+    if (error) console.error("Score save error:", error);
+  }
+
+  async function restoreProgressFromSupabase(userId: string, date: string) {
+    const existing = getDayProgress("sicko", date) as any;
+    if (existing && SICKO_ORDER.some((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0)) return;
+
+    const { data } = await supabase
+      .from("scores")
+      .select("question_results, question_scores, hint_question, total_score")
+      .eq("user_id", userId)
+      .eq("date", date)
+      .maybeSingle();
+
+    if (!data) return;
+
+    const rawScores: number[] = data.question_scores ?? [0, 0, 0, 0];
+    const allZero = rawScores.every((s: number) => s === 0);
+    const results: boolean[] = data.question_results ?? [false, false, false, false];
+    const correctCount = results.filter(Boolean).length;
+
+    // Fall back to distributing total_score evenly if per-question scores weren't saved
+    let resolvedScores = rawScores;
+    if (allZero && data.total_score > 0 && correctCount > 0) {
+      const perQ = Math.round(data.total_score / correctCount);
+      resolvedScores = results.map((correct: boolean) => correct ? perQ : 0);
+    }
+
+    const questions: Record<string, QuestionProgress> = {};
+    SICKO_ORDER.forEach((id, i) => {
+      const completed = results[i] ?? false;
+      const score = resolvedScores[i] ?? 0;
+      const hintUsed = data.hint_question === id;
+      questions[id] = { guesses: [completed ? "(restored)" : "(incorrect)"], completed, score, hintUsed };
+    });
+
+    upsertDayProgress({ mode: "sicko", date, questions } as any);
+    setSickoProgress(questions);
+    setSickoStarted(true);
+  }
+
   function submitGuess() {
     const guess = input.trim().replace(/\s*\([^)]*\)\s*$/, "").trim();
     if (!guess) return;
@@ -219,20 +316,17 @@ export default function HomePage() {
     if (!sickoCurrent || validPlayers.length === 0) return;
 
     const isCorrect = validPlayers.some((p) => normalizeName(guess) === normalizeName(p.name));
-    const prevIds = SICKO_ORDER.slice(0, SICKO_ORDER.indexOf(sickoCurrent.id));
-    let consecutiveCorrect = 0;
-    for (let i = prevIds.length - 1; i >= 0; i--) {
-      if (sickoProgress[prevIds[i]]?.completed) consecutiveCorrect++;
-      else break;
-    }
-    const streak = isCorrect ? consecutiveCorrect + 1 : 0;
-    const score = isCorrect ? calcScore(timeRemaining, streak) : 0;
+    const season = sickoCurrent.season ?? 2020;
+    const hintUsed = !!hintsRevealed[sickoCurrent.id];
+    const rawScore = isCorrect ? calcScore(timeRemaining, season) : 0;
+    const score = hintUsed ? Math.floor(rawScore / 2) : rawScore;
 
     const nextQp: QuestionProgress = {
       guesses: [guess],
       completed: isCorrect,
       score,
       timeRemaining: isCorrect ? timeRemaining : undefined,
+      hintUsed,
     };
 
     const nextQuestions = {
@@ -243,6 +337,7 @@ export default function HomePage() {
     setSickoProgress(nextQuestions);
     setInput("");
     persistSicko(nextQuestions);
+    saveScoreToSupabase(nextQuestions);
   }
 
   async function share() {
@@ -253,7 +348,7 @@ export default function HomePage() {
         if (qp.guesses.length === 0) return "⬛";
         return "🟥";
       }).join(" ");
-      const text = `#PanthersTriviaSicko\n${today}\n${cells}\n${totalScore} pts`;
+      const text = `#PanthersTriviaSicko\n${activeDate}\n${cells}\n${totalScore} pts`;
 
       if ((navigator as any).share) {
         await (navigator as any).share({ text });
@@ -266,6 +361,7 @@ export default function HomePage() {
     }
   }
 
+
   function resetToday() {
     const cleared: Record<string, QuestionProgress> = {};
     for (const qid of SICKO_ORDER) {
@@ -274,6 +370,7 @@ export default function HomePage() {
     setSickoProgress(cleared);
     setSickoStarted(false);
     setInput("");
+    setHintsRevealed({});
     setTimerKey((k) => k + 1);
     persistSicko(cleared);
   }
@@ -309,24 +406,49 @@ export default function HomePage() {
             <div className="flex items-center gap-2.5">
               <span className="text-lg font-black tracking-tight text-white">PANTHERS</span>
               <span className="rounded bg-sky-500 px-1.5 py-0.5 text-[11px] font-black tracking-widest text-white">
-                DAILY
+                TRIVIA
               </span>
             </div>
 
             <div className="flex items-center gap-2">
-              <Link
-                className="rounded-lg border border-slate-700 px-3 py-1.5 text-xs font-semibold text-slate-300 transition-colors hover:border-slate-600 hover:text-slate-100"
-                href="/stats"
-              >
-                Stats
-              </Link>
-              <input
-                type="password"
-                placeholder="Admin"
-                value={adminPassword}
-                onChange={(e) => setAdminPassword(e.target.value)}
-                className="w-20 rounded-lg border border-slate-800 bg-transparent px-2 py-1.5 text-xs text-slate-500 placeholder-slate-600 transition-colors focus:border-slate-600 focus:outline-none"
-              />
+              {user ? (
+                <div className="flex items-center gap-2">
+                  <Link
+                    className="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800 px-3 py-1.5 text-xs font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:bg-slate-700 hover:text-white active:scale-95"
+                    href="/stats"
+                  >
+                    Leaderboard
+                  </Link>
+                  <div className="relative">
+                    <button
+                      className="rounded-lg border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs font-semibold text-sky-400 hover:border-slate-600 hover:bg-slate-800 transition-colors active:scale-95"
+                      onClick={() => setShowUserMenu((v) => !v)}
+                    >
+                      {user.username ?? user.email} ▾
+                    </button>
+                    {showUserMenu && (
+                      <>
+                        <div className="fixed inset-0 z-10" onClick={() => setShowUserMenu(false)} />
+                        <div className="absolute right-0 mt-1 z-20 w-36 rounded-xl border border-slate-700 bg-slate-900 shadow-xl overflow-hidden">
+                          <button
+                            className="w-full px-4 py-2.5 text-left text-xs font-semibold text-rose-400 hover:bg-slate-800 transition-colors"
+                            onClick={async () => { await supabase.auth.signOut(); localStorage.removeItem("panthers_daily_v1"); window.location.reload(); }}
+                          >
+                            Sign out
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <button
+                  className="rounded-lg border border-sky-700/50 bg-sky-500/10 px-3 py-1.5 text-xs font-semibold text-sky-400 hover:border-sky-600/60 hover:bg-sky-500/20 transition-colors"
+                  onClick={() => setShowAuthModal(true)}
+                >
+                  Sign in
+                </button>
+              )}
             </div>
           </div>
 
@@ -373,23 +495,6 @@ export default function HomePage() {
 
         {/* Game Card */}
         <section className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.6),0_20px_60px_rgba(0,0,0,0.45)]">
-          <div className="flex flex-wrap items-center justify-end gap-3">
-            <div className="flex gap-2">
-              <div className="rounded-xl border border-slate-800 bg-slate-950/40 px-3 py-2">
-                <div className="text-xs text-slate-400">Progress</div>
-                <div className="text-sm font-semibold text-sky-200">
-                  {SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length}/4
-                </div>
-              </div>
-              <div className="rounded-xl border border-slate-800 bg-slate-950/40 px-3 py-2">
-                <div className="text-xs text-slate-400">Score</div>
-                <div className="text-sm font-semibold text-yellow-300">
-                  {totalScore}
-                  {maxScore != null && <span className="text-xs font-normal text-slate-500"> / {maxScore}</span>}
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Body */}
           {!sickoStarted ? (
@@ -421,18 +526,44 @@ export default function HomePage() {
               </div>
 
               <div className="space-y-3 text-sm text-slate-300 max-w-sm">
-                <p className="text-base font-semibold text-slate-100">
+                {/* <p className="text-base font-semibold text-slate-100">
                   Drive the football into the endzone for a <span className="text-yellow-300 font-bold">TOUCHDOWN</span>.
-                </p>
+                </p> */}
+
+                {/* Title */}                                                                                                                                           
+              <div className="flex flex-col items-center gap-1">                                                                                                      
+                <p className="text-xs font-bold tracking-[0.25em] text-slate-500 uppercase">Panthers Trivia</p>                                                
+                  <h2 className="text-3xl font-black tracking-tight text-white uppercase">                                                                              
+                    Sicko <span className="text-sky-400">Mode</span>                                                                                             
+                  </h2>                                                                                                                                          
+                <div className="mt-1 h-px w-16 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />                                                
+              </div>    
+
                 <p>
-                  4 questions stand between you and the goal line. Answer each one correctly to move the ball 25 yards.
+                  4 questions stand between you and the endzone. 
+
+                  <br></br><br></br>You have <span className="font-semibold text-white">30 seconds</span> per question — one guess only.
+                  The faster you answer, the more points you score.
+                  <br></br><br></br>Each question can range from "easy" to "sicko" difficulty, and you won't know which one you're getting until the timer has already started.
+                  <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half. Choose wisely and good luck!
                 </p>
-                <p>
-                  You have <span className="font-semibold text-white">30 seconds</span> per question — one guess only. The faster you answer, the more points you score (up to <span className="font-semibold text-yellow-300">1,000 pts</span> per question). Run out of time and the ball doesn't move.
-                </p>
-                <p className="text-xs text-slate-400">
-                  Max score: 4,000 pts.
-                </p>
+                {/* Era hints */}
+                <div className="rounded-xl border border-slate-700 bg-slate-900/60 px-3 py-2.5 space-y-1">
+                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Today's eras</p>
+                  {sickoQuestions?.map((q, i) => (
+                    <div key={q.id} className="flex items-center text-xs">
+                      <span className="w-8 text-slate-400">Q{i + 1}</span>
+                      <span className="flex-1 text-slate-300 font-medium">{eraDecade(q.season ?? 2020)}</span>
+                      <span className="w-24 text-right">
+                        {eraBonus(q.season ?? 2020) > 0 ? (
+                          <span className="rounded bg-purple-900/40 px-1.5 py-0.5 text-purple-300 font-semibold">+{eraBonus(q.season ?? 2020)} bonus</span>
+                        ) : (
+                          <span className="text-slate-600">no bonus</span>
+                        )}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <button
@@ -445,6 +576,77 @@ export default function HomePage() {
           ) : (
             <>
               {/* Football field progress */}
+              {/* Detect restored session — all guesses are placeholders */}
+              {(() => {
+                const allAnswered = SICKO_ORDER.every((id) => (sickoProgress[id]?.guesses.length ?? 0) > 0);
+                const isRestored = allAnswered && SICKO_ORDER.every((id) => {
+                  const g = sickoProgress[id]?.guesses[0];
+                  return g === "(restored)" || g === "(incorrect)";
+                });
+                if (!isRestored) return null;
+
+                const correctCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
+                const isTouchdown = correctCount === 4;
+                const ballPct = 10 + correctCount * 20;
+
+                return (
+                  <div className="mt-5 space-y-4">
+                    {/* Field */}
+                    <div className="relative h-20 overflow-hidden rounded-xl border border-slate-700">
+                      <div className="absolute inset-0 bg-emerald-800" />
+                      <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#101820" }}>
+                        <span className="text-[9px] font-black italic tracking-widest uppercase" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>Carolina</span>
+                      </div>
+                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#101820]">
+                        <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
+                      </div>
+                      {[30, 50, 70].map((pos) => (
+                        <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
+                      ))}
+                      {([30, 50, 70] as const).map((pos, i) => (
+                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>{["25", "50", "25"][i]}</div>
+                      ))}
+                      {correctCount > 0 && !isTouchdown && (
+                        <>
+                          <div className="absolute pointer-events-none" style={{ top: "50%", left: "10%", right: `calc(${100 - ballPct}% + 26px)`, height: "4px", transform: "translateY(-50%)", background: "#0085CA", zIndex: 2 }} />
+                          <div className="absolute pointer-events-none" style={{ top: "50%", left: `calc(${ballPct}% - 26px)`, transform: "translateY(-50%)", width: 0, height: 0, borderTop: "8px solid transparent", borderBottom: "8px solid transparent", borderLeft: "14px solid #0085CA", zIndex: 2 }} />
+                        </>
+                      )}
+                      <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
+                      {isTouchdown && (
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                          <span className="text-base font-black italic tracking-widest text-yellow-300 drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Question summary */}
+                    <div className="rounded-2xl border border-slate-800 bg-slate-900/60 divide-y divide-slate-800">
+                      {SICKO_ORDER.map((id, idx) => {
+                        const q = sickoQuestions?.find((x) => x.id === id);
+                        const qp = sickoProgress[id];
+                        return (
+                          <div key={id} className="flex items-center gap-3 px-4 py-3">
+                            <span className={`text-base ${qp?.completed ? "text-emerald-400" : "text-rose-400"}`}>{qp?.completed ? "✓" : "✗"}</span>
+                            <span className="flex-1 text-sm text-slate-300">{q?.prompt}</span>
+                          </div>
+                        );
+                      })}
+                      <div className="flex items-center justify-center gap-2 px-4 py-3">
+                        <span className="text-sm font-bold text-slate-300">Total</span>
+                        <span className="text-sm font-bold text-sky-400">{totalScore} pts</span>
+                      </div>
+                    </div>
+
+                    {/* Share */}
+                    <div className="flex justify-center">
+                      <button className="rounded-xl px-4 py-2 text-sm font-bold text-white shadow-sm hover:opacity-90" style={{ background: "#0085CA" }} onClick={share}>Share Results</button>
+                    </div>
+                  </div>
+                );
+              })()}
+              {/* Only render the full game UI if NOT restored */}
+              {!SICKO_ORDER.every((id) => { const g = sickoProgress[id]?.guesses[0]; return g === "(restored)" || g === "(incorrect)"; }) && <>
               {(() => {
                 const correctCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
                 const isTouchdown = correctCount === 4;
@@ -590,24 +792,30 @@ export default function HomePage() {
                             ? "border-emerald-500/30 bg-emerald-500/10"
                             : "border-rose-500/30 bg-rose-500/10"
                         }`}>
-                          {qp.completed ? (
-                            <>
-                              <div className="text-xs text-slate-400">Correct!</div>
-                              <div className="mt-0.5 font-bold text-emerald-100">{qp.guesses[0]}</div>
-                            </>
-                          ) : (
-                            <>
-                              <div className="text-xs text-slate-400">
-                                {answerPlayers.length === 1 ? "Answer" : "Valid answers"}
-                              </div>
-                              <div className="mt-0.5 font-bold text-rose-100">
-                                {answerPlayers.map((p) => p.name).join(" · ")}
-                              </div>
-                              <div className="mt-0.5 text-xs text-slate-400">
-                                You guessed: {qp.guesses[0] === "(time's up)" ? "⏰ Time's up!" : qp.guesses[0]}
-                              </div>
-                            </>
-                          )}
+                          {(() => {
+                            const isRestored = qp.guesses[0] === "(restored)" || qp.guesses[0] === "(incorrect)";
+                            return qp.completed ? (
+                              <>
+                                <div className="text-xs text-slate-400">Correct!</div>
+                                {!isRestored && <div className="mt-0.5 font-bold text-emerald-100">{qp.guesses[0]}</div>}
+                                {isRestored && <div className="mt-0.5 font-bold text-emerald-100">{answerPlayers.map((p) => p.name).join(" · ")}</div>}
+                              </>
+                            ) : (
+                              <>
+                                <div className="text-xs text-slate-400">
+                                  {answerPlayers.length === 1 ? "Answer" : "Valid answers"}
+                                </div>
+                                <div className="mt-0.5 font-bold text-rose-100">
+                                  {answerPlayers.map((p) => p.name).join(" · ")}
+                                </div>
+                                {!isRestored && (
+                                  <div className="mt-0.5 text-xs text-slate-400">
+                                    You guessed: {qp.guesses[0] === "(time's up)" ? "⏰ Time's up!" : qp.guesses[0]}
+                                  </div>
+                                )}
+                              </>
+                            );
+                          })()}
                           <div className="mt-1 text-xs font-semibold text-slate-300">
                             {qp.score ?? 0} pts
                           </div>
@@ -615,7 +823,11 @@ export default function HomePage() {
                       )}
 
                       {/* Active: show timer bar + input */}
-                      {isActive && (
+                      {isActive && (() => {
+                        const hintRevealed = !!hintsRevealed[id];
+                        const hintJerseys = answerPlayers.flatMap((p) => p.jersey ?? []);
+                        const hasHint = hintJerseys.length > 0;
+                        return (
                         <>
                           {/* Countdown bar */}
                           <div className="mt-3">
@@ -636,6 +848,33 @@ export default function HomePage() {
                               />
                             </div>
                           </div>
+
+                          {/* Hint */}
+                          {hasHint && (
+                            <div className="mt-2">
+                              {!hintRevealed ? (
+                                Object.values(hintsRevealed).some(Boolean) ? (
+                                  <span className="text-xs text-slate-600">💡 Hint already used today</span>
+                                ) : (
+                                <button
+                                  className="rounded-lg border border-amber-700/50 bg-amber-950/30 px-3 py-1.5 text-xs font-semibold text-amber-400 hover:border-amber-600/60 hover:bg-amber-950/50 transition-colors"
+                                  onClick={() => setHintsRevealed((prev) => ({ ...prev, [id]: true }))}
+                                >
+                                  💡 Use hint (−50% score)
+                                </button>
+                                )
+                              ) : (
+                                <div className="flex items-center gap-2 rounded-lg border border-amber-700/40 bg-amber-950/20 px-3 py-1.5">
+                                  <span className="text-xs text-amber-400 font-semibold">💡 Hint:</span>
+                                  <span className="text-xs text-amber-200">
+                                    Jersey #{hintJerseys.join(" or #")}
+                                  </span>
+                                  <span className="ml-auto text-xs text-amber-600">−50% score</span>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
                           <div className="mt-2 flex flex-col gap-2 sm:flex-row">
                             <div className="relative w-full">
                               <input
@@ -659,7 +898,8 @@ export default function HomePage() {
                             </button>
                           </div>
                         </>
-                      )}
+                        );
+                      })()}
 
                       {/* Locked: placeholder */}
                       {isLocked && (
@@ -680,12 +920,11 @@ export default function HomePage() {
                       const q = sickoQuestions?.find((x) => x.id === id);
                       const isTimesUp = qp?.guesses[0] === "(time's up)";
                       const tier = q?.tier ?? 2;
-                      const season = q?.season ?? 2010;
-                      const streak = qp?.completed
-                        ? SICKO_ORDER.slice(0, idx).filter((sid) => sickoProgress[sid]?.completed).length + 1
-                        : 0;
-                      const streakMult = streakMultiplier(streak);
+                      const season = q?.season ?? 2020;
+                      const bonus = qp?.completed ? eraBonus(season) : 0;
                       const timeLeft = qp?.timeRemaining ?? null;
+                      const hintUsed = !!qp?.hintUsed;
+                      const rawScore = qp?.completed ? Math.round(BASE_PTS * ((timeLeft ?? 0) / 30)) + bonus : 0;
                       return (
                         <div key={id} className="rounded-xl border border-slate-800 bg-slate-900/40 p-3">
                           <div className="flex items-start justify-between gap-3">
@@ -696,7 +935,7 @@ export default function HomePage() {
                               </span>
                               <span className="truncate text-xs text-slate-400">{q?.prompt}</span>
                             </div>
-                            <span className={`shrink-0 font-bold ${qp?.completed ? "text-yellow-300" : "text-slate-500"}`}>
+                            <span className={`shrink-0 font-bold ${qp?.completed ? "text-sky-400" : "text-slate-500"}`}>
                               {qp?.completed ? `+${qp.score}` : "0 pts"}
                             </span>
                           </div>
@@ -706,18 +945,34 @@ export default function HomePage() {
                               <div className="flex flex-wrap items-center gap-1 text-xs font-mono text-slate-300">
                                 <span className="text-sky-300">{BASE_PTS}</span>
                                 <span className="text-slate-500">×</span>
-                                <span className="text-amber-300">{streakMult}</span>
-                                <span className="text-slate-500">×</span>
                                 <span className="text-emerald-300">({timeLeft ?? "?"}s/30s)</span>
+                                {bonus > 0 && (
+                                  <>
+                                    <span className="text-slate-500">+</span>
+                                    <span className="text-purple-300">{bonus}</span>
+                                  </>
+                                )}
+                                {hintUsed && (
+                                  <>
+                                    <span className="text-slate-500">→</span>
+                                    <span className="text-amber-400">{rawScore}</span>
+                                    <span className="text-slate-500">÷ 2</span>
+                                  </>
+                                )}
                                 <span className="text-slate-500">=</span>
                                 <span className="font-bold text-yellow-300">{qp.score}</span>
                               </div>
                               <div className="flex flex-wrap gap-1.5 text-xs text-slate-500">
                                 <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-sky-400">{tierLabel(tier)}</span>
-                                <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-amber-400">
-                                  {streak === 1 ? "no streak yet" : `${streak}× streak`}
-                                </span>
                                 <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-emerald-400">{timeLeft ?? "?"}s remaining</span>
+                                {bonus > 0 && (
+                                  <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-purple-400">
+                                    {season < 2000 ? "1990s" : season < 2010 ? "2000s" : "2010s"} Bonus
+                                  </span>
+                                )}
+                                {hintUsed && (
+                                  <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-amber-400">💡 Hint used</span>
+                                )}
                               </div>
                             </div>
                           )}
@@ -731,18 +986,18 @@ export default function HomePage() {
                       );
                     })}
                   </div>
-                  <div className="mt-3 border-t border-slate-700 pt-3 flex justify-between text-sm font-bold">
-                    <span className="text-slate-300">Total</span>
-                    <span className="text-yellow-300">
-                      {totalScore}
-                      {maxScore != null && <span className="font-normal text-slate-400"> / {maxScore} pts max</span>}
+                  <div className="mt-3 border-t border-slate-700 pt-4 flex justify-between items-baseline">
+                    <span className="text-base font-bold text-slate-300">Total</span>
+                    <span className="text-2xl font-black text-sky-400">
+                      {totalScore.toLocaleString()}
+                      {maxScore != null && <span className="text-sm font-normal text-slate-500"> / {maxScore}</span>}
                     </span>
                   </div>
                 </div>
               )}
 
               {/* Actions */}
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-6 flex justify-center">
                 <button
                   className="rounded-xl px-4 py-2 text-sm font-bold text-white shadow-sm transition-opacity hover:opacity-90"
                   style={{ background: "#0085CA" }}
@@ -750,22 +1005,19 @@ export default function HomePage() {
                 >
                   Share Results
                 </button>
-                <button
-                  className="rounded-xl border border-slate-800 bg-slate-950/30 px-4 py-2 text-sm font-semibold text-slate-400"
-                  onClick={resetToday}
-                >
-                  Reset today
-                </button>
               </div>
+            </>}
             </>
           )}
         </section>
 
         {/* Footer */}
         <footer className="mt-8 text-center text-xs text-slate-500">
-          Built for Panthers fans
+          #PanthersTriviaSickoMode
         </footer>
       </div>
+
+      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
     </main>
   );
 }
