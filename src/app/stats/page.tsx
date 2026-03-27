@@ -169,7 +169,6 @@ export default function LeaderboardPage() {
             <span className="rounded bg-sky-500 px-1.5 py-0.5 text-[11px] font-black tracking-widest text-white">
               TRIVIA
             </span>
-            <span className="text-xs font-semibold text-slate-500 tracking-wider uppercase">/ Leaderboard</span>
           </div>
           <Link
             className="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800 px-3 py-1.5 text-xs font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:bg-slate-700 hover:text-white"
@@ -296,18 +295,18 @@ export default function LeaderboardPage() {
               ) : allTime.length === 0 ? (
                 <div className="py-16 text-center text-sm text-slate-500">No scores yet.</div>
               ) : (
-                <table className="w-full text-sm">
+                <table className="w-full text-xs">
                   <thead>
-                    <tr className="border-b border-slate-800 text-xs text-slate-500">
-                      <th className="px-4 py-3 text-left font-semibold">#</th>
-                      <th className="px-4 py-3 text-left font-semibold">Player</th>
-                      {(["days_played", "hintPct", "correctPct", "total_score"] as const).map((key) => (
+                    <tr className="border-b border-slate-800 text-[11px] text-slate-500">
+                      <th className="px-2 py-3 text-left font-semibold">#</th>
+                      <th className="px-2 py-3 text-left font-semibold">Player</th>
+                      {(["total_score", "correctPct", "hintPct"] as const).map((key) => (
                         <th
                           key={key}
-                          className={`px-4 py-3 text-right font-semibold cursor-pointer select-none transition-colors hover:text-slate-200 ${sortKey === key ? "text-white" : "text-slate-500"}`}
+                          className={`px-2 py-3 text-right font-semibold cursor-pointer select-none transition-colors hover:text-slate-200 ${sortKey === key ? "text-white" : "text-slate-500"}`}
                           onClick={() => handleSort(key)}
                         >
-                          {key === "days_played" ? "Days" : key === "hintPct" ? "Hint %" : key === "correctPct" ? "Correct" : "Points"}
+                          {key === "hintPct" ? "Hint" : key === "correctPct" ? "Correct" : "Points"}
                         </th>
                       ))}
                     </tr>
@@ -323,29 +322,26 @@ export default function LeaderboardPage() {
                       const maxPts = row.days_played * 4000;
                       return (
                       <tr key={i} className="border-b border-slate-800/60 last:border-0 hover:bg-slate-800/30 transition-colors">
-                        <td className="px-4 py-3 text-center text-sm w-10">
+                        <td className="px-2 py-3 text-center w-8">
                           <span className={i < 3 ? "text-base" : "text-slate-500"}>{medal(i)}</span>
                         </td>
-                        <td className="px-4 py-3 font-semibold text-slate-100">{row.username}</td>
-                        <td className={`px-4 py-3 text-right font-bold ${sortKey === "days_played" ? "text-sky-400" : "text-slate-400"}`}>
-                          {row.days_played}
-                        </td>
-                        <td className={`px-4 py-3 text-right font-bold group cursor-default relative ${sortKey === "hintPct" ? "text-sky-400" : "text-slate-400"}`}>
-                          <span className="group-hover:invisible">{hintPct}%</span>
-                          <span className="absolute right-4 top-1/2 -translate-y-1/2 hidden group-hover:inline text-xs font-normal text-slate-300 whitespace-nowrap">
-                            {row.hints_used} / {row.days_played}
+                        <td className="px-2 py-3 font-semibold text-slate-100">{row.username}</td>
+                        <td className={`px-2 py-3 text-right font-bold group cursor-default relative ${sortKey === "total_score" ? "text-sky-400" : "text-slate-400"}`}>
+                          <span className="group-hover:invisible">{row.total_score.toLocaleString()}</span>
+                          <span className="absolute right-2 top-1/2 -translate-y-1/2 hidden group-hover:inline text-[11px] font-normal text-slate-300 whitespace-nowrap">
+                            {row.total_score.toLocaleString()} / {maxPts.toLocaleString()}
                           </span>
                         </td>
-                        <td className={`px-4 py-3 text-right group cursor-default relative font-bold ${sortKey === "correctPct" ? "text-sky-400" : "text-slate-400"}`}>
+                        <td className={`px-2 py-3 text-right group cursor-default relative font-bold ${sortKey === "correctPct" ? "text-sky-400" : "text-slate-400"}`}>
                           <span className="group-hover:invisible">{correctPct}%</span>
-                          <span className="absolute right-4 top-1/2 -translate-y-1/2 hidden group-hover:inline text-xs font-normal text-slate-300 whitespace-nowrap">
+                          <span className="absolute right-2 top-1/2 -translate-y-1/2 hidden group-hover:inline text-[11px] font-normal text-slate-300 whitespace-nowrap">
                             {row.questions_correct} / {row.questions_total}
                           </span>
                         </td>
-                        <td className={`px-4 py-3 text-right font-bold group cursor-default relative ${sortKey === "total_score" ? "text-sky-400" : "text-slate-400"}`}>
-                          <span className="group-hover:invisible">{row.total_score.toLocaleString()}</span>
-                          <span className="absolute right-4 top-1/2 -translate-y-1/2 hidden group-hover:inline text-xs font-normal text-slate-300 whitespace-nowrap">
-                            {row.total_score.toLocaleString()} / {maxPts.toLocaleString()}
+                        <td className={`px-2 py-3 text-right font-bold group cursor-default relative ${sortKey === "hintPct" ? "text-sky-400" : "text-slate-400"}`}>
+                          <span className="group-hover:invisible">{hintPct}%</span>
+                          <span className="absolute right-2 top-1/2 -translate-y-1/2 hidden group-hover:inline text-[11px] font-normal text-slate-300 whitespace-nowrap">
+                            {row.hints_used} / {row.days_played}
                           </span>
                         </td>
                       </tr>
