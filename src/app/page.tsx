@@ -23,7 +23,7 @@ function eraBonus(season: number): number {
   if (season < 2000) return 300;
   if (season < 2010) return 200;
   if (season < 2020) return 100;
-  return 0;
+  return 50;
 }
 
 function eraDecade(season: number): string {
@@ -34,7 +34,7 @@ function eraDecade(season: number): string {
 }
 
 function calcScore(timeRemaining: number, season: number): number {
-  return Math.round(BASE_PTS * (timeRemaining / 30)) + eraBonus(season);
+  return Math.round(BASE_PTS * (timeRemaining / 40)) + eraBonus(season);
 }
 
 
@@ -151,9 +151,9 @@ export default function HomePage() {
   const [sickoProgress, setSickoProgress] = useState<Record<string, QuestionProgress>>({});
   const [hintsRevealed, setHintsRevealed] = useState<Record<string, boolean>>({});
   const [sickoStarted, setSickoStarted] = useState(false);
-  const [timeRemaining, setTimeRemaining] = useState(30);
+  const [timeRemaining, setTimeRemaining] = useState(40);
   const [timerKey, setTimerKey] = useState(0);
-  const timeRef = useRef(30);
+  const timeRef = useRef(40);
   const autoSubmitRef = useRef<() => void>(() => {});
 
   const sickoCurrentId =
@@ -212,14 +212,14 @@ export default function HomePage() {
     saveScoreToSupabase(nextQuestions);
   };
 
-  // 30-second countdown per question
+  // 40-second countdown per question
   useEffect(() => {
     if (!sickoStarted) return;
     const qp = sickoProgress[sickoCurrentId];
     if ((qp?.guesses.length ?? 0) > 0) return; // already answered
 
-    setTimeRemaining(30);
-    timeRef.current = 30;
+    setTimeRemaining(40);
+    timeRef.current = 40;
 
     const intervalId = setInterval(() => {
       timeRef.current -= 1;
@@ -542,7 +542,7 @@ export default function HomePage() {
                 <p>
                   4 questions stand between you and the endzone. 
 
-                  <br></br><br></br>You have <span className="font-semibold text-white">30 seconds</span> per question — one guess only.
+                  <br></br><br></br>You have <span className="font-semibold text-white">40 seconds</span> per question — just like the play clock. One guess only.
                   The faster you answer, the more points you score.
                   <br></br><br></br>Each question can range from "easy" to "sicko" difficulty, and you won't know which one you're getting until the timer has already started.
                   <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half. Choose wisely and good luck!
@@ -844,7 +844,7 @@ export default function HomePage() {
                                   timeRemaining > 10 ? "bg-emerald-500" :
                                   timeRemaining > 5  ? "bg-amber-500"   : "bg-rose-500"
                                 }`}
-                                style={{ width: `${(timeRemaining / 30) * 100}%` }}
+                                style={{ width: `${(timeRemaining / 40) * 100}%` }}
                               />
                             </div>
                           </div>
@@ -945,7 +945,7 @@ export default function HomePage() {
                               <div className="flex flex-wrap items-center gap-1 text-xs font-mono text-slate-300">
                                 <span className="text-sky-300">{BASE_PTS}</span>
                                 <span className="text-slate-500">×</span>
-                                <span className="text-emerald-300">({timeLeft ?? "?"}s/30s)</span>
+                                <span className="text-emerald-300">({timeLeft ?? "?"}s/40s)</span>
                                 {bonus > 0 && (
                                   <>
                                     <span className="text-slate-500">+</span>
