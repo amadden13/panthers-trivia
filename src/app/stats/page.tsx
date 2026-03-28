@@ -247,39 +247,39 @@ export default function LeaderboardPage() {
               ) : daily.length === 0 ? (
                 <div className="py-16 text-center text-sm text-slate-500">No scores for this date.</div>
               ) : (
-                <table className="w-full text-sm">
+                <table className="w-full text-xs">
                   <thead>
-                    <tr className="border-b border-slate-800 text-xs text-slate-500">
-                      <th className="px-4 py-3 text-left font-semibold">#</th>
-                      <th className="px-4 py-3 text-left font-semibold">Player</th>
-                      <th className="px-4 py-3 text-center font-semibold">Results</th>
-                      <th className="px-4 py-3 text-center font-semibold">Hint</th>
-                      <th className="px-4 py-3 text-right font-semibold">Score</th>
+                    <tr className="border-b border-slate-800 text-[11px] text-slate-500">
+                      <th className="px-2 py-3 text-left font-semibold">#</th>
+                      <th className="px-2 py-3 text-left font-semibold">Player</th>
+                      <th className="px-2 py-3 text-center font-semibold">Results</th>
+                      <th className="px-2 py-3 text-center font-semibold">Hint</th>
+                      <th className="px-2 py-3 text-right font-semibold">Score</th>
                     </tr>
                   </thead>
                   <tbody>
                     {daily.map((row, i) => (
                       <tr key={i} className="border-b border-slate-800/60 last:border-0 hover:bg-slate-800/30 transition-colors">
-                        <td className="px-4 py-3 text-center text-sm w-10">
+                        <td className="px-2 py-3 text-center w-8">
                           <span className={i < 3 ? "text-base" : "text-slate-500"}>{medal(i)}</span>
                         </td>
-                        <td className="px-4 py-3 font-semibold text-slate-100">{row.username}</td>
-                        <td className="px-4 py-3 text-center">
-                          <span className="flex items-center justify-center gap-1">
+                        <td className="px-2 py-3 font-semibold text-slate-100">{row.username}</td>
+                        <td className="px-2 py-3 text-center">
+                          <span className="flex items-center justify-center gap-0.5">
                             {row.question_results.map((correct, qi) => (
-                              <span key={qi} className={`text-xs font-bold ${correct ? "text-emerald-400" : "text-rose-400"}`}>
+                              <span key={qi} className={`font-bold ${correct ? "text-emerald-400" : "text-rose-400"}`}>
                                 {correct ? "✓" : "✗"}
                               </span>
                             ))}
                           </span>
                         </td>
-                        <td className="px-4 py-3 text-center text-xs">
+                        <td className="px-2 py-3 text-center">
                           {row.hint_used
                             ? <span className="text-amber-400">💡 {row.hint_question ? row.hint_question.toUpperCase() : ""}</span>
                             : <span className="text-slate-600">—</span>
                           }
                         </td>
-                        <td className="px-4 py-3 text-right font-bold text-sky-400">{row.total_score}</td>
+                        <td className="px-2 py-3 text-right font-bold text-sky-400">{row.total_score}</td>
                       </tr>
                     ))}
                   </tbody>
