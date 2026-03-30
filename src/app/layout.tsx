@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Panthers Trivia",
   description: "Daily Panthers trivia — 4 questions, 1 guess, 30 seconds each.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
 };
 
 export default function RootLayout({
@@ -24,9 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-slate-950 text-slate-100">
-      {children}
-    </body>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+      </head>
+      <body className="min-h-screen text-zinc-100">
+        {children}
+      </body>
     </html>
   );
 }

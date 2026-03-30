@@ -9,6 +9,8 @@ import { PUZZLES_SICKO } from "@/data/puzzles_sicko";
 import { getDayProgress, upsertDayProgress, type Mode } from "@/lib/storage";
 import { createClient } from "@/lib/supabase";
 import AuthModal from "@/components/AuthModal";
+import ProfileModal from "@/components/ProfileModal";
+import Header from "@/components/Header";
 
 /** ---------- scoring helpers ---------- **/
 const BASE_PTS = 1000;
@@ -20,10 +22,10 @@ function tierLabel(tier: number): string {
 }
 
 function eraBonus(season: number): number {
-  if (season < 2000) return 300;
-  if (season < 2010) return 200;
-  if (season < 2020) return 100;
-  return 50;
+  if (season < 2000) return 200;
+  if (season < 2010) return 100;
+  if (season < 2020) return 50;
+  return 25;
 }
 
 function eraDecade(season: number): string {
@@ -97,12 +99,17 @@ export default function HomePage() {
   const supabase = createClient();
   const today = useMemo(() => chicagoYMD(), []);
   const [adminDate, setAdminDate] = useState<string>(() => today);
-  const [showAuthModal, setShowAuthModal] = useState(false);
-  const [showUserMenu, setShowUserMenu] = useState(false);
   const [user, setUser] = useState<{ email?: string; username?: string; isAdmin?: boolean } | null>(null);
 
   useEffect(() => {
     async function loadUser(userId: string, email?: string) {
+      // Clear localStorage if it belongs to a different user
+      const storedUserId = localStorage.getItem("panthers_user_id");
+      if (storedUserId && storedUserId !== userId) {
+        localStorage.removeItem("panthers_daily_v1");
+      }
+      localStorage.setItem("panthers_user_id", userId);
+
       const { data: profile } = await supabase
         .from("profiles")
         .select("username, is_admin")
@@ -377,18 +384,18 @@ export default function HomePage() {
 
   if (!hasDay) {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-slate-100">
+      <main className="min-h-screen bg-transparent text-zinc-100">
         <div className="mx-auto max-w-2xl p-6">
           <header className="flex items-center justify-between">
             <h1 className="text-2xl font-bold">Panthers Daily</h1>
             <Link
-              className="rounded-lg border border-slate-700 bg-slate-900/60 px-3 py-2 text-sm font-medium text-slate-200 hover:border-sky-500/40 hover:bg-slate-900"
+              className="rounded-lg border border-zinc-700 bg-zinc-900/60 px-3 py-2 text-sm font-medium text-zinc-200 hover:border-[#0085CA]/40 hover:bg-zinc-900"
               href="/stats"
             >
               Stats
             </Link>
           </header>
-          <p className="mt-6 text-sm text-slate-300">
+          <p className="mt-6 text-sm text-zinc-300">
             No puzzle found for today (<code>{today}</code>).
           </p>
         </div>
@@ -397,97 +404,41 @@ export default function HomePage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-slate-100">
+    <main className="min-h-screen bg-transparent text-zinc-100">
       <div className="mx-auto max-w-2xl p-6">
         {/* Header */}
-        <header className="mb-8">
-          {/* Top nav row */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <span className="text-lg font-black tracking-tight text-white">PANTHERS</span>
-              <span className="rounded bg-sky-500 px-1.5 py-0.5 text-[11px] font-black tracking-widest text-white">
-                TRIVIA
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              {user ? (
-                <div className="flex items-center gap-2">
-                  <Link
-                    className="inline-flex items-center rounded-lg border border-slate-600 bg-slate-800 px-3 py-1.5 text-xs font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:bg-slate-700 hover:text-white active:scale-95"
-                    href="/stats"
-                  >
-                    <span className="hidden sm:inline">Leaderboard</span>
-                    <span className="sm:hidden">🏆</span>
-                  </Link>
-                  <div className="relative">
-                    <button
-                      className="max-w-[120px] truncate rounded-lg border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs font-semibold text-sky-400 hover:border-slate-600 hover:bg-slate-800 transition-colors active:scale-95"
-                      onClick={() => setShowUserMenu((v) => !v)}
-                    >
-                      Account ▾
-                    </button>
-                    {showUserMenu && (
-                      <>
-                        <div className="fixed inset-0 z-10" onClick={() => setShowUserMenu(false)} />
-                        <div className="absolute right-0 mt-1 z-20 w-44 rounded-xl border border-slate-700 bg-slate-900 shadow-xl overflow-hidden">
-                          <div className="px-4 py-2.5 border-b border-slate-800">
-                            <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Signed in as</p>
-                            <p className="mt-0.5 text-xs font-bold text-slate-200 truncate">{user.username ?? user.email}</p>
-                          </div>
-                          <button
-                            className="w-full px-4 py-2.5 text-left text-xs font-semibold text-rose-400 hover:bg-slate-800 transition-colors"
-                            onClick={async () => { await supabase.auth.signOut(); localStorage.removeItem("panthers_daily_v1"); window.location.reload(); }}
-                          >
-                            Sign out
-                          </button>
-                        </div>
-                      </>
-                    )}
-                  </div>
-                </div>
-              ) : (
-                <button
-                  className="rounded-lg border border-sky-700/50 bg-sky-500/10 px-3 py-1.5 text-xs font-semibold text-sky-400 hover:border-sky-600/60 hover:bg-sky-500/20 transition-colors"
-                  onClick={() => setShowAuthModal(true)}
-                >
-                  Sign in
-                </button>
-              )}
-            </div>
-          </div>
+        <header className="mb-2">
+          <Header activePage="home" />
 
           {/* Date + subtitle row */}
-          <div className="mt-5 border-t border-slate-800/60 pt-4">
-            <p className="text-xs font-semibold tracking-[0.15em] text-slate-500 uppercase">
+          <div className="mt-2 text-center">
+            <p className="text-xl font-bold text-white">
               {new Date(today + "T12:00:00").toLocaleDateString("en-US", {
                 weekday: "long",
                 month: "long",
                 day: "numeric",
+                year: "numeric",
               })}
-            </p>
-            <p className="mt-1 text-sm text-slate-400">
-              4 questions per day · 1 guess per question · Answer to unlock the next.
             </p>
           </div>
 
           {/* Admin controls (collapsed by default) */}
           {adminEnabled && (
-            <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/40 px-3 py-2">
-              <span className="text-xs font-medium text-slate-500">Viewing:</span>
+            <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/40 px-3 py-2">
+              <span className="text-xs font-medium text-zinc-500">Viewing:</span>
               <input
                 type="date"
                 value={adminDate}
                 onChange={(e) => setAdminDate(e.target.value)}
-                className="rounded border border-slate-700 bg-slate-950 px-2 py-1 text-xs text-slate-100"
+                className="rounded border border-zinc-700 bg-zinc-950 px-2 py-1 text-xs text-zinc-100"
               />
               <button
-                className="rounded border border-slate-700 bg-slate-900/60 px-2 py-1 text-xs text-slate-300 hover:border-slate-600"
+                className="rounded border border-zinc-700 bg-zinc-900/60 px-2 py-1 text-xs text-zinc-300 hover:border-zinc-600"
                 onClick={() => setAdminDate(today)}
               >
                 Today
               </button>
-              <span className="text-xs font-mono text-slate-500">{activeDate}</span>
+              <span className="text-xs font-mono text-zinc-500">{activeDate}</span>
               <button
                 className="ml-auto rounded border border-rose-800/60 bg-rose-950/40 px-2 py-1 text-xs text-rose-400 hover:border-rose-600/60"
                 onClick={resetToday}
@@ -499,71 +450,61 @@ export default function HomePage() {
         </header>
 
         {/* Game Card */}
-        <section className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.6),0_20px_60px_rgba(0,0,0,0.45)]">
+        <section className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 shadow-[0_0_0_1px_rgba(15,23,42,0.6),0_20px_60px_rgba(0,0,0,0.45)]">
 
           {/* Body */}
           {!sickoStarted ? (
             /* ── Pre-game intro screen ── */
-            <div className="mt-6 flex flex-col items-center gap-6 text-center">
-              {/* Field preview */}
-              <div className="relative h-16 w-full overflow-hidden rounded-xl border border-slate-700">
-                <div className="absolute inset-0 bg-emerald-800" />
-                {/* Left endzone */}
-                <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#101820" }}>
-                  <span className="text-[8px] font-black italic tracking-widest uppercase" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>Carolina</span>
+            <div className="flex flex-col items-center gap-6 text-center">
+
+              <div className="space-y-3 text-sm text-zinc-300 max-w-sm w-full">
+                {/* Title */}
+                <div className="flex flex-col items-center gap-1">
+                  <p className="text-xs font-bold tracking-[0.25em] text-zinc-500 uppercase">Panthers Trivia</p>
+                  <h2 className="text-3xl font-black tracking-tight text-white uppercase">
+                    Sicko <span className="text-[#0085CA]">Mode</span>
+                  </h2>
+                  <div className="mt-1 h-px w-16 bg-gradient-to-r from-transparent via-[#0085CA] to-transparent" />
                 </div>
-                {/* Right endzone */}
-                <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#101820]">
-                  <span className="text-[8px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
-                </div>
-                {/* Yard lines */}
-                {[30, 50, 70].map((pos) => (
-                  <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
-                ))}
-                {/* Yard markers on the field */}
-                {([30, 50, 70] as const).map((pos, i) => (
-                  <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>
-                    {["25", "50", "25"][i]}
+
+                {/* Field preview — same width as the eras box */}
+                <div className="relative h-16 w-full overflow-hidden rounded-xl border border-zinc-700">
+                  <div className="absolute inset-0 bg-emerald-800" />
+                  <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#000000" }}>
+                    <span className="text-[8px] font-black italic tracking-widest uppercase" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>Carolina</span>
                   </div>
-                ))}
-                {/* Football */}
-                <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-2xl drop-shadow-lg" style={{ zIndex: 3 }}>🏈</div>
-              </div>
+                  <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
+                    <span className="text-[8px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
+                  </div>
+                  {[30, 50, 70].map((pos) => (
+                    <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
+                  ))}
+                  {([30, 50, 70] as const).map((pos, i) => (
+                    <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>
+                      {["25", "50", "25"][i]}
+                    </div>
+                  ))}
+                  <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-2xl drop-shadow-lg" style={{ zIndex: 3 }}>🏈</div>
+                </div>
 
-              <div className="space-y-3 text-sm text-slate-300 max-w-sm">
-                {/* <p className="text-base font-semibold text-slate-100">
-                  Drive the football into the endzone for a <span className="text-yellow-300 font-bold">TOUCHDOWN</span>.
-                </p> */}
-
-                {/* Title */}                                                                                                                                           
-              <div className="flex flex-col items-center gap-1">                                                                                                      
-                <p className="text-xs font-bold tracking-[0.25em] text-slate-500 uppercase">Panthers Trivia</p>                                                
-                  <h2 className="text-3xl font-black tracking-tight text-white uppercase">                                                                              
-                    Sicko <span className="text-sky-400">Mode</span>                                                                                             
-                  </h2>                                                                                                                                          
-                <div className="mt-1 h-px w-16 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />                                                
-              </div>    
-
-                <p>
-                  4 questions stand between you and the endzone. 
-
-                  <br></br><br></br>You have <span className="font-semibold text-white">40 seconds</span> per question — just like the play clock. One guess only.
-                  The faster you answer, the more points you score.
-                  <br></br><br></br>Each question can range from "easy" to "sicko" difficulty, and you won't know which one you're getting until the timer has already started.
-                  <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half. Choose wisely and good luck!
+                <p className="text-sm">
+                  4 questions stand between you and the endzone. You have <span className="font-semibold text-white">40 seconds</span> per question and one guess per question.
+                  The faster you answer, the more points you score. 
+                  <br></br><br></br>Questions range from draft picks and season leaders, to obscure plays — such as <span className="font-semibold text-white">who caught Jake Delhomme's 3rd TD pass in Week 1 of the 2007 season</span>.
+                  <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half so choose wisely. Good luck!
                 </p>
                 {/* Era hints */}
-                <div className="rounded-xl border border-slate-700 bg-slate-900/60 px-3 py-2.5 space-y-1">
-                  <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Today's eras</p>
+                <div className="rounded-xl border border-zinc-700 bg-zinc-900/60 px-3 py-2.5 space-y-1">
+                  <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-1.5">Today's eras</p>
                   {sickoQuestions?.map((q, i) => (
                     <div key={q.id} className="flex items-center text-xs">
-                      <span className="w-8 text-slate-400">Q{i + 1}</span>
-                      <span className="flex-1 text-slate-300 font-medium">{eraDecade(q.season ?? 2020)}</span>
+                      <span className="w-8 text-zinc-400">Q{i + 1}</span>
+                      <span className="flex-1 text-zinc-300 font-medium">{eraDecade(q.season ?? 2020)}</span>
                       <span className="w-24 text-right">
                         {eraBonus(q.season ?? 2020) > 0 ? (
-                          <span className="rounded bg-purple-900/40 px-1.5 py-0.5 text-purple-300 font-semibold">+{eraBonus(q.season ?? 2020)} bonus</span>
+                          <span className="rounded px-1.5 py-0.5 font-semibold" style={{ background: "#BFC0BF22", color: "#BFC0BF" }}>+{eraBonus(q.season ?? 2020)} bonus</span>
                         ) : (
-                          <span className="text-slate-600">no bonus</span>
+                          <span className="text-zinc-600">no bonus</span>
                         )}
                       </span>
                     </div>
@@ -572,10 +513,10 @@ export default function HomePage() {
               </div>
 
               <button
-                className="mt-2 rounded-2xl bg-sky-500 px-10 py-4 text-base font-extrabold tracking-wide text-slate-950 shadow-[0_10px_40px_rgba(56,189,248,0.5)] hover:bg-sky-400 active:scale-95 transition-transform"
+                className="mt-2 rounded-2xl bg-[#0085CA] px-10 py-4 text-base font-extrabold tracking-wide text-zinc-950 shadow-[0_10px_40px_rgba(0,133,202,0.5)] hover:bg-[#0096E0] active:scale-95 transition-transform"
                 onClick={() => setSickoStarted(true)}
               >
-                ▶ Start
+                Start
               </button>
             </div>
           ) : (
@@ -597,12 +538,12 @@ export default function HomePage() {
                 return (
                   <div className="mt-5 space-y-4">
                     {/* Field */}
-                    <div className="relative h-20 overflow-hidden rounded-xl border border-slate-700">
+                    <div className="relative h-20 overflow-hidden rounded-xl border border-zinc-700">
                       <div className="absolute inset-0 bg-emerald-800" />
-                      <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#101820" }}>
+                      <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#000000" }}>
                         <span className="text-[9px] font-black italic tracking-widest uppercase" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>Carolina</span>
                       </div>
-                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#101820]">
+                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
                         <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
                       </div>
                       {[30, 50, 70].map((pos) => (
@@ -620,26 +561,26 @@ export default function HomePage() {
                       <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
                       {isTouchdown && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                          <span className="text-base font-black italic tracking-widest text-yellow-300 drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                          <span className="text-base font-black italic tracking-widest text-white-300 drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
                         </div>
                       )}
                     </div>
 
                     {/* Question summary */}
-                    <div className="rounded-2xl border border-slate-800 bg-slate-900/60 divide-y divide-slate-800">
+                    <div className="rounded-2xl border border-zinc-800 bg-zinc-900/60 divide-y divide-zinc-800">
                       {SICKO_ORDER.map((id, idx) => {
                         const q = sickoQuestions?.find((x) => x.id === id);
                         const qp = sickoProgress[id];
                         return (
                           <div key={id} className="flex items-center gap-3 px-4 py-3">
                             <span className={`text-base ${qp?.completed ? "text-emerald-400" : "text-rose-400"}`}>{qp?.completed ? "✓" : "✗"}</span>
-                            <span className="flex-1 text-sm text-slate-300">{q?.prompt}</span>
+                            <span className="flex-1 text-sm text-zinc-300">{q?.prompt}</span>
                           </div>
                         );
                       })}
                       <div className="flex items-center justify-center gap-2 px-4 py-3">
-                        <span className="text-sm font-bold text-slate-300">Total</span>
-                        <span className="text-sm font-bold text-sky-400">{totalScore} pts</span>
+                        <span className="text-sm font-bold text-zinc-300">Total</span>
+                        <span className="text-sm font-bold text-[#0085CA]">{totalScore} pts</span>
                       </div>
                     </div>
 
@@ -659,13 +600,13 @@ export default function HomePage() {
                 const ballPct = 10 + correctCount * 20;
                 return (
                   <div className="mt-5">
-                    <div className="relative h-20 overflow-hidden rounded-xl border border-slate-700">
+                    <div className="relative h-20 overflow-hidden rounded-xl border border-zinc-700">
                       {/* Field */}
                       <div className="absolute inset-0 bg-emerald-800" />
 
                       {/* Left endzone */}
                       <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center"
-                           style={{ background: "#101820" }}>
+                           style={{ background: "#000000" }}>
                         <span className="text-[9px] font-black italic tracking-widest uppercase"
                               style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>
                           Carolina
@@ -673,7 +614,7 @@ export default function HomePage() {
                       </div>
 
                       {/* Right endzone */}
-                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#101820]">
+                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
                         <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]"
                               style={{ writingMode: "vertical-rl" }}>
                           Panthers
@@ -743,7 +684,7 @@ export default function HomePage() {
                       {isTouchdown && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
                           <span
-                            className="text-base font-black italic tracking-widest text-yellow-300 drop-shadow-lg"
+                            className="text-base font-black italic tracking-widest text-white-300 drop-shadow-lg"
                             style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}
                           >
                             TOUCHDOWN!
@@ -772,22 +713,27 @@ export default function HomePage() {
                   const isLocked = !isAnswered && !isActive;
 
                   return (
-                    <li key={id} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                    <li key={id} className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4">
                       {/* Question header */}
                       <div className="flex items-center gap-2">
-                        <span className="inline-flex h-6 w-6 items-center justify-center rounded-lg bg-sky-500/15 text-xs font-bold text-sky-200 ring-1 ring-sky-500/30">
+                        <span className="inline-flex h-6 w-6 items-center justify-center rounded-lg bg-[#0085CA]/15 text-xs font-bold text-[#66BADF] ring-1 ring-[#0085CA]/30">
                           {idx + 1}
                         </span>
-                        <span className="text-xs font-semibold tracking-wider text-slate-400">
+                        <span className="text-xs font-semibold tracking-wider text-zinc-400">
                           {isAnswered
                             ? qp.completed ? "✅ CORRECT" : qp.guesses[0] === "(time's up)" ? "⏰ TIME'S UP" : "❌ INCORRECT"
                             : isActive ? "YOUR TURN" : "🔒 LOCKED"}
                         </span>
+                        {isActive && (
+                          <div className="ml-auto inline-flex items-center justify-center font-black tabular-nums" style={{ fontFamily: "'VT323', monospace", fontSize: "1.8rem", letterSpacing: "0.15em", minWidth: "2.8rem", color: `hsl(${(timeRemaining / 40) * 120}, 90%, 60%)`, textShadow: `0 0 3px hsl(${(timeRemaining / 40) * 120}, 90%, 60%)` }}>
+                            {String(timeRemaining).padStart(2, "0")}
+                          </div>
+                        )}
                       </div>
 
                       {/* Prompt — show for answered and active, hide for locked */}
                       {!isLocked && (
-                        <p className="mt-2 text-sm text-slate-200">{q?.prompt}</p>
+                        <p className="mt-2 text-sm text-zinc-200">{q?.prompt}</p>
                       )}
 
                       {/* Answered: show result */}
@@ -801,27 +747,27 @@ export default function HomePage() {
                             const isRestored = qp.guesses[0] === "(restored)" || qp.guesses[0] === "(incorrect)";
                             return qp.completed ? (
                               <>
-                                <div className="text-xs text-slate-400">Correct!</div>
+                                <div className="text-xs text-zinc-400">Correct!</div>
                                 {!isRestored && <div className="mt-0.5 font-bold text-emerald-100">{qp.guesses[0]}</div>}
                                 {isRestored && <div className="mt-0.5 font-bold text-emerald-100">{answerPlayers.map((p) => p.name).join(" · ")}</div>}
                               </>
                             ) : (
                               <>
-                                <div className="text-xs text-slate-400">
+                                <div className="text-xs text-zinc-400">
                                   {answerPlayers.length === 1 ? "Answer" : "Valid answers"}
                                 </div>
                                 <div className="mt-0.5 font-bold text-rose-100">
                                   {answerPlayers.map((p) => p.name).join(" · ")}
                                 </div>
                                 {!isRestored && (
-                                  <div className="mt-0.5 text-xs text-slate-400">
+                                  <div className="mt-0.5 text-xs text-zinc-400">
                                     You guessed: {qp.guesses[0] === "(time's up)" ? "⏰ Time's up!" : qp.guesses[0]}
                                   </div>
                                 )}
                               </>
                             );
                           })()}
-                          <div className="mt-1 text-xs font-semibold text-slate-300">
+                          <div className="mt-1 text-xs font-semibold text-zinc-300">
                             {qp.score ?? 0} pts
                           </div>
                         </div>
@@ -834,46 +780,24 @@ export default function HomePage() {
                         const hasHint = hintJerseys.length > 0;
                         return (
                         <>
-                          {/* Countdown bar */}
-                          <div className="mt-3">
-                            <div className="mb-1 flex items-center justify-between">
-                              <span className="text-xs text-slate-400">Time remaining</span>
-                              <span className={`text-xs font-bold tabular-nums ${
-                                timeRemaining > 10 ? "text-emerald-400" :
-                                timeRemaining > 5  ? "text-amber-400"   : "text-rose-400"
-                              }`}>{timeRemaining}s</span>
-                            </div>
-                            <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-700">
-                              <div
-                                className={`h-full rounded-full transition-all duration-1000 ease-linear ${
-                                  timeRemaining > 10 ? "bg-emerald-500" :
-                                  timeRemaining > 5  ? "bg-amber-500"   : "bg-rose-500"
-                                }`}
-                                style={{ width: `${(timeRemaining / 40) * 100}%` }}
-                              />
-                            </div>
-                          </div>
-
                           {/* Hint */}
                           {hasHint && (
                             <div className="mt-2">
                               {!hintRevealed ? (
                                 Object.values(hintsRevealed).some(Boolean) ? (
-                                  <span className="text-xs text-slate-600">💡 Hint already used today</span>
+                                  <span className="text-xs text-zinc-600">💡 Hint already used today</span>
                                 ) : (
-                                <button
-                                  className="rounded-lg border border-amber-700/50 bg-amber-950/30 px-3 py-1.5 text-xs font-semibold text-amber-400 hover:border-amber-600/60 hover:bg-amber-950/50 transition-colors"
-                                  onClick={() => setHintsRevealed((prev) => ({ ...prev, [id]: true }))}
-                                >
-                                  💡 Use hint (−50% score)
-                                </button>
+                                  <button
+                                    className="rounded-md border border-amber-700/50 bg-amber-950/30 px-3 py-1.5 text-xs font-semibold text-amber-400 hover:border-amber-600/60 hover:bg-amber-950/50 transition-colors"
+                                    onClick={() => setHintsRevealed((prev) => ({ ...prev, [id]: true }))}
+                                  >
+                                    💡 Use hint (−50% score)
+                                  </button>
                                 )
                               ) : (
                                 <div className="flex items-center gap-2 rounded-lg border border-amber-700/40 bg-amber-950/20 px-3 py-1.5">
                                   <span className="text-xs text-amber-400 font-semibold">💡 Hint:</span>
-                                  <span className="text-xs text-amber-200">
-                                    Jersey #{hintJerseys.join(" or #")}
-                                  </span>
+                                  <span className="text-xs text-amber-200">Jersey #{hintJerseys.join(" or #")}</span>
                                   <span className="ml-auto text-xs text-amber-600">−50% score</span>
                                 </div>
                               )}
@@ -883,7 +807,7 @@ export default function HomePage() {
                           <div className="mt-2 flex flex-col gap-2 sm:flex-row">
                             <div className="relative w-full">
                               <input
-                                className="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none ring-sky-500/30 focus:border-sky-500/60 focus:ring-4"
+                                className="w-full rounded-xl border border-zinc-700 bg-zinc-950/60 px-4 py-3 text-zinc-100 placeholder:text-zinc-500 outline-none ring-[#0085CA]/30 focus:border-[#0085CA]/60 focus:ring-4"
                                 placeholder="Type a player name…"
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
@@ -891,12 +815,12 @@ export default function HomePage() {
                                 list="players-list"
                                 autoFocus
                               />
-                              <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-500">
+                              <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-zinc-500">
                                 Enter
                               </div>
                             </div>
                             <button
-                              className="rounded-xl bg-sky-500 px-5 py-3 text-sm font-bold text-slate-950 shadow-[0_10px_30px_rgba(56,189,248,0.35)] hover:bg-sky-400"
+                              className="rounded-xl bg-[#0085CA] px-5 py-3 text-sm font-bold text-zinc-950 shadow-[0_10px_30px_rgba(0,133,202,0.35)] hover:bg-[#0096E0]"
                               onClick={submitGuess}
                             >
                               Guess
@@ -908,7 +832,7 @@ export default function HomePage() {
 
                       {/* Locked: placeholder */}
                       {isLocked && (
-                        <p className="mt-2 text-xs text-slate-500">Answer the previous question to unlock.</p>
+                        <p className="mt-2 text-xs text-zinc-500">Answer the previous question to unlock.</p>
                       )}
                     </li>
                   );
@@ -917,8 +841,8 @@ export default function HomePage() {
 
               {/* Score breakdown — shown once all 4 questions are answered */}
               {SICKO_ORDER.every((id) => (sickoProgress[id]?.guesses.length ?? 0) > 0) && (
-                <div className="mt-6 rounded-2xl border border-slate-700 bg-slate-950/50 p-4">
-                  <div className="text-xs font-semibold tracking-wider text-slate-400 mb-3">SCORE BREAKDOWN</div>
+                <div className="mt-6 rounded-2xl border border-zinc-700 bg-zinc-950/50 p-4">
+                  <div className="text-xs font-semibold tracking-wider text-zinc-400 mb-3">SCORE BREAKDOWN</div>
                   <div className="space-y-2">
                     {SICKO_ORDER.map((id, idx) => {
                       const qp = sickoProgress[id];
@@ -931,71 +855,71 @@ export default function HomePage() {
                       const hintUsed = !!qp?.hintUsed;
                       const rawScore = qp?.completed ? Math.round(BASE_PTS * ((timeLeft ?? 0) / 30)) + bonus : 0;
                       return (
-                        <div key={id} className="rounded-xl border border-slate-800 bg-slate-900/40 p-3">
+                        <div key={id} className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-3">
                           <div className="flex items-start justify-between gap-3">
                             <div className="flex items-center gap-2 min-w-0">
-                              <span className="shrink-0 text-slate-500 text-xs">Q{idx + 1}</span>
+                              <span className="shrink-0 text-zinc-500 text-xs">Q{idx + 1}</span>
                               <span className={`shrink-0 font-semibold ${qp?.completed ? "text-emerald-400" : "text-rose-400"}`}>
                                 {qp?.completed ? "✓" : isTimesUp ? "⏰" : "✗"}
                               </span>
-                              <span className="truncate text-xs text-slate-400">{q?.prompt}</span>
+                              <span className="truncate text-xs text-zinc-400">{q?.prompt}</span>
                             </div>
-                            <span className={`shrink-0 font-bold ${qp?.completed ? "text-sky-400" : "text-slate-500"}`}>
+                            <span className={`shrink-0 font-bold ${qp?.completed ? "text-[#0085CA]" : "text-zinc-500"}`}>
                               {qp?.completed ? `+${qp.score}` : "0 pts"}
                             </span>
                           </div>
                           {qp?.completed && (
                             <div className="mt-2 space-y-1.5">
                               {/* Equation row */}
-                              <div className="flex flex-wrap items-center gap-1 text-xs font-mono text-slate-300">
-                                <span className="text-sky-300">{BASE_PTS}</span>
-                                <span className="text-slate-500">×</span>
+                              <div className="flex flex-wrap items-center gap-1 text-xs font-mono text-zinc-300">
+                                <span className="text-[#33A0D8]">{BASE_PTS}</span>
+                                <span className="text-zinc-500">×</span>
                                 <span className="text-emerald-300">({timeLeft ?? "?"}s/40s)</span>
                                 {bonus > 0 && (
                                   <>
-                                    <span className="text-slate-500">+</span>
-                                    <span className="text-purple-300">{bonus}</span>
+                                    <span className="text-zinc-500">+</span>
+                                    <span style={{ color: "#BFC0BF" }}>{bonus}</span>
                                   </>
                                 )}
                                 {hintUsed && (
                                   <>
-                                    <span className="text-slate-500">→</span>
+                                    <span className="text-zinc-500">→</span>
                                     <span className="text-amber-400">{rawScore}</span>
-                                    <span className="text-slate-500">÷ 2</span>
+                                    <span className="text-zinc-500">÷ 2</span>
                                   </>
                                 )}
-                                <span className="text-slate-500">=</span>
+                                <span className="text-zinc-500">=</span>
                                 <span className="font-bold text-yellow-300">{qp.score}</span>
                               </div>
-                              <div className="flex flex-wrap gap-1.5 text-xs text-slate-500">
-                                <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-sky-400">{tierLabel(tier)}</span>
-                                <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-emerald-400">{timeLeft ?? "?"}s remaining</span>
+                              <div className="flex flex-wrap gap-1.5 text-xs text-zinc-500">
+                                <span className="rounded bg-zinc-800/80 px-1.5 py-0.5 text-[#0085CA]">{tierLabel(tier)}</span>
+                                <span className="rounded bg-zinc-800/80 px-1.5 py-0.5 text-emerald-400">{timeLeft ?? "?"}s remaining</span>
                                 {bonus > 0 && (
-                                  <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-purple-400">
+                                  <span className="rounded bg-zinc-800/80 px-1.5 py-0.5" style={{ color: "#BFC0BF" }}>
                                     {season < 2000 ? "1990s" : season < 2010 ? "2000s" : "2010s"} Bonus
                                   </span>
                                 )}
                                 {hintUsed && (
-                                  <span className="rounded bg-slate-800/80 px-1.5 py-0.5 text-amber-400">💡 Hint used</span>
+                                  <span className="rounded bg-zinc-800/80 px-1.5 py-0.5 text-amber-400">💡 Hint used</span>
                                 )}
                               </div>
                             </div>
                           )}
                           {!qp?.completed && isTimesUp && (
-                            <p className="mt-1.5 text-xs text-slate-500">Ran out of time — correct answer: {(sickoPlayerMap[id] ?? []).map(p => p.name).join(" · ")}</p>
+                            <p className="mt-1.5 text-xs text-zinc-500">Ran out of time — correct answer: {(sickoPlayerMap[id] ?? []).map(p => p.name).join(" · ")}</p>
                           )}
                           {!qp?.completed && !isTimesUp && qp?.guesses[0] && (
-                            <p className="mt-1.5 text-xs text-slate-500">You guessed: {qp.guesses[0]} — correct: {(sickoPlayerMap[id] ?? []).map(p => p.name).join(" · ")}</p>
+                            <p className="mt-1.5 text-xs text-zinc-500">You guessed: {qp.guesses[0]} — correct: {(sickoPlayerMap[id] ?? []).map(p => p.name).join(" · ")}</p>
                           )}
                         </div>
                       );
                     })}
                   </div>
-                  <div className="mt-3 border-t border-slate-700 pt-4 flex justify-between items-baseline">
-                    <span className="text-base font-bold text-slate-300">Total</span>
-                    <span className="text-2xl font-black text-sky-400">
+                  <div className="mt-3 border-t border-zinc-700 pt-4 flex justify-between items-baseline">
+                    <span className="text-base font-bold text-zinc-300">Total</span>
+                    <span className="text-2xl font-black text-[#0085CA]">
                       {totalScore.toLocaleString()}
-                      {maxScore != null && <span className="text-sm font-normal text-slate-500"> / {maxScore}</span>}
+                      {maxScore != null && <span className="text-sm font-normal text-zinc-500"> / {maxScore}</span>}
                     </span>
                   </div>
                 </div>
@@ -1017,12 +941,11 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-8 text-center text-xs text-slate-500">
+        <footer className="mt-8 text-center text-xs text-zinc-500">
           #PanthersTriviaSickoMode
         </footer>
       </div>
 
-      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
     </main>
   );
 }
