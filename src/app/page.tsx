@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 import { chicagoYMD } from "@/lib/time";
 import { PLAYERS } from "@/data/players";
+import { OPPONENTS } from "@/data/opponents";
 import { PUZZLES_SICKO } from "@/data/puzzles_sicko";
 import { getDayProgress, upsertDayProgress, type Mode } from "@/lib/storage";
 import { createClient } from "@/lib/supabase";
@@ -39,6 +40,71 @@ function calcScore(timeRemaining: number, season: number): number {
   return Math.round(BASE_PTS * (timeRemaining / 40)) + eraBonus(season);
 }
 
+
+/** ---------- PlayClock ---------- **/
+const SEG_DIGITS: Record<number, boolean[]> = {
+  // segments: [a, b, c, d, e, f, g]  (top, top-right, bot-right, bot, bot-left, top-left, mid)
+  0: [true,  true,  true,  true,  true,  true,  false],
+  1: [false, true,  true,  false, false, false, false],
+  2: [true,  true,  false, true,  true,  false, true ],
+  3: [true,  true,  true,  true,  false, false, true ],
+  4: [false, true,  true,  false, false, true,  true ],
+  5: [true,  false, true,  true,  false, true,  true ],
+  6: [true,  false, true,  true,  true,  true,  true ],
+  7: [true,  true,  true,  false, false, false, false],
+  8: [true,  true,  true,  true,  true,  true,  true ],
+  9: [true,  true,  true,  true,  false, true,  true ],
+};
+
+function SevenSegDigit({ digit, on, off }: { digit: number; on: string; off: string }) {
+  const segs = SEG_DIGITS[digit] ?? SEG_DIGITS[8];
+  const W = 18, H = 30, T = 3, G = 1.5;
+  const hw = W - 2 * (T + G); // horizontal segment width
+  const vh = H / 2 - T - 2 * G; // vertical segment height
+  const hx = T + G;
+  const rects = [
+    { x: hx,   y: 0,       w: hw, h: T,  r: 2 }, // a top
+    { x: W - T, y: T + G,  w: T,  h: vh, r: 2 }, // b top-right
+    { x: W - T, y: H/2+G,  w: T,  h: vh, r: 2 }, // c bot-right
+    { x: hx,   y: H - T,   w: hw, h: T,  r: 2 }, // d bottom
+    { x: 0,    y: H/2+G,   w: T,  h: vh, r: 2 }, // e bot-left
+    { x: 0,    y: T + G,   w: T,  h: vh, r: 2 }, // f top-left
+    { x: hx,   y: H/2-T/2, w: hw, h: T,  r: 2 }, // g middle
+  ];
+  return (
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+      {rects.map((r, i) => (
+        <rect key={i} x={r.x} y={r.y} width={r.w} height={r.h} rx={r.r} fill={segs[i] ? on : off} />
+      ))}
+    </svg>
+  );
+}
+
+function PlayClock({ timeRemaining }: { timeRemaining: number }) {
+  const urgent = timeRemaining <= 10;
+  const onColor  = urgent ? "#ff4400" : "#ffb300";
+  const offColor = urgent ? "#200800" : "#1c1000";
+  const glow     = urgent ? "#ff440055" : "#ffb30044";
+  return (
+    <div className="flex flex-col items-center gap-0.5">
+      <div style={{
+        background: "linear-gradient(180deg, #141414 0%, #0a0a0a 100%)",
+        border: "3px solid #2a2a2a",
+        borderRadius: "6px",
+        outline: "1px solid #111",
+        padding: "6px 10px",
+        display: "flex",
+        gap: "3px",
+        alignItems: "center",
+        boxShadow: `inset 0 2px 8px rgba(0,0,0,0.95), 0 1px 0 #333, 0 0 12px ${glow}`,
+        filter: `drop-shadow(0 0 5px ${glow})`,
+      }}>
+        <SevenSegDigit digit={Math.floor(timeRemaining / 10)} on={onColor} off={offColor} />
+        <SevenSegDigit digit={timeRemaining % 10}             on={onColor} off={offColor} />
+      </div>
+    </div>
+  );
+}
 
 /** ---------- helpers ---------- **/
 function normalizeName(s: string) {
@@ -100,6 +166,7 @@ export default function HomePage() {
   const today = useMemo(() => chicagoYMD(), []);
   const [adminDate, setAdminDate] = useState<string>(() => today);
   const [user, setUser] = useState<{ email?: string; username?: string; isAdmin?: boolean } | null>(null);
+  const [showAuthModal, setShowAuthModal] = useState(false);
 
   useEffect(() => {
     async function loadUser(userId: string, email?: string) {
@@ -149,7 +216,7 @@ export default function HomePage() {
   }, [activeDate]);
 
   const sickoQuestions = (sickoDay as any)?.questions as
-    | Array<{ id: "q1" | "q2" | "q3" | "q4"; prompt: string; playerIds?: string[]; playerId?: string; tier?: number; season?: number }>
+    | Array<{ id: "q1" | "q2" | "q3" | "q4"; prompt: string; playerIds?: string[]; playerId?: string; answerPool?: string; tier?: number; season?: number }>
     | undefined;
 
   const hasDay = !!sickoDay;
@@ -157,10 +224,13 @@ export default function HomePage() {
   const [input, setInput] = useState<string>("");
   const [sickoProgress, setSickoProgress] = useState<Record<string, QuestionProgress>>({});
   const [hintsRevealed, setHintsRevealed] = useState<Record<string, boolean>>({});
+  const [scoreExpanded, setScoreExpanded] = useState(false);
   const [sickoStarted, setSickoStarted] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(40);
   const [timerKey, setTimerKey] = useState(0);
   const timeRef = useRef(40);
+  const activeCardRef = useRef<HTMLLIElement>(null);
+  const scoreRef = useRef<HTMLDivElement>(null);
   const autoSubmitRef = useRef<() => void>(() => {});
 
   const sickoCurrentId =
@@ -173,16 +243,24 @@ export default function HomePage() {
   const sickoOutOfGuesses = mode === "sicko" && sickoQp.guesses.length >= 1;
 
   const totalScore = SICKO_ORDER.reduce((sum, id) => sum + (sickoProgress[id]?.score ?? 0), 0);
+  const allAnswered = SICKO_ORDER.every((id) => (sickoProgress[id]?.guesses.length ?? 0) > 0);
+
+  useEffect(() => {
+    if (allAnswered && scoreRef.current) {
+      setTimeout(() => scoreRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
+    }
+  }, [allAnswered]);
 
   const maxScore = sickoQuestions ? 4 * BASE_PTS : null;
 
-  // Map every question id -> all valid answer Players (usually 1, sometimes multiple)
+  // Map every question id -> all valid answer entries (Panthers players or opposing QBs)
   const sickoPlayerMap = useMemo(() => {
-    const map: Record<string, (typeof PLAYERS[number])[]> = {};
+    const map: Record<string, { id: string; name: string; pos?: string; jersey?: number[] }[]> = {};
     for (const q of sickoQuestions ?? []) {
       const ids = q.playerIds ?? (q.playerId ? [q.playerId] : []);
+      const pool = q.answerPool === "opponents" ? OPPONENTS : PLAYERS;
       map[q.id] = ids.flatMap((id) => {
-        const p = PLAYERS.find((x) => x.id === id);
+        const p = pool.find((x) => x.id === id);
         return p ? [p] : [];
       });
     }
@@ -215,9 +293,11 @@ export default function HomePage() {
     const nextQuestions = { ...sickoProgress, [sickoCurrent.id]: nextQp };
     setSickoProgress(nextQuestions);
     setInput("");
+    localStorage.removeItem(`panthers_timer_v1_${activeDate}_${sickoCurrent.id}`);
     upsertDayProgress({ mode: "sicko", date: activeDate, questions: nextQuestions } as any);
     saveScoreToSupabase(nextQuestions);
   };
+
 
   // 40-second countdown per question
   useEffect(() => {
@@ -225,8 +305,25 @@ export default function HomePage() {
     const qp = sickoProgress[sickoCurrentId];
     if ((qp?.guesses.length ?? 0) > 0) return; // already answered
 
-    setTimeRemaining(40);
-    timeRef.current = 40;
+    const timerKey_str = `panthers_timer_v1_${activeDate}_${sickoCurrentId}`;
+
+    // Check if there's a saved start time for this question
+    const savedStart = localStorage.getItem(timerKey_str);
+    let initial = 40;
+    if (savedStart) {
+      const elapsed = Math.floor((Date.now() - Number(savedStart)) / 1000);
+      initial = Math.max(0, 40 - elapsed);
+    } else {
+      localStorage.setItem(timerKey_str, String(Date.now()));
+    }
+
+    if (initial <= 0) {
+      autoSubmitRef.current();
+      return;
+    }
+
+    setTimeRemaining(initial);
+    timeRef.current = initial;
 
     const intervalId = setInterval(() => {
       timeRef.current -= 1;
@@ -256,29 +353,55 @@ export default function HomePage() {
     const allAnswered = SICKO_ORDER.every((id) => (nextQuestions[id]?.guesses.length ?? 0) > 0);
     if (!allAnswered) return;
 
-    const total = SICKO_ORDER.reduce((sum, id) => sum + (nextQuestions[id]?.score ?? 0), 0);
-    const results = SICKO_ORDER.map((id) => !!nextQuestions[id]?.completed);
-    const scores = SICKO_ORDER.map((id) => nextQuestions[id]?.score ?? 0);
-    const correct = results.filter(Boolean).length;
-    const hintQuestion = SICKO_ORDER.find((id) => nextQuestions[id]?.hintUsed) ?? null;
-    const hintUsed = !!hintQuestion;
+    const answers = SICKO_ORDER.map((id) => ({
+      questionId: id,
+      answer: nextQuestions[id]?.guesses[0] ?? "",
+      timeRemaining: nextQuestions[id]?.timeRemaining ?? 0,
+      hintUsed: !!nextQuestions[id]?.hintUsed,
+    }));
 
-    const { error } = await supabase.from("scores").upsert({
-      user_id: session.user.id,
-      date: activeDate,
-      total_score: total,
-      questions_correct: correct,
-      question_results: results,
-      question_scores: scores,
-      hint_used: hintUsed,
-      hint_question: hintQuestion,
-    }, { onConflict: "user_id,date" });
-    if (error) console.error("Score save error:", error);
+    const res = await fetch("/api/submit-score", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ date: activeDate, answers }),
+    });
+    if (!res.ok) console.error("Score save error:", await res.text());
+  }
+
+  async function syncLocalProgressToSupabase(date: string) {
+    const existing = getDayProgress("sicko", date) as any;
+    if (!existing) return;
+
+    const allAnswered = SICKO_ORDER.every((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0);
+    if (!allAnswered) return;
+
+    const answers = SICKO_ORDER.map((id) => ({
+      questionId: id,
+      answer: existing.questions[id]?.guesses[0] ?? "",
+      timeRemaining: existing.questions[id]?.timeRemaining ?? 0,
+      hintUsed: !!existing.questions[id]?.hintUsed,
+    }));
+
+    const res = await fetch("/api/submit-score", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ date, answers }),
+    });
+    if (!res.ok) console.error("Score sync error:", await res.text());
   }
 
   async function restoreProgressFromSupabase(userId: string, date: string) {
     const existing = getDayProgress("sicko", date) as any;
-    if (existing && SICKO_ORDER.some((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0)) return;
+    const hasLocalProgress = existing && SICKO_ORDER.some((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0);
+
+    // If quiz is fully completed locally but not yet in Supabase, submit it now
+    const allAnsweredLocally = existing && SICKO_ORDER.every((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0);
+    if (allAnsweredLocally) {
+      await syncLocalProgressToSupabase(date);
+      return;
+    }
+
+    if (hasLocalProgress) return;
 
     const { data } = await supabase
       .from("scores")
@@ -343,28 +466,24 @@ export default function HomePage() {
 
     setSickoProgress(nextQuestions);
     setInput("");
+    localStorage.removeItem(`panthers_timer_v1_${activeDate}_${sickoCurrent.id}`);
     persistSicko(nextQuestions);
     saveScoreToSupabase(nextQuestions);
   }
 
   async function share() {
-    try {
-      const cells = SICKO_ORDER.map((id) => {
-        const qp = sickoProgress[id] ?? { guesses: [], completed: false };
-        if (qp.completed) return "🟩";
-        if (qp.guesses.length === 0) return "⬛";
-        return "🟥";
-      }).join(" ");
-      const text = `#PanthersTriviaSicko\n${activeDate}\n${cells}\n${totalScore} pts`;
+    const cells = SICKO_ORDER.map((id) => {
+      const qp = sickoProgress[id] ?? { guesses: [], completed: false };
+      if (qp.completed) return "🟩";
+      if (qp.guesses.length === 0) return "⬛";
+      return "🟥";
+    }).join(" ");
+    const text = `${activeDate}\n${cells}\n${totalScore} pts\n${window.location.origin}\n#PanthersSicko`;
 
-      if ((navigator as any).share) {
-        await (navigator as any).share({ text });
-      } else {
-        await navigator.clipboard.writeText(text);
-        alert("Copied results to clipboard!");
-      }
+    try {
+      await (navigator as any).share({ text });
     } catch {
-      // ignore
+      // user dismissed or share not supported
     }
   }
 
@@ -487,11 +606,12 @@ export default function HomePage() {
                   <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-2xl drop-shadow-lg" style={{ zIndex: 3 }}>🏈</div>
                 </div>
 
-                <p className="text-sm">
-                  4 questions stand between you and the endzone. You have <span className="font-semibold text-white">40 seconds</span> per question and one guess per question.
-                  The faster you answer, the more points you score. 
-                  <br></br><br></br>Questions range from draft picks and season leaders, to obscure plays — such as <span className="font-semibold text-white">who caught Jake Delhomme's 3rd TD pass in Week 1 of the 2007 season</span>.
-                  <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half so choose wisely. Good luck!
+                <p className="text-sm text-center" style={{ textWrap: "balance" } as React.CSSProperties}>
+                  4 questions stand between you and the endzone. <br></br> <span className="font-semibold text-white">40 second play clock </span> per question. 
+                  <br></br>The faster you answer, the more points you score. 
+                  <br></br><br></br>Questions range from the 1995 - 2025 seasons. 
+                  <br></br>You will be quizzed on draft picks and season leaders, as well as specific plays — such as <br></br><span className="font-semibold text-white">Which WR caught Jake Delhomme's 3rd TD pass in Week 1 of the 2007 season</span>.
+                  <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half so choose wisely. <br></br>Good luck!
                 </p>
                 {/* Era hints */}
                 <div className="rounded-xl border border-zinc-700 bg-zinc-900/60 px-3 py-2.5 space-y-1">
@@ -511,6 +631,15 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
+
+              {!user && (
+                <div className="w-full max-w-sm rounded-xl border border-[#0085CA]/30 bg-[#0085CA]/10 px-4 py-3 text-center">
+                  <p className="text-xs font-semibold text-zinc-300">
+                    <button className="text-[#0085CA] hover:text-white transition-colors font-bold" onClick={() => setShowAuthModal(true)}>Sign in or create an account</button>
+                    {" "}to register your points and compete on the leaderboard.
+                  </p>
+                </div>
+              )}
 
               <button
                 className="mt-2 rounded-2xl bg-[#0085CA] px-10 py-4 text-base font-extrabold tracking-wide text-zinc-950 shadow-[0_10px_40px_rgba(0,133,202,0.5)] hover:bg-[#0096E0] active:scale-95 transition-transform"
@@ -593,113 +722,15 @@ export default function HomePage() {
               })()}
               {/* Only render the full game UI if NOT restored */}
               {!SICKO_ORDER.every((id) => { const g = sickoProgress[id]?.guesses[0]; return g === "(restored)" || g === "(incorrect)"; }) && <>
-              {(() => {
-                const correctCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
-                const isTouchdown = correctCount === 4;
-                // Ball x-position as % of container: starts at left goal line (10%), moves 20% per correct answer, TD at 90%
-                const ballPct = 10 + correctCount * 20;
-                return (
-                  <div className="mt-5">
-                    <div className="relative h-20 overflow-hidden rounded-xl border border-zinc-700">
-                      {/* Field */}
-                      <div className="absolute inset-0 bg-emerald-800" />
-
-                      {/* Left endzone */}
-                      <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center"
-                           style={{ background: "#000000" }}>
-                        <span className="text-[9px] font-black italic tracking-widest uppercase"
-                              style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>
-                          Carolina
-                        </span>
-                      </div>
-
-                      {/* Right endzone */}
-                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
-                        <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]"
-                              style={{ writingMode: "vertical-rl" }}>
-                          Panthers
-                        </span>
-                      </div>
-
-                      {/* Yard lines */}
-                      {[30, 50, 70].map((pos) => (
-                        <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
-                      ))}
-
-                      {/* Yard markers on the field */}
-                      {([30, 50, 70] as const).map((pos, i) => (
-                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>
-                          {["25", "50", "25"][i]}
-                        </div>
-                      ))}
-
-                      {/* Hash marks */}
-                      {[20, 40, 60, 80].map((pos) => (
-                        <div key={pos} className="absolute top-1/2 -translate-y-1/2 w-px h-2 bg-white/20" style={{ left: `${pos}%` }} />
-                      ))}
-
-                      {/* Panthers blue arrow: left endzone → back of football */}
-                      {correctCount > 0 && !isTouchdown && (
-                        <>
-                          {/* Shaft */}
-                          <div
-                            className="absolute pointer-events-none transition-all duration-700 ease-out"
-                            style={{
-                              top: "50%",
-                              left: "10%",
-                              right: `calc(${100 - ballPct}% + 26px)`,
-                              height: "4px",
-                              transform: "translateY(-50%)",
-                              background: "#0085CA",
-                              zIndex: 2,
-                            }}
-                          />
-                          {/* Arrowhead (right-pointing triangle) */}
-                          <div
-                            className="absolute pointer-events-none transition-all duration-700 ease-out"
-                            style={{
-                              top: "50%",
-                              left: `calc(${ballPct}% - 26px)`,
-                              transform: "translateY(-50%)",
-                              width: 0,
-                              height: 0,
-                              borderTop: "8px solid transparent",
-                              borderBottom: "8px solid transparent",
-                              borderLeft: "14px solid #0085CA",
-                              zIndex: 2,
-                            }}
-                          />
-                        </>
-                      )}
-
-                      {/* Football — above arrow */}
-                      <div
-                        className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl transition-all duration-700 ease-out drop-shadow-lg"
-                        style={{ left: `${ballPct}%`, zIndex: 3 }}
-                      >
-                        🏈
-                      </div>
-
-                      {/* Touchdown celebration */}
-                      {isTouchdown && (
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-                          <span
-                            className="text-base font-black italic tracking-widest text-white-300 drop-shadow-lg"
-                            style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}
-                          >
-                            TOUCHDOWN!
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                );
-              })()}
-
               {/* Sicko: one card per question, answered ones stay visible */}
               <datalist id="players-list">
                 {PLAYERS.map((p) => (
                   <option key={p.id} value={`${p.name} (${p.pos})`} />
+                ))}
+              </datalist>
+              <datalist id="opponents-list">
+                {OPPONENTS.map((p) => (
+                  <option key={p.id} value={p.name} />
                 ))}
               </datalist>
 
@@ -712,33 +743,52 @@ export default function HomePage() {
                   const isActive = id === sickoCurrentId && !isAnswered;
                   const isLocked = !isAnswered && !isActive;
 
-                  return (
-                    <li key={id} className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4">
-                      {/* Question header */}
-                      <div className="flex items-center gap-2">
-                        <span className="inline-flex h-6 w-6 items-center justify-center rounded-lg bg-[#0085CA]/15 text-xs font-bold text-[#66BADF] ring-1 ring-[#0085CA]/30">
+                  // Collapse answered questions while there's still an active question
+                  const hasActiveQuestion = SICKO_ORDER.some((qid) => {
+                    const qpCheck = sickoProgress[qid] ?? { guesses: [], completed: false };
+                    return qid === sickoCurrentId && qpCheck.guesses.length === 0;
+                  });
+                  const isCollapsed = isAnswered && hasActiveQuestion;
+
+                  if (isCollapsed) {
+                    return (
+                      <li key={id} className="rounded-2xl border border-zinc-800 bg-zinc-900/60 px-4 py-2.5 flex items-center gap-2">
+                        <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-[#0085CA]/15 text-xs font-bold text-[#66BADF] ring-1 ring-[#0085CA]/30">
                           {idx + 1}
                         </span>
                         <span className="text-xs font-semibold tracking-wider text-zinc-400">
-                          {isAnswered
-                            ? qp.completed ? "✅ CORRECT" : qp.guesses[0] === "(time's up)" ? "⏰ TIME'S UP" : "❌ INCORRECT"
-                            : isActive ? "YOUR TURN" : "🔒 LOCKED"}
+                          {qp.completed ? "✅ CORRECT" : qp.guesses[0] === "(time's up)" ? "⏰ TIME'S UP" : "❌ INCORRECT"}
                         </span>
-                        {isActive && (
-                          <div className="ml-auto inline-flex items-center justify-center font-black tabular-nums" style={{ fontFamily: "'VT323', monospace", fontSize: "1.8rem", letterSpacing: "0.15em", minWidth: "2.8rem", color: `hsl(${(timeRemaining / 40) * 120}, 90%, 60%)`, textShadow: `0 0 3px hsl(${(timeRemaining / 40) * 120}, 90%, 60%)` }}>
-                            {String(timeRemaining).padStart(2, "0")}
-                          </div>
+                        <span className="ml-auto text-xs font-bold text-[#0085CA]">{qp.score ?? 0} pts</span>
+                      </li>
+                    );
+                  }
+
+                  return (
+                    <li key={id} ref={isActive ? activeCardRef : null} className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4">
+                      {/* Question header */}
+                      <div className={`flex items-center gap-2 justify-center${isLocked ? "" : " flex-col text-center"}`}>
+                        {isLocked && (
+                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-lg bg-[#0085CA]/15 text-xs font-bold text-[#66BADF] ring-1 ring-[#0085CA]/30">
+                            {idx + 1}
+                          </span>
                         )}
+                        {!isAnswered && (
+                          <span className="text-xs font-semibold tracking-wider text-zinc-400">
+                            {isActive ? "YOUR TURN" : "🔒 LOCKED"}
+                          </span>
+                        )}
+                        {isActive && <PlayClock timeRemaining={timeRemaining} />}
                       </div>
 
                       {/* Prompt — show for answered and active, hide for locked */}
                       {!isLocked && (
-                        <p className="mt-2 text-sm text-zinc-200">{q?.prompt}</p>
+                        <p className="mt-2 text-sm text-zinc-200 text-center" style={{ textWrap: "balance" } as React.CSSProperties}>{q?.prompt}</p>
                       )}
 
                       {/* Answered: show result */}
                       {isAnswered && answerPlayers.length > 0 && (
-                        <div className={`mt-3 rounded-xl border p-3 ${
+                        <div className={`mt-3 rounded-xl border p-3 text-center ${
                           qp.completed
                             ? "border-emerald-500/30 bg-emerald-500/10"
                             : "border-rose-500/30 bg-rose-500/10"
@@ -782,7 +832,7 @@ export default function HomePage() {
                         <>
                           {/* Hint */}
                           {hasHint && (
-                            <div className="mt-2">
+                            <div className="mt-2 flex justify-center">
                               {!hintRevealed ? (
                                 Object.values(hintsRevealed).some(Boolean) ? (
                                   <span className="text-xs text-zinc-600">💡 Hint already used today</span>
@@ -798,21 +848,26 @@ export default function HomePage() {
                                 <div className="flex items-center gap-2 rounded-lg border border-amber-700/40 bg-amber-950/20 px-3 py-1.5">
                                   <span className="text-xs text-amber-400 font-semibold">💡 Hint:</span>
                                   <span className="text-xs text-amber-200">Jersey #{hintJerseys.join(" or #")}</span>
-                                  <span className="ml-auto text-xs text-amber-600">−50% score</span>
+                                  <span className="ml-2 text-xs text-amber-600">−50% score</span>
                                 </div>
                               )}
                             </div>
                           )}
 
-                          <div className="mt-2 flex flex-col gap-2 sm:flex-row">
+                          <div className="mt-2 flex flex-col gap-2">
                             <div className="relative w-full">
                               <input
                                 className="w-full rounded-xl border border-zinc-700 bg-zinc-950/60 px-4 py-3 text-zinc-100 placeholder:text-zinc-500 outline-none ring-[#0085CA]/30 focus:border-[#0085CA]/60 focus:ring-4"
-                                placeholder="Type a player name…"
+                                placeholder={sickoCurrent?.answerPool === "opponents" ? "Type a QB name…" : "Type a player name…"}
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 onKeyDown={(e) => { if (e.key === "Enter") submitGuess(); }}
-                                list="players-list"
+                                autoComplete="off"
+                                autoCorrect="off"
+                                autoCapitalize="off"
+                                spellCheck={false}
+                                onFocus={() => { setTimeout(() => { if (activeCardRef.current) { const top = activeCardRef.current.getBoundingClientRect().top + window.scrollY - 16; window.scrollTo({ top, behavior: "smooth" }); } }, 350); }}
+                                list={sickoCurrent?.answerPool === "opponents" ? "opponents-list" : "players-list"}
                                 autoFocus
                               />
                               <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-zinc-500">
@@ -820,7 +875,7 @@ export default function HomePage() {
                               </div>
                             </div>
                             <button
-                              className="rounded-xl bg-[#0085CA] px-5 py-3 text-sm font-bold text-zinc-950 shadow-[0_10px_30px_rgba(0,133,202,0.35)] hover:bg-[#0096E0]"
+                              className="w-full rounded-xl bg-[#0085CA] px-5 py-3 text-sm font-bold text-zinc-950 shadow-[0_10px_30px_rgba(0,133,202,0.35)] hover:bg-[#0096E0]"
                               onClick={submitGuess}
                             >
                               Guess
@@ -830,20 +885,27 @@ export default function HomePage() {
                         );
                       })()}
 
-                      {/* Locked: placeholder */}
-                      {isLocked && (
-                        <p className="mt-2 text-xs text-zinc-500">Answer the previous question to unlock.</p>
-                      )}
                     </li>
                   );
                 })}
               </ol>
 
               {/* Score breakdown — shown once all 4 questions are answered */}
-              {SICKO_ORDER.every((id) => (sickoProgress[id]?.guesses.length ?? 0) > 0) && (
-                <div className="mt-6 rounded-2xl border border-zinc-700 bg-zinc-950/50 p-4">
-                  <div className="text-xs font-semibold tracking-wider text-zinc-400 mb-3">SCORE BREAKDOWN</div>
-                  <div className="space-y-2">
+              {allAnswered && (
+                <div ref={scoreRef} className="mt-6 rounded-2xl border border-zinc-700 bg-zinc-950/50 p-4">
+                  <button
+                    className="w-full flex flex-col items-center gap-1"
+                    onClick={() => setScoreExpanded((v) => !v)}
+                  >
+                    <span className="text-xs font-semibold tracking-wider text-zinc-400">SCORE</span>
+                    <span className="text-2xl font-black text-[#0085CA]">
+                      {totalScore.toLocaleString()}
+                    </span>
+                    <span className="text-xs text-zinc-500 flex items-center gap-1">
+                      {scoreExpanded ? "HIDE DETAILS ▲" : "SCORE DETAILS ▼"}
+                    </span>
+                  </button>
+                  {scoreExpanded && <div className="mt-3 space-y-2">
                     {SICKO_ORDER.map((id, idx) => {
                       const qp = sickoProgress[id];
                       const q = sickoQuestions?.find((x) => x.id === id);
@@ -914,16 +976,50 @@ export default function HomePage() {
                         </div>
                       );
                     })}
-                  </div>
-                  <div className="mt-3 border-t border-zinc-700 pt-4 flex justify-between items-baseline">
-                    <span className="text-base font-bold text-zinc-300">Total</span>
-                    <span className="text-2xl font-black text-[#0085CA]">
-                      {totalScore.toLocaleString()}
-                      {maxScore != null && <span className="text-sm font-normal text-zinc-500"> / {maxScore}</span>}
-                    </span>
-                  </div>
+                  </div>}
                 </div>
               )}
+
+              {/* Football field progress */}
+              {(() => {
+                const correctCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
+                const isTouchdown = correctCount === 4;
+                const ballPct = 10 + correctCount * 20;
+                return (
+                  <div className="mt-5">
+                    <div className="relative h-20 overflow-hidden rounded-xl border border-zinc-700">
+                      <div className="absolute inset-0 bg-emerald-800" />
+                      <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#000000" }}>
+                        <span className="text-[9px] font-black italic tracking-widest uppercase" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", color: "#0085CA" }}>Carolina</span>
+                      </div>
+                      <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
+                        <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
+                      </div>
+                      {[30, 50, 70].map((pos) => (
+                        <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
+                      ))}
+                      {([30, 50, 70] as const).map((pos, i) => (
+                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>{["25", "50", "25"][i]}</div>
+                      ))}
+                      {[20, 40, 60, 80].map((pos) => (
+                        <div key={pos} className="absolute top-1/2 -translate-y-1/2 w-px h-2 bg-white/20" style={{ left: `${pos}%` }} />
+                      ))}
+                      {correctCount > 0 && !isTouchdown && (
+                        <>
+                          <div className="absolute pointer-events-none transition-all duration-700 ease-out" style={{ top: "50%", left: "10%", right: `calc(${100 - ballPct}% + 26px)`, height: "4px", transform: "translateY(-50%)", background: "#0085CA", zIndex: 2 }} />
+                          <div className="absolute pointer-events-none transition-all duration-700 ease-out" style={{ top: "50%", left: `calc(${ballPct}% - 26px)`, transform: "translateY(-50%)", width: 0, height: 0, borderTop: "8px solid transparent", borderBottom: "8px solid transparent", borderLeft: "14px solid #0085CA", zIndex: 2 }} />
+                        </>
+                      )}
+                      <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl transition-all duration-700 ease-out drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
+                      {isTouchdown && (
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+                          <span className="text-base font-black italic tracking-widest text-white-300 drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Actions */}
               <div className="mt-6 flex justify-center">
@@ -946,6 +1042,7 @@ export default function HomePage() {
         </footer>
       </div>
 
+      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
     </main>
   );
 }

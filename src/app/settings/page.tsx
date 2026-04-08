@@ -1,19 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase";
 import Header from "@/components/Header";
 
 type Section = "username" | "email" | "password" | "birthday";
 
-export default function SettingsPage() {
+function SettingsContent() {
   const supabase = createClient();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [section, setSection] = useState<Section | null>(null);
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
+  const [currentPassword, setCurrentPassword] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [bdMonth, setBdMonth] = useState("");
@@ -26,6 +28,23 @@ export default function SettingsPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [isRecovery, setIsRecovery] = useState(false);
+  const [recoveryPassword, setRecoveryPassword] = useState("");
+  const [recoveryConfirm, setRecoveryConfirm] = useState("");
+
+  useEffect(() => {
+    if (searchParams.get("recovery") === "true") setIsRecovery(true);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  async function handleRecoverySubmit() {
+    setLoading(true); setError(null);
+    if (recoveryPassword.length < 6) { setError("Password must be at least 6 characters."); setLoading(false); return; }
+    if (recoveryPassword !== recoveryConfirm) { setError("Passwords don't match."); setLoading(false); return; }
+    const { error: err } = await supabase.auth.updateUser({ password: recoveryPassword });
+    if (err) { setError(err.message); } else { setSuccess("Password updated! You can now log in."); setIsRecovery(false); setTimeout(() => router.push("/"), 2000); }
+    setLoading(false);
+  }
 
   useEffect(() => {
     async function loadProfile() {
@@ -74,10 +93,15 @@ export default function SettingsPage() {
 
   async function savePassword() {
     setLoading(true); reset();
-    if (password.length < 6) { setError("Password must be at least 6 characters."); setLoading(false); return; }
+    if (!currentPassword) { setError("Enter your current password."); setLoading(false); return; }
+    if (password.length < 6) { setError("New password must be at least 6 characters."); setLoading(false); return; }
     if (password !== confirmPassword) { setError("Passwords don't match."); setLoading(false); return; }
+    // Verify old password by re-signing in
+    const { data: { session } } = await supabase.auth.getSession();
+    const { error: verifyErr } = await supabase.auth.signInWithPassword({ email: session!.user.email!, password: currentPassword });
+    if (verifyErr) { setError("Current password is incorrect."); setLoading(false); return; }
     const { error: err } = await supabase.auth.updateUser({ password });
-    if (err) { setError(err.message); } else { setSuccess("Password updated!"); setPassword(""); setConfirmPassword(""); }
+    if (err) { setError(err.message); } else { setSuccess("Password updated!"); setCurrentPassword(""); setPassword(""); setConfirmPassword(""); }
     setLoading(false);
   }
 
@@ -102,6 +126,27 @@ export default function SettingsPage() {
   ];
 
   const inputClass = "w-full rounded-xl border border-zinc-700 bg-zinc-950/60 px-4 py-2.5 text-sm text-zinc-100 placeholder:text-zinc-500 outline-none focus:border-[#0085CA]/60 focus:ring-2 focus:ring-[#0085CA]/20";
+
+  if (isRecovery) return (
+    <main className="min-h-screen bg-transparent text-zinc-100">
+      <div className="mx-auto max-w-2xl p-6">
+        <div className="max-w-sm mx-auto mt-16 space-y-4">
+          <h1 className="text-xl font-black text-white">Set a new password</h1>
+          <input className={inputClass} type="password" placeholder="New password" value={recoveryPassword} onChange={(e) => setRecoveryPassword(e.target.value)} />
+          <input className={inputClass} type="password" placeholder="Confirm new password" value={recoveryConfirm} onChange={(e) => setRecoveryConfirm(e.target.value)} />
+          {error && <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-3 py-2 text-xs text-rose-300">{error}</p>}
+          {success && <p className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-xs text-emerald-300">{success}</p>}
+          <button
+            className="w-full rounded-xl bg-[#0085CA] py-2.5 text-sm font-bold text-white hover:bg-[#0096E0] disabled:opacity-50 transition-colors"
+            onClick={handleRecoverySubmit}
+            disabled={loading}
+          >
+            {loading ? "Saving..." : "Update password"}
+          </button>
+        </div>
+      </div>
+    </main>
+  );
 
   return (
     <main className="min-h-screen bg-transparent text-zinc-100">
@@ -149,6 +194,7 @@ export default function SettingsPage() {
               )}
               {section === "password" && (
                 <>
+                  <input className={inputClass} type="password" placeholder="Current password" value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} />
                   <input className={inputClass} type="password" placeholder="New password" value={password} onChange={(e) => setPassword(e.target.value)} />
                   <input className={inputClass} type="password" placeholder="Confirm new password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                 </>
@@ -196,5 +242,13 @@ export default function SettingsPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function SettingsPage() {
+  return (
+    <Suspense>
+      <SettingsContent />
+    </Suspense>
   );
 }

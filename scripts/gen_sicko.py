@@ -8,12 +8,12 @@ completely avoiding name-abbreviation collisions (e.g. D.Williams → wrong Will
 
 Three question tiers:
 
-  TIER 1 — Play-level (from nfl.load_pbp, all seasons 1999-2024)
+  TIER 1 — Play-level (from nfl.load_pbp, all seasons 1999-2025)
     rec_td, rush_td, int, sack, rush_100, rec_100, pick_six, multi_sack,
     ot_td, return_td, fourth_down_td, pass_300, pass_3td, fumble_return_td,
     two_pt, nth_pass_td, playoff_rec_td, playoff_rush_td, playoff_int, playoff_sack
 
-  TIER 2 — Season leaders (from nfl.load_player_stats, seasons 1999-2024)
+  TIER 2 — Season leaders (from nfl.load_player_stats, seasons 1999-2025)
     rushing yards, receiving yards, passing TDs, passing yards,
     sacks, interceptions, rushing TDs, receptions
 
@@ -38,9 +38,10 @@ from typing import Dict, List, Optional
 import pandas as pd
 import nflreadpy as nfl
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-PLAYERS_TS   = PROJECT_ROOT / "src" / "data" / "players.ts"
-DEFAULT_OUT  = PROJECT_ROOT / "src" / "data" / "puzzles_sicko.ts"
+PROJECT_ROOT       = Path(__file__).resolve().parents[1]
+PLAYERS_TS         = PROJECT_ROOT / "src" / "data" / "players.ts"
+DEFAULT_OUT        = PROJECT_ROOT / "src" / "data" / "puzzles_sicko.ts"
+DEFAULT_OPP_OUT    = PROJECT_ROOT / "src" / "data" / "opponents.ts"
 
 # ── Team name map ─────────────────────────────────────────────────────────────
 TEAM_NAMES = {
@@ -110,6 +111,17 @@ def normalize_name(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+def round_down_yards(yards: int, base: int = 25) -> int:
+    """Round yards down to the nearest multiple of base (default 25).
+    e.g. 104 → 100, 137 → 125, 213 → 200"""
+    return (yards // base) * base
+
+
+def slugify(name: str) -> str:
+    """Convert display name to URL-safe slug: 'Tom Brady' → 'tom-brady'"""
+    return re.sub(r"\s+", "-", normalize_name(name))
+
+
 def load_name_to_id(players_ts_path: Path) -> Dict[str, str]:
     """Full normalized name → player slug (no abbreviations, no collisions)."""
     txt = players_ts_path.read_text(encoding="utf-8")
@@ -118,6 +130,13 @@ def load_name_to_id(players_ts_path: Path) -> Dict[str, str]:
     for pid, name in pattern.findall(txt):
         name_to_id[normalize_name(name)] = pid
     return name_to_id
+
+
+def load_id_to_name(players_ts_path: Path) -> Dict[str, str]:
+    """player slug → display name."""
+    txt = players_ts_path.read_text(encoding="utf-8")
+    pattern = re.compile(r'id:\s*"([^"]+)"\s*,\s*name:\s*"([^"]+)"', re.MULTILINE)
+    return {pid: name for pid, name in pattern.findall(txt)}
 
 
 def load_id_to_pos(players_ts_path: Path) -> Dict[str, str]:
@@ -140,6 +159,8 @@ def load_id_to_pos(players_ts_path: Path) -> Dict[str, str]:
 def apply_position_hints(grouped: List["GroupedCandidate"], id_to_pos: Dict[str, str]) -> None:
     """Rewrite 'Who ...' prompts to 'Which {pos} ...' using the answer player's position."""
     for gc in grouped:
+        if gc.answer_pool != "panthers":
+            continue  # opponent-pool questions already specify position in prompt
         if not gc.prompt.startswith("Who "):
             continue
         positions = list({id_to_pos.get(pid) for pid in gc.player_ids} - {None})
@@ -182,6 +203,46 @@ def build_gsis_map(name_to_id: Dict[str, str], debug: bool = False) -> Dict[str,
     return gsis_map
 
 
+def build_nfl_name_map(debug: bool = False) -> Dict[str, str]:
+    """gsis_id → full_name for all NFL players (used to resolve opposing QB names)."""
+    print("Loading all NFL rosters for opponent name lookup...")
+    try:
+        df = nfl.load_rosters(seasons=True).to_pandas()
+    except Exception as e:
+        print(f"  WARNING: load_rosters failed: {e}", file=sys.stderr)
+        return {}
+    result: Dict[str, str] = {}
+    for _, row in df.iterrows():
+        gsis = safe_str(row.get("gsis_id"))
+        name = safe_str(row.get("full_name"))
+        if gsis and name:
+            result[gsis] = name
+    print(f"  nfl_name_map: {len(result)} entries")
+    return result
+
+
+def build_all_qb_registry(debug: bool = False) -> Dict[str, str]:
+    """slug → full_name for every QB in NFL history (used to pad the opponents autocomplete)."""
+    print("Building all-time QB registry for autocomplete...")
+    try:
+        df = nfl.load_rosters(seasons=True).to_pandas()
+    except Exception as e:
+        print(f"  WARNING: load_rosters failed: {e}", file=sys.stderr)
+        return {}
+    pos_col = next((c for c in ["position", "pos"] if c in df.columns), None)
+    name_col = "full_name" if "full_name" in df.columns else None
+    if not pos_col or not name_col:
+        return {}
+    qbs = df[df[pos_col] == "QB"][name_col].dropna().unique()
+    result: Dict[str, str] = {}
+    for name in qbs:
+        name = safe_str(name)
+        if name:
+            result[slugify(name)] = name
+    print(f"  all-QB registry: {len(result)} unique QBs")
+    return result
+
+
 # ── Candidate model ───────────────────────────────────────────────────────────
 
 @dataclass(frozen=True)
@@ -190,7 +251,8 @@ class Candidate:
     kind: str
     season: int
     prompt: str
-    player_id: str  # slug from players.ts
+    player_id: str  # slug from players.ts or opponents.ts
+    answer_pool: str = "panthers"  # "panthers" or "opponents"
 
 
 @dataclass
@@ -201,6 +263,7 @@ class GroupedCandidate:
     season: int
     prompt: str
     player_ids: List[str]  # all valid answers (usually 1, sometimes multiple)
+    answer_pool: str = "panthers"  # "panthers" or "opponents"
 
     def day_key(self) -> str:
         return f"{self.kind}|{self.prompt}"
@@ -212,7 +275,7 @@ def group_candidates(candidates: List[Candidate]) -> List["GroupedCandidate"]:
     for c in candidates:
         key = c.kind + "|" + c.prompt
         if key not in groups:
-            groups[key] = GroupedCandidate(c.tier, c.kind, c.season, c.prompt, [c.player_id])
+            groups[key] = GroupedCandidate(c.tier, c.kind, c.season, c.prompt, [c.player_id], c.answer_pool)
         elif c.player_id not in groups[key].player_ids:
             groups[key].player_ids.append(c.player_id)
     return list(groups.values())
@@ -243,14 +306,20 @@ def build_rec_td(pbp_off: pd.DataFrame, season: int, gm: Dict) -> List[Candidate
     id_col = col(pbp_off, "receiver_player_id", "receiver_id")
     if not id_col or "pass_touchdown" not in pbp_off.columns:
         return []
-    df = pbp_off[(pbp_off["pass_touchdown"] == 1) & pbp_off[id_col].notna()]
+    df = pbp_off[(pbp_off["pass_touchdown"] == 1) & pbp_off[id_col].notna()].copy()
+    df["_pid"] = df[id_col].apply(lambda x: gm.get(safe_str(x)))
+    df = df[df["_pid"].notna()]
     out = []
-    for _, r in df.iterrows():
-        pid = gm.get(safe_str(r[id_col]))
-        if not pid:
-            continue
-        out.append(Candidate(1, "rec_td", season,
-            f"Who caught a TD pass in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
+    for (week, season_type, defteam, pid), grp in df.groupby(["week", "season_type", "defteam", "_pid"]):
+        count = len(grp)
+        desc = game_desc(week, season_type, season, defteam)
+        if count == 1:
+            prompt = f"Who caught a TD pass in {desc}?"
+        else:
+            prompt = f"Who caught {count} TD passes in {desc}?"
+            # Also include in the single-TD pool — catching 2+ TDs means you caught a TD
+            out.append(Candidate(1, "rec_td", season, f"Who caught a TD pass in {desc}?", pid))
+        out.append(Candidate(1, "rec_td", season, prompt, pid))
     return out
 
 
@@ -258,14 +327,20 @@ def build_rush_td(pbp_off: pd.DataFrame, season: int, gm: Dict) -> List[Candidat
     id_col = col(pbp_off, "rusher_player_id", "rusher_id")
     if not id_col or "rush_touchdown" not in pbp_off.columns:
         return []
-    df = pbp_off[(pbp_off["rush_touchdown"] == 1) & pbp_off[id_col].notna()]
+    df = pbp_off[(pbp_off["rush_touchdown"] == 1) & pbp_off[id_col].notna()].copy()
+    df["_pid"] = df[id_col].apply(lambda x: gm.get(safe_str(x)))
+    df = df[df["_pid"].notna()]
     out = []
-    for _, r in df.iterrows():
-        pid = gm.get(safe_str(r[id_col]))
-        if not pid:
-            continue
-        out.append(Candidate(1, "rush_td", season,
-            f"Who scored a rushing TD in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
+    for (week, season_type, defteam, pid), grp in df.groupby(["week", "season_type", "defteam", "_pid"]):
+        count = len(grp)
+        desc = game_desc(week, season_type, season, defteam)
+        if count == 1:
+            prompt = f"Who scored a rushing TD in {desc}?"
+        else:
+            prompt = f"Who scored {count} rushing TDs in {desc}?"
+            # Also include in the single-TD pool — scoring 2+ rushing TDs means you scored a rushing TD
+            out.append(Candidate(1, "rush_td", season, f"Who scored a rushing TD in {desc}?", pid))
+        out.append(Candidate(1, "rush_td", season, prompt, pid))
     return out
 
 
@@ -299,6 +374,153 @@ def build_sack(pbp_def: pd.DataFrame, season: int, gm: Dict) -> List[Candidate]:
     return out
 
 
+def build_sack_target(pbp_def: pd.DataFrame, season: int, gm: Dict, nfl_names: Optional[Dict] = None) -> List[Candidate]:
+    """'Who sacked [QB name] in [game]?' — answer is the Panthers player who made the sack."""
+    id_col = col(pbp_def, "sack_player_id")
+    passer_id_col = col(pbp_def, "passer_player_id")
+    passer_name_col = col(pbp_def, "passer_player_name", "passer")
+    if not id_col or "sack" not in pbp_def.columns:
+        return []
+    # Group by passer gsis when available (more reliable than name), else by name
+    group_passer_col = passer_id_col if passer_id_col else passer_name_col
+    if not group_passer_col:
+        return []
+    df = pbp_def[(pbp_def["sack"] == 1) & pbp_def[id_col].notna() & pbp_def[group_passer_col].notna()].copy()
+    df["_pid"] = df[id_col].apply(lambda x: gm.get(safe_str(x)))
+    df = df[df["_pid"].notna()]
+    out = []
+    for (week, season_type, posteam, passer_key, pid), grp in df.groupby(
+        ["week", "season_type", "posteam", group_passer_col, "_pid"]
+    ):
+        count = len(grp)
+        # Resolve display name: prefer full name from nfl_names, fall back to passer_name_col
+        passer_display = None
+        if nfl_names and passer_id_col:
+            passer_display = nfl_names.get(safe_str(passer_key))
+        if not passer_display and passer_name_col:
+            passer_display = safe_str(grp.iloc[0].get(passer_name_col, ""))
+        if not passer_display:
+            continue
+        desc = game_desc(week, season_type, season, posteam)
+        if count == 1:
+            prompt = f"Who sacked {passer_display} in {desc}?"
+        else:
+            prompt = f"Who sacked {passer_display} {count} times in {desc}?"
+            # Also include in the single-sack pool — sacking a QB 2+ times means you sacked them
+            out.append(Candidate(1, "sack_target", season, f"Who sacked {passer_display} in {desc}?", pid))
+        out.append(Candidate(1, "sack_target", season, prompt, pid))
+    return out
+
+
+def build_sack_victim(pbp_def: pd.DataFrame, season: int, gm: Dict, id_to_name: Dict,
+                      nfl_names: Dict, opponent_registry: Dict) -> List[Candidate]:
+    """'Which QB did [Panthers player] sack in [game]?' — answer is the opposing passer.
+    Only generated for 1990s/2000s seasons (pre-2010) where QBs are harder to recall."""
+    if season >= 2010:
+        return []
+    id_col = col(pbp_def, "sack_player_id")
+    passer_id_col = col(pbp_def, "passer_player_id")
+    passer_name_col = col(pbp_def, "passer_player_name", "passer")
+    if not id_col or "sack" not in pbp_def.columns:
+        return []
+    df = pbp_def[(pbp_def["sack"] == 1) & pbp_def[id_col].notna()].copy()
+    df["_pid"] = df[id_col].apply(lambda x: gm.get(safe_str(x)))
+    df = df[df["_pid"].notna()]
+    out = []
+    for _, r in df.iterrows():
+        panthers_pid = r["_pid"]
+        panthers_name = id_to_name.get(panthers_pid, "a Panthers player")
+        # Resolve opposing QB full name
+        passer_name = None
+        passer_gsis = safe_str(r.get(passer_id_col)) if passer_id_col else None
+        if passer_gsis and passer_gsis in nfl_names:
+            passer_name = nfl_names[passer_gsis]
+        if not passer_name and passer_name_col:
+            passer_name = safe_str(r.get(passer_name_col))
+        if not passer_name:
+            continue
+        passer_slug = slugify(passer_name)
+        if not passer_slug:
+            continue
+        opponent_registry[passer_slug] = passer_name
+        desc = game_desc(r["week"], r["season_type"], season, r["posteam"])
+        out.append(Candidate(1, "sack_victim", season,
+            f"Which QB did {panthers_name} sack in {desc}?", passer_slug, "opponents"))
+    return out
+
+
+def build_int_target(pbp_def: pd.DataFrame, season: int, gm: Dict, nfl_names: Optional[Dict] = None) -> List[Candidate]:
+    """'Who intercepted [QB name] in [game]?' — answer is the Panthers player who made the INT."""
+    id_col = col(pbp_def, "interception_player_id")
+    passer_id_col = col(pbp_def, "passer_player_id")
+    passer_name_col = col(pbp_def, "passer_player_name", "passer")
+    if not id_col or "interception" not in pbp_def.columns:
+        return []
+    group_passer_col = passer_id_col if passer_id_col else passer_name_col
+    if not group_passer_col:
+        return []
+    df = pbp_def[(pbp_def["interception"] == 1) & pbp_def[id_col].notna() & pbp_def[group_passer_col].notna()].copy()
+    df["_pid"] = df[id_col].apply(lambda x: gm.get(safe_str(x)))
+    df = df[df["_pid"].notna()]
+    out = []
+    for (week, season_type, posteam, passer_key, pid), grp in df.groupby(
+        ["week", "season_type", "posteam", group_passer_col, "_pid"]
+    ):
+        count = len(grp)
+        passer_display = None
+        if nfl_names and passer_id_col:
+            passer_display = nfl_names.get(safe_str(passer_key))
+        if not passer_display and passer_name_col:
+            passer_display = safe_str(grp.iloc[0].get(passer_name_col, ""))
+        if not passer_display:
+            continue
+        desc = game_desc(week, season_type, season, posteam)
+        if count == 1:
+            prompt = f"Who intercepted {passer_display} in {desc}?"
+        else:
+            prompt = f"Who intercepted {passer_display} {count} times in {desc}?"
+            out.append(Candidate(1, "int_target", season, f"Who intercepted {passer_display} in {desc}?", pid))
+        out.append(Candidate(1, "int_target", season, prompt, pid))
+    return out
+
+
+def build_int_victim(pbp_def: pd.DataFrame, season: int, gm: Dict, id_to_name: Dict,
+                     nfl_names: Dict, opponent_registry: Dict) -> List[Candidate]:
+    """'Which QB did [Panthers player] intercept in [game]?' — answer is the opposing passer.
+    Only generated for 1990s/2000s seasons (pre-2010) where QBs are harder to recall."""
+    if season >= 2010:
+        return []
+    id_col = col(pbp_def, "interception_player_id")
+    passer_id_col = col(pbp_def, "passer_player_id")
+    passer_name_col = col(pbp_def, "passer_player_name", "passer")
+    if not id_col or "interception" not in pbp_def.columns:
+        return []
+    df = pbp_def[(pbp_def["interception"] == 1) & pbp_def[id_col].notna()].copy()
+    df["_pid"] = df[id_col].apply(lambda x: gm.get(safe_str(x)))
+    df = df[df["_pid"].notna()]
+    out = []
+    for _, r in df.iterrows():
+        panthers_pid = r["_pid"]
+        panthers_name = id_to_name.get(panthers_pid, "a Panthers player")
+        # Resolve opposing QB full name
+        passer_name = None
+        passer_gsis = safe_str(r.get(passer_id_col)) if passer_id_col else None
+        if passer_gsis and passer_gsis in nfl_names:
+            passer_name = nfl_names[passer_gsis]
+        if not passer_name and passer_name_col:
+            passer_name = safe_str(r.get(passer_name_col))
+        if not passer_name:
+            continue
+        passer_slug = slugify(passer_name)
+        if not passer_slug:
+            continue
+        opponent_registry[passer_slug] = passer_name
+        desc = game_desc(r["week"], r["season_type"], season, r["posteam"])
+        out.append(Candidate(1, "int_victim", season,
+            f"Which QB did {panthers_name} intercept in {desc}?", passer_slug, "opponents"))
+    return out
+
+
 def build_rush_100(pbp_off: pd.DataFrame, season: int, gm: Dict) -> List[Candidate]:
     id_col = col(pbp_off, "rusher_player_id", "rusher_id")
     if not id_col or "rushing_yards" not in pbp_off.columns:
@@ -314,7 +536,7 @@ def build_rush_100(pbp_off: pd.DataFrame, season: int, gm: Dict) -> List[Candida
         if not pid:
             continue
         out.append(Candidate(1, "rush_100", season,
-            f"Who rushed for {int(r['rushing_yards'])}+ yards in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
+            f"Who rushed for {round_down_yards(int(r['rushing_yards']))}+ yards in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
     return out
 
 
@@ -334,7 +556,7 @@ def build_rec_100(pbp_off: pd.DataFrame, season: int, gm: Dict) -> List[Candidat
         if not pid:
             continue
         out.append(Candidate(1, "rec_100", season,
-            f"Who had {int(r[yds_col])}+ receiving yards in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
+            f"Who had {round_down_yards(int(r[yds_col]))}+ receiving yards in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
     return out
 
 
@@ -423,10 +645,10 @@ def build_return_td(pbp_all: pd.DataFrame, season: int, gm: Dict) -> List[Candid
             continue
         posteam = str(r.get("posteam", ""))
         defteam = str(r.get("defteam", ""))
-        # Skip plays where CAR isn't one of the two teams (former Panthers on other teams)
-        if posteam != "CAR" and defteam != "CAR":
+        # Returner is always on posteam — require CAR to be the returning team
+        if posteam != "CAR":
             continue
-        opp = defteam if posteam == "CAR" else posteam
+        opp = defteam
         out.append(Candidate(1, "return_td", season,
             f"Who returned a {ret_type} for a TD in {game_desc(r['week'], r['season_type'], season, opp)}?", pid))
     return out
@@ -472,7 +694,7 @@ def build_pass_300(pbp_off: pd.DataFrame, season: int, gm: Dict) -> List[Candida
         if not pid:
             continue
         out.append(Candidate(1, "pass_300", season,
-            f"Who threw for {int(r[yds_col])}+ passing yards in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
+            f"Who threw for {round_down_yards(int(r[yds_col]))}+ passing yards in {game_desc(r['week'], r['season_type'], season, r['defteam'])}?", pid))
     return out
 
 
@@ -639,7 +861,8 @@ def build_forced_fumble(pbp_def: pd.DataFrame, season: int, gm: Dict) -> List[Ca
     return out
 
 
-def build_pbp_candidates(season: int, gm: Dict) -> List[Candidate]:
+def build_pbp_candidates(season: int, gm: Dict, id_to_name: Dict,
+                         nfl_names: Dict, opponent_registry: Dict) -> List[Candidate]:
     print(f"  Loading PBP for {season}...")
     try:
         pbp_all = nfl.load_pbp([season]).to_pandas()
@@ -654,7 +877,11 @@ def build_pbp_candidates(season: int, gm: Dict) -> List[Candidate]:
     cands += build_rec_td(pbp_off, season, gm)
     cands += build_rush_td(pbp_off, season, gm)
     cands += build_int(pbp_def, season, gm)
+    cands += build_int_target(pbp_def, season, gm, nfl_names)
+    cands += build_int_victim(pbp_def, season, gm, id_to_name, nfl_names, opponent_registry)
     cands += build_sack(pbp_def, season, gm)
+    cands += build_sack_target(pbp_def, season, gm, nfl_names)
+    cands += build_sack_victim(pbp_def, season, gm, id_to_name, nfl_names, opponent_registry)
     cands += build_rush_100(pbp_off, season, gm)
     cands += build_rec_100(pbp_off, season, gm)
     cands += build_pick_six(pbp_def, season, gm)
@@ -866,30 +1093,47 @@ def build_jersey_candidates(gm: Dict, debug: bool = False) -> List[Candidate]:
 # Scheduling
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def schedule_days(candidates: List[GroupedCandidate], start_date: str, num_days: int, seed: int) -> List[dict]:
+def schedule_days(candidates: List[GroupedCandidate], start_date: str, num_days: int,
+                  seed: int, opponent_rate: float = 0.05) -> List[dict]:
     rnd = random.Random(seed)
-    pool = candidates[:]
-    rnd.shuffle(pool)
+
+    # Split into separate pools so we can control opponent frequency
+    opp_pool = [gc for gc in candidates if gc.answer_pool == "opponents"]
+    pan_pool = [gc for gc in candidates if gc.answer_pool == "panthers"]
+    rnd.shuffle(opp_pool)
+    rnd.shuffle(pan_pool)
 
     used_global: set = set()
     days: List[dict] = []
     start = pd.Timestamp(start_date)
+
+    def pick_one(pool: List[GroupedCandidate], used_players: set) -> Optional[GroupedCandidate]:
+        for gc in pool:
+            k = gc.day_key()
+            if k in used_global or any(pid in used_players for pid in gc.player_ids):
+                continue
+            used_global.add(k)
+            used_players.update(gc.player_ids)
+            return gc
+        return None
 
     for d in range(num_days):
         date = (start + pd.Timedelta(days=d)).strftime("%Y-%m-%d")
         picked: List[GroupedCandidate] = []
         used_players: set = set()
 
-        # Scan full pool each day — skip globally used questions and today's player conflicts
-        for gc in pool:
-            if len(picked) >= 4:
+        # ~5% of days include one opponent-pool question
+        if opp_pool and rnd.random() < opponent_rate:
+            gc = pick_one(opp_pool, used_players)
+            if gc:
+                picked.append(gc)
+
+        # Fill remaining slots from panthers pool
+        while len(picked) < 4:
+            gc = pick_one(pan_pool, used_players)
+            if gc is None:
                 break
-            k = gc.day_key()
-            if k in used_global or any(pid in used_players for pid in gc.player_ids):
-                continue
             picked.append(gc)
-            used_players.update(gc.player_ids)
-            used_global.add(k)
 
         if len(picked) < 4:
             print(f"  WARNING: only {len(picked)} questions for {date}, stopping.")
@@ -897,7 +1141,8 @@ def schedule_days(candidates: List[GroupedCandidate], start_date: str, num_days:
 
         rnd.shuffle(picked)
         days.append({"date": date, "questions": [
-            {"id": f"q{i+1}", "prompt": gc.prompt, "playerIds": gc.player_ids, "tier": gc.tier, "season": gc.season}
+            {"id": f"q{i+1}", "prompt": gc.prompt, "playerIds": gc.player_ids,
+             "answerPool": gc.answer_pool, "tier": gc.tier, "season": gc.season}
             for i, gc in enumerate(picked)
         ]})
 
@@ -915,9 +1160,10 @@ TS_HEADER = """\
 export type SickoQuestion = {
   id: "q1" | "q2" | "q3" | "q4";
   prompt: string;
-  playerIds: string[];  // all valid answers (usually 1, sometimes multiple for shared plays)
-  tier: 1 | 2 | 3;     // 1=play-level, 2=season leader, 3=draft pick
-  season: number;       // NFL season year, used for era multiplier
+  playerIds: string[];         // all valid answers (usually 1, sometimes multiple for shared plays)
+  answerPool: "panthers" | "opponents";  // which autocomplete list to use
+  tier: 1 | 2 | 3;            // 1=play-level, 2=season leader, 3=draft pick
+  season: number;              // NFL season year, used for era multiplier
 };
 
 export type SickoDay = {
@@ -926,6 +1172,20 @@ export type SickoDay = {
 };
 
 """
+
+def write_opponents_ts(opponent_registry: Dict[str, str], out_path: Path) -> None:
+    """Write opponents.ts with all opposing passers encountered in sack/int victim questions."""
+    opponents = sorted(opponent_registry.items(), key=lambda x: x[1])
+    entries = [f'  {{ id: "{slug}", name: "{name}" }}' for slug, name in opponents]
+    content = (
+        "// Auto-generated by scripts/gen_sicko.py — do not edit by hand.\n\n"
+        "export type Opponent = { id: string; name: string };\n\n"
+        "export const OPPONENTS: Opponent[] = [\n"
+        + ",\n".join(entries) + "\n];\n"
+    )
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(content, encoding="utf-8")
+
 
 def write_ts(days: List[dict], out_path: Path) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -941,11 +1201,12 @@ def write_ts(days: List[dict], out_path: Path) -> None:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--pbp-seasons", type=int, nargs="+", default=list(range(1999, 2025)))
-    ap.add_argument("--start-date", default="2026-02-20")
-    ap.add_argument("--days", type=int, default=120)
+    ap.add_argument("--pbp-seasons", type=int, nargs="+", default=list(range(1999, 2026)))
+    ap.add_argument("--start-date", default="2026-04-06")
+    ap.add_argument("--days", type=int, default=1100)
     ap.add_argument("--seed", type=int, default=19951015)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--opp-out", type=Path, default=DEFAULT_OPP_OUT)
     ap.add_argument("--debug", action="store_true")
     args = ap.parse_args()
 
@@ -959,15 +1220,22 @@ def main():
     id_to_pos = load_id_to_pos(PLAYERS_TS)
     print(f"Loaded {len(id_to_pos)} id→pos mappings from players.ts")
 
+    id_to_name = load_id_to_name(PLAYERS_TS)
+    print(f"Loaded {len(id_to_name)} id→name mappings from players.ts")
+
     gm = build_gsis_map(name_to_id, debug=args.debug)
     print(f"gsis_map has {len(gm)} entries\n")
 
+    nfl_names = build_nfl_name_map(debug=args.debug)
+    print(f"nfl_name_map has {len(nfl_names)} entries\n")
+
+    opponent_registry: Dict[str, str] = {}  # slug → display name for opposing QBs
     all_candidates: List[Candidate] = []
 
     # Tier 1
     print(f"── Tier 1: Play-level questions ({len(args.pbp_seasons)} seasons) ──")
     for season in args.pbp_seasons:
-        all_candidates += build_pbp_candidates(season, gm)
+        all_candidates += build_pbp_candidates(season, gm, id_to_name, nfl_names, opponent_registry)
     t1 = sum(1 for c in all_candidates if c.tier == 1)
     print(f"Tier 1 total: {t1}\n")
 
@@ -995,11 +1263,20 @@ def main():
     apply_position_hints(grouped, id_to_pos)
 
     print(f"Scheduling {args.days} days from {args.start_date}...")
-    days = schedule_days(grouped, args.start_date, args.days, args.seed)
+    # opponent_rate=0.2 → ~20% of days get 1 opponent question → ~5% of all questions
+    days = schedule_days(grouped, args.start_date, args.days, args.seed, opponent_rate=0.2)
     print(f"Scheduled {len(days)} days.")
 
     write_ts(days, args.out)
     print(f"\n✅ Wrote {args.out.relative_to(PROJECT_ROOT)}")
+
+    # Pad the autocomplete with all historical NFL QBs so wrong answers exist
+    all_qbs = build_all_qb_registry(debug=args.debug)
+    opponent_registry.update({k: v for k, v in all_qbs.items() if k not in opponent_registry})
+
+    opp_out = args.opp_out if hasattr(args, "opp_out") else DEFAULT_OPP_OUT
+    write_opponents_ts(opponent_registry, opp_out)
+    print(f"✅ Wrote {opp_out.relative_to(PROJECT_ROOT)} ({len(opponent_registry)} opponents)")
 
 
 if __name__ == "__main__":
