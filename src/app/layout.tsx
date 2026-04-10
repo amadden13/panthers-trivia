@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Panthers Trivia",
-  description: "Daily Panthers trivia — 4 questions, 1 guess, 30 seconds each.",
+  title: "Sicko Trivia",
+  description: "Daily NFL trivia — 5 questions, 1 guess, 40 seconds each. Pick your team and prove you're a sicko.",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
 };
 
