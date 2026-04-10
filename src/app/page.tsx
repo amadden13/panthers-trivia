@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import confetti from "canvas-confetti";
 
 import { chicagoYMD } from "@/lib/time";
 import { PLAYERS } from "@/data/players";
@@ -14,7 +15,7 @@ import ProfileModal from "@/components/ProfileModal";
 import Header from "@/components/Header";
 
 /** ---------- scoring helpers ---------- **/
-const BASE_PTS = 1000;
+const BASE_PTS = 100;
 
 function tierLabel(tier: number): string {
   if (tier === 1) return "Play by Play";
@@ -23,10 +24,10 @@ function tierLabel(tier: number): string {
 }
 
 function eraBonus(season: number): number {
-  if (season < 2000) return 200;
-  if (season < 2010) return 100;
-  if (season < 2020) return 50;
-  return 25;
+  if (season < 2000) return 25;
+  if (season < 2010) return 15;
+  if (season < 2020) return 5;
+  return 0;
 }
 
 function eraDecade(season: number): string {
@@ -126,7 +127,7 @@ type DayProgressV2 = {
   cluesUsed?: number;
 };
 
-const SICKO_ORDER = ["q1", "q2", "q3", "q4"] as const;
+const SICKO_ORDER = ["q1", "q2", "q3", "q4", "q5"] as const;
 
 function coerceProgress(mode: Mode, date: string, saved: any | null): DayProgressV2 {
   const base: DayProgressV2 = {
@@ -216,7 +217,7 @@ export default function HomePage() {
   }, [activeDate]);
 
   const sickoQuestions = (sickoDay as any)?.questions as
-    | Array<{ id: "q1" | "q2" | "q3" | "q4"; prompt: string; playerIds?: string[]; playerId?: string; answerPool?: string; tier?: number; season?: number }>
+    | Array<{ id: "q1" | "q2" | "q3" | "q4" | "q5"; prompt: string; playerIds?: string[]; playerId?: string; answerPool?: string; tier?: number; season?: number }>
     | undefined;
 
   const hasDay = !!sickoDay;
@@ -225,6 +226,7 @@ export default function HomePage() {
   const [sickoProgress, setSickoProgress] = useState<Record<string, QuestionProgress>>({});
   const [hintsRevealed, setHintsRevealed] = useState<Record<string, boolean>>({});
   const [scoreExpanded, setScoreExpanded] = useState(false);
+  const [instructionsOpen, setInstructionsOpen] = useState(false);
   const [sickoStarted, setSickoStarted] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(40);
   const [timerKey, setTimerKey] = useState(0);
@@ -234,7 +236,7 @@ export default function HomePage() {
   const autoSubmitRef = useRef<() => void>(() => {});
 
   const sickoCurrentId =
-    SICKO_ORDER.find((id) => (sickoProgress[id]?.guesses?.length ?? 0) === 0) ?? "q4";
+    SICKO_ORDER.find((id) => (sickoProgress[id]?.guesses?.length ?? 0) === 0) ?? "q5";
   const sickoCurrent = sickoQuestions?.find((q) => q.id === sickoCurrentId) ?? null;
   const sickoQp = sickoCurrent
     ? sickoProgress[sickoCurrent.id] ?? { guesses: [], completed: false }
@@ -244,6 +246,8 @@ export default function HomePage() {
 
   const totalScore = SICKO_ORDER.reduce((sum, id) => sum + (sickoProgress[id]?.score ?? 0), 0);
   const allAnswered = SICKO_ORDER.every((id) => (sickoProgress[id]?.guesses.length ?? 0) > 0);
+  const completedCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
+  const showConfetti = allAnswered && completedCount === 5;
 
   useEffect(() => {
     if (allAnswered && scoreRef.current) {
@@ -266,6 +270,20 @@ export default function HomePage() {
     }
     return map;
   }, [sickoQuestions]);
+
+  useEffect(() => {
+    if (!showConfetti) return;
+    const colors = ["#FF3B30","#FF9500","#FFCC00","#34C759","#007AFF","#5856D6","#FF2D55","#00C7BE","#30D158","#64D2FF","#BF5AF2","#FFD60A"];
+    const end = Date.now() + 1000;
+    let frame: number;
+    (function burst() {
+      confetti({ particleCount: 6, angle: 60,  spread: 55, origin: { x: 0,   y: 0.9 }, colors, startVelocity: 60, scalar: 0.9, gravity: 1.1 });
+      confetti({ particleCount: 6, angle: 120, spread: 55, origin: { x: 1,   y: 0.9 }, colors, startVelocity: 60, scalar: 0.9, gravity: 1.1 });
+      confetti({ particleCount: 5, angle: 90,  spread: 80, origin: { x: 0.5, y: 1   }, colors, startVelocity: 75, scalar: 0.9, gravity: 1.1 });
+      if (Date.now() < end) frame = requestAnimationFrame(burst);
+    })();
+    return () => cancelAnimationFrame(frame);
+  }, [showConfetti]);
 
   useEffect(() => {
     const savedAny = getDayProgress("sicko", activeDate) as any;
@@ -489,6 +507,9 @@ export default function HomePage() {
 
 
   function resetToday() {
+    for (const qid of SICKO_ORDER) {
+      localStorage.removeItem(`panthers_timer_v1_${activeDate}_${qid}`);
+    }
     const cleared: Record<string, QuestionProgress> = {};
     for (const qid of SICKO_ORDER) {
       cleared[qid] = { guesses: [], completed: false };
@@ -595,24 +616,35 @@ export default function HomePage() {
                   <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
                     <span className="text-[8px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
                   </div>
-                  {[30, 50, 70].map((pos) => (
+                  {[18, 26, 34, 42, 50, 58, 66, 74, 82].map((pos) => (
                     <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
                   ))}
-                  {([30, 50, 70] as const).map((pos, i) => (
+                  {([18, 26, 34, 42, 50, 58, 66, 74, 82] as const).map((pos, i) => (
                     <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>
-                      {["25", "50", "25"][i]}
+                      {["10", "20", "30", "40", "50", "40", "30", "20", "10"][i]}
                     </div>
                   ))}
-                  <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-2xl drop-shadow-lg" style={{ zIndex: 3 }}>🏈</div>
+                  <div className="absolute top-1/2 left-[10%] -translate-y-1/2 text-sm drop-shadow-lg" style={{ zIndex: 3 }}>🏈</div>
                 </div>
 
-                <p className="text-sm text-center" style={{ textWrap: "balance" } as React.CSSProperties}>
-                  4 questions stand between you and the endzone. <br></br> <span className="font-semibold text-white">40 second play clock </span> per question. 
-                  <br></br>The faster you answer, the more points you score. 
-                  <br></br><br></br>Questions range from the 1995 - 2025 seasons. 
-                  <br></br>You will be quizzed on draft picks and season leaders, as well as specific plays — such as <br></br><span className="font-semibold text-white">Which WR caught Jake Delhomme's 3rd TD pass in Week 1 of the 2007 season</span>.
-                  <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half so choose wisely. <br></br>Good luck!
-                </p>
+                <div className="w-full rounded-xl border border-zinc-700 bg-zinc-900/40 overflow-hidden">
+                  <button
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold text-zinc-400 uppercase tracking-wider hover:text-zinc-200 transition-colors"
+                    onClick={() => setInstructionsOpen((v) => !v)}
+                  >
+                    <span>How to Play</span>
+                    <span className="text-zinc-500">{instructionsOpen ? "▲" : "▼"}</span>
+                  </button>
+                  {instructionsOpen && (
+                    <p className="px-4 pb-4 text-sm text-center text-zinc-300" style={{ textWrap: "balance" } as React.CSSProperties}>
+                      5 questions stand between you and the endzone. <br></br> <span className="font-semibold text-white">40 second play clock </span> per question.
+                      <br></br>The faster you answer, the more points you score.
+                      <br></br><br></br>Questions range from the 1995 - 2025 seasons.
+                      <br></br>You will be quizzed on draft picks and season leaders, as well as specific plays — such as <br></br><span className="font-semibold text-white">Which WR caught Jake Delhomme's 3rd TD pass in Week 1 of the 2007 season</span>.
+                      <br></br><br></br>You can use 1 hint per day, but it will cut that question's score in half so choose wisely. <br></br>Good luck!
+                    </p>
+                  )}
+                </div>
                 {/* Era hints */}
                 <div className="rounded-xl border border-zinc-700 bg-zinc-900/60 px-3 py-2.5 space-y-1">
                   <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-1.5">Today's eras</p>
@@ -621,10 +653,8 @@ export default function HomePage() {
                       <span className="w-8 text-zinc-400">Q{i + 1}</span>
                       <span className="flex-1 text-zinc-300 font-medium">{eraDecade(q.season ?? 2020)}</span>
                       <span className="w-24 text-right">
-                        {eraBonus(q.season ?? 2020) > 0 ? (
-                          <span className="rounded px-1.5 py-0.5 font-semibold" style={{ background: "#BFC0BF22", color: "#BFC0BF" }}>+{eraBonus(q.season ?? 2020)} bonus</span>
-                        ) : (
-                          <span className="text-zinc-600">no bonus</span>
+                        {eraBonus(q.season ?? 2020) > 0 && (
+                          <span className="rounded px-1.5 py-0.5 font-semibold" style={{ background: "#0085CA22", color: "#0085CA" }}>+{eraBonus(q.season ?? 2020)} bonus</span>
                         )}
                       </span>
                     </div>
@@ -661,8 +691,9 @@ export default function HomePage() {
                 if (!isRestored) return null;
 
                 const correctCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
-                const isTouchdown = correctCount === 4;
-                const ballPct = 10 + correctCount * 20;
+                const isTouchdown = correctCount === 5;
+                const isFieldGoal = correctCount === 4;
+                const ballPct = 10 + correctCount * 16;
 
                 return (
                   <div className="mt-5 space-y-4">
@@ -675,22 +706,43 @@ export default function HomePage() {
                       <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
                         <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
                       </div>
-                      {[30, 50, 70].map((pos) => (
+                      {[18, 26, 34, 42, 50, 58, 66, 74, 82].map((pos) => (
                         <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
                       ))}
-                      {([30, 50, 70] as const).map((pos, i) => (
-                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>{["25", "50", "25"][i]}</div>
+                      {([18, 26, 34, 42, 50, 58, 66, 74, 82] as const).map((pos, i) => (
+                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>{["10", "20", "30", "40", "50", "40", "30", "20", "10"][i]}</div>
                       ))}
-                      {correctCount > 0 && !isTouchdown && (
-                        <>
-                          <div className="absolute pointer-events-none" style={{ top: "50%", left: "10%", right: `calc(${100 - ballPct}% + 26px)`, height: "4px", transform: "translateY(-50%)", background: "#0085CA", zIndex: 2 }} />
-                          <div className="absolute pointer-events-none" style={{ top: "50%", left: `calc(${ballPct}% - 26px)`, transform: "translateY(-50%)", width: 0, height: 0, borderTop: "8px solid transparent", borderBottom: "8px solid transparent", borderLeft: "14px solid #0085CA", zIndex: 2 }} />
-                        </>
+                      {correctCount > 0 && !isTouchdown && !isFieldGoal && (
+                        <div className="absolute pointer-events-none flex items-center" style={{ top: "50%", left: "10%", right: `calc(${100 - ballPct}% + 14px)`, transform: "translateY(-50%)", zIndex: 2 }}>
+                          <div style={{ flex: 1, height: "5px", borderRadius: "3px 0 0 3px", background: "linear-gradient(to right, #003d5c, #0085CA)", boxShadow: "0 0 10px #0085CA55" }} />
+                          <svg width="18" height="22" viewBox="0 0 18 22" style={{ flexShrink: 0, filter: "drop-shadow(0 0 4px #0085CA88)" }}>
+                            <polygon points="0,2 18,11 0,20" fill="#0085CA" />
+                          </svg>
+                        </div>
                       )}
-                      <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
+                      {isFieldGoal && (
+                        <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 80" preserveAspectRatio="none" style={{ zIndex: 4 }}>
+                          <defs>
+                            <clipPath id="fg-trail-clip">
+                              <rect x="74" y="0" height="80" style={{ width: 0, animation: "fg-clip-grow 1.1s ease-in 0.15s both" } as React.CSSProperties} />
+                            </clipPath>
+                          </defs>
+                          <path d="M 74 40 Q 88 15 100 40" fill="none" stroke="white" strokeWidth="1.5" strokeDasharray="1.5 2.5" strokeLinecap="round" opacity="0.6" clipPath="url(#fg-trail-clip)" />
+                        </svg>
+                      )}
+                      {isFieldGoal ? (
+                        <div className="absolute text-sm drop-shadow-lg" style={{ top: "50%", left: `${ballPct}%`, zIndex: 3, animation: "fg-follow 1.1s ease-in 0.15s both" }}>🏈</div>
+                      ) : (
+                        <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-sm drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
+                      )}
                       {isTouchdown && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                          <span className="text-base font-black italic tracking-widest text-white-300 drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                          <span className="text-base font-black italic tracking-widest text-white drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                        </div>
+                      )}
+                      {isFieldGoal && (
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                          <span className="text-base font-black italic tracking-widest drop-shadow-lg" style={{ color: "white", animation: "fg-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.9s both" }}>FIELD GOAL!</span>
                         </div>
                       )}
                     </div>
@@ -983,8 +1035,9 @@ export default function HomePage() {
               {/* Football field progress */}
               {(() => {
                 const correctCount = SICKO_ORDER.filter((id) => sickoProgress[id]?.completed).length;
-                const isTouchdown = correctCount === 4;
-                const ballPct = 10 + correctCount * 20;
+                const isTouchdown = allAnswered && correctCount === 5;
+                const isFieldGoal = allAnswered && correctCount === 4;
+                const ballPct = 10 + correctCount * 16;
                 return (
                   <div className="mt-5">
                     <div className="relative h-20 overflow-hidden rounded-xl border border-zinc-700">
@@ -995,25 +1048,43 @@ export default function HomePage() {
                       <div className="absolute right-0 top-0 bottom-0 w-[10%] border-l-2 border-white/40 flex items-center justify-center bg-[#000000]">
                         <span className="text-[9px] font-black italic tracking-widest uppercase text-[#0085CA]" style={{ writingMode: "vertical-rl" }}>Panthers</span>
                       </div>
-                      {[30, 50, 70].map((pos) => (
+                      {[18, 26, 34, 42, 50, 58, 66, 74, 82].map((pos) => (
                         <div key={pos} className="absolute top-0 bottom-0 w-px bg-white/25" style={{ left: `${pos}%` }} />
                       ))}
-                      {([30, 50, 70] as const).map((pos, i) => (
-                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>{["25", "50", "25"][i]}</div>
+                      {([18, 26, 34, 42, 50, 58, 66, 74, 82] as const).map((pos, i) => (
+                        <div key={pos} className="absolute bottom-1 text-[8px] font-bold text-white/50 -translate-x-1/2" style={{ left: `${pos}%` }}>{["10", "20", "30", "40", "50", "40", "30", "20", "10"][i]}</div>
                       ))}
-                      {[20, 40, 60, 80].map((pos) => (
-                        <div key={pos} className="absolute top-1/2 -translate-y-1/2 w-px h-2 bg-white/20" style={{ left: `${pos}%` }} />
-                      ))}
-                      {correctCount > 0 && !isTouchdown && (
-                        <>
-                          <div className="absolute pointer-events-none transition-all duration-700 ease-out" style={{ top: "50%", left: "10%", right: `calc(${100 - ballPct}% + 26px)`, height: "4px", transform: "translateY(-50%)", background: "#0085CA", zIndex: 2 }} />
-                          <div className="absolute pointer-events-none transition-all duration-700 ease-out" style={{ top: "50%", left: `calc(${ballPct}% - 26px)`, transform: "translateY(-50%)", width: 0, height: 0, borderTop: "8px solid transparent", borderBottom: "8px solid transparent", borderLeft: "14px solid #0085CA", zIndex: 2 }} />
-                        </>
+                      {correctCount > 0 && !isTouchdown && !isFieldGoal && (
+                        <div className="absolute pointer-events-none transition-all duration-700 ease-out flex items-center" style={{ top: "50%", left: "10%", right: `calc(${100 - ballPct}% + 14px)`, transform: "translateY(-50%)", zIndex: 2 }}>
+                          <div style={{ flex: 1, height: "5px", borderRadius: "3px 0 0 3px", background: "linear-gradient(to right, #003d5c, #0085CA)", boxShadow: "0 0 10px #0085CA55" }} />
+                          <svg width="18" height="22" viewBox="0 0 18 22" style={{ flexShrink: 0, filter: "drop-shadow(0 0 4px #0085CA88)" }}>
+                            <polygon points="0,2 18,11 0,20" fill="#0085CA" />
+                          </svg>
+                        </div>
                       )}
-                      <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-2xl transition-all duration-700 ease-out drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
+                      {isFieldGoal && (
+                        <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 80" preserveAspectRatio="none" style={{ zIndex: 4 }}>
+                          <defs>
+                            <clipPath id="fg-trail-clip">
+                              <rect x="74" y="0" height="80" style={{ width: 0, animation: "fg-clip-grow 1.1s ease-in 0.15s both" } as React.CSSProperties} />
+                            </clipPath>
+                          </defs>
+                          <path d="M 74 40 Q 88 15 100 40" fill="none" stroke="white" strokeWidth="1.5" strokeDasharray="1.5 2.5" strokeLinecap="round" opacity="0.6" clipPath="url(#fg-trail-clip)" />
+                        </svg>
+                      )}
+                      {isFieldGoal ? (
+                        <div className="absolute text-sm drop-shadow-lg" style={{ top: "50%", left: `${ballPct}%`, zIndex: 3, animation: "fg-follow 1.1s ease-in 0.15s both" }}>🏈</div>
+                      ) : (
+                        <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-sm transition-all duration-700 ease-out drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
+                      )}
                       {isTouchdown && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-                          <span className="text-base font-black italic tracking-widest text-white-300 drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                          <span className="text-base font-black italic tracking-widest text-white drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                        </div>
+                      )}
+                      {isFieldGoal && (
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+                          <span className="text-base font-black italic tracking-widest drop-shadow-lg" style={{ color: "white", animation: "fg-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.9s both" }}>FIELD GOAL!</span>
                         </div>
                       )}
                     </div>
@@ -1043,6 +1114,7 @@ export default function HomePage() {
       </div>
 
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+
     </main>
   );
 }

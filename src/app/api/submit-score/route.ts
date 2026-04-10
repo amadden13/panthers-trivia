@@ -5,13 +5,13 @@ import { PUZZLES_SICKO } from "@/data/puzzles_sicko";
 import { PLAYERS } from "@/data/players";
 import { OPPONENTS } from "@/data/opponents";
 
-const BASE_PTS = 1000;
+const BASE_PTS = 100;
 
 function eraBonus(season: number): number {
-  if (season < 2000) return 200;
-  if (season < 2010) return 100;
-  if (season < 2020) return 50;
-  return 25;
+  if (season < 2000) return 25;
+  if (season < 2010) return 15;
+  if (season < 2020) return 5;
+  return 0;
 }
 
 function normalizeName(s: string) {
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { date, answers }: { date: string; answers: AnswerInput[] } = body;
 
-  if (!date || !Array.isArray(answers) || answers.length !== 4) {
+  if (!date || !Array.isArray(answers) || answers.length !== 5) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
@@ -83,6 +83,7 @@ export async function POST(request: Request) {
   for (const ans of answers) {
     const q = questions.find((x) => x.id === ans.questionId);
     if (!q) {
+      console.log(`[submit-score] No question found for id: ${ans.questionId}`);
       questionResults.push(false);
       questionScores.push(0);
       continue;

@@ -22,6 +22,8 @@ type AllTimeEntry = {
   hints_used: number;
   questions_correct: number;
   questions_total: number;
+  touchdowns: number;
+  field_goals: number;
 };
 
 type ProfileCard = {
@@ -32,6 +34,8 @@ type ProfileCard = {
   hints_used: number;
   questions_correct: number;
   questions_total: number;
+  touchdowns: number;
+  field_goals: number;
 };
 
 export default function LeaderboardPage() {
@@ -89,6 +93,8 @@ export default function LeaderboardPage() {
       hints_used: entry.hints_used,
       questions_correct: entry.questions_correct,
       questions_total: entry.questions_total,
+      touchdowns: entry.touchdowns,
+      field_goals: entry.field_goals,
     });
   }
 
@@ -158,13 +164,16 @@ export default function LeaderboardPage() {
         for (const row of scoreData as any[]) {
           const username = profileMap[row.user_id] ?? "Anonymous";
           if (!grouped[username]) {
-            grouped[username] = { username, total_score: 0, days_played: 0, hints_used: 0, questions_correct: 0, questions_total: 0 };
+            grouped[username] = { username, total_score: 0, days_played: 0, hints_used: 0, questions_correct: 0, questions_total: 0, touchdowns: 0, field_goals: 0 };
           }
+          const qc = Number(row.questions_correct ?? 0);
           grouped[username].total_score += Number(row.total_score);
           grouped[username].days_played += 1;
           grouped[username].hints_used += row.hint_used ? 1 : 0;
-          grouped[username].questions_correct += Number(row.questions_correct ?? 0);
-          grouped[username].questions_total += 4;
+          grouped[username].questions_correct += qc;
+          grouped[username].questions_total += 5;
+          if (qc === 5) grouped[username].touchdowns += 1;
+          if (qc === 4) grouped[username].field_goals += 1;
         }
         setAllTime(
           Object.values(grouped).sort((a, b) => b.total_score - a.total_score).slice(0, 25)
@@ -337,7 +346,7 @@ export default function LeaderboardPage() {
                       const correctPct = row.questions_total > 0
                         ? Math.round((row.questions_correct / row.questions_total) * 100)
                         : 0;
-                      const maxPts = row.days_played * 4000;
+                      const maxPts = row.days_played * 500;
                       return (
                         <tr key={i} className="border-b border-zinc-800/60 last:border-0 hover:bg-zinc-800/30 transition-colors">
                           <td className="px-2 py-3 text-center w-8">
@@ -415,6 +424,8 @@ export default function LeaderboardPage() {
                     ? `${Math.round((profileCard.hints_used / profileCard.days_played) * 100)}%`
                     : "—"
                 },
+                { label: "Touchdowns", value: profileCard.touchdowns },
+                { label: "Field Goals", value: profileCard.field_goals },
               ].map(({ label, value }) => (
                 <div key={label} className="rounded-xl border border-zinc-800 bg-zinc-950/60 px-4 py-3">
                   <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">{label}</p>

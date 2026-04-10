@@ -1129,13 +1129,13 @@ def schedule_days(candidates: List[GroupedCandidate], start_date: str, num_days:
                 picked.append(gc)
 
         # Fill remaining slots from panthers pool
-        while len(picked) < 4:
+        while len(picked) < 5:
             gc = pick_one(pan_pool, used_players)
             if gc is None:
                 break
             picked.append(gc)
 
-        if len(picked) < 4:
+        if len(picked) < 5:
             print(f"  WARNING: only {len(picked)} questions for {date}, stopping.")
             break
 
@@ -1158,7 +1158,7 @@ TS_HEADER = """\
 // All-time Panthers Sicko Mode. Player matching uses gsis_id (no name collisions).
 
 export type SickoQuestion = {
-  id: "q1" | "q2" | "q3" | "q4";
+  id: "q1" | "q2" | "q3" | "q4" | "q5";
   prompt: string;
   playerIds: string[];         // all valid answers (usually 1, sometimes multiple for shared plays)
   answerPool: "panthers" | "opponents";  // which autocomplete list to use
