@@ -46,7 +46,7 @@ export default function Header({ activePage }: { activePage?: "home" | "leaderbo
     <div className="relative">
       {/* Logo row with profile icon in top-right of container */}
       <div className="relative flex items-center justify-center gap-2.5 mb-4">
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href="/panthers" className="flex items-center gap-2.5">
           <span className="text-2xl font-black tracking-tight text-white">PANTHERS</span>
           <span className="rounded bg-[#0085CA] px-2 py-0.5 text-sm font-black tracking-widest text-white">
             TRIVIA
@@ -79,7 +79,7 @@ export default function Header({ activePage }: { activePage?: "home" | "leaderbo
                 onClick={async () => {
                   await supabase.auth.signOut();
                   localStorage.removeItem("panthers_daily_v1");
-                  window.location.reload();
+                  window.location.href = "/panthers";
                 }}
               >
                 Sign out
@@ -93,7 +93,7 @@ export default function Header({ activePage }: { activePage?: "home" | "leaderbo
       <nav className="relative flex items-center border-b border-zinc-800 pb-4 mb-2">
         {/* Centered nav links */}
         <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-1">
-          <Link href="/" className={navLinkClass("home")}>
+          <Link href="/panthers" className={navLinkClass("home")}>
             Home
           </Link>
           {user && (

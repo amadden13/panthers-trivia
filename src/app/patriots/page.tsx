@@ -8,7 +8,7 @@ export default function PatriotsPage() {
         <h1 className="text-2xl font-black text-white mb-2">Patriots Sicko</h1>
         <p className="text-zinc-400 text-sm mb-8">Coming soon. Think you know Patriots history?</p>
         <Link
-          href="/"
+          href="/panthers"
           className="text-xs font-semibold text-[#0085CA] hover:text-[#33A0D8] transition-colors"
         >
           ← Play Panthers Sicko
