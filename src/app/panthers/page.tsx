@@ -434,6 +434,7 @@ export default function HomePage() {
       .select("question_results, question_scores, hint_question, total_score")
       .eq("user_id", userId)
       .eq("date", date)
+      .eq("team", "panthers")
       .maybeSingle();
 
     if (!data) return;
