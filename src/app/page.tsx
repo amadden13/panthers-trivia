@@ -233,6 +233,7 @@ export default function HomePage() {
   const timeRef = useRef(40);
   const activeCardRef = useRef<HTMLLIElement>(null);
   const scoreRef = useRef<HTMLDivElement>(null);
+  const fieldRef = useRef<HTMLDivElement>(null);
   const autoSubmitRef = useRef<() => void>(() => {});
 
   const sickoCurrentId =
@@ -250,8 +251,8 @@ export default function HomePage() {
   const showConfetti = allAnswered && completedCount === 5;
 
   useEffect(() => {
-    if (allAnswered && scoreRef.current) {
-      setTimeout(() => scoreRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
+    if (allAnswered && fieldRef.current) {
+      setTimeout(() => fieldRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 200);
     }
   }, [allAnswered]);
 
@@ -1050,7 +1051,7 @@ export default function HomePage() {
                 const isFieldGoal = allAnswered && correctCount === 4;
                 const ballPct = 10 + correctCount * 16;
                 return (
-                  <div className="mt-5">
+                  <div ref={fieldRef} className="mt-5">
                     <div className="relative h-20 overflow-hidden rounded-xl border border-zinc-700">
                       <div className="absolute inset-0 bg-emerald-800" />
                       <div className="absolute left-0 top-0 bottom-0 w-[10%] border-r-2 border-white/40 flex items-center justify-center" style={{ background: "#000000" }}>
