@@ -267,7 +267,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Ricky Manning intercept in Week 5 of the 2004 season against the Denver Broncos?",
+        "prompt": "Which Denver Broncos QB did CB Ricky Manning intercept in Week 5 of the 2004 season?",
         "playerIds": [
           "jake-plummer"
         ],
@@ -1173,7 +1173,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Colin Branch intercept in Week 6 of the 2006 season against the Baltimore Ravens?",
+        "prompt": "Which Baltimore Ravens QB did S Colin Branch intercept in Week 6 of the 2006 season?",
         "playerIds": [
           "steve-mcnair"
         ],
@@ -1391,7 +1391,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Reggie Howard intercept in Week 5 of the 2003 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did CB Reggie Howard intercept in Week 5 of the 2003 season?",
         "playerIds": [
           "aaron-brooks"
         ],
@@ -4490,7 +4490,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Deon Grant intercept in Week 9 of the 2001 season against the Los Angeles Rams?",
+        "prompt": "Which Los Angeles Rams QB did S Deon Grant intercept in Week 9 of the 2001 season?",
         "playerIds": [
           "kurt-warner"
         ],
@@ -5909,7 +5909,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Jimmy Hitchcock intercept in Week 12 of the 2001 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did DB Jimmy Hitchcock intercept in Week 12 of the 2001 season?",
         "playerIds": [
           "aaron-brooks"
         ],
@@ -7367,7 +7367,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Jon Beason intercept in Week 13 of the 2007 season against the San Francisco 49ers?",
+        "prompt": "Which San Francisco 49ers QB did LB Jon Beason intercept in Week 13 of the 2007 season?",
         "playerIds": [
           "trent-dilfer"
         ],
@@ -8157,7 +8157,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Will Witherspoon intercept in Week 10 of the 2004 season against the San Francisco 49ers?",
+        "prompt": "Which San Francisco 49ers QB did LB Will Witherspoon intercept in Week 10 of the 2004 season?",
         "playerIds": [
           "tim-rattay"
         ],
@@ -8204,7 +8204,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Richard Marshall intercept in Week 6 of the 2006 season against the Baltimore Ravens?",
+        "prompt": "Which Baltimore Ravens QB did CB Richard Marshall intercept in Week 6 of the 2006 season?",
         "playerIds": [
           "kyle-boller"
         ],
@@ -8399,7 +8399,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Julius Peppers intercept in Week 5 of the 2004 season against the Denver Broncos?",
+        "prompt": "Which Denver Broncos QB did DL Julius Peppers intercept in Week 5 of the 2004 season?",
         "playerIds": [
           "jake-plummer"
         ],
@@ -8909,7 +8909,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Richard Marshall intercept in Week 17 of the 2007 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which Tampa Bay Buccaneers QB did CB Richard Marshall intercept in Week 17 of the 2007 season?",
         "playerIds": [
           "luke-mccown"
         ],
@@ -9072,7 +9072,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Mike Minter intercept in Week 15 of the 2003 season against the Arizona Cardinals?",
+        "prompt": "Which Arizona Cardinals QB did S Mike Minter intercept in Week 15 of the 2003 season?",
         "playerIds": [
           "josh-mccown"
         ],
@@ -10504,7 +10504,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Lester Towns intercept in Week 7 of the 2001 season against the New York Jets?",
+        "prompt": "Which New York Jets QB did LB Lester Towns intercept in Week 7 of the 2001 season?",
         "playerIds": [
           "vinny-testaverde"
         ],
@@ -12023,7 +12023,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Al Wallace intercept in Week 17 of the 2003 season against the New York Giants?",
+        "prompt": "Which New York Giants QB did DE Al Wallace intercept in Week 17 of the 2003 season?",
         "playerIds": [
           "jesse-palmer"
         ],
@@ -12153,7 +12153,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Doug Evans intercept in Week 4 of the 2001 season against the San Francisco 49ers?",
+        "prompt": "Which San Francisco 49ers QB did DB Doug Evans intercept in Week 4 of the 2001 season?",
         "playerIds": [
           "jeff-garcia"
         ],
@@ -12484,7 +12484,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Mike Minter intercept in Week 13 of the 1999 season against the Los Angeles Rams?",
+        "prompt": "Which Los Angeles Rams QB did S Mike Minter intercept in Week 13 of the 1999 season?",
         "playerIds": [
           "kurt-warner"
         ],
@@ -13570,7 +13570,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Ken Lucas intercept in Week 6 of the 2007 season against the Arizona Cardinals?",
+        "prompt": "Which Arizona Cardinals QB did CB Ken Lucas intercept in Week 6 of the 2007 season?",
         "playerIds": [
           "tim-rattay"
         ],
@@ -13616,7 +13616,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Chris Gamble intercept in Week 13 of the 2009 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which Tampa Bay Buccaneers QB did CB Chris Gamble intercept in Week 13 of the 2009 season?",
         "playerIds": [
           "josh-freeman"
         ],
@@ -13819,7 +13819,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Reggie Howard intercept in Week 8 of the 2002 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which Tampa Bay Buccaneers QB did CB Reggie Howard intercept in Week 8 of the 2002 season?",
         "playerIds": [
           "rob-johnson"
         ],
@@ -14446,7 +14446,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Chris Gamble intercept in Week 3 of the 2008 season against the Minnesota Vikings?",
+        "prompt": "Which Minnesota Vikings QB did CB Chris Gamble intercept in Week 3 of the 2008 season?",
         "playerIds": [
           "gus-frerotte"
         ],
@@ -15532,7 +15532,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Richard Marshall intercept in Week 13 of the 2007 season against the San Francisco 49ers?",
+        "prompt": "Which San Francisco 49ers QB did CB Richard Marshall intercept in Week 13 of the 2007 season?",
         "playerIds": [
           "trent-dilfer"
         ],
@@ -16290,7 +16290,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Artrell Hawkins intercept in Week 13 of the 2004 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did CB Artrell Hawkins intercept in Week 13 of the 2004 season?",
         "playerIds": [
           "aaron-brooks"
         ],
@@ -16566,7 +16566,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Mark Fields intercept in Week 10 of the 2004 season against the San Francisco 49ers?",
+        "prompt": "Which San Francisco 49ers QB did LB Mark Fields intercept in Week 10 of the 2004 season?",
         "playerIds": [
           "tim-rattay"
         ],
@@ -18194,7 +18194,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Terry Cousin intercept in Week 17 of the 2002 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did CB Terry Cousin intercept in Week 17 of the 2002 season?",
         "playerIds": [
           "aaron-brooks"
         ],
@@ -18683,7 +18683,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Eric Davis intercept in Week 11 of the 1999 season against the Cleveland Browns?",
+        "prompt": "Which Cleveland Browns QB did DB Eric Davis intercept in Week 11 of the 1999 season?",
         "playerIds": [
           "tim-couch"
         ],
@@ -19365,7 +19365,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Shaun Williams intercept in Week 16 of the 2006 season against the Atlanta Falcons?",
+        "prompt": "Which Atlanta Falcons QB did S Shaun Williams intercept in Week 16 of the 2006 season?",
         "playerIds": [
           "mike-vick"
         ],
@@ -19487,7 +19487,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Mike Minter intercept in Week 15 of the 2005 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did S Mike Minter intercept in Week 15 of the 2005 season?",
         "playerIds": [
           "todd-bouman"
         ],
@@ -19618,7 +19618,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Ken Lucas intercept in Week 16 of the 2006 season against the Atlanta Falcons?",
+        "prompt": "Which Atlanta Falcons QB did CB Ken Lucas intercept in Week 16 of the 2006 season?",
         "playerIds": [
           "mike-vick"
         ],
@@ -21035,7 +21035,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Ken Lucas intercept in Week 4 of the 2005 season against the Green Bay Packers?",
+        "prompt": "Which Green Bay Packers QB did CB Ken Lucas intercept in Week 4 of the 2005 season?",
         "playerIds": [
           "brett-favre"
         ],
@@ -21315,7 +21315,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Brentson Buckner intercept in Week 10 of the 2004 season against the San Francisco 49ers?",
+        "prompt": "Which San Francisco 49ers QB did DT Brentson Buckner intercept in Week 10 of the 2004 season?",
         "playerIds": [
           "tim-rattay"
         ],
@@ -22136,7 +22136,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Julius Peppers intercept in Week 12 of the 2007 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did DL Julius Peppers intercept in Week 12 of the 2007 season?",
         "playerIds": [
           "drew-brees"
         ],
@@ -24280,7 +24280,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Jon Beason intercept in Week 8 of the 2008 season against the Arizona Cardinals?",
+        "prompt": "Which Arizona Cardinals QB did LB Jon Beason intercept in Week 8 of the 2008 season?",
         "playerIds": [
           "kurt-warner"
         ],
@@ -24326,7 +24326,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Mike Rucker intercept in Week 13 of the 2003 season against the Philadelphia Eagles?",
+        "prompt": "Which Philadelphia Eagles QB did DE Mike Rucker intercept in Week 13 of the 2003 season?",
         "playerIds": [
           "donovan-mcnabb"
         ],
@@ -24581,7 +24581,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Mike Minter intercept in Week 9 of the 2000 season against the Atlanta Falcons?",
+        "prompt": "Which Atlanta Falcons QB did S Mike Minter intercept in Week 9 of the 2000 season?",
         "playerIds": [
           "chris-chandler"
         ],
@@ -25255,7 +25255,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Doug Evans intercept in Week 17 of the 1999 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did DB Doug Evans intercept in Week 17 of the 1999 season?",
         "playerIds": [
           "jake-delhomme"
         ],
@@ -25392,7 +25392,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Brent Alexander intercept in Week 11 of the 1999 season against the Cleveland Browns?",
+        "prompt": "Which Cleveland Browns QB did DB Brent Alexander intercept in Week 11 of the 1999 season?",
         "playerIds": [
           "tim-couch"
         ],
@@ -25494,7 +25494,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Eric Davis intercept in Week 10 of the 1999 season against the Los Angeles Rams?",
+        "prompt": "Which Los Angeles Rams QB did DB Eric Davis intercept in Week 10 of the 1999 season?",
         "playerIds": [
           "kurt-warner"
         ],
@@ -25734,7 +25734,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Ken Lucas intercept in Week 2 of the 2006 season against the Minnesota Vikings?",
+        "prompt": "Which Minnesota Vikings QB did CB Ken Lucas intercept in Week 2 of the 2006 season?",
         "playerIds": [
           "brad-johnson"
         ],
@@ -26484,7 +26484,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Mike Minter intercept in Week 16 of the 2003 season against the Detroit Lions?",
+        "prompt": "Which Detroit Lions QB did S Mike Minter intercept in Week 16 of the 2003 season?",
         "playerIds": [
           "mike-mcmahon"
         ],
@@ -27019,7 +27019,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Sherrod Martin intercept in Week 10 of the 2009 season against the Atlanta Falcons?",
+        "prompt": "Which Atlanta Falcons QB did S Sherrod Martin intercept in Week 10 of the 2009 season?",
         "playerIds": [
           "matt-ryan"
         ],
@@ -27926,7 +27926,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Jon Beason intercept in Week 1 of the 2009 season against the Philadelphia Eagles?",
+        "prompt": "Which Philadelphia Eagles QB did LB Jon Beason intercept in Week 1 of the 2009 season?",
         "playerIds": [
           "donovan-mcnabb"
         ],
@@ -28692,7 +28692,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Chris Gamble intercept in Week 10 of the 2008 season against the Las Vegas Raiders?",
+        "prompt": "Which Las Vegas Raiders QB did CB Chris Gamble intercept in Week 10 of the 2008 season?",
         "playerIds": [
           "andrew-walter"
         ],
@@ -28910,7 +28910,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Richard Marshall intercept in Week 10 of the 2009 season against the Atlanta Falcons?",
+        "prompt": "Which Atlanta Falcons QB did CB Richard Marshall intercept in Week 10 of the 2009 season?",
         "playerIds": [
           "matt-ryan"
         ],
@@ -31712,7 +31712,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Eric Davis intercept in Week 14 of the 2000 season against the Los Angeles Rams?",
+        "prompt": "Which Los Angeles Rams QB did DB Eric Davis intercept in Week 14 of the 2000 season?",
         "playerIds": [
           "kurt-warner"
         ],
@@ -32810,7 +32810,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Ken Lucas intercept in Week 7 of the 2008 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did CB Ken Lucas intercept in Week 7 of the 2008 season?",
         "playerIds": [
           "drew-brees"
         ],
@@ -33119,7 +33119,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Will Witherspoon intercept in Week 10 of the 2005 season against the New York Jets?",
+        "prompt": "Which New York Jets QB did LB Will Witherspoon intercept in Week 10 of the 2005 season?",
         "playerIds": [
           "brooks-bollinger"
         ],
@@ -33886,7 +33886,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which QB did Ken Lucas intercept in Week 10 of the 2005 season against the New York Jets?",
+        "prompt": "Which New York Jets QB did CB Ken Lucas intercept in Week 10 of the 2005 season?",
         "playerIds": [
           "brooks-bollinger"
         ],
@@ -33974,7 +33974,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Al Wallace intercept in Week 2 of the 2003 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which Tampa Bay Buccaneers QB did DE Al Wallace intercept in Week 2 of the 2003 season?",
         "playerIds": [
           "brad-johnson"
         ],
@@ -34496,7 +34496,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Chris Gamble intercept in Week 12 of the 2005 season against the Buffalo Bills?",
+        "prompt": "Which Buffalo Bills QB did CB Chris Gamble intercept in Week 12 of the 2005 season?",
         "playerIds": [
           "jp-losman"
         ],
@@ -35962,7 +35962,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Richard Marshall intercept in Week 5 of the 2006 season against the Cleveland Browns?",
+        "prompt": "Which Cleveland Browns QB did CB Richard Marshall intercept in Week 5 of the 2006 season?",
         "playerIds": [
           "charlie-frye"
         ],
@@ -36087,7 +36087,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Mike Minter intercept in Week 13 of the 2002 season against the Cleveland Browns?",
+        "prompt": "Which Cleveland Browns QB did S Mike Minter intercept in Week 13 of the 2002 season?",
         "playerIds": [
           "tim-couch"
         ],
@@ -37563,7 +37563,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Ricky Manning intercept in Week 6 of the 2004 season against the Philadelphia Eagles?",
+        "prompt": "Which Philadelphia Eagles QB did CB Ricky Manning intercept in Week 6 of the 2004 season?",
         "playerIds": [
           "donovan-mcnabb"
         ],
@@ -38715,7 +38715,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Chris Gamble intercept in Week 9 of the 2009 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did CB Chris Gamble intercept in Week 9 of the 2009 season?",
         "playerIds": [
           "drew-brees"
         ],
@@ -38787,7 +38787,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Mike Minter intercept in Week 9 of the 2001 season against the Los Angeles Rams?",
+        "prompt": "Which Los Angeles Rams QB did S Mike Minter intercept in Week 9 of the 2001 season?",
         "playerIds": [
           "kurt-warner"
         ],
@@ -40504,7 +40504,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Ken Lucas intercept in Week 16 of the 2005 season against the Dallas Cowboys?",
+        "prompt": "Which Dallas Cowboys QB did CB Ken Lucas intercept in Week 16 of the 2005 season?",
         "playerIds": [
           "drew-bledsoe"
         ],
@@ -41220,7 +41220,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Jon Beason intercept in Week 13 of the 2009 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which Tampa Bay Buccaneers QB did LB Jon Beason intercept in Week 13 of the 2009 season?",
         "playerIds": [
           "josh-freeman"
         ],
@@ -41512,7 +41512,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Deon Grant intercept in Week 3 of the 2001 season against the Green Bay Packers?",
+        "prompt": "Which Green Bay Packers QB did S Deon Grant intercept in Week 3 of the 2001 season?",
         "playerIds": [
           "brett-favre"
         ],
@@ -41569,7 +41569,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which QB did Richard Marshall intercept in Week 16 of the 2009 season against the New York Giants?",
+        "prompt": "Which New York Giants QB did CB Richard Marshall intercept in Week 16 of the 2009 season?",
         "playerIds": [
           "eli-manning"
         ],
@@ -41614,7 +41614,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which QB did Al Wallace intercept in Week 15 of the 2005 season against the New Orleans Saints?",
+        "prompt": "Which New Orleans Saints QB did DE Al Wallace intercept in Week 15 of the 2005 season?",
         "playerIds": [
           "todd-bouman"
         ],
@@ -41707,7 +41707,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Mike Minter intercept in Week 7 of the 2001 season against the New York Jets?",
+        "prompt": "Which New York Jets QB did S Mike Minter intercept in Week 7 of the 2001 season?",
         "playerIds": [
           "vinny-testaverde"
         ],
@@ -41865,7 +41865,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Emmanuel McDaniel intercept in Week 13 of the 2002 season against the Cleveland Browns?",
+        "prompt": "Which Cleveland Browns QB did CB Emmanuel McDaniel intercept in Week 13 of the 2002 season?",
         "playerIds": [
           "tim-couch"
         ],
@@ -42463,7 +42463,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which QB did Charles Godfrey intercept in Week 11 of the 2008 season against the Detroit Lions?",
+        "prompt": "Which Detroit Lions QB did CB Charles Godfrey intercept in Week 11 of the 2008 season?",
         "playerIds": [
           "daunte-culpepper"
         ],
@@ -42563,7 +42563,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which QB did Charles Godfrey intercept in Week 13 of the 2009 season against the Tampa Bay Buccaneers?",
+        "prompt": "Which Tampa Bay Buccaneers QB did CB Charles Godfrey intercept in Week 13 of the 2009 season?",
         "playerIds": [
           "josh-freeman"
         ],
