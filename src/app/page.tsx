@@ -496,7 +496,14 @@ export default function HomePage() {
       if (qp.guesses.length === 0) return "⬛";
       return "🟥";
     }).join(" ");
-    const text = `${activeDate}\n${cells}\n${totalScore} pts\n${window.location.origin}\n#PanthersSicko`;
+    const [y, m, d] = activeDate.split("-");
+    const formattedDate = `${m}-${d}-${y}`;
+    const achievementLine = allAnswered && completedCount === 5
+      ? "\nTOUCHDOWN!"
+      : allAnswered && completedCount === 4
+      ? "\nFIELD GOAL!"
+      : "";
+    const text = `${formattedDate}\n${cells}${achievementLine}\n${totalScore} pts\n${window.location.origin}\n#PanthersSicko`;
 
     try {
       await (navigator as any).share({ text });
