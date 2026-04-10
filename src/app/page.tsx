@@ -413,9 +413,13 @@ export default function HomePage() {
     const hasLocalProgress = existing && SICKO_ORDER.some((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0);
 
     // If quiz is fully completed locally but not yet in Supabase, submit it now
+    // Skip if answers are "(restored)" placeholders — score is already in Supabase
     const allAnsweredLocally = existing && SICKO_ORDER.every((id) => (existing.questions?.[id]?.guesses.length ?? 0) > 0);
     if (allAnsweredLocally) {
-      await syncLocalProgressToSupabase(date);
+      const hasPlaceholders = SICKO_ORDER.some((id) => existing.questions?.[id]?.guesses?.[0] === "(restored)");
+      if (!hasPlaceholders) {
+        await syncLocalProgressToSupabase(date);
+      }
       return;
     }
 
