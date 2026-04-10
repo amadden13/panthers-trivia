@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
-import { PUZZLES_SICKO } from "@/data/puzzles_sicko";
-import { PLAYERS } from "@/data/players";
-import { OPPONENTS } from "@/data/opponents";
+import { PUZZLES_PATRIOTS } from "@/data/puzzles_patriots";
+import { PLAYERS_PATRIOTS } from "@/data/players_patriots";
 
 const BASE_PTS = 100;
 
@@ -63,7 +62,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid date" }, { status: 400 });
   }
 
-  const dayPuzzle = (PUZZLES_SICKO as any[]).find((d: any) => d.date === date);
+  const dayPuzzle = (PUZZLES_PATRIOTS as any[]).find((d: any) => d.date === date);
   if (!dayPuzzle) {
     return NextResponse.json({ error: "No puzzle for this date" }, { status: 404 });
   }
@@ -83,14 +82,14 @@ export async function POST(request: Request) {
   for (const ans of answers) {
     const q = questions.find((x) => x.id === ans.questionId);
     if (!q) {
-      console.log(`[submit-score] No question found for id: ${ans.questionId}`);
+      console.log(`[submit-score-patriots] No question found for id: ${ans.questionId}`);
       questionResults.push(false);
       questionScores.push(0);
       continue;
     }
 
     const ids = q.playerIds ?? (q.playerId ? [q.playerId] : []);
-    const pool = q.answerPool === "opponents" ? OPPONENTS : PLAYERS;
+    const pool = PLAYERS_PATRIOTS;
     const validPlayers = ids.flatMap((id) => {
       const p = pool.find((x) => x.id === id);
       return p ? [p] : [];
@@ -123,7 +122,7 @@ export async function POST(request: Request) {
     {
       user_id: user.id,
       date,
-      team: "panthers",
+      team: "patriots",
       total_score: totalScore,
       questions_correct: questionsCorrect,
       question_results: questionResults,

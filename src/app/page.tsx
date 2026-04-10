@@ -15,7 +15,7 @@ const teams = [
     abbr: "NE",
     primary: "#002244",
     secondary: "#C60C30",
-    available: false,
+    available: true,
   },
 ];
 

@@ -168,6 +168,7 @@ export default function HomePage() {
   const [adminDate, setAdminDate] = useState<string>(() => today);
   const [user, setUser] = useState<{ email?: string; username?: string; isAdmin?: boolean } | null>(null);
   const [showAuthModal, setShowAuthModal] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     async function loadUser(userId: string, email?: string) {
@@ -513,9 +514,21 @@ export default function HomePage() {
     const text = `${formattedDate}\n${cells}${achievementLine}\n${totalScore} pts\n${window.location.origin}\n#PanthersSicko`;
 
     try {
-      await (navigator as any).share({ text });
+      if (navigator.share) {
+        await navigator.share({ text });
+      } else {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
     } catch {
-      // user dismissed or share not supported
+      try {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } catch {
+        // clipboard also unavailable
+      }
     }
   }
 
@@ -562,7 +575,7 @@ export default function HomePage() {
       <div className="mx-auto max-w-2xl p-6">
         {/* Header */}
         <header className="mb-2">
-          <Header activePage="home" />
+          <Header activePage="panthers" />
 
           {/* Date + subtitle row */}
           <div className="mt-2 text-center">
@@ -614,9 +627,8 @@ export default function HomePage() {
               <div className="space-y-3 text-sm text-zinc-300 max-w-sm w-full">
                 {/* Title */}
                 <div className="flex flex-col items-center gap-1">
-                  <p className="text-xs font-bold tracking-[0.25em] text-zinc-500 uppercase">Panthers Trivia</p>
-                  <h2 className="text-3xl font-black tracking-tight text-white uppercase">
-                    Sicko <span className="text-[#0085CA]">Mode</span>
+                  <h2 className="font-black tracking-tight uppercase flex gap-2 justify-center whitespace-nowrap" style={{ fontSize: "clamp(1rem, 5.5vw, 1.875rem)" }}>
+                    <span className="text-white">Carolina</span><span className="text-[#0085CA]">Panthers</span>
                   </h2>
                   <div className="mt-1 h-px w-16 bg-gradient-to-r from-transparent via-[#0085CA] to-transparent" />
                 </div>
@@ -781,7 +793,7 @@ export default function HomePage() {
 
                     {/* Share */}
                     <div className="flex justify-center">
-                      <button className="rounded-xl px-4 py-2 text-sm font-bold text-white shadow-sm hover:opacity-90" style={{ background: "#0085CA" }} onClick={share}>Share Results</button>
+                      <button className="rounded-xl px-4 py-2 text-sm font-bold text-white shadow-sm hover:opacity-90" style={{ background: "#0085CA" }} onClick={share}>{copied ? "Copied!" : "Share Results"}</button>
                     </div>
                   </div>
                 );
@@ -1113,7 +1125,7 @@ export default function HomePage() {
                   style={{ background: "#0085CA" }}
                   onClick={share}
                 >
-                  Share Results
+                  {copied ? "Copied!" : "Share Results"}
                 </button>
               </div>
             </>}

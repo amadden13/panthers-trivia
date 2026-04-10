@@ -8,7 +8,7 @@ import ProfileModal from "@/components/ProfileModal";
 
 type User = { email?: string; username?: string; isAdmin?: boolean };
 
-export default function Header({ activePage }: { activePage?: "home" | "leaderboard" | "about" | "settings" }) {
+export default function Header({ activePage, team = "panthers" }: { activePage?: "home" | "panthers" | "leaderboard" | "about" | "settings"; team?: "panthers" | "patriots" }) {
   const supabase = createClient();
   const [user, setUser] = useState<User | null>(null);
   const [showUserMenu, setShowUserMenu] = useState(false);
@@ -46,9 +46,12 @@ export default function Header({ activePage }: { activePage?: "home" | "leaderbo
     <div className="relative">
       {/* Logo row with profile icon in top-right of container */}
       <div className="relative flex items-center justify-center gap-2.5 mb-4">
-        <Link href="/panthers" className="flex items-center gap-2.5">
-          <span className="text-2xl font-black tracking-tight text-white">PANTHERS</span>
-          <span className="rounded bg-[#0085CA] px-2 py-0.5 text-sm font-black tracking-widest text-white">
+        <Link href={team === "patriots" ? "/patriots" : "/panthers"} className="flex items-center gap-2.5">
+          <span className="text-2xl font-black tracking-tight text-white">SICKO</span>
+          <span
+            className="rounded px-2 py-0.5 text-sm font-black tracking-widest text-white"
+            style={{ background: team === "patriots" ? "#002244" : "#0085CA" }}
+          >
             TRIVIA
           </span>
         </Link>
@@ -78,8 +81,12 @@ export default function Header({ activePage }: { activePage?: "home" | "leaderbo
                 className="w-full px-4 py-2.5 text-left text-xs font-semibold text-rose-400 hover:bg-zinc-800 transition-colors border-t border-zinc-800"
                 onClick={async () => {
                   await supabase.auth.signOut();
-                  localStorage.removeItem("panthers_daily_v1");
-                  window.location.href = "/panthers";
+                  if (team === "patriots") {
+                    window.location.href = "/patriots";
+                  } else {
+                    localStorage.removeItem("panthers_daily_v1");
+                    window.location.href = "/panthers";
+                  }
                 }}
               >
                 Sign out
@@ -93,17 +100,17 @@ export default function Header({ activePage }: { activePage?: "home" | "leaderbo
       <nav className="relative flex items-center border-b border-zinc-800 pb-4 mb-2">
         {/* Centered nav links */}
         <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-1">
-          <Link href="/panthers" className={navLinkClass("home")}>
+          <Link href="/" className={navLinkClass("home")}>
             Home
+          </Link>
+          <Link href="/panthers" className={navLinkClass("panthers")}>
+            Panthers
           </Link>
           {user && (
             <Link href="/stats" className={navLinkClass("leaderboard")}>
               Leaderboard
             </Link>
           )}
-          <Link href="/about" className={navLinkClass("about")}>
-            About
-          </Link>
           {user && (
             <Link href="/settings" className={navLinkClass("settings")}>
               Settings

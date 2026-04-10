@@ -32,6 +32,8 @@ function SettingsContent() {
   const [recoveryPassword, setRecoveryPassword] = useState("");
   const [recoveryConfirm, setRecoveryConfirm] = useState("");
 
+  const teamParam = searchParams.get("team") === "patriots" ? "patriots" : "panthers";
+
   useEffect(() => {
     if (searchParams.get("recovery") === "true") setIsRecovery(true);
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -152,7 +154,7 @@ function SettingsContent() {
     <main className="min-h-screen bg-transparent text-zinc-100">
       <div className="mx-auto max-w-2xl p-6">
         <header className="mb-8">
-          <Header activePage="settings" />
+          <Header activePage="settings" team={teamParam} />
         </header>
 
         <div className="max-w-sm mx-auto">
