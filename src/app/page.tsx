@@ -275,15 +275,17 @@ export default function HomePage() {
   useEffect(() => {
     if (!showConfetti) return;
     const colors = ["#FF3B30","#FF9500","#FFCC00","#34C759","#007AFF","#5856D6","#FF2D55","#00C7BE","#30D158","#64D2FF","#BF5AF2","#FFD60A"];
-    const end = Date.now() + 1000;
     let frame: number;
-    (function burst() {
-      confetti({ particleCount: 6, angle: 60,  spread: 55, origin: { x: 0,   y: 0.9 }, colors, startVelocity: 60, scalar: 0.9, gravity: 1.1 });
-      confetti({ particleCount: 6, angle: 120, spread: 55, origin: { x: 1,   y: 0.9 }, colors, startVelocity: 60, scalar: 0.9, gravity: 1.1 });
-      confetti({ particleCount: 5, angle: 90,  spread: 80, origin: { x: 0.5, y: 1   }, colors, startVelocity: 75, scalar: 0.9, gravity: 1.1 });
-      if (Date.now() < end) frame = requestAnimationFrame(burst);
-    })();
-    return () => cancelAnimationFrame(frame);
+    const timeout = setTimeout(() => {
+      const end = Date.now() + 1000;
+      (function burst() {
+        confetti({ particleCount: 6, angle: 60,  spread: 55, origin: { x: 0,   y: 0.9 }, colors, startVelocity: 60, scalar: 0.9, gravity: 1.1 });
+        confetti({ particleCount: 6, angle: 120, spread: 55, origin: { x: 1,   y: 0.9 }, colors, startVelocity: 60, scalar: 0.9, gravity: 1.1 });
+        confetti({ particleCount: 5, angle: 90,  spread: 80, origin: { x: 0.5, y: 1   }, colors, startVelocity: 75, scalar: 0.9, gravity: 1.1 });
+        if (Date.now() < end) frame = requestAnimationFrame(burst);
+      })();
+    }, 1000);
+    return () => { clearTimeout(timeout); cancelAnimationFrame(frame); };
   }, [showConfetti]);
 
   useEffect(() => {
@@ -736,25 +738,25 @@ export default function HomePage() {
                         <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 80" preserveAspectRatio="none" style={{ zIndex: 4 }}>
                           <defs>
                             <clipPath id="fg-trail-clip">
-                              <rect x="74" y="0" height="80" style={{ width: 0, animation: "fg-clip-grow 1.1s ease-in 0.15s both" } as React.CSSProperties} />
+                              <rect x="74" y="0" height="80" style={{ width: 0, animation: "fg-clip-grow 1.1s ease-in 1.15s both" } as React.CSSProperties} />
                             </clipPath>
                           </defs>
                           <path d="M 74 40 Q 88 15 100 40" fill="none" stroke="white" strokeWidth="1.5" strokeDasharray="1.5 2.5" strokeLinecap="round" opacity="0.6" clipPath="url(#fg-trail-clip)" />
                         </svg>
                       )}
                       {isFieldGoal ? (
-                        <div className="absolute text-sm drop-shadow-lg" style={{ top: "50%", left: `${ballPct}%`, zIndex: 3, animation: "fg-follow 1.1s ease-in 0.15s both" }}>🏈</div>
+                        <div className="absolute text-sm drop-shadow-lg" style={{ top: "50%", left: `${ballPct}%`, zIndex: 3, animation: "fg-follow 1.1s ease-in 1.15s both" }}>🏈</div>
                       ) : (
                         <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-sm drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
                       )}
                       {isTouchdown && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                          <span className="text-base font-black italic tracking-widest text-white drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                          <span className="text-base font-black italic tracking-widest text-white drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 1s both" }}>TOUCHDOWN!</span>
                         </div>
                       )}
                       {isFieldGoal && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                          <span className="text-base font-black italic tracking-widest drop-shadow-lg" style={{ color: "white", animation: "fg-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.9s both" }}>FIELD GOAL!</span>
+                          <span className="text-base font-black italic tracking-widest drop-shadow-lg" style={{ color: "white", animation: "fg-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) 1.9s both" }}>FIELD GOAL!</span>
                         </div>
                       )}
                     </div>
@@ -1078,25 +1080,25 @@ export default function HomePage() {
                         <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 80" preserveAspectRatio="none" style={{ zIndex: 4 }}>
                           <defs>
                             <clipPath id="fg-trail-clip">
-                              <rect x="74" y="0" height="80" style={{ width: 0, animation: "fg-clip-grow 1.1s ease-in 0.15s both" } as React.CSSProperties} />
+                              <rect x="74" y="0" height="80" style={{ width: 0, animation: "fg-clip-grow 1.1s ease-in 1.15s both" } as React.CSSProperties} />
                             </clipPath>
                           </defs>
                           <path d="M 74 40 Q 88 15 100 40" fill="none" stroke="white" strokeWidth="1.5" strokeDasharray="1.5 2.5" strokeLinecap="round" opacity="0.6" clipPath="url(#fg-trail-clip)" />
                         </svg>
                       )}
                       {isFieldGoal ? (
-                        <div className="absolute text-sm drop-shadow-lg" style={{ top: "50%", left: `${ballPct}%`, zIndex: 3, animation: "fg-follow 1.1s ease-in 0.15s both" }}>🏈</div>
+                        <div className="absolute text-sm drop-shadow-lg" style={{ top: "50%", left: `${ballPct}%`, zIndex: 3, animation: "fg-follow 1.1s ease-in 1.15s both" }}>🏈</div>
                       ) : (
                         <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 text-sm transition-all duration-700 ease-out drop-shadow-lg" style={{ left: `${ballPct}%`, zIndex: 3 }}>🏈</div>
                       )}
                       {isTouchdown && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-                          <span className="text-base font-black italic tracking-widest text-white drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) both" }}>TOUCHDOWN!</span>
+                          <span className="text-base font-black italic tracking-widest text-white drop-shadow-lg" style={{ animation: "td-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 1s both" }}>TOUCHDOWN!</span>
                         </div>
                       )}
                       {isFieldGoal && (
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-                          <span className="text-base font-black italic tracking-widest drop-shadow-lg" style={{ color: "white", animation: "fg-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.9s both" }}>FIELD GOAL!</span>
+                          <span className="text-base font-black italic tracking-widest drop-shadow-lg" style={{ color: "white", animation: "fg-pop 0.5s cubic-bezier(0.34,1.56,0.64,1) 1.9s both" }}>FIELD GOAL!</span>
                         </div>
                       )}
                     </div>
