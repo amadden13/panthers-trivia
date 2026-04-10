@@ -510,7 +510,7 @@ export default function HomePage() {
       : allAnswered && completedCount === 4
       ? "\nFIELD GOAL!"
       : "";
-    const text = `${formattedDate}\n${cells}${achievementLine}\n${totalScore} pts\n${window.location.origin}\n#PanthersSicko`;
+    const text = `#PanthersSicko\n${formattedDate}\n${cells}${achievementLine}\n${totalScore} pts\n${window.location.origin}`;
 
     try {
       await (navigator as any).share({ text });
