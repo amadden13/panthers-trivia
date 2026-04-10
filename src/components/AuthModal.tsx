@@ -5,7 +5,7 @@ import { createClient } from "@/lib/supabase";
 
 type Tab = "login" | "signup";
 
-export default function AuthModal({ onClose }: { onClose: () => void }) {
+export default function AuthModal({ onClose, teamColor = "#0085CA" }: { onClose: () => void; teamColor?: string }) {
   const supabase = createClient();
   const [tab, setTab] = useState<Tab>("login");
   const [email, setEmail] = useState("");
@@ -99,7 +99,7 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
         </button>
 
         <h2 className="text-lg font-black tracking-tight text-white">
-          Panthers <span className="text-[#0085CA]">Trivia</span>
+          SICKO <span style={{ color: teamColor }}>TRIVIA</span>
         </h2>
         <p className="mt-1 text-xs text-zinc-400" style={{ textWrap: "balance" }}>Sign in to track your scores and compete on the leaderboard.</p>
 
@@ -110,9 +110,10 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
               key={t}
               className={`flex-1 rounded-lg py-1.5 text-xs font-semibold transition-colors ${
                 tab === t
-                  ? "bg-[#0085CA] text-white"
+                  ? "text-white"
                   : "text-zinc-400 hover:text-zinc-200"
               }`}
+              style={tab === t ? { background: teamColor } : {}}
               onClick={() => { setTab(t); setError(null); }}
             >
               {t === "login" ? "Log in" : "Sign up"}
@@ -191,7 +192,8 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
 
             {!forgotSent && (
               <button
-                className="w-full rounded-xl bg-[#0085CA] py-2.5 text-sm font-bold text-zinc-950 hover:bg-[#0096E0] disabled:opacity-50 transition-colors"
+                className="w-full rounded-xl py-2.5 text-sm font-bold text-white disabled:opacity-50 transition-opacity hover:opacity-90"
+                style={{ background: teamColor }}
                 onClick={tab === "login" ? handleLogin : handleSignup}
                 disabled={loading}
               >

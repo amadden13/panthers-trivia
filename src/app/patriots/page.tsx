@@ -14,7 +14,7 @@ import AuthModal from "@/components/AuthModal";
 // Patriots colors
 const TEAM_COLOR = "#002244";   // Navy
 const TEAM_ACCENT = "#C60C30";  // Red
-const TEAM_LIGHT = "#4a6fa5";   // Light navy for hover states
+const TEAM_LIGHT = "#C60C30";   // Red for text on dark backgrounds
 
 /** ---------- scoring helpers ---------- **/
 const BASE_PTS = 100;
@@ -1172,7 +1172,7 @@ export default function PatriotsPage() {
         </footer>
       </div>
 
-      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} teamColor={TEAM_ACCENT} />}
 
     </main>
   );
