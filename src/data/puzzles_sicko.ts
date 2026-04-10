@@ -135,7 +135,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Aaron Rodgers in Week 10 of the 2019 season against the Green Bay Packers?",
+        "prompt": "Who sacked Aaron Rodgers in Week 10 of the 2019 season against the Green Bay Packers?",
         "playerIds": [
           "vernon-butler"
         ],
@@ -191,7 +191,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Alex Smith in Week 10 of the 2016 season against the Kansas City Chiefs?",
+        "prompt": "Who sacked Alex Smith in Week 10 of the 2016 season against the Kansas City Chiefs?",
         "playerIds": [
           "kawann-short",
           "mario-addison"
@@ -443,7 +443,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Jay Cutler in Week 5 of the 2014 season against the Chicago Bears?",
+        "prompt": "Who sacked Jay Cutler in Week 5 of the 2014 season against the Chicago Bears?",
         "playerIds": [
           "charles-johnson",
           "kawann-short",
@@ -691,7 +691,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Tony Romo in Week 12 of the 2015 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Tony Romo in Week 12 of the 2015 season against the Dallas Cowboys?",
         "playerIds": [
           "thomas-davis"
         ],
@@ -736,7 +736,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Case Keenum 2 times in Week 9 of the 2016 season against the Los Angeles Rams?",
+        "prompt": "Who sacked Case Keenum 2 times in Week 9 of the 2016 season against the Los Angeles Rams?",
         "playerIds": [
           "mario-addison"
         ],
@@ -761,7 +761,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matthew Stafford 2 times in Week 2 of the 2014 season against the Detroit Lions?",
+        "prompt": "Who sacked Matthew Stafford 2 times in Week 2 of the 2014 season against the Detroit Lions?",
         "playerIds": [
           "mario-addison"
         ],
@@ -791,7 +791,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Sam Bradford in Week 3 of the 2016 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Sam Bradford in Week 3 of the 2016 season against the Minnesota Vikings?",
         "playerIds": [
           "thomas-davis"
         ],
@@ -1148,7 +1148,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Tom Brady in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Tom Brady in Week 10 of the 2020 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "efe-obada"
         ],
@@ -1221,7 +1221,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Drew Brees 2 times in Week 11 of the 2016 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees 2 times in Week 11 of the 2016 season against the New Orleans Saints?",
         "playerIds": [
           "mario-addison"
         ],
@@ -1543,7 +1543,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Jordan Love in Week 9 of the 2025 season against the Green Bay Packers?",
+        "prompt": "Who sacked Jordan Love in Week 9 of the 2025 season against the Green Bay Packers?",
         "playerIds": [
           "tershawn-wharton"
         ],
@@ -1947,7 +1947,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Jimmy Garoppolo 2 times in Week 8 of the 2019 season against the San Francisco 49ers?",
+        "prompt": "Who sacked Jimmy Garoppolo 2 times in Week 8 of the 2019 season against the San Francisco 49ers?",
         "playerIds": [
           "bruce-irvin"
         ],
@@ -2003,7 +2003,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Aidan O'Connell in Week 3 of the 2024 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Aidan O'Connell in Week 3 of the 2024 season against the Las Vegas Raiders?",
         "playerIds": [
           "jadeveon-clowney"
         ],
@@ -2553,7 +2553,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DE sacked Aaron Brooks in Week 5 of the 2001 season against the New Orleans Saints?",
+        "prompt": "Who sacked Aaron Brooks in Week 5 of the 2001 season against the New Orleans Saints?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -2979,7 +2979,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Brock Huard 2 times in Week 6 of the 2000 season against the Seattle Seahawks?",
+        "prompt": "Who sacked Brock Huard 2 times in Week 6 of the 2000 season against the Seattle Seahawks?",
         "playerIds": [
           "jay-williams"
         ],
@@ -3015,7 +3015,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Ryan Lindley in the 2014 Wild Card against the Arizona Cardinals?",
+        "prompt": "Who sacked Ryan Lindley in the 2014 Wild Card against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson",
           "dwan-edwards",
@@ -3170,7 +3170,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Mike Vick in Week 2 of the 2001 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Mike Vick in Week 2 of the 2001 season against the Atlanta Falcons?",
         "playerIds": [
           "jay-williams"
         ],
@@ -3285,7 +3285,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Russell Wilson 2 times in Week 6 of the 2015 season against the Seattle Seahawks?",
+        "prompt": "Who sacked Russell Wilson 2 times in Week 6 of the 2015 season against the Seattle Seahawks?",
         "playerIds": [
           "kawann-short"
         ],
@@ -3638,7 +3638,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked David Carr in Week 3 of the 2012 season against the New York Giants?",
+        "prompt": "Who sacked David Carr in Week 3 of the 2012 season against the New York Giants?",
         "playerIds": [
           "dwan-edwards"
         ],
@@ -3695,7 +3695,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Chris Chandler 2 times in Week 12 of the 1999 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Chris Chandler 2 times in Week 12 of the 1999 season against the Atlanta Falcons?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -3888,7 +3888,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Josh McCown in Week 12 of the 2017 season against the New York Jets?",
+        "prompt": "Who sacked Josh McCown in Week 12 of the 2017 season against the New York Jets?",
         "playerIds": [
           "julius-peppers",
           "mario-addison",
@@ -4232,7 +4232,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Matt Ryan in Week 8 of the 2021 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 8 of the 2021 season against the Atlanta Falcons?",
         "playerIds": [
           "haason-reddick",
           "yetur-gross-matos"
@@ -4348,7 +4348,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Gardner Minshew in Week 3 of the 2024 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Gardner Minshew in Week 3 of the 2024 season against the Las Vegas Raiders?",
         "playerIds": [
           "jayden-peevy",
           "labryan-ray"
@@ -4877,7 +4877,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Marques Tuiasosopo in Week 10 of the 2008 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Marques Tuiasosopo in Week 10 of the 2008 season against the Las Vegas Raiders?",
         "playerIds": [
           "charles-johnson",
           "julius-peppers"
@@ -5285,7 +5285,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Matt Cassel 2 times in Week 6 of the 2013 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Matt Cassel 2 times in Week 6 of the 2013 season against the Minnesota Vikings?",
         "playerIds": [
           "thomas-davis"
         ],
@@ -5340,7 +5340,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Ryan Mallett in Week 2 of the 2015 season against the Houston Texans?",
+        "prompt": "Who sacked Ryan Mallett in Week 2 of the 2015 season against the Houston Texans?",
         "playerIds": [
           "dwan-edwards"
         ],
@@ -5423,7 +5423,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Sam Bradford 3 times in Week 7 of the 2015 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Sam Bradford 3 times in Week 7 of the 2015 season against the Philadelphia Eagles?",
         "playerIds": [
           "kawann-short"
         ],
@@ -5468,7 +5468,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan in Week 6 of the 2011 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 6 of the 2011 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -5637,7 +5637,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Drew Brees in Week 14 of the 2014 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 14 of the 2014 season against the New Orleans Saints?",
         "playerIds": [
           "kawann-short",
           "mario-addison"
@@ -5660,7 +5660,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Steve McNair in Week 6 of the 2006 season against the Baltimore Ravens?",
+        "prompt": "Who sacked Steve McNair in Week 6 of the 2006 season against the Baltimore Ravens?",
         "playerIds": [
           "chris-draft"
         ],
@@ -5772,7 +5772,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DE sacked Mike Vick 2 times in Week 17 of the 2005 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Mike Vick 2 times in Week 17 of the 2005 season against the Atlanta Falcons?",
         "playerIds": [
           "al-wallace"
         ],
@@ -5852,7 +5852,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Brian Hoyer in Week 16 of the 2014 season against the Cleveland Browns?",
+        "prompt": "Who sacked Brian Hoyer in Week 16 of the 2014 season against the Cleveland Browns?",
         "playerIds": [
           "charles-johnson",
           "kawann-short",
@@ -5869,7 +5869,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Todd Collins in Week 5 of the 2010 season against the Chicago Bears?",
+        "prompt": "Who sacked Todd Collins in Week 5 of the 2010 season against the Chicago Bears?",
         "playerIds": [
           "greg-hardy"
         ],
@@ -5924,7 +5924,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Troy Aikman in Week 5 of the 2000 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Troy Aikman in Week 5 of the 2000 season against the Dallas Cowboys?",
         "playerIds": [
           "eric-swann",
           "reggie-white"
@@ -6023,7 +6023,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Mike Vick 2 times in Week 16 of the 2006 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Mike Vick 2 times in Week 16 of the 2006 season against the Atlanta Falcons?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -6048,7 +6048,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Leinart in Week 16 of the 2012 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Matt Leinart in Week 16 of the 2012 season against the Las Vegas Raiders?",
         "playerIds": [
           "dwan-edwards"
         ],
@@ -6155,7 +6155,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Jalen Hurts in Week 5 of the 2021 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Jalen Hurts in Week 5 of the 2021 season against the Philadelphia Eagles?",
         "playerIds": [
           "haason-reddick"
         ],
@@ -6244,7 +6244,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Tony Romo in Week 3 of the 2009 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Tony Romo in Week 3 of the 2009 season against the Dallas Cowboys?",
         "playerIds": [
           "jon-beason",
           "thomas-davis"
@@ -6622,7 +6622,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Quincy Carter in Week 12 of the 2003 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Quincy Carter in Week 12 of the 2003 season against the Dallas Cowboys?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -6724,7 +6724,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Drew Brees in the 2017 Wild Card against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in the 2017 Wild Card against the New Orleans Saints?",
         "playerIds": [
           "kawann-short"
         ],
@@ -6744,7 +6744,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Russell Wilson in Week 13 of the 2016 season against the Seattle Seahawks?",
+        "prompt": "Who sacked Russell Wilson in Week 13 of the 2016 season against the Seattle Seahawks?",
         "playerIds": [
           "charles-johnson",
           "kony-ealy"
@@ -6768,7 +6768,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Ryan Fitzpatrick in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Ryan Fitzpatrick in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "mario-addison"
         ],
@@ -6962,7 +6962,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Carson Palmer in Week 3 of the 2010 season against the Cincinnati Bengals?",
+        "prompt": "Who sacked Carson Palmer in Week 3 of the 2010 season against the Cincinnati Bengals?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -7037,7 +7037,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Kerry Collins 2 times in Week 9 of the 2004 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Kerry Collins 2 times in Week 9 of the 2004 season against the Las Vegas Raiders?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -7120,7 +7120,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Kyle Boller in Week 6 of the 2006 season against the Baltimore Ravens?",
+        "prompt": "Who sacked Kyle Boller in Week 6 of the 2006 season against the Baltimore Ravens?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -7292,7 +7292,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan 3 times in Week 4 of the 2012 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan 3 times in Week 4 of the 2012 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -7312,7 +7312,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Deshaun Watson 2 times in Week 4 of the 2019 season against the Houston Texans?",
+        "prompt": "Who sacked Deshaun Watson 2 times in Week 4 of the 2019 season against the Houston Texans?",
         "playerIds": [
           "mario-addison"
         ],
@@ -7387,7 +7387,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Philip Rivers 2 times in Week 14 of the 2016 season against the Los Angeles Chargers?",
+        "prompt": "Who sacked Philip Rivers 2 times in Week 14 of the 2016 season against the Los Angeles Chargers?",
         "playerIds": [
           "kawann-short"
         ],
@@ -7469,7 +7469,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Josh Freeman in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Josh Freeman in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "dwan-edwards"
         ],
@@ -7479,7 +7479,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Peyton Manning in Week 10 of the 2012 season against the Denver Broncos?",
+        "prompt": "Who sacked Peyton Manning in Week 10 of the 2012 season against the Denver Broncos?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -7500,7 +7500,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Gardner Minshew in Week 9 of the 2023 season against the Indianapolis Colts?",
+        "prompt": "Who sacked Gardner Minshew in Week 9 of the 2023 season against the Indianapolis Colts?",
         "playerIds": [
           "deshawn-williams"
         ],
@@ -7571,7 +7571,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan in Week 16 of the 2015 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 16 of the 2015 season against the Atlanta Falcons?",
         "playerIds": [
           "kawann-short"
         ],
@@ -7747,7 +7747,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Drew Brees in Week 4 of the 2006 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 4 of the 2006 season against the New Orleans Saints?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -7955,7 +7955,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Alex Smith in Week 7 of the 2010 season against the San Francisco 49ers?",
+        "prompt": "Who sacked Alex Smith in Week 7 of the 2010 season against the San Francisco 49ers?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -7970,7 +7970,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Drew Brees in Week 13 of the 2017 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 13 of the 2017 season against the New Orleans Saints?",
         "playerIds": [
           "kyle-love",
           "mario-addison"
@@ -7991,7 +7991,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Mike Vick in Week 7 of the 2002 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Mike Vick in Week 7 of the 2002 season against the Atlanta Falcons?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -8544,7 +8544,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Ryan in Week 11 of the 2014 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 11 of the 2014 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson",
           "mario-addison"
@@ -8763,7 +8763,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Jay Cutler 2 times in Week 8 of the 2012 season against the Chicago Bears?",
+        "prompt": "Who sacked Jay Cutler 2 times in Week 8 of the 2012 season against the Chicago Bears?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -8959,7 +8959,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Jamie Martin 2 times in Week 17 of the 2006 season against the New Orleans Saints?",
+        "prompt": "Who sacked Jamie Martin 2 times in Week 17 of the 2006 season against the New Orleans Saints?",
         "playerIds": [
           "james-anderson"
         ],
@@ -8969,7 +8969,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Aaron Brooks in Week 13 of the 2004 season against the New Orleans Saints?",
+        "prompt": "Who sacked Aaron Brooks in Week 13 of the 2004 season against the New Orleans Saints?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -9037,7 +9037,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Matt Ryan 4 times in Week 17 of the 2013 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan 4 times in Week 17 of the 2013 season against the Atlanta Falcons?",
         "playerIds": [
           "greg-hardy"
         ],
@@ -9552,7 +9552,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Trent Green 2 times in Week 2 of the 2004 season against the Kansas City Chiefs?",
+        "prompt": "Who sacked Trent Green 2 times in Week 2 of the 2004 season against the Kansas City Chiefs?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -9682,7 +9682,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan 2 times in Week 16 of the 2015 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan 2 times in Week 16 of the 2015 season against the Atlanta Falcons?",
         "playerIds": [
           "kawann-short"
         ],
@@ -9737,7 +9737,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Jason Campbell in Week 12 of the 2006 season against the Washington Commanders?",
+        "prompt": "Who sacked Jason Campbell in Week 12 of the 2006 season against the Washington Commanders?",
         "playerIds": [
           "chris-draft"
         ],
@@ -10049,7 +10049,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Marcus Mariota in Week 8 of the 2022 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Marcus Mariota in Week 8 of the 2022 season against the Atlanta Falcons?",
         "playerIds": [
           "frankie-luvu"
         ],
@@ -10435,7 +10435,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Josh Johnson 2 times in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Josh Johnson 2 times in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "charles-johnson",
           "julius-peppers"
@@ -10473,7 +10473,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Kirk Cousins in Week 12 of the 2020 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Kirk Cousins in Week 12 of the 2020 season against the Minnesota Vikings?",
         "playerIds": [
           "bravvion-roy",
           "zach-kerr"
@@ -10540,7 +10540,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Baker Mayfield in Week 13 of the 2023 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Baker Mayfield in Week 13 of the 2023 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "marquis-haynes"
         ],
@@ -10863,7 +10863,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Ryan Leaf in Week 16 of the 2000 season against the Los Angeles Chargers?",
+        "prompt": "Who sacked Ryan Leaf in Week 16 of the 2000 season against the Los Angeles Chargers?",
         "playerIds": [
           "tim-morabito"
         ],
@@ -11288,7 +11288,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Josh Freeman 2 times in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Josh Freeman 2 times in Week 1 of the 2012 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "dwan-edwards"
         ],
@@ -11308,7 +11308,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Derek Carr 2 times in Week 2 of the 2023 season against the New Orleans Saints?",
+        "prompt": "Who sacked Derek Carr 2 times in Week 2 of the 2023 season against the New Orleans Saints?",
         "playerIds": [
           "frankie-luvu"
         ],
@@ -11792,7 +11792,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Carson Palmer in Week 5 of the 2013 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Carson Palmer in Week 5 of the 2013 season against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -11880,7 +11880,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Matthew Stafford in Week 11 of the 2011 season against the Detroit Lions?",
+        "prompt": "Who sacked Matthew Stafford in Week 11 of the 2011 season against the Detroit Lions?",
         "playerIds": [
           "thomas-keiser"
         ],
@@ -12043,7 +12043,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Aaron Rodgers 2 times in Week 13 of the 2008 season against the Green Bay Packers?",
+        "prompt": "Who sacked Aaron Rodgers 2 times in Week 13 of the 2008 season against the Green Bay Packers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -12098,7 +12098,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Eli Manning 3 times in Week 3 of the 2013 season against the New York Giants?",
+        "prompt": "Who sacked Eli Manning 3 times in Week 3 of the 2013 season against the New York Giants?",
         "playerIds": [
           "greg-hardy"
         ],
@@ -12237,7 +12237,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Jason Campbell 2 times in Week 5 of the 2009 season against the Washington Commanders?",
+        "prompt": "Who sacked Jason Campbell 2 times in Week 5 of the 2009 season against the Washington Commanders?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -12561,7 +12561,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Carson Palmer in the 2015 NFC Championship against the Arizona Cardinals?",
+        "prompt": "Who sacked Carson Palmer in the 2015 NFC Championship against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson",
           "kawann-short",
@@ -13329,7 +13329,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Aaron Brooks 2 times in Week 8 of the 2003 season against the New Orleans Saints?",
+        "prompt": "Who sacked Aaron Brooks 2 times in Week 8 of the 2003 season against the New Orleans Saints?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -13349,7 +13349,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Jalen Hurts 2 times in Week 5 of the 2021 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Jalen Hurts 2 times in Week 5 of the 2021 season against the Philadelphia Eagles?",
         "playerIds": [
           "haason-reddick"
         ],
@@ -13494,7 +13494,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Teddy Bridgewater 2 times in Week 13 of the 2014 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Teddy Bridgewater 2 times in Week 13 of the 2014 season against the Minnesota Vikings?",
         "playerIds": [
           "luke-kuechly"
         ],
@@ -13550,7 +13550,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan 2 times in Week 17 of the 2013 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan 2 times in Week 17 of the 2013 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -13580,7 +13580,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Andy Dalton in Week 18 of the 2022 season against the New Orleans Saints?",
+        "prompt": "Who sacked Andy Dalton in Week 18 of the 2022 season against the New Orleans Saints?",
         "playerIds": [
           "amare-barno"
         ],
@@ -13703,7 +13703,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Tom Brady in Week 17 of the 2001 season against the New England Patriots?",
+        "prompt": "Who sacked Tom Brady in Week 17 of the 2001 season against the New England Patriots?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -13989,7 +13989,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Tom Brady 2 times in Week 4 of the 2017 season against the New England Patriots?",
+        "prompt": "Who sacked Tom Brady 2 times in Week 4 of the 2017 season against the New England Patriots?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -14316,7 +14316,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Blake Bortles 2 times in Week 1 of the 2015 season against the Jacksonville Jaguars?",
+        "prompt": "Who sacked Blake Bortles 2 times in Week 1 of the 2015 season against the Jacksonville Jaguars?",
         "playerIds": [
           "mario-addison"
         ],
@@ -14528,7 +14528,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Baker Mayfield in Week 17 of the 2024 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Baker Mayfield in Week 17 of the 2024 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "jadeveon-clowney"
         ],
@@ -14672,7 +14672,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Mike Glennon 2 times in Week 8 of the 2013 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Mike Glennon 2 times in Week 8 of the 2013 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -14699,7 +14699,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Ryan in Week 9 of the 2017 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 9 of the 2017 season against the Atlanta Falcons?",
         "playerIds": [
           "mario-addison",
           "wes-horton"
@@ -14746,7 +14746,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Jeff Garcia in Week 13 of the 2006 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Jeff Garcia in Week 13 of the 2006 season against the Philadelphia Eagles?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -14776,7 +14776,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Ryan Fitzpatrick 3 times in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Ryan Fitzpatrick 3 times in Week 9 of the 2018 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "mario-addison"
         ],
@@ -15078,7 +15078,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Jay Cutler 3 times in Week 8 of the 2012 season against the Chicago Bears?",
+        "prompt": "Who sacked Jay Cutler 3 times in Week 8 of the 2012 season against the Chicago Bears?",
         "playerIds": [
           "greg-hardy"
         ],
@@ -15172,7 +15172,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DE sacked Tony Banks in Week 9 of the 2003 season against the Houston Texans?",
+        "prompt": "Who sacked Tony Banks in Week 9 of the 2003 season against the Houston Texans?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -15353,7 +15353,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Tyler Shough 2 times in Week 15 of the 2025 season against the New Orleans Saints?",
+        "prompt": "Who sacked Tyler Shough 2 times in Week 15 of the 2025 season against the New Orleans Saints?",
         "playerIds": [
           "dj-wonnum"
         ],
@@ -15379,7 +15379,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Drew Brees in Week 7 of the 2004 season against the Los Angeles Chargers?",
+        "prompt": "Who sacked Drew Brees in Week 7 of the 2004 season against the Los Angeles Chargers?",
         "playerIds": [
           "dan-morgan"
         ],
@@ -15501,7 +15501,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Marcus Mariota in Week 10 of the 2015 season against the Tennessee Titans?",
+        "prompt": "Who sacked Marcus Mariota in Week 10 of the 2015 season against the Tennessee Titans?",
         "playerIds": [
           "kony-ealy"
         ],
@@ -15827,7 +15827,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Brett Favre in Week 4 of the 2005 season against the Green Bay Packers?",
+        "prompt": "Who sacked Brett Favre in Week 4 of the 2005 season against the Green Bay Packers?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -15893,7 +15893,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Brett Favre in Week 11 of the 2007 season against the Green Bay Packers?",
+        "prompt": "Who sacked Brett Favre in Week 11 of the 2007 season against the Green Bay Packers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -15938,7 +15938,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Shaun King 2 times in Week 11 of the 2004 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Shaun King 2 times in Week 11 of the 2004 season against the Arizona Cardinals?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -16207,7 +16207,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Tyler Shough in Week 10 of the 2025 season against the New Orleans Saints?",
+        "prompt": "Who sacked Tyler Shough in Week 10 of the 2025 season against the New Orleans Saints?",
         "playerIds": [
           "nic-scourton",
           "trevin-wallace"
@@ -16280,7 +16280,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Chris Chandler in Week 9 of the 2000 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Chris Chandler in Week 9 of the 2000 season against the Atlanta Falcons?",
         "playerIds": [
           "hannibal-navies"
         ],
@@ -16424,7 +16424,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Jacoby Brissett in Week 1 of the 2022 season against the Cleveland Browns?",
+        "prompt": "Who sacked Jacoby Brissett in Week 1 of the 2022 season against the Cleveland Browns?",
         "playerIds": [
           "damien-wilson"
         ],
@@ -16472,7 +16472,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Matthew Stafford in Week 2 of the 2014 season against the Detroit Lions?",
+        "prompt": "Who sacked Matthew Stafford in Week 2 of the 2014 season against the Detroit Lions?",
         "playerIds": [
           "dwan-edwards",
           "mario-addison"
@@ -16521,7 +16521,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Kyle Boller 2 times in Week 6 of the 2006 season against the Baltimore Ravens?",
+        "prompt": "Who sacked Kyle Boller 2 times in Week 6 of the 2006 season against the Baltimore Ravens?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -16653,7 +16653,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Kurt Warner 2 times in Week 8 of the 2008 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kurt Warner 2 times in Week 8 of the 2008 season against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -16754,7 +16754,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Bruce Gradkowski in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Bruce Gradkowski in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -16822,7 +16822,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Drew Brees 2 times in Week 17 of the 2012 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees 2 times in Week 17 of the 2012 season against the New Orleans Saints?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -16914,7 +16914,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Brady Quinn in Week 13 of the 2012 season against the Kansas City Chiefs?",
+        "prompt": "Who sacked Brady Quinn in Week 13 of the 2012 season against the Kansas City Chiefs?",
         "playerIds": [
           "luke-kuechly"
         ],
@@ -17076,7 +17076,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Ben Roethlisberger in Week 3 of the 2014 season against the Pittsburgh Steelers?",
+        "prompt": "Who sacked Ben Roethlisberger in Week 3 of the 2014 season against the Pittsburgh Steelers?",
         "playerIds": [
           "mario-addison"
         ],
@@ -17098,7 +17098,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Josh Johnson in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Josh Johnson in Week 6 of the 2009 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "charles-johnson",
           "julius-peppers"
@@ -17541,7 +17541,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Jameis Winston in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston in Week 13 of the 2018 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "dontari-poe",
           "efe-obada",
@@ -17609,7 +17609,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Chris Chandler in Week 3 of the 2000 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Chris Chandler in Week 3 of the 2000 season against the Atlanta Falcons?",
         "playerIds": [
           "jason-peter",
           "reggie-white"
@@ -17760,7 +17760,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Peyton Manning 3 times in the 2015 Super Bowl against the Denver Broncos?",
+        "prompt": "Who sacked Peyton Manning 3 times in the 2015 Super Bowl against the Denver Broncos?",
         "playerIds": [
           "kony-ealy"
         ],
@@ -18072,7 +18072,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DE sacked Mark Sanchez in Week 12 of the 2009 season against the New York Jets?",
+        "prompt": "Who sacked Mark Sanchez in Week 12 of the 2009 season against the New York Jets?",
         "playerIds": [
           "tyler-brayton"
         ],
@@ -18411,7 +18411,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Ryan 2 times in Week 17 of the 2014 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan 2 times in Week 17 of the 2014 season against the Atlanta Falcons?",
         "playerIds": [
           "star-lotulelei"
         ],
@@ -18487,7 +18487,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Josh McCown in Week 5 of the 2005 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Josh McCown in Week 5 of the 2005 season against the Arizona Cardinals?",
         "playerIds": [
           "dan-morgan"
         ],
@@ -18693,7 +18693,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Derek Carr in Week 12 of the 2016 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Derek Carr in Week 12 of the 2016 season against the Las Vegas Raiders?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -18740,7 +18740,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Mark Brunell 3 times in Week 1 of the 2003 season against the Jacksonville Jaguars?",
+        "prompt": "Who sacked Mark Brunell 3 times in Week 1 of the 2003 season against the Jacksonville Jaguars?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -18864,7 +18864,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Carson Palmer 3 times in Week 8 of the 2016 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Carson Palmer 3 times in Week 8 of the 2016 season against the Arizona Cardinals?",
         "playerIds": [
           "star-lotulelei"
         ],
@@ -19181,7 +19181,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Daunte Culpepper in Week 11 of the 2008 season against the Detroit Lions?",
+        "prompt": "Who sacked Daunte Culpepper in Week 11 of the 2008 season against the Detroit Lions?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -19451,7 +19451,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Mike McMahon 2 times in Week 2 of the 2002 season against the Detroit Lions?",
+        "prompt": "Who sacked Mike McMahon 2 times in Week 2 of the 2002 season against the Detroit Lions?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -19543,7 +19543,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Chris Simms in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Chris Simms in Week 3 of the 2006 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -19598,7 +19598,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Drew Brees in Week 17 of the 2012 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 17 of the 2012 season against the New Orleans Saints?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -19721,7 +19721,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Jake Delhomme 2 times in Week 17 of the 1999 season against the New Orleans Saints?",
+        "prompt": "Who sacked Jake Delhomme 2 times in Week 17 of the 1999 season against the New Orleans Saints?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -19788,7 +19788,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Kerry Collins in Week 9 of the 2004 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Kerry Collins in Week 9 of the 2004 season against the Las Vegas Raiders?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -19890,7 +19890,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Matt Cassel in Week 12 of the 2015 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Matt Cassel in Week 12 of the 2015 season against the Dallas Cowboys?",
         "playerIds": [
           "kony-ealy"
         ],
@@ -20192,7 +20192,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Colin Kaepernick in the 2013 Divisional Round against the San Francisco 49ers?",
+        "prompt": "Who sacked Colin Kaepernick in the 2013 Divisional Round against the San Francisco 49ers?",
         "playerIds": [
           "luke-kuechly"
         ],
@@ -20445,7 +20445,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Daunte Culpepper 2 times in Week 11 of the 2008 season against the Detroit Lions?",
+        "prompt": "Who sacked Daunte Culpepper 2 times in Week 11 of the 2008 season against the Detroit Lions?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -20479,7 +20479,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Drew Brees in Week 11 of the 2016 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 11 of the 2016 season against the New Orleans Saints?",
         "playerIds": [
           "kony-ealy",
           "mario-addison"
@@ -20619,7 +20619,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Ryan in Week 16 of the 2018 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 16 of the 2018 season against the Atlanta Falcons?",
         "playerIds": [
           "kyle-love"
         ],
@@ -21419,7 +21419,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Trent Green 2 times in Week 10 of the 2000 season against the Los Angeles Rams?",
+        "prompt": "Who sacked Trent Green 2 times in Week 10 of the 2000 season against the Los Angeles Rams?",
         "playerIds": [
           "reggie-white"
         ],
@@ -22121,7 +22121,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Russell Wilson in Week 8 of the 2014 season against the Seattle Seahawks?",
+        "prompt": "Who sacked Russell Wilson in Week 8 of the 2014 season against the Seattle Seahawks?",
         "playerIds": [
           "kony-ealy"
         ],
@@ -22441,7 +22441,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Brett Favre 2 times in Week 14 of the 1999 season against the Green Bay Packers?",
+        "prompt": "Who sacked Brett Favre 2 times in Week 14 of the 1999 season against the Green Bay Packers?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -22462,7 +22462,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Aaron Rodgers in Week 15 of the 2017 season against the Green Bay Packers?",
+        "prompt": "Who sacked Aaron Rodgers in Week 15 of the 2017 season against the Green Bay Packers?",
         "playerIds": [
           "wes-horton"
         ],
@@ -22507,7 +22507,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Chris Chandler in Week 2 of the 2001 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Chris Chandler in Week 2 of the 2001 season against the Atlanta Falcons?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -22808,7 +22808,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Drake Maye in Week 4 of the 2025 season against the New England Patriots?",
+        "prompt": "Who sacked Drake Maye in Week 4 of the 2025 season against the New England Patriots?",
         "playerIds": [
           "tershawn-wharton"
         ],
@@ -23256,7 +23256,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Mitchell Trubisky in Week 15 of the 2022 season against the Pittsburgh Steelers?",
+        "prompt": "Who sacked Mitchell Trubisky in Week 15 of the 2022 season against the Pittsburgh Steelers?",
         "playerIds": [
           "frankie-luvu"
         ],
@@ -23487,7 +23487,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Daunte Culpepper in Week 8 of the 2005 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Daunte Culpepper in Week 8 of the 2005 season against the Minnesota Vikings?",
         "playerIds": [
           "dan-morgan",
           "will-witherspoon"
@@ -23610,7 +23610,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Philip Rivers in Week 1 of the 2008 season against the Los Angeles Chargers?",
+        "prompt": "Who sacked Philip Rivers in Week 1 of the 2008 season against the Los Angeles Chargers?",
         "playerIds": [
           "nail-diggs"
         ],
@@ -23669,7 +23669,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Brandon Allen in Week 9 of the 2022 season against the Cincinnati Bengals?",
+        "prompt": "Who sacked Brandon Allen in Week 9 of the 2022 season against the Cincinnati Bengals?",
         "playerIds": [
           "amare-barno"
         ],
@@ -24290,7 +24290,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Colin Kaepernick 2 times in Week 10 of the 2013 season against the San Francisco 49ers?",
+        "prompt": "Who sacked Colin Kaepernick 2 times in Week 10 of the 2013 season against the San Francisco 49ers?",
         "playerIds": [
           "dwan-edwards"
         ],
@@ -24636,7 +24636,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Jon Kitna 2 times in Week 14 of the 2002 season against the Cincinnati Bengals?",
+        "prompt": "Who sacked Jon Kitna 2 times in Week 14 of the 2002 season against the Cincinnati Bengals?",
         "playerIds": [
           "mark-fields"
         ],
@@ -24651,7 +24651,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Andy Dalton in Week 6 of the 2014 season against the Cincinnati Bengals?",
+        "prompt": "Who sacked Andy Dalton in Week 6 of the 2014 season against the Cincinnati Bengals?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -25064,7 +25064,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Tim Rattay 2 times in Week 10 of the 2004 season against the San Francisco 49ers?",
+        "prompt": "Who sacked Tim Rattay 2 times in Week 10 of the 2004 season against the San Francisco 49ers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -25120,7 +25120,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Jameis Winston 2 times in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston 2 times in Week 6 of the 2019 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "gerald-mccoy",
           "vernon-butler"
@@ -25152,7 +25152,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Michael Penix Jr. in Week 18 of the 2024 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Michael Penix Jr. in Week 18 of the 2024 season against the Atlanta Falcons?",
         "playerIds": [
           "jadeveon-clowney"
         ],
@@ -25801,7 +25801,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Kurt Warner in Week 8 of the 2009 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kurt Warner in Week 8 of the 2009 season against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson",
           "julius-peppers"
@@ -25889,7 +25889,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Mike McMahon 3 times in Week 2 of the 2002 season against the Detroit Lions?",
+        "prompt": "Who sacked Mike McMahon 3 times in Week 2 of the 2002 season against the Detroit Lions?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -25925,7 +25925,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Kirk Cousins in Week 15 of the 2016 season against the Washington Commanders?",
+        "prompt": "Who sacked Kirk Cousins in Week 15 of the 2016 season against the Washington Commanders?",
         "playerIds": [
           "wes-horton"
         ],
@@ -26017,7 +26017,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Tom Brady in Week 4 of the 2017 season against the New England Patriots?",
+        "prompt": "Who sacked Tom Brady in Week 4 of the 2017 season against the New England Patriots?",
         "playerIds": [
           "julius-peppers",
           "kawann-short"
@@ -26095,7 +26095,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Matt Ryan 2 times in Week 14 of the 2015 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan 2 times in Week 14 of the 2015 season against the Atlanta Falcons?",
         "playerIds": [
           "kawann-short"
         ],
@@ -26205,7 +26205,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Jake Delhomme in Week 12 of the 2010 season against the Cleveland Browns?",
+        "prompt": "Who sacked Jake Delhomme in Week 12 of the 2010 season against the Cleveland Browns?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -26577,7 +26577,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Kyler Murray 2 times in Week 3 of the 2019 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kyler Murray 2 times in Week 3 of the 2019 season against the Arizona Cardinals?",
         "playerIds": [
           "christian-miller"
         ],
@@ -26725,7 +26725,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Jay Cutler in Week 4 of the 2011 season against the Chicago Bears?",
+        "prompt": "Who sacked Jay Cutler in Week 4 of the 2011 season against the Chicago Bears?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -26772,7 +26772,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Baker Mayfield in Week 13 of the 2024 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Baker Mayfield in Week 13 of the 2024 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "amare-barno",
           "jadeveon-clowney",
@@ -27215,7 +27215,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Mike Glennon 2 times in Week 13 of the 2013 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Mike Glennon 2 times in Week 13 of the 2013 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "wes-horton"
         ],
@@ -27348,7 +27348,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Bruce Gradkowski 3 times in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Bruce Gradkowski 3 times in Week 10 of the 2006 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -27358,7 +27358,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Derek Carr in Week 2 of the 2023 season against the New Orleans Saints?",
+        "prompt": "Who sacked Derek Carr in Week 2 of the 2023 season against the New Orleans Saints?",
         "playerIds": [
           "frankie-luvu",
           "kamu-grugier-hill"
@@ -27597,7 +27597,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Mike Tomczak in Week 16 of the 1999 season against the Pittsburgh Steelers?",
+        "prompt": "Who sacked Mike Tomczak in Week 16 of the 1999 season against the Pittsburgh Steelers?",
         "playerIds": [
           "jason-peter"
         ],
@@ -27652,7 +27652,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Josh Allen 2 times in Week 15 of the 2021 season against the Buffalo Bills?",
+        "prompt": "Who sacked Josh Allen 2 times in Week 15 of the 2021 season against the Buffalo Bills?",
         "playerIds": [
           "yetur-gross-matos"
         ],
@@ -27800,7 +27800,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Teddy Bridgewater in Week 17 of the 2018 season against the New Orleans Saints?",
+        "prompt": "Who sacked Teddy Bridgewater in Week 17 of the 2018 season against the New Orleans Saints?",
         "playerIds": [
           "julius-peppers",
           "mario-addison"
@@ -27848,7 +27848,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Drew Bledsoe 3 times in Week 16 of the 2005 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Drew Bledsoe 3 times in Week 16 of the 2005 season against the Dallas Cowboys?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -27878,7 +27878,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Chris Streveler in Week 10 of the 2021 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Chris Streveler in Week 10 of the 2021 season against the Arizona Cardinals?",
         "playerIds": [
           "marquis-haynes"
         ],
@@ -28064,7 +28064,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Dwayne Haskins in Week 16 of the 2020 season against the Washington Commanders?",
+        "prompt": "Who sacked Dwayne Haskins in Week 16 of the 2020 season against the Washington Commanders?",
         "playerIds": [
           "marquis-haynes",
           "yetur-gross-matos"
@@ -28086,7 +28086,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Derek Carr in Week 1 of the 2024 season against the New Orleans Saints?",
+        "prompt": "Who sacked Derek Carr in Week 1 of the 2024 season against the New Orleans Saints?",
         "playerIds": [
           "eku-leota"
         ],
@@ -28220,7 +28220,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Derek Carr in Week 14 of the 2023 season against the New Orleans Saints?",
+        "prompt": "Who sacked Derek Carr in Week 14 of the 2023 season against the New Orleans Saints?",
         "playerIds": [
           "frankie-luvu"
         ],
@@ -28255,7 +28255,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DE sacked Daunte Culpepper in Week 12 of the 2000 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Daunte Culpepper in Week 12 of the 2000 season against the Minnesota Vikings?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -28332,7 +28332,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Drew Brees in Week 9 of the 2009 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 9 of the 2009 season against the New Orleans Saints?",
         "playerIds": [
           "tyler-brayton"
         ],
@@ -28541,7 +28541,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Geno Smith in Week 14 of the 2022 season against the Seattle Seahawks?",
+        "prompt": "Who sacked Geno Smith in Week 14 of the 2022 season against the Seattle Seahawks?",
         "playerIds": [
           "frankie-luvu",
           "marquis-haynes"
@@ -28702,7 +28702,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Ryan in Week 17 of the 2014 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 17 of the 2014 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson",
           "kony-ealy",
@@ -29380,7 +29380,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Tyler Thigpen in Week 5 of the 2008 season against the Kansas City Chiefs?",
+        "prompt": "Who sacked Tyler Thigpen in Week 5 of the 2008 season against the Kansas City Chiefs?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -29446,7 +29446,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Matthew Stafford 2 times in Week 11 of the 2011 season against the Detroit Lions?",
+        "prompt": "Who sacked Matthew Stafford 2 times in Week 11 of the 2011 season against the Detroit Lions?",
         "playerIds": [
           "thomas-keiser"
         ],
@@ -29495,7 +29495,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Matt Ryan in Week 17 of the 2010 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 17 of the 2010 season against the Atlanta Falcons?",
         "playerIds": [
           "eric-norwood"
         ],
@@ -29573,7 +29573,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Kurt Warner in Week 6 of the 2007 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kurt Warner in Week 6 of the 2007 season against the Arizona Cardinals?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -29649,7 +29649,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Kurt Warner in Week 13 of the 1999 season against the Los Angeles Rams?",
+        "prompt": "Who sacked Kurt Warner in Week 13 of the 1999 season against the Los Angeles Rams?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -29707,7 +29707,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Mark Sanchez in Week 10 of the 2014 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Mark Sanchez in Week 10 of the 2014 season against the Philadelphia Eagles?",
         "playerIds": [
           "thomas-davis"
         ],
@@ -29961,7 +29961,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Jameis Winston in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "ryan-delaire"
         ],
@@ -30087,7 +30087,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DE sacked Tony Banks 2 times in Week 9 of the 2003 season against the Houston Texans?",
+        "prompt": "Who sacked Tony Banks 2 times in Week 9 of the 2003 season against the Houston Texans?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -30164,7 +30164,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Jake Delhomme 2 times in Week 12 of the 2010 season against the Cleveland Browns?",
+        "prompt": "Who sacked Jake Delhomme 2 times in Week 12 of the 2010 season against the Cleveland Browns?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -30466,7 +30466,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan in Week 14 of the 2015 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 14 of the 2015 season against the Atlanta Falcons?",
         "playerIds": [
           "kawann-short"
         ],
@@ -30476,7 +30476,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Brett Favre 2 times in Week 13 of the 2000 season against the Green Bay Packers?",
+        "prompt": "Who sacked Brett Favre 2 times in Week 13 of the 2000 season against the Green Bay Packers?",
         "playerIds": [
           "jay-williams"
         ],
@@ -30486,7 +30486,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Jordan Love in Week 16 of the 2023 season against the Green Bay Packers?",
+        "prompt": "Who sacked Jordan Love in Week 16 of the 2023 season against the Green Bay Packers?",
         "playerIds": [
           "frankie-luvu"
         ],
@@ -30580,7 +30580,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Dak Prescott 2 times in Week 1 of the 2018 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Dak Prescott 2 times in Week 1 of the 2018 season against the Dallas Cowboys?",
         "playerIds": [
           "kawann-short"
         ],
@@ -30806,7 +30806,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Kurt Warner in Week 8 of the 2008 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kurt Warner in Week 8 of the 2008 season against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -31258,7 +31258,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matt Ryan in Week 14 of the 2019 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 14 of the 2019 season against the Atlanta Falcons?",
         "playerIds": [
           "vernon-butler"
         ],
@@ -31541,7 +31541,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Kyler Murray 3 times in Week 3 of the 2019 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kyler Murray 3 times in Week 3 of the 2019 season against the Arizona Cardinals?",
         "playerIds": [
           "mario-addison"
         ],
@@ -32037,7 +32037,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Brett Favre in Week 14 of the 1999 season against the Green Bay Packers?",
+        "prompt": "Who sacked Brett Favre in Week 14 of the 1999 season against the Green Bay Packers?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -32109,7 +32109,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Tyrod Taylor in Week 2 of the 2017 season against the Buffalo Bills?",
+        "prompt": "Who sacked Tyrod Taylor in Week 2 of the 2017 season against the Buffalo Bills?",
         "playerIds": [
           "julius-peppers",
           "mario-addison"
@@ -32351,7 +32351,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Brad Johnson 3 times in Week 2 of the 2006 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Brad Johnson 3 times in Week 2 of the 2006 season against the Minnesota Vikings?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -32576,7 +32576,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Luke McCown in Week 3 of the 2015 season against the New Orleans Saints?",
+        "prompt": "Who sacked Luke McCown in Week 3 of the 2015 season against the New Orleans Saints?",
         "playerIds": [
           "shaq-thompson"
         ],
@@ -32707,7 +32707,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Blaine Gabbert in Week 2 of the 2016 season against the San Francisco 49ers?",
+        "prompt": "Who sacked Blaine Gabbert in Week 2 of the 2016 season against the San Francisco 49ers?",
         "playerIds": [
           "mario-addison",
           "star-lotulelei"
@@ -32718,7 +32718,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Eli Manning in Week 5 of the 2018 season against the New York Giants?",
+        "prompt": "Who sacked Eli Manning in Week 5 of the 2018 season against the New York Giants?",
         "playerIds": [
           "luke-kuechly"
         ],
@@ -33007,7 +33007,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Nick Foles in Week 12 of the 2012 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Nick Foles in Week 12 of the 2012 season against the Philadelphia Eagles?",
         "playerIds": [
           "greg-hardy"
         ],
@@ -33062,7 +33062,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Aaron Brooks 2 times in Week 5 of the 2001 season against the New Orleans Saints?",
+        "prompt": "Who sacked Aaron Brooks 2 times in Week 5 of the 2001 season against the New Orleans Saints?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -33212,7 +33212,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matt Ryan in Week 9 of the 2013 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 9 of the 2013 season against the Atlanta Falcons?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -33481,7 +33481,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Eli Manning in Week 3 of the 2012 season against the New York Giants?",
+        "prompt": "Who sacked Eli Manning in Week 3 of the 2012 season against the New York Giants?",
         "playerIds": [
           "frank-alexander"
         ],
@@ -33861,7 +33861,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Leon Washington in Week 13 of the 2010 season against the Seattle Seahawks?",
+        "prompt": "Who sacked Leon Washington in Week 13 of the 2010 season against the Seattle Seahawks?",
         "playerIds": [
           "james-anderson"
         ],
@@ -34085,7 +34085,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Quincy Carter 3 times in Week 6 of the 2002 season against the Dallas Cowboys?",
+        "prompt": "Who sacked Quincy Carter 3 times in Week 6 of the 2002 season against the Dallas Cowboys?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -34175,7 +34175,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Eli Manning in Week 1 of the 2010 season against the New York Giants?",
+        "prompt": "Who sacked Eli Manning in Week 1 of the 2010 season against the New York Giants?",
         "playerIds": [
           "dan-connor"
         ],
@@ -34195,7 +34195,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Daunte Culpepper 3 times in Week 3 of the 2002 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Daunte Culpepper 3 times in Week 3 of the 2002 season against the Minnesota Vikings?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -34337,7 +34337,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Ryan Lindley 2 times in the 2014 Wild Card against the Arizona Cardinals?",
+        "prompt": "Who sacked Ryan Lindley 2 times in the 2014 Wild Card against the Arizona Cardinals?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -34481,7 +34481,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Jameis Winston 2 times in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston 2 times in Week 4 of the 2015 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "ryan-delaire"
         ],
@@ -34726,7 +34726,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Mike McMahon in Week 16 of the 2003 season against the Detroit Lions?",
+        "prompt": "Who sacked Mike McMahon in Week 16 of the 2003 season against the Detroit Lions?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -35315,7 +35315,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DE sacked Doug Johnson 2 times in Week 4 of the 2003 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Doug Johnson 2 times in Week 4 of the 2003 season against the Atlanta Falcons?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -35370,7 +35370,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Mark Brunell in Week 2 of the 1999 season against the Jacksonville Jaguars?",
+        "prompt": "Who sacked Mark Brunell in Week 2 of the 1999 season against the Jacksonville Jaguars?",
         "playerIds": [
           "ernest-jones"
         ],
@@ -35390,7 +35390,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Andy Dalton in Week 3 of the 2018 season against the Cincinnati Bengals?",
+        "prompt": "Who sacked Andy Dalton in Week 3 of the 2018 season against the Cincinnati Bengals?",
         "playerIds": [
           "efe-obada",
           "mario-addison"
@@ -35494,7 +35494,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Drew Brees in Week 7 of the 2008 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 7 of the 2008 season against the New Orleans Saints?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -35770,7 +35770,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Andrew Walter 2 times in Week 10 of the 2008 season against the Las Vegas Raiders?",
+        "prompt": "Who sacked Andrew Walter 2 times in Week 10 of the 2008 season against the Las Vegas Raiders?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -36223,7 +36223,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which LB sacked Jacoby Brissett 2 times in Week 16 of the 2019 season against the Indianapolis Colts?",
+        "prompt": "Who sacked Jacoby Brissett 2 times in Week 16 of the 2019 season against the Indianapolis Colts?",
         "playerIds": [
           "bruce-irvin"
         ],
@@ -36382,7 +36382,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Aaron Rodgers in Week 2 of the 2011 season against the Green Bay Packers?",
+        "prompt": "Who sacked Aaron Rodgers in Week 2 of the 2011 season against the Green Bay Packers?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -36508,7 +36508,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Jameis Winston in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston in Week 17 of the 2016 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "kony-ealy",
           "mario-addison",
@@ -36520,7 +36520,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Jeff Garcia in Week 6 of the 1999 season against the San Francisco 49ers?",
+        "prompt": "Who sacked Jeff Garcia in Week 6 of the 1999 season against the San Francisco 49ers?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -37427,7 +37427,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Matt Ryan in Week 11 of the 2019 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Matt Ryan in Week 11 of the 2019 season against the Atlanta Falcons?",
         "playerIds": [
           "dontari-poe",
           "gerald-mccoy",
@@ -37519,7 +37519,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Chris Chandler in Week 16 of the 2002 season against the Chicago Bears?",
+        "prompt": "Who sacked Chris Chandler in Week 16 of the 2002 season against the Chicago Bears?",
         "playerIds": [
           "al-wallace",
           "mike-rucker"
@@ -37759,7 +37759,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which DL sacked Matthew Stafford 2 times in Week 5 of the 2017 season against the Detroit Lions?",
+        "prompt": "Who sacked Matthew Stafford 2 times in Week 5 of the 2017 season against the Detroit Lions?",
         "playerIds": [
           "kawann-short"
         ],
@@ -37780,7 +37780,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Drew Brees 2 times in Week 16 of the 2013 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees 2 times in Week 16 of the 2013 season against the New Orleans Saints?",
         "playerIds": [
           "greg-hardy"
         ],
@@ -38365,7 +38365,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DE sacked Aaron Brooks in Week 8 of the 2003 season against the New Orleans Saints?",
+        "prompt": "Who sacked Aaron Brooks in Week 8 of the 2003 season against the New Orleans Saints?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -38546,7 +38546,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Tom Brady in Week 17 of the 2022 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Tom Brady in Week 17 of the 2022 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "frankie-luvu",
           "marquis-haynes",
@@ -38583,7 +38583,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DE sacked Marc Bulger 2 times in Week 11 of the 2006 season against the Los Angeles Rams?",
+        "prompt": "Who sacked Marc Bulger 2 times in Week 11 of the 2006 season against the Los Angeles Rams?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -38593,7 +38593,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Bo Nix in Week 8 of the 2024 season against the Denver Broncos?",
+        "prompt": "Who sacked Bo Nix in Week 8 of the 2024 season against the Denver Broncos?",
         "playerIds": [
           "ashawn-robinson"
         ],
@@ -38771,7 +38771,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which LB sacked Marcus Mariota 2 times in Week 10 of the 2022 season against the Atlanta Falcons?",
+        "prompt": "Who sacked Marcus Mariota 2 times in Week 10 of the 2022 season against the Atlanta Falcons?",
         "playerIds": [
           "frankie-luvu",
           "marquis-haynes"
@@ -38871,7 +38871,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Jameis Winston in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston in Week 17 of the 2015 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "kyle-love",
           "mario-addison"
@@ -38893,7 +38893,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DE sacked Josh Freeman in Week 10 of the 2010 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Josh Freeman in Week 10 of the 2010 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "everette-brown"
         ],
@@ -38996,7 +38996,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which LB sacked Kyler Murray in Week 2 of the 2025 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kyler Murray in Week 2 of the 2025 season against the Arizona Cardinals?",
         "playerIds": [
           "princely-umanmielen"
         ],
@@ -39077,7 +39077,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DL sacked Matthew Stafford in Week 11 of the 2018 season against the Detroit Lions?",
+        "prompt": "Who sacked Matthew Stafford in Week 11 of the 2018 season against the Detroit Lions?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -39158,7 +39158,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Tyrod Taylor 2 times in Week 2 of the 2017 season against the Buffalo Bills?",
+        "prompt": "Who sacked Tyrod Taylor 2 times in Week 2 of the 2017 season against the Buffalo Bills?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -39947,7 +39947,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Matthew Stafford in the 2025 Wild Card against the Los Angeles Rams?",
+        "prompt": "Who sacked Matthew Stafford in the 2025 Wild Card against the Los Angeles Rams?",
         "playerIds": [
           "trevis-gipson"
         ],
@@ -40618,7 +40618,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Josh Allen in Week 8 of the 2025 season against the Buffalo Bills?",
+        "prompt": "Who sacked Josh Allen in Week 8 of the 2025 season against the Buffalo Bills?",
         "playerIds": [
           "trevin-wallace"
         ],
@@ -40688,7 +40688,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Doug Pederson in Week 9 of the 1999 season against the Philadelphia Eagles?",
+        "prompt": "Who sacked Doug Pederson in Week 9 of the 1999 season against the Philadelphia Eagles?",
         "playerIds": [
           "kevin-greene"
         ],
@@ -41386,7 +41386,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Drew Brees in Week 3 of the 2017 season against the New Orleans Saints?",
+        "prompt": "Who sacked Drew Brees in Week 3 of the 2017 season against the New Orleans Saints?",
         "playerIds": [
           "mario-addison"
         ],
@@ -41432,7 +41432,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q2",
-        "prompt": "Which LB sacked Kyler Murray in Week 4 of the 2020 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Kyler Murray in Week 4 of the 2020 season against the Arizona Cardinals?",
         "playerIds": [
           "yetur-gross-matos"
         ],
@@ -41624,7 +41624,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Bo Nix 2 times in Week 8 of the 2024 season against the Denver Broncos?",
+        "prompt": "Who sacked Bo Nix 2 times in Week 8 of the 2024 season against the Denver Broncos?",
         "playerIds": [
           "ashawn-robinson"
         ],
@@ -41751,7 +41751,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Ben Roethlisberger 2 times in Week 16 of the 2010 season against the Pittsburgh Steelers?",
+        "prompt": "Who sacked Ben Roethlisberger 2 times in Week 16 of the 2010 season against the Pittsburgh Steelers?",
         "playerIds": [
           "charles-johnson"
         ],
@@ -41912,7 +41912,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Ben Roethlisberger in Week 10 of the 2018 season against the Pittsburgh Steelers?",
+        "prompt": "Who sacked Ben Roethlisberger in Week 10 of the 2018 season against the Pittsburgh Steelers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -41979,7 +41979,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Jameis Winston in Week 8 of the 2017 season against the Tampa Bay Buccaneers?",
+        "prompt": "Who sacked Jameis Winston in Week 8 of the 2017 season against the Tampa Bay Buccaneers?",
         "playerIds": [
           "julius-peppers",
           "mario-addison"
@@ -42081,7 +42081,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q4",
-        "prompt": "Which DL sacked Aaron Rodgers in Week 13 of the 2008 season against the Green Bay Packers?",
+        "prompt": "Who sacked Aaron Rodgers in Week 13 of the 2008 season against the Green Bay Packers?",
         "playerIds": [
           "julius-peppers"
         ],
@@ -42167,7 +42167,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which DE sacked Jake Plummer in Week 5 of the 2002 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Jake Plummer in Week 5 of the 2002 season against the Arizona Cardinals?",
         "playerIds": [
           "mike-rucker"
         ],
@@ -42390,7 +42390,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q5",
-        "prompt": "Which DL sacked Case Keenum 2 times in Week 14 of the 2017 season against the Minnesota Vikings?",
+        "prompt": "Who sacked Case Keenum 2 times in Week 14 of the 2017 season against the Minnesota Vikings?",
         "playerIds": [
           "kawann-short"
         ],
@@ -42883,7 +42883,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
       },
       {
         "id": "q3",
-        "prompt": "Which DL sacked Jeff Blake in Week 7 of the 2000 season against the New Orleans Saints?",
+        "prompt": "Who sacked Jeff Blake in Week 7 of the 2000 season against the New Orleans Saints?",
         "playerIds": [
           "jay-williams"
         ],
@@ -43143,7 +43143,7 @@ export const PUZZLES_SICKO: SickoDay[] = [
     "questions": [
       {
         "id": "q1",
-        "prompt": "Which LB sacked Colt McCoy in Week 10 of the 2021 season against the Arizona Cardinals?",
+        "prompt": "Who sacked Colt McCoy in Week 10 of the 2021 season against the Arizona Cardinals?",
         "playerIds": [
           "haason-reddick",
           "shaq-thompson"
