@@ -510,7 +510,7 @@ export default function HomePage() {
       : allAnswered && completedCount === 4
       ? "\nFIELD GOAL!"
       : "";
-    const text = `#PanthersSicko\n${formattedDate}\n${cells}${achievementLine}\n${totalScore} pts\n${window.location.origin}`;
+    const text = `${formattedDate}\n${cells}${achievementLine}\n${totalScore} pts\n${window.location.origin}\n#PanthersSicko`;
 
     try {
       await (navigator as any).share({ text });
@@ -1123,7 +1123,7 @@ export default function HomePage() {
 
         {/* Footer */}
         <footer className="mt-8 text-center text-xs text-zinc-500">
-          #PanthersTriviaSickoMode
+          #PanthersSicko
         </footer>
       </div>
 
